@@ -6,21 +6,18 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed bg-no-repeat relative"
+      className="min-h-screen flex items-center bg-cover bg-center bg-fixed bg-no-repeat"
       style={{ backgroundImage: "url('/images/banner1.png')" }}
     >
-      {/* Overlay for better text visibility */}
-      <div className="absolute inset-0 bg-black/40"></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="text-white font-heading">
-          <div className="text-2xl md:text-3xl mb-2">Hello, my name is</div>
-          <div className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-4 -ml-1">
+      <div className="max-w-[1300px] w-full mx-auto px-20">
+        <div className="text-white font-ubuntu">
+          <div className="text-[27px]">Hello, my name is</div>
+          <div className="text-[75px] font-semibold -ml-1">
             Vikas Singh
           </div>
-          <div className="text-3xl md:text-4xl lg:text-5xl mb-6">
+          <div className="text-[40px] my-2">
             And I&apos;m a{' '}
-            <span className="text-brand-crimson">
+            <span className="text-[#dc143c] font-medium">
               <TypeAnimation
                 sequence={[
                   'Front End Developer',
@@ -40,7 +37,7 @@ export default function Hero() {
           </div>
           <a
             href="#contact"
-            className="inline-block bg-brand-crimson hover:bg-brand-crimson-dark text-white text-lg font-medium px-8 py-3 rounded-md transition-colors duration-300 mt-4"
+            className="inline-block bg-[#dc143c] text-white text-[25px] px-9 py-3 mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
           >
             Hire me
           </a>

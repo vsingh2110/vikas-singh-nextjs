@@ -1,0 +1,85 @@
+export default function SocialActivities() {
+  const activities = [
+    {
+      organization: "Ananya - The Unparallel",
+      role: "Member, Literature and Debating Society",
+      period: "2016 - 2020",
+      institution: "YMCA University of Science & Technology",
+      description: "Active member of university's premier literary and debating society. Won 3 debate competitions, 2 quiz competitions, and participated in 20+ inter-college/university events.",
+      icon: "fa-book-open"
+    },
+    {
+      organization: "Save Aravali Trust",
+      role: "Digital Volunteer & Activist",
+      period: "2017 - Present",
+      institution: "Environmental Activism",
+      description: "Fighting to protect Aravali hills from mining destruction. Published articles in Rajasthan newspapers. Leading signature campaigns and legal challenges against government's redefinition of Aravali boundaries.",
+      icon: "fa-tree"
+    },
+    {
+      organization: "People For Animals (PFA)",
+      role: "Volunteer",
+      period: "2017 - Present",
+      institution: "Founded by Menaka Gandhi",
+      description: "Volunteering for animal welfare and rights. Supporting PFA's mission to protect and care for animals across India.",
+      icon: "fa-paw"
+    },
+    {
+      organization: "Safe and Secure Faridabad (SSF)",
+      role: "Activist",
+      period: "2017 - Present",
+      institution: "Civil Rights and Social Action",
+      description: "Working towards making Faridabad safer and more secure for all residents. Advocating for civic issues and community welfare.",
+      icon: "fa-shield-halved"
+    },
+    {
+      organization: "Student Political Organization",
+      role: "Working President & District Media Coordinator",
+      period: "2017 - Early 2020",
+      institution: "University Student Wing",
+      description: "Served as Working President for university students and District Media Coordinator for a major national political-social organization's student wing.",
+      icon: "fa-users"
+    }
+  ];
+
+  return (
+    <section id="social-activities" className="bg-gray-50 py-20">
+      <div className="max-w-[1300px] mx-auto px-6 md:px-10">
+        <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
+          Social Activities
+        </h2>
+        <p className="text-center text-[#dc143c] text-lg mb-12">
+          Community Engagement & Activism
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {activities.map((activity, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
+            >
+              <div className="flex items-start gap-4">
+                <div className="text-[#dc143c] text-3xl flex-shrink-0 mt-1">
+                  <i className={`fas ${activity.icon}`}></i>
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-ubuntu text-xl font-semibold text-gray-800 mb-1">
+                    {activity.organization}
+                  </h3>
+                  <p className="text-[#dc143c] font-medium mb-1">{activity.role}</p>
+                  <p className="text-gray-600 text-sm mb-2">
+                    <i className="far fa-calendar mr-2"></i>
+                    {activity.period} • {activity.institution}
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    {activity.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

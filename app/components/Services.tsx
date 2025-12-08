@@ -18,27 +18,27 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="py-16 md:py-20 lg:py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 md:mb-16 relative pb-5">
+    <section id="services" className="py-24 bg-[#111] text-white">
+      <div className="max-w-[1300px] mx-auto px-20">
+        <h2 className="text-center text-[40px] font-medium font-ubuntu mb-16 relative pb-5">
           My services
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-gray-800"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-brand-crimson bg-gray-50 px-2">
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-white"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-[#dc143c] bg-[#111] px-2">
             what i provide
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-between gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+              className="w-[calc(33%-20px)] bg-[#222] rounded-md p-12 text-center cursor-pointer transition-all duration-300 hover:bg-[#dc143c] hover:scale-105"
             >
-              <div className="mb-4">
-                <i className={`${service.icon} text-5xl text-brand-crimson`}></i>
+              <div className="mb-4 transition-all duration-300">
+                <i className={`${service.icon} text-5xl text-[#dc143c] group-hover:text-white`}></i>
               </div>
-              <h3 className="text-2xl font-medium mb-4">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <h3 className="text-2xl font-medium mb-4 text-white">{service.title}</h3>
+              <p className="text-white">{service.description}</p>
             </div>
           ))}
         </div>

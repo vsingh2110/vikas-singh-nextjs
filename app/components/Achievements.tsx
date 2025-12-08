@@ -1,0 +1,113 @@
+export default function Achievements() {
+  const achievements = [
+    {
+      title: "All India 0.1% Topper",
+      subtitle: "CBSE Class 10th Board Examination",
+      year: "2013",
+      description: "Achieved perfect 10.0 CGPA, ranking among top 0.1% students across India in CBSE matriculation examination.",
+      icon: "fa-trophy",
+      color: "from-yellow-400 to-amber-500"
+    },
+    {
+      title: "District Topper - English (Core)",
+      subtitle: "CBSE Class 12th Board Examination",
+      year: "2015",
+      description: "Secured district's highest marks in English (Core) and ranked among All India 0.1%ile toppers in the subject.",
+      icon: "fa-medal",
+      color: "from-blue-400 to-indigo-500"
+    },
+    {
+      title: "3× Debate Competition Winner",
+      subtitle: "YMCA University Competitions",
+      year: "2016-2019",
+      description: "Won three major university-level debate competitions including Rostrum, Witswill, and NTPC Vigilance Awareness debate. Participated in 20+ inter-college/university events.",
+      icon: "fa-microphone",
+      color: "from-purple-400 to-pink-500"
+    },
+    {
+      title: "2× Quiz Competition Winner",
+      subtitle: "University & National Level",
+      year: "2016-2017",
+      description: "Winner of Cultural Quiz at Youth Festival 2017 and All India Topper in GK round at national level competition by Unified Council.",
+      icon: "fa-lightbulb",
+      color: "from-green-400 to-teal-500"
+    },
+    {
+      title: "Founder - NEWS YMCA",
+      subtitle: "University Student News Portal",
+      year: "2017",
+      description: "Founded and single-handedly developed a student news website serving YMCA University and 15+ affiliated colleges, becoming a hit platform among students.",
+      icon: "fa-newspaper",
+      color: "from-cyan-400 to-blue-500"
+    },
+    {
+      title: "IIT-JEE Mains Qualifier",
+      subtitle: "Engineering Entrance Examination",
+      year: "2016",
+      description: "Ranked 90,000 out of 1.5 million aspirants (Top 6%) in one of India's toughest engineering entrance examinations.",
+      icon: "fa-graduation-cap",
+      color: "from-red-400 to-rose-500"
+    },
+    {
+      title: "100% Attendance Award (2 Years)",
+      subtitle: "Academic Excellence",
+      year: "2012-2013",
+      description: "Received 100% attendance awards for two consecutive years and 'Best Student Award' three times during school years.",
+      icon: "fa-award",
+      color: "from-orange-400 to-red-500"
+    },
+    {
+      title: "Published Environmental Writer",
+      subtitle: "Rajasthan Newspapers",
+      year: "2024",
+      description: "Articles on Save Aravali campaign published in local newspapers across multiple cities in Rajasthan, advocating for environmental protection.",
+      icon: "fa-pen-nib",
+      color: "from-emerald-400 to-green-500"
+    }
+  ];
+
+  return (
+    <section id="achievements" className="bg-gradient-to-b from-gray-50 to-white py-20">
+      <div className="max-w-[1300px] mx-auto px-6 md:px-10">
+        <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
+          Major Achievements
+        </h2>
+        <p className="text-center text-[#dc143c] text-lg mb-12">
+          Milestones & Recognition
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {achievements.map((achievement, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+            >
+              <div className={`bg-gradient-to-r ${achievement.color} p-4 text-white`}>
+                <div className="flex items-center justify-between">
+                  <div className="text-4xl">
+                    <i className={`fas ${achievement.icon}`}></i>
+                  </div>
+                  <span className="text-sm font-semibold bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                    {achievement.year}
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6">
+                <h3 className="font-ubuntu text-xl font-bold text-gray-800 mb-2 group-hover:text-[#dc143c] transition-colors">
+                  {achievement.title}
+                </h3>
+                <p className="text-[#dc143c] font-medium text-sm mb-3">
+                  {achievement.subtitle}
+                </p>
+                <p className="text-gray-600 leading-relaxed text-sm">
+                  {achievement.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
