@@ -1,7 +1,7 @@
 export default function SocialLinks() {
   const socialLinks = [
     { icon: 'fab fa-facebook', url: 'https://www.facebook.com/singhsahab.vikas', label: 'Facebook' },
-    { icon: 'fab fa-twitter', url: 'https://twitter.com/newsymca', label: 'Twitter' },
+    { icon: 'fab fa-twitter', url: 'https://twitter.com/vs_vimukt', label: 'Twitter' },
     { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/vikas-singh2110/', label: 'LinkedIn' },
     { icon: 'fab fa-github', url: 'https://github.com/vsingh2110', label: 'GitHub' },
     { icon: 'fab fa-whatsapp', url: 'https://wa.me/919716186925?text=Via%20Website%20of%20Vikas%20Singh', label: 'WhatsApp' },

@@ -2,7 +2,7 @@ export default function SocialActivities() {
   const activities = [
     {
       organization: "Ananya - The Unparallel",
-      role: "Member, Literature and Debating Society",
+      role: "Member, Literature and Debating Society of Univeristy",
       period: "2016 - 2020",
       institution: "YMCA University of Science & Technology",
       description: "Active member of university's premier literary and debating society. Won 3 debate competitions, 2 quiz competitions, and participated in 20+ inter-college/university events.",
@@ -33,11 +33,11 @@ export default function SocialActivities() {
       icon: "fa-shield-halved"
     },
     {
-      organization: "Student Political Organization",
-      role: "Working President & District Media Coordinator",
+      organization: "Student Wing - Political Organization(Hidden)",
+      role: "Working President-Univeristy & Faridabad District Media Coordinator",
       period: "2017 - Early 2020",
-      institution: "University Student Wing",
-      description: "Served as Working President for university students and District Media Coordinator for a major national political-social organization's student wing.",
+      institution: "University Student Wing of *Hidden* ",
+      description: "Served as Working President for university students and District(Faridabad) Media Coordinator for a major national political-social organization's student wing*Name Hidden*.",
       icon: "fa-users"
     }
   ];
