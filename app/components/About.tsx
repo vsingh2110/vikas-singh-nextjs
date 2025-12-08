@@ -20,8 +20,8 @@ export default function About() {
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-lg overflow-hidden">
               <Image
-                src="/images/profile-pic.png"
-                alt="Vikas Singh - Frontend Developer"
+                src="/images/vikas-socialist.png"
+                alt="Vikas Singh - Social Psychologist & Developer"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 288px, 384px"
@@ -36,13 +36,13 @@ export default function About() {
               <span className="text-brand-crimson">
                 <TypeAnimation
                   sequence={[
+                    'Social Psychologist',
+                    2000,
                     'Front End Developer',
                     2000,
                     'Digital Marketer',
                     2000,
-                    'Wordpress and Shopify Designer',
-                    2000,
-                    'Paid Ads Google/FB',
+                    'Research & Activist',
                     2000,
                   ]}
                   wrapper="span"
@@ -52,11 +52,10 @@ export default function About() {
               </span>
             </div>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              I am an Electrical Engineering graduate. I developed an interest in web development during the
-              2nd year of my B.tech while I was developing a news website on WordPress. I started working in
-              2017 as a freelancer and did 6 months of internships in Web development & Digital Marketing
-              agency as part of the college curriculum. Later I transformed and upgraded my career into web
-              development and digital marketing.
+              Social Psychologist and Software Professional researching how digital platforms shape human cognition and behavior. Founder of CogniSocial Research, investigating algorithmic influence, digital propaganda, and platform ethics.
+            </p>
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
+              Technical expertise in React.js, Next.js, TypeScript, and SEO/AISEO/GEO/AEO. Environmental activist with Save Aravali Trust, published writer in regional newspapers. Former founder of NEWS YMCA student portal.
             </p>
             <a
               href="https://drive.google.com/file/d/1AhM7AiNR-6VOgtnmuDpy_CuepF_lrmjw/view?usp=sharing"

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/app/components/Navbar'
+import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 
@@ -235,6 +236,7 @@ export default async function BlogPost({ params }: Props) {
         </div>
       </article>
 
+      <SocialLinks />
       <Footer />
       <ScrollToTop />
     </>

@@ -7,8 +7,8 @@ import Journey from './components/Journey'
 import Achievements from './components/Achievements'
 import NonProfitWork from './components/NonProfitWork'
 import SocialActivities from './components/SocialActivities'
-import Projects from './components/Projects'
-import Teams from './components/Teams'
+// import Projects from './components/Projects'
+// import Teams from './components/Teams'
 import Contact from './components/Contact'
 import SocialLinks from './components/SocialLinks'
 import Footer from './components/Footer'
@@ -26,8 +26,8 @@ export default function Home() {
       <Achievements />
       <NonProfitWork />
       <SocialActivities />
-      <Projects />
-      <Teams />
+      {/* <Projects /> */}
+      {/* <Teams /> */}
       <Contact />
       <SocialLinks />
       <Footer />

@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
+import SocialLinks from '../components/SocialLinks'
 import Footer from '../components/Footer'
 import ScrollToTop from '../components/ScrollToTop'
 
@@ -154,6 +155,7 @@ export default function BlogPage() {
         </div>
       </main>
 
+      <SocialLinks />
       <Footer />
       <ScrollToTop />
     </>
