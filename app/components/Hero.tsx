@@ -51,23 +51,39 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Layer 3: Floating psychology icons (social/cognitive elements) */}
-        <div className="absolute inset-0 opacity-20">
+        {/* Layer 3: Floating psychology icons (social/cognitive elements) - ENHANCED VISIBILITY */}
+        <div className="absolute inset-0 opacity-40">
           {psychIcons.map((icon, i) => (
             <div
               key={`icon-${i}`}
-              className="absolute text-4xl"
+              className="absolute text-5xl drop-shadow-2xl"
               style={{
                 left: `${(i * 12 + 5) % 90}%`,
                 top: `${(i * 15 + 10) % 80}%`,
                 animation: `floatIcon ${5 + i}s ease-in-out infinite`,
                 animationDelay: `${i * 0.5}s`,
-                filter: 'blur(1px) grayscale(50%)'
+                filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.8))'
               }}
             >
               {icon}
             </div>
           ))}
+        </div>
+
+        {/* Layer 3.5: Large Brain Representation - VERY VISIBLE */}
+        <div className="absolute top-[15%] right-[10%] opacity-30">
+          <div className="text-9xl animate-pulse" style={{ filter: 'drop-shadow(0 0 30px rgba(220, 20, 60, 0.8))' }}>
+            🧠
+          </div>
+        </div>
+
+        {/* Layer 3.6: Human-Computer Interface Visual */}
+        <div className="absolute bottom-[20%] left-[8%] opacity-30">
+          <div className="flex items-center gap-4 text-6xl" style={{ filter: 'drop-shadow(0 0 20px rgba(100, 200, 255, 0.8))' }}>
+            <span className="animate-pulse">👤</span>
+            <span className="text-4xl text-cyan-400">⟷</span>
+            <span className="animate-pulse" style={{ animationDelay: '0.5s' }}>💻</span>
+          </div>
         </div>
 
         {/* Layer 4: Neural nodes with glow */}
@@ -90,25 +106,29 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Layer 5: Brain hemisphere simulation */}
-        <div className="absolute inset-0 opacity-10">
-          {/* Left brain hemisphere (logical) */}
+        {/* Layer 5: Brain hemisphere simulation - ENHANCED VISIBILITY */}
+        <div className="absolute inset-0 opacity-25">
+          {/* Left brain hemisphere (logical) - LARGER AND MORE VISIBLE */}
           <div 
-            className="absolute left-[10%] top-[20%] w-64 h-64 border-4 border-cyan-400 rounded-full"
+            className="absolute left-[10%] top-[20%] w-80 h-80 border-4 border-cyan-400 rounded-full"
             style={{
               animation: 'brainPulse 3s ease-in-out infinite',
-              clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)'
+              clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
+              boxShadow: '0 0 40px rgba(34, 211, 238, 0.6)'
             }}
           ></div>
-          {/* Right brain hemisphere (creative) */}
+          {/* Right brain hemisphere (creative) - LARGER AND MORE VISIBLE */}
           <div 
-            className="absolute right-[10%] top-[20%] w-64 h-64 border-4 border-purple-400 rounded-full"
+            className="absolute right-[10%] top-[20%] w-80 h-80 border-4 border-purple-400 rounded-full"
             style={{
               animation: 'brainPulse 3s ease-in-out infinite',
               animationDelay: '0.5s',
-              clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)'
+              clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)',
+              boxShadow: '0 0 40px rgba(192, 132, 252, 0.6)'
             }}
           ></div>
+          {/* Neural pathways connecting hemispheres */}
+          <div className="absolute left-[48%] top-[30%] w-1 h-40 bg-gradient-to-b from-cyan-400 to-purple-400" style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
         </div>
 
         {/* Layer 6: Information flow pathways (data to brain) */}
@@ -436,10 +456,10 @@ export default function Hero() {
             </span>
           </div>
           <a
-            href="#contact"
+            href="/blog"
             className="inline-block bg-[#dc143c] text-white text-base sm:text-lg md:text-xl lg:text-[25px] px-6 sm:px-7 md:px-8 lg:px-9 py-2 sm:py-2.5 md:py-3 mt-4 sm:mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
           >
-            Hire me
+            Read My Blogs
           </a>
         </div>
       </div>

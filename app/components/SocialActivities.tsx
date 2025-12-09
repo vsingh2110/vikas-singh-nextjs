@@ -33,11 +33,11 @@ export default function SocialActivities() {
       icon: "fa-shield-halved"
     },
     {
-      organization: "Student Wing - Political Organization(Hidden)",
+      organization: "Student Leader - Political Organization(Hidden)",
       role: "Working President-Univeristy & Faridabad District Media Coordinator",
       period: "2017 - Early 2020",
-      institution: "University Student Wing of *Hidden* ",
-      description: "Served as Working President for university students and District(Faridabad) Media Coordinator for a major national political-social organization's student wing*Name Hidden*.",
+      institution: "University Student Organization of *Hidden* ",
+      description: "Served as <strong>Working President</strong> for university students and <strong>District(Faridabad) Media Coordinator</strong> for a major national political-social organization's student leadership *Name Hidden*.",
       icon: "fa-users"
     }
   ];
@@ -71,9 +71,7 @@ export default function SocialActivities() {
                     <i className="far fa-calendar mr-2"></i>
                     {activity.period} • {activity.institution}
                   </p>
-                  <p className="text-gray-700 leading-relaxed">
-                    {activity.description}
-                  </p>
+                  <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: activity.description }} />
                 </div>
               </div>
             </div>

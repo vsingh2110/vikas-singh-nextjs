@@ -55,7 +55,7 @@ export default function About() {
                             Social Psychologist and Software Professional researching how digital platforms shape human cognition and behavior. Founder of CogniSocial Research, investigating algorithmic influence, digital propaganda, and platform ethics.
                         </p>
                         <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-                            Technical expertise in React.js, Next.js, TypeScript, and SEO/AISEO/GEO/AEO. Environmental & activist, former Working President of University&apos;s Student Wing of a National Party, published writer in regional newspapers. Former founder of NEWS YMCA student portal.
+                            Technical expertise in React.js, Next.js, TypeScript, and SEO/AISEO/GEO/AEO. Environmental & activist, former Working President as Student Leader at University level for a National Party, published writer in regional newspapers. Former founder of NEWS YMCA student portal.
                         </p>
                         <a
                             href="https://drive.google.com/file/d/1AhM7AiNR-6VOgtnmuDpy_CuepF_lrmjw/view?usp=sharing"

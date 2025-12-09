@@ -4,7 +4,7 @@ export default function Achievements() {
       title: "All India 0.1% Topper",
       subtitle: "CBSE Class 10th Board Examination",
       year: "2013",
-      description: "Achieved perfect 10.0 CGPA, ranking among top 0.1% students across India in CBSE matriculation examination.",
+      description: "Achieved <strong>perfect 10.0 CGPA</strong>, ranking among <strong>top 0.1% students across India</strong> in CBSE matriculation examination.",
       icon: "fa-trophy",
       color: "from-yellow-400 to-amber-500"
     },
@@ -12,7 +12,7 @@ export default function Achievements() {
       title: "District Topper - English (Core)",
       subtitle: "CBSE Class 12th Board Examination",
       year: "2015",
-      description: "Secured district's highest marks in English (Core) and ranked among All India 0.1%ile toppers in the subject.",
+      description: "Secured <strong>district's highest marks in English (Core)</strong> and ranked among <strong>All India 0.1%ile toppers</strong> in the subject.",
       icon: "fa-medal",
       color: "from-blue-400 to-indigo-500"
     },
@@ -20,7 +20,7 @@ export default function Achievements() {
       title: "3× Debate Competition Winner",
       subtitle: "YMCA University Competitions",
       year: "2016-2019",
-      description: "Won three major university-level debate competitions including Rostrum, Witswill, and NTPC Vigilance Awareness debate. Participated in 20+ inter-college/university events.",
+      description: "<strong>Won three major university-level debate competitions</strong> including Rostrum, Witswill, and NTPC Vigilance Awareness debate. Participated in <strong>20+ inter-college/university events</strong>.",
       icon: "fa-microphone",
       color: "from-purple-400 to-pink-500"
     },
@@ -28,7 +28,7 @@ export default function Achievements() {
       title: "10+ Quiz Competition Winner",
       subtitle: "University & National Level",
       year: "2006-2019",
-      description: "Winner of Cultural Quiz at Youth Festival 2017 and All India Topper in GK round at national level competition by Unified Council. Participated in 100+ quiz competitions throughout academic life from school to university level.",
+      description: "<strong>Winner of Cultural Quiz</strong> at Youth Festival 2017 and <strong>All India Topper in GK round</strong> at national level competition by Unified Council. Participated in <strong>100+ quiz competitions</strong> throughout academic life from school to university level.",
       icon: "fa-lightbulb",
       color: "from-green-400 to-teal-500"
     },
@@ -36,7 +36,7 @@ export default function Achievements() {
       title: "Founder - NEWS YMCA",
       subtitle: "University Student News Portal",
       year: "2017",
-      description: "Founded and single-handedly developed a student news website serving YMCA University and 15+ affiliated colleges, becoming a hit platform among students.",
+      description: "<strong>Founded and single-handedly developed</strong> a student news website serving <strong>YMCA University and 15+ affiliated colleges</strong>, becoming a <strong>hit platform among students</strong>.",
       icon: "fa-newspaper",
       color: "from-cyan-400 to-blue-500"
     },
@@ -51,8 +51,8 @@ export default function Achievements() {
     {
       title: "100% Attendance Award (2 Years)",
       subtitle: "Academic Excellence",
-      year: "2012-2013",
-      description: "Received 100% attendance awards for two consecutive years and 'Best Student Award' three times during school years.",
+      year: "April 2011 - March 2013",
+      description: "Achieved <strong>730+ consecutive days of 100% attendance</strong> from April 2011 to March 2013. Received <strong>100% attendance awards</strong> for two consecutive years and <strong>'Best Student Award'</strong> three times during school years, demonstrating exceptional dedication and discipline.",
       icon: "fa-award",
       color: "from-orange-400 to-red-500"
     },
@@ -60,7 +60,7 @@ export default function Achievements() {
       title: "Published Environmental Writer",
       subtitle: "Rajasthan Newspapers Patrika.com",
       year: "2025",
-      description: "Articles on Save Aravali campaign published in local newspapers across multiple cities in Rajasthan, advocating for environmental protection.",
+      description: "Articles on <strong>Save Aravali campaign</strong> published in <strong>local newspapers across multiple cities in Rajasthan</strong>, advocating for <strong>environmental protection</strong>.",
       icon: "fa-pen-nib",
       color: "from-emerald-400 to-green-500"
     }
@@ -100,9 +100,7 @@ export default function Achievements() {
                 <p className="text-[#dc143c] font-medium text-sm mb-3">
                   {achievement.subtitle}
                 </p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {achievement.description}
-                </p>
+                <p className="text-gray-600 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: achievement.description }} />
               </div>
             </div>
           ))}
