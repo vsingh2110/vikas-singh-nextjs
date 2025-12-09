@@ -397,11 +397,13 @@ export default function Hero() {
                 sequence={[
                   'Front End Developer',
                   2000,
+                  'Social Psychologist',
+                  2000,
                   'Digital Marketer',
                   2000,
                   'Wordpress and Shopify Designer',
                   2000,
-                  'Paid Ads Google/FB',
+                  'Paid Ads Google-FB-Insta-LinkedIn Specialist',
                   2000,
                 ]}
                 wrapper="span"

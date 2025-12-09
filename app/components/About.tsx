@@ -42,7 +42,7 @@ export default function About() {
                                         2000,
                                         'Digital Marketer',
                                         2000,
-                                        'Research & Activist',
+                                        'Researcher & Activist',
                                         2000,
                                     ]}
                                     wrapper="span"
@@ -58,12 +58,12 @@ export default function About() {
                             Technical expertise in React.js, Next.js, TypeScript, and SEO/AISEO/GEO/AEO. Environmental & activist, former Working President as Student Leader at University level for a National Party, published writer in regional newspapers. Former founder of NEWS YMCA student portal.
                         </p>
                         <a
-                            href="https://drive.google.com/file/d/1AhM7AiNR-6VOgtnmuDpy_CuepF_lrmjw/view?usp=sharing"
+                            href="https://drive.google.com/file/d/13qssfiu6Ni-p49nW2YPlo7ZYmMAD9WiA/view?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block bg-brand-crimson hover:bg-brand-crimson-dark text-white text-lg font-medium px-8 py-3 rounded-md transition-colors duration-300"
                         >
-                            Download CV
+                            View CV
                         </a>
                     </div>
                 </div>

@@ -16,7 +16,7 @@ export default function NonProfitWork() {
       period: "2017 - 2020 (3 Years)",
       role: "Founder & Editor-in-Chief (Non-Profit)",
       description: "Single-handedly created and managed a WordPress-based news and help portal for YMCA University students. Served 15+ affiliated colleges with university news, student resources, and information completely free of charge. 3 years of dedicated non-profit service helping thousands of students without any monetary gains, charity donations, or commercial intent. Platform became immensely popular among students during its active years.",
-      website: "newsymca.com",
+      website: "https://web.archive.org/web/20190413140812/http://www.newsymca.com/",
       icon: "fa-newspaper",
       color: "bg-gradient-to-br from-blue-500 to-cyan-600"
     }
@@ -28,7 +28,7 @@ export default function NonProfitWork() {
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Non-Profit Work
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-0.5 bg-gray-800"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-white px-2">
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-white px-2 whitespace-nowrap">
             Research & Community Projects
           </span>
         </h2>
@@ -75,7 +75,7 @@ export default function NonProfitWork() {
                       className="inline-flex items-center gap-2 text-[#dc143c] hover:text-[#a00e2e] font-medium transition-colors"
                     >
                       <i className="fas fa-external-link-alt"></i>
-                      Visit Project
+                      Visit Project {project.name === "NEWS YMCA" && "(Archived Link)"}
                     </a>
                   )}
                 </div>
