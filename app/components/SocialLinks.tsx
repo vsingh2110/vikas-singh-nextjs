@@ -12,13 +12,13 @@ export default function SocialLinks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 relative pb-5 text-white">
           Social Links
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-white"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-brand-crimson bg-gray-900 px-2">
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-0.5 bg-white"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-brand-crimson bg-gray-900 px-2 whitespace-nowrap">
             connect with me
           </span>
         </h2>
 
-        <div className="flex justify-center items-center gap-4 md:gap-8 flex-wrap">
+        <div className="flex justify-center items-center gap-3 md:gap-8 flex-wrap">
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -26,7 +26,7 @@ export default function SocialLinks() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-brand-crimson text-white text-xl md:text-3xl hover:bg-brand-crimson-dark hover:scale-110 transition-all duration-300 shadow-lg"
+              className="w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-brand-crimson text-white text-lg md:text-3xl hover:bg-brand-crimson-dark hover:scale-110 transition-all duration-300 shadow-lg"
             >
               <i className={link.icon}></i>
             </a>

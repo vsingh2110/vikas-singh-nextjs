@@ -78,9 +78,9 @@ export default function Journey() {
               {education.map((item, index) => (
                 <div key={index} className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
                   <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
                     <h4 
-                      className="text-base sm:text-lg md:text-xl font-medium mb-2"
+                      className="text-base sm:text-lg md:text-xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
                     <span className="text-xs sm:text-sm text-gray-600 block mb-2 sm:mb-3">{item.period}</span>
@@ -110,9 +110,9 @@ export default function Journey() {
               {experience.map((item, index) => (
                 <div key={index} className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
                   <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
                     <h4 
-                      className="text-base sm:text-lg md:text-xl font-medium mb-2"
+                      className="text-base sm:text-lg md:text-xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
                     <span className="text-xs sm:text-sm text-gray-600 block mb-2 sm:mb-3">{item.period}</span>

@@ -26,11 +26,9 @@ export default function Skills() {
               My Technical Skills & Experiences
             </h3>
             <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-              I have work experience and skills in the following profiles - Digital Marketing Executive,
-              WordPress designing & Development, Drupal Development, Shopify Development, On-Page and Off-page SEO, 
-              AI-SEO (AISEO), Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), SMO, SEM, SMM, 
-              Content Writer, Blogger, Google Ads, Meta Ads (Facebook & Instagram), LinkedIn Ads, Google Analytics, 
-              Google Search Console, Content Developer, CMS Development (PayLoad, WordPress, Shopify, Drupal, Magento).
+              I have work experience and skills in the following profiles:<br/><br/>
+              <strong>Digital Marketing:</strong> Digital Marketing Executive, On-Page and Off-page SEO, AI-SEO (AISEO), Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), SMO, SEM, SMM, Content Writer, Blogger, Google Ads, Meta Ads (Facebook & Instagram), LinkedIn Ads, Google Analytics, Google Search Console<br/><br/>
+              <strong>Web Development:</strong> WordPress designing & Development, Drupal Development, Shopify Development, Content Developer, CMS Development (PayLoad, WordPress, Shopify, Drupal, Magento)
             </p>
             <a
               href="#about"

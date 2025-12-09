@@ -72,7 +72,7 @@ export default function Hero() {
 
         {/* Layer 3.5: HUGE Brain Representation - VERY VISIBLE */}
         <div className="absolute top-[5%] right-[3%] opacity-60">
-          <div className="text-[220px] animate-pulse" style={{ filter: 'drop-shadow(0 0 60px rgba(220, 20, 60, 1))' }}>
+          <div className="text-[180px] md:text-[280px] animate-pulse" style={{ filter: 'drop-shadow(0 0 60px rgba(220, 20, 60, 1))' }}>
             🧠
           </div>
         </div>

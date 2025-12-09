@@ -22,7 +22,7 @@ export default function Services() {
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           My services
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 h-0.5 bg-gray-800"></span>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-40 sm:w-48 md:w-56 h-0.5 bg-gray-800"></span>
           <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-white px-2">
             what i provide
           </span>

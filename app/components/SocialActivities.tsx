@@ -47,8 +47,8 @@ export default function SocialActivities() {
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Social Activities
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-gray-800"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-[#dc143c] bg-gray-100 px-2">
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-56 md:w-72 h-0.5 bg-gray-800"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-gray-100 px-2">
             Community Engagement & Activism
           </span>
         </h2>
