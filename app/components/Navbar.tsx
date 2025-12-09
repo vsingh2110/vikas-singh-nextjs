@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isBlogPage = pathname?.startsWith('/blog')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,21 +20,21 @@ export default function Navbar() {
   }, [])
 
   const menuItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Research', href: '#nonprofit' },
-    { name: 'Activism', href: '#social-activities' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Achievements', href: '/#achievements' },
+    { name: 'Research', href: '/#nonprofit' },
+    { name: 'Activism', href: '/#social-activities' },
+    { name: 'Contact', href: '/#contact' },
     { name: 'Blog', href: '/blog' },
   ]
 
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
+        isBlogPage || isScrolled
           ? 'bg-brand-crimson py-4'
           : 'bg-transparent py-8'
       }`}
@@ -44,7 +47,7 @@ export default function Navbar() {
               href="/"
               className="text-white text-3xl font-semibold font-heading"
             >
-              Portfo<span className={`transition-colors duration-300 ${isScrolled ? 'text-white' : 'text-brand-crimson'}`}>lio.</span>
+              Portfo<span className={`transition-colors duration-300 ${isBlogPage || isScrolled ? 'text-white' : 'text-brand-crimson'}`}>lio.</span>
             </Link>
           </div>
 
@@ -55,7 +58,7 @@ export default function Navbar() {
                 <Link
                   href={item.href}
                   className={`text-white text-lg font-medium transition-colors duration-300 ${
-                    isScrolled
+                    isBlogPage || isScrolled
                       ? 'hover:text-white/90'
                       : 'hover:text-brand-crimson'
                   }`}

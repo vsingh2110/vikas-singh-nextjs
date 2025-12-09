@@ -8,7 +8,7 @@ export default function SocialLinks() {
   ]
 
   return (
-    <section id="social" className="py-16 md:py-20 bg-white">
+    <section id="social" className="py-16 md:py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 relative pb-5">
           Social Links
