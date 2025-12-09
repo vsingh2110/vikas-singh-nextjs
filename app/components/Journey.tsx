@@ -13,12 +13,12 @@ export default function Journey() {
     {
       title: 'B.Tech In Electrical Engineering<br/><span class="text-base font-normal text-gray-600">J.C. Bose YMCA University of Science & Technology (Main Campus), Faridabad</span>',
       period: '2016 - 2020 (1st Division)',
-      description: 'Active in Literary, Debating and Quizzing activities in Inter-College, Inter-University and State Level Competitions',
+      description: 'Active in Literary, Debating and Quizzing activities in Inter-College, Inter-University and State Level Competitions. <strong>Won multiple debate and quiz competitions</strong> representing the university.',
     },
     {
       title: 'Secondary & Senior Secondary School<br/><span class="text-base font-normal text-gray-600">Faridabad Model School</span>',
-      period: '2004 - 2016',
-      description: '<strong>All India 0.1% Topper</strong> (CBSE Class 10th, 2013) with perfect 10.0 CGPA. <strong>Faridabad District Topper in English</strong> (CBSE Class 12th, 2015) with 97% marks.',
+      period: '2015',
+      description: '<strong>All India 0.1% Topper</strong> (CBSE Class 10th, 2013) with perfect <strong>10.0/10.0 CGPA</strong>. <strong>Faridabad District Topper in English</strong> (CBSE Class 12th, 2015) with 97% marks. <strong>Won multiple quiz competitions</strong> at inter-school and school level throughout academic years.',
     },
   ]
 
@@ -29,17 +29,12 @@ export default function Journey() {
       description: 'Handling websites development, online and digital marketing activities with social media and website promotion with paid sponsored as well as organic work',
     },
     {
-      title: 'Wordpress Developer & Digital Marketing<br/><span class="text-base font-normal text-gray-600">Zara International Machines</span>',
-      period: 'January 2021 - March 2021',
-      description: 'Worked as Wordpress Developer, designed website and managed online B2B & B2C accounts',
+      title: 'WordPress & Shopify Developer<br/><span class="text-base font-normal text-gray-600">Freelance Projects (Zara International & The Earth Store)</span>',
+      period: 'November 2020 - March 2021',
+      description: 'WordPress development for B2B/B2C platforms, Shopify e-commerce management, SEO (On-page, Off-page, Technical), SMO, content writing, Google Analytics, market research & customer service',
     },
     {
-      title: 'Shopify Website Designer<br/><span class="text-base font-normal text-gray-600">The Earth Store (Freelance)</span>',
-      period: 'November 2020 - December 2020',
-      description: 'E-commerce platform management, Shopify development, SEO (On-page, Off-page, Technical), SMO, content writing, Google Analytics, market research & customer service',
-    },
-    {
-      title: 'Digital Marketing & Business Development<br/><span class="text-base font-normal text-gray-600">RuralShores Skills Academy (Trainee)</span>',
+      title: 'Digital Marketing & Business Development<br/><span class="text-base font-normal text-gray-600">RuralShores Skills Academy</span>',
       period: 'July 2020 - October 2020',
       description: 'Course development for online learning platform, content development, marketing strategy, social media marketing, and management of Pan India training centres',
     },
@@ -49,11 +44,6 @@ export default function Journey() {
       description: 'Client projects: Website content development, On-page/Off-page SEO, social media management, online reputation management for multiple brands',
     },
     {
-      title: 'Student Leader<br/><span class="text-base font-normal text-gray-600">Political Organization (Hidden)</span>',
-      period: '2017 - 2020',
-      description: '<strong>Working President - University</strong> & <strong>Faridabad District Media Coordinator</strong>. Led student campaigns, managed university-level communications, and coordinated district media operations',
-    },
-    {
       title: 'Various Freelance Projects<br/><span class="text-base font-normal text-gray-600">Multiple Clients</span>',
       period: 'March 2017 - December 2020',
       description: 'WordPress websites and digital marketing projects for multiple clients across various industries',
@@ -61,12 +51,12 @@ export default function Journey() {
   ]
 
   return (
-    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-gray-50">
+    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           My Journey
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 h-0.5 bg-[#111]"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2\" style={{ backgroundColor: 'rgb(249, 250, 251)' }}>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2" style={{ backgroundColor: 'white' }}>
             what I did
           </span>
         </h2>

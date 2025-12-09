@@ -3,22 +3,25 @@
 import { TypeAnimation } from 'react-type-animation'
 
 export default function Hero() {
-  // Generate more complex node positions for connections
+  // Generate complex node positions for neural network
   const nodes = Array.from({ length: 40 }, (_, i) => ({
     x: Math.random() * 100,
     y: Math.random() * 100,
     size: 3 + Math.random() * 4
   }))
 
+  // Generate psychology-themed icons positions
+  const psychIcons = ['🧠', '👤', '💭', '🔗', '📱', '💻', '🎭', '👁️']
+
   return (
     <section
       id="home"
       className="min-h-screen flex items-center relative overflow-hidden"
     >
-      {/* Ultra Complex Animated Tech/Psychology Background */}
+      {/* Ultra Complex Animated Tech/Psychology/HMI Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         
-        {/* Layer 1: Fast moving hexagonal grid */}
+        {/* Layer 1: Fast moving hexagonal grid (tech) */}
         <div className="absolute inset-0 opacity-15">
           <div className="absolute inset-0" style={{
             backgroundImage: `
@@ -30,7 +33,7 @@ export default function Hero() {
           }}></div>
         </div>
 
-        {/* Layer 2: Multiple digital rain columns with varied speeds */}
+        {/* Layer 2: Digital rain + human silhouettes (HMI) */}
         <div className="absolute inset-0 opacity-12">
           {[...Array(50)].map((_, i) => (
             <div
@@ -43,12 +46,31 @@ export default function Hero() {
                 animationDelay: `${(i * 0.2) % 8}s`
               }}
             >
-              {i % 3 === 0 ? '101' : i % 3 === 1 ? '010' : '001'}
+              {i % 5 === 0 ? '👤' : i % 5 === 1 ? '101' : i % 5 === 2 ? '🧠' : i % 5 === 3 ? '010' : '💻'}
             </div>
           ))}
         </div>
 
-        {/* Layer 3: Large neural nodes with glow */}
+        {/* Layer 3: Floating psychology icons (social/cognitive elements) */}
+        <div className="absolute inset-0 opacity-20">
+          {psychIcons.map((icon, i) => (
+            <div
+              key={`icon-${i}`}
+              className="absolute text-4xl"
+              style={{
+                left: `${(i * 12 + 5) % 90}%`,
+                top: `${(i * 15 + 10) % 80}%`,
+                animation: `floatIcon ${5 + i}s ease-in-out infinite`,
+                animationDelay: `${i * 0.5}s`,
+                filter: 'blur(1px) grayscale(50%)'
+              }}
+            >
+              {icon}
+            </div>
+          ))}
+        </div>
+
+        {/* Layer 4: Neural nodes with glow */}
         <div className="absolute inset-0">
           {nodes.map((node, i) => (
             <div
@@ -68,7 +90,59 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Layer 4: Dynamic connection lines between nodes */}
+        {/* Layer 5: Brain hemisphere simulation */}
+        <div className="absolute inset-0 opacity-10">
+          {/* Left brain hemisphere (logical) */}
+          <div 
+            className="absolute left-[10%] top-[20%] w-64 h-64 border-4 border-cyan-400 rounded-full"
+            style={{
+              animation: 'brainPulse 3s ease-in-out infinite',
+              clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)'
+            }}
+          ></div>
+          {/* Right brain hemisphere (creative) */}
+          <div 
+            className="absolute right-[10%] top-[20%] w-64 h-64 border-4 border-purple-400 rounded-full"
+            style={{
+              animation: 'brainPulse 3s ease-in-out infinite',
+              animationDelay: '0.5s',
+              clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)'
+            }}
+          ></div>
+        </div>
+
+        {/* Layer 6: Information flow pathways (data to brain) */}
+        <svg className="absolute inset-0 w-full h-full opacity-20 pointer-events-none">
+          {/* Human-to-machine data flow */}
+          {[...Array(8)].map((_, i) => (
+            <g key={`dataflow-${i}`}>
+              <path
+                d={`M ${10 + i * 12},${50} Q ${30 + i * 12},${30 + Math.sin(i) * 20} ${50 + i * 12},${50}`}
+                stroke="#dc143c"
+                strokeWidth="2"
+                fill="none"
+                strokeDasharray="5,5"
+                style={{
+                  animation: `dataFlow ${3 + i * 0.5}s ease-in-out infinite`,
+                  animationDelay: `${i * 0.3}s`
+                }}
+              />
+              {/* Data particles along paths */}
+              <circle
+                cx="50"
+                cy="50"
+                r="3"
+                fill="#fff"
+                style={{
+                  animation: `moveAlongPath ${3 + i * 0.5}s ease-in-out infinite`,
+                  animationDelay: `${i * 0.3}s`
+                }}
+              />
+            </g>
+          ))}
+        </svg>
+
+        {/* Layer 7: Dynamic connection lines (social network) */}
         <svg className="absolute inset-0 w-full h-full opacity-25 pointer-events-none">
           {nodes.slice(0, 60).map((node, i) => {
             if (i < nodes.length - 1) {
@@ -93,58 +167,78 @@ export default function Hero() {
           })}
         </svg>
 
-        {/* Layer 5: Scanning laser lines */}
-        <div className="absolute inset-0 opacity-20">
+        {/* Layer 8: Attention/Focus scanning laser (eye tracking) */}
+        <div className="absolute inset-0 opacity-15">
           <div 
-            className="absolute w-full h-1 bg-gradient-to-r from-transparent via-brand-crimson to-transparent"
+            className="absolute w-full h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
             style={{
-              animation: 'scanVertical 4s ease-in-out infinite',
-              filter: 'blur(2px)'
-            }}
-          ></div>
-          <div 
-            className="absolute h-full w-1 bg-gradient-to-b from-transparent via-brand-crimson to-transparent"
-            style={{
-              animation: 'scanHorizontal 6s ease-in-out infinite',
-              animationDelay: '2s',
-              filter: 'blur(2px)'
+              animation: 'eyeScan 6s ease-in-out infinite',
+              filter: 'blur(3px)'
             }}
           ></div>
         </div>
 
-        {/* Layer 6: Pulsing brain wave circles - faster */}
+        {/* Layer 9: Cognitive wave pulses (brain activity) */}
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/15 rounded-full blur-3xl" style={{ animation: 'pulse 1.5s ease-in-out infinite' }}></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl" style={{ animationDelay: '0.3s', animation: 'pulse 2s ease-in-out infinite' }}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-500/15 rounded-full blur-3xl" style={{ animationDelay: '0.6s', animation: 'pulse 2.5s ease-in-out infinite' }}></div>
 
-        {/* Layer 7: Rotating neuron synapses effect */}
-        <div className="absolute inset-0 opacity-10">
-          {[...Array(8)].map((_, i) => (
+        {/* Layer 10: Interface elements (screens/devices) */}
+        <div className="absolute inset-0 opacity-8">
+          {[...Array(6)].map((_, i) => (
             <div
-              key={`synapse-${i}`}
-              className="absolute w-32 h-32 border-2 border-brand-crimson rounded-full"
+              key={`screen-${i}`}
+              className="absolute border-2 border-cyan-400 rounded"
               style={{
-                left: `${20 + i * 10}%`,
-                top: `${30 + (i % 3) * 20}%`,
-                animation: `rotate ${8 + i * 2}s linear infinite ${i % 2 === 0 ? '' : 'reverse'}`,
-                transformOrigin: 'center'
+                width: `${40 + i * 10}px`,
+                height: `${30 + i * 8}px`,
+                left: `${15 + i * 15}%`,
+                top: `${70 - i * 8}%`,
+                animation: `screenGlow ${4 + i}s ease-in-out infinite`,
+                animationDelay: `${i * 0.5}s`
               }}
-            ></div>
+            >
+              <div className="absolute inset-1 bg-cyan-400/20"></div>
+            </div>
           ))}
         </div>
 
-        {/* Layer 8: Particle explosion effects */}
-        <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
+        {/* Layer 11: Thought bubbles (cognitive processes) */}
+        <div className="absolute inset-0 opacity-10">
+          {[...Array(5)].map((_, i) => (
             <div
-              key={`particle-${i}`}
-              className="absolute w-1 h-1 bg-white rounded-full"
+              key={`bubble-${i}`}
+              className="absolute"
               style={{
-                left: '50%',
-                top: '50%',
-                animation: `explode ${3 + (i % 3)}s ease-out infinite`,
-                animationDelay: `${i * 0.2}s`,
-                transform: `rotate(${i * 18}deg)`
+                left: `${20 + i * 20}%`,
+                bottom: `${10 + i * 15}%`,
+                animation: `bubbleRise ${8 + i * 2}s ease-in-out infinite`,
+                animationDelay: `${i * 1.5}s`
+              }}
+            >
+              <div className="relative">
+                {/* Main bubble */}
+                <div className="w-20 h-20 bg-purple-400/30 rounded-full border-2 border-purple-400"></div>
+                {/* Small bubbles */}
+                <div className="absolute -bottom-6 -left-2 w-8 h-8 bg-purple-400/30 rounded-full border-2 border-purple-400"></div>
+                <div className="absolute -bottom-10 left-2 w-4 h-4 bg-purple-400/30 rounded-full border-2 border-purple-400"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Layer 12: Synaptic firing patterns */}
+        <div className="absolute inset-0">
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={`synapse-${i}`}
+              className="absolute w-2 h-2 bg-yellow-300 rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `synapseFire ${0.5 + Math.random()}s ease-out infinite`,
+                animationDelay: `${Math.random() * 3}s`,
+                boxShadow: '0 0 20px 5px rgba(253, 224, 71, 0.6)'
               }}
             ></div>
           ))}
@@ -179,6 +273,17 @@ export default function Hero() {
           }
         }
         
+        @keyframes floatIcon {
+          0%, 100% {
+            transform: translateY(0) scale(1);
+            opacity: 0.4;
+          }
+          50% {
+            transform: translateY(-40px) scale(1.2);
+            opacity: 0.8;
+          }
+        }
+        
         @keyframes glow {
           0%, 100% {
             box-shadow: 0 0 10px 3px rgba(220, 20, 60, 0.3);
@@ -205,6 +310,37 @@ export default function Hero() {
           }
         }
         
+        @keyframes brainPulse {
+          0%, 100% {
+            transform: scale(1);
+            border-width: 4px;
+          }
+          50% {
+            transform: scale(1.1);
+            border-width: 6px;
+          }
+        }
+        
+        @keyframes dataFlow {
+          0%, 100% {
+            stroke-dashoffset: 0;
+            opacity: 0.3;
+          }
+          50% {
+            stroke-dashoffset: 20;
+            opacity: 1;
+          }
+        }
+        
+        @keyframes moveAlongPath {
+          0% {
+            offset-distance: 0%;
+          }
+          100% {
+            offset-distance: 100%;
+          }
+        }
+        
         @keyframes lineFlow {
           0%, 100% {
             stroke-opacity: 0.3;
@@ -216,40 +352,57 @@ export default function Hero() {
           }
         }
         
-        @keyframes scanVertical {
+        @keyframes eyeScan {
           0%, 100% {
-            top: -10%;
+            top: 20%;
+          }
+          33% {
+            top: 50%;
+          }
+          66% {
+            top: 80%;
+          }
+        }
+        
+        @keyframes screenGlow {
+          0%, 100% {
+            opacity: 0.3;
+            box-shadow: 0 0 10px rgba(34, 211, 238, 0.3);
           }
           50% {
-            top: 110%;
+            opacity: 0.8;
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.8);
           }
         }
         
-        @keyframes scanHorizontal {
-          0%, 100% {
-            left: -10%;
-          }
-          50% {
-            left: 110%;
-          }
-        }
-        
-        @keyframes rotate {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-        
-        @keyframes explode {
+        @keyframes bubbleRise {
           0% {
-            transform: rotate(var(--rotation, 0deg)) translateX(0) scale(1);
+            transform: translateY(0) scale(0.8);
+            opacity: 0;
+          }
+          20% {
+            opacity: 0.5;
+          }
+          80% {
+            opacity: 0.5;
+          }
+          100% {
+            transform: translateY(-200px) scale(1.2);
+            opacity: 0;
+          }
+        }
+        
+        @keyframes synapseFire {
+          0% {
+            transform: scale(0.5);
+            opacity: 0;
+          }
+          50% {
+            transform: scale(2);
             opacity: 1;
           }
           100% {
-            transform: rotate(var(--rotation, 0deg)) translateX(150px) scale(0);
+            transform: scale(0.5);
             opacity: 0;
           }
         }

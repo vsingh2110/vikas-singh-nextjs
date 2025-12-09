@@ -23,7 +23,7 @@ export default function NonProfitWork() {
   ];
 
   return (
-    <section id="nonprofit" className="bg-gray-50 py-20">
+    <section id="nonprofit" className="bg-white py-20">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
         <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
           Non-Profit Work

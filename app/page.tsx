@@ -20,7 +20,6 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Services />
       <Skills />
       <Journey />
       <Achievements />
@@ -28,6 +27,7 @@ export default function Home() {
       <SocialActivities />
       {/* <Projects /> */}
       {/* <Teams /> */}
+      <Services />
       <Contact />
       <SocialLinks />
       <Footer />

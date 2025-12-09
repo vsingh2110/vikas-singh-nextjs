@@ -43,7 +43,7 @@ export default function SocialActivities() {
   ];
 
   return (
-    <section id="social-activities" className="bg-gray-50 py-20">
+    <section id="social-activities" className="bg-gray-100 py-20">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
         <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
           Social Activities
