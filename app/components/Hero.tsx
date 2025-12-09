@@ -70,9 +70,9 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Layer 3.5: Large Brain Representation - VERY VISIBLE */}
-        <div className="absolute top-[15%] right-[10%] opacity-30">
-          <div className="text-9xl animate-pulse" style={{ filter: 'drop-shadow(0 0 30px rgba(220, 20, 60, 0.8))' }}>
+        {/* Layer 3.5: HUGE Brain Representation - VERY VISIBLE */}
+        <div className="absolute top-[5%] right-[3%] opacity-60">
+          <div className="text-[220px] animate-pulse" style={{ filter: 'drop-shadow(0 0 60px rgba(220, 20, 60, 1))' }}>
             🧠
           </div>
         </div>
@@ -86,49 +86,24 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Layer 4: Neural nodes with glow */}
+        {/* Layer 4: BRIGHT Neural nodes with STRONG glow */}
         <div className="absolute inset-0">
           {nodes.map((node, i) => (
             <div
               key={`node-${i}`}
               className="absolute rounded-full bg-brand-crimson shadow-2xl"
               style={{
-                width: `${node.size}px`,
-                height: `${node.size}px`,
+                width: `${node.size + 3}px`,
+                height: `${node.size + 3}px`,
                 left: `${node.x}%`,
                 top: `${node.y}%`,
-                opacity: 0.7 + Math.random() * 0.3,
-                boxShadow: `0 0 ${node.size * 3}px ${node.size}px rgba(220, 20, 60, 0.4)`,
+                opacity: 0.95,
+                boxShadow: `0 0 ${node.size * 6}px ${node.size * 3}px rgba(220, 20, 60, 0.8)`,
                 animation: `float ${2 + Math.random() * 3}s ease-in-out infinite, glow ${1 + Math.random() * 2}s ease-in-out infinite`,
                 animationDelay: `${Math.random() * 2}s`
               }}
             ></div>
           ))}
-        </div>
-
-        {/* Layer 5: Brain hemisphere simulation - ENHANCED VISIBILITY */}
-        <div className="absolute inset-0 opacity-25">
-          {/* Left brain hemisphere (logical) - LARGER AND MORE VISIBLE */}
-          <div 
-            className="absolute left-[10%] top-[20%] w-80 h-80 border-4 border-cyan-400 rounded-full"
-            style={{
-              animation: 'brainPulse 3s ease-in-out infinite',
-              clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)',
-              boxShadow: '0 0 40px rgba(34, 211, 238, 0.6)'
-            }}
-          ></div>
-          {/* Right brain hemisphere (creative) - LARGER AND MORE VISIBLE */}
-          <div 
-            className="absolute right-[10%] top-[20%] w-80 h-80 border-4 border-purple-400 rounded-full"
-            style={{
-              animation: 'brainPulse 3s ease-in-out infinite',
-              animationDelay: '0.5s',
-              clipPath: 'polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%)',
-              boxShadow: '0 0 40px rgba(192, 132, 252, 0.6)'
-            }}
-          ></div>
-          {/* Neural pathways connecting hemispheres */}
-          <div className="absolute left-[48%] top-[30%] w-1 h-40 bg-gradient-to-b from-cyan-400 to-purple-400" style={{ animation: 'pulse 2s ease-in-out infinite' }}></div>
         </div>
 
         {/* Layer 6: Information flow pathways (data to brain) */}
@@ -162,9 +137,9 @@ export default function Hero() {
           ))}
         </svg>
 
-        {/* Layer 7: Dynamic connection lines (social network) */}
-        <svg className="absolute inset-0 w-full h-full opacity-25 pointer-events-none">
-          {nodes.slice(0, 60).map((node, i) => {
+        {/* Layer 7: THICK Dynamic neural connection lines - VERY VISIBLE */}
+        <svg className="absolute inset-0 w-full h-full opacity-50 pointer-events-none">
+          {nodes.slice(0, 80).map((node, i) => {
             if (i < nodes.length - 1) {
               const nextNode = nodes[(i + Math.floor(Math.random() * 5) + 1) % nodes.length]
               return (
@@ -175,7 +150,7 @@ export default function Hero() {
                   x2={`${nextNode.x}%`}
                   y2={`${nextNode.y}%`}
                   stroke="#dc143c"
-                  strokeWidth="0.5"
+                  strokeWidth="2"
                   style={{
                     animation: `lineFlow ${3 + (i % 4)}s ease-in-out infinite`,
                     animationDelay: `${i * 0.1}s`
@@ -202,26 +177,6 @@ export default function Hero() {
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/15 rounded-full blur-3xl" style={{ animation: 'pulse 1.5s ease-in-out infinite' }}></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl" style={{ animationDelay: '0.3s', animation: 'pulse 2s ease-in-out infinite' }}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-500/15 rounded-full blur-3xl" style={{ animationDelay: '0.6s', animation: 'pulse 2.5s ease-in-out infinite' }}></div>
-
-        {/* Layer 10: Interface elements (screens/devices) */}
-        <div className="absolute inset-0 opacity-8">
-          {[...Array(6)].map((_, i) => (
-            <div
-              key={`screen-${i}`}
-              className="absolute border-2 border-cyan-400 rounded"
-              style={{
-                width: `${40 + i * 10}px`,
-                height: `${30 + i * 8}px`,
-                left: `${15 + i * 15}%`,
-                top: `${70 - i * 8}%`,
-                animation: `screenGlow ${4 + i}s ease-in-out infinite`,
-                animationDelay: `${i * 0.5}s`
-              }}
-            >
-              <div className="absolute inset-1 bg-cyan-400/20"></div>
-            </div>
-          ))}
-        </div>
 
         {/* Layer 11: Thought bubbles (cognitive processes) */}
         <div className="absolute inset-0 opacity-10">
