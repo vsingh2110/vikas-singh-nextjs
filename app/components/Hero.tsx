@@ -384,13 +384,13 @@ export default function Hero() {
       `}</style>
       <div className="max-w-[1300px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-20 relative z-10">
         <div className="text-white font-ubuntu">
-          <div className="text-lg sm:text-xl md:text-2xl lg:text-[27px] leading-tight">
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[27px] leading-tight">
             Hello, my name is
           </div>
-          <div className="text-4xl sm:text-5xl md:text-6xl lg:text-[75px] font-semibold -ml-1 leading-tight mt-2">
+          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[75px] font-semibold -ml-1 leading-tight mt-2">
             Vikas Singh
           </div>
-          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] my-3 sm:my-4 leading-tight min-h-[60px] sm:min-h-[80px] lg:min-h-[100px]">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] my-4 sm:my-5 leading-tight min-h-[70px] sm:min-h-[90px] lg:min-h-[100px]">
             And I&apos;m a{' '}
             <span className="text-[#dc143c] font-medium inline-block">
               <TypeAnimation

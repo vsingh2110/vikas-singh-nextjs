@@ -85,12 +85,13 @@ export default function Achievements() {
   return (
     <section id="achievements" className="bg-gray-100 py-20">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
-        <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
+        <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Major Achievements
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-gray-800"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-[#dc143c] bg-gray-100 px-2">
+            Milestones & Recognition
+          </span>
         </h2>
-        <p className="text-center text-[#dc143c] text-lg mb-12">
-          Milestones & Recognition
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((achievement, index) => (

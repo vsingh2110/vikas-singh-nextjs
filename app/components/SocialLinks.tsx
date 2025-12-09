@@ -18,7 +18,7 @@ export default function SocialLinks() {
           </span>
         </h2>
 
-        <div className="flex justify-center items-center gap-6 md:gap-8 flex-wrap">
+        <div className="flex justify-center items-center gap-4 md:gap-8 flex-wrap">
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -26,7 +26,7 @@ export default function SocialLinks() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-brand-crimson text-white text-2xl md:text-3xl hover:bg-brand-crimson-dark hover:scale-110 transition-all duration-300 shadow-lg"
+              className="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-brand-crimson text-white text-xl md:text-3xl hover:bg-brand-crimson-dark hover:scale-110 transition-all duration-300 shadow-lg"
             >
               <i className={link.icon}></i>
             </a>

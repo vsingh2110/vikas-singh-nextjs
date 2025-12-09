@@ -45,9 +45,10 @@ export default function Navbar() {
           <div className="logo">
             <Link
               href="/"
-              className="text-white text-3xl font-semibold font-heading"
+              className="text-white text-3xl font-semibold font-heading flex flex-col"
             >
-              Portfo<span className={`transition-colors duration-300 ${isBlogPage || isScrolled ? 'text-white' : 'text-brand-crimson'}`}>lio.</span>
+              <span>Portfo<span className={`transition-colors duration-300 ${isBlogPage || isScrolled ? 'text-white' : 'text-brand-crimson'}`}>lio.</span></span>
+              <span className="text-xs text-right mt-[-4px]">Vikas Singh</span>
             </Link>
           </div>
 

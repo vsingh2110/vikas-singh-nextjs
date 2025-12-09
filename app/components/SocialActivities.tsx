@@ -45,12 +45,13 @@ export default function SocialActivities() {
   return (
     <section id="social-activities" className="bg-gray-100 py-20">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
-        <h2 className="text-center font-ubuntu text-4xl md:text-5xl font-semibold mb-3">
+        <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Social Activities
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 h-0.5 bg-gray-800"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-[#dc143c] bg-gray-100 px-2">
+            Community Engagement & Activism
+          </span>
         </h2>
-        <p className="text-center text-[#dc143c] text-lg mb-12">
-          Community Engagement & Activism
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {activities.map((activity, index) => (
@@ -58,7 +59,8 @@ export default function SocialActivities() {
               key={index}
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
             >
-              <div className="flex items-start gap-4">
+              {/* Desktop layout: icon on left */}
+              <div className="hidden md:flex items-start gap-4">
                 <div className="text-[#dc143c] text-3xl flex-shrink-0 mt-1">
                   <i className={`fas ${activity.icon}`}></i>
                 </div>
@@ -73,6 +75,22 @@ export default function SocialActivities() {
                   </p>
                   <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: activity.description }} />
                 </div>
+              </div>
+              
+              {/* Mobile layout: icon between heading and subheading */}
+              <div className="block md:hidden">
+                <h3 className="font-ubuntu text-xl font-semibold text-gray-800 mb-3">
+                  {activity.organization}
+                </h3>
+                <div className="text-[#dc143c] text-4xl mb-3 text-center">
+                  <i className={`fas ${activity.icon}`}></i>
+                </div>
+                <p className="text-[#dc143c] font-medium mb-1">{activity.role}</p>
+                <p className="text-gray-600 text-sm mb-2">
+                  <i className="far fa-calendar mr-2"></i>
+                  {activity.period} • {activity.institution}
+                </p>
+                <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: activity.description }} />
               </div>
             </div>
           ))}

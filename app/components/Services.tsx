@@ -18,12 +18,12 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="py-16 md:py-20 lg:py-24 bg-[#111] text-white">
+    <section id="services" className="py-16 md:py-20 lg:py-24 bg-white">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           My services
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 h-0.5 bg-white"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2" style={{ backgroundColor: '#111' }}>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 h-0.5 bg-gray-800"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-white px-2">
             what i provide
           </span>
         </h2>
@@ -32,13 +32,13 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#222] rounded-md p-8 md:p-10 lg:p-12 text-center cursor-pointer transition-all duration-300 hover:bg-[#dc143c] hover:scale-105 group"
+              className="bg-gray-50 rounded-md p-8 md:p-10 lg:p-12 text-center cursor-pointer transition-all duration-300 hover:bg-[#dc143c] hover:scale-105 group border border-gray-200"
             >
               <div className="mb-4 transition-all duration-300">
                 <i className={`${service.icon} text-4xl sm:text-5xl text-[#dc143c] group-hover:text-white transition-colors duration-300`}></i>
               </div>
-              <h3 className="text-xl sm:text-2xl font-medium mb-3 sm:mb-4 text-white">{service.title}</h3>
-              <p className="text-sm sm:text-base text-white">{service.description}</p>
+              <h3 className="text-xl sm:text-2xl font-medium mb-3 sm:mb-4 text-gray-800 group-hover:text-white transition-colors duration-300">{service.title}</h3>
+              <p className="text-sm sm:text-base text-gray-700 group-hover:text-white transition-colors duration-300">{service.description}</p>
             </div>
           ))}
         </div>
