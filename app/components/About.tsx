@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 export default function About() {
     return (
-        <section id="about" className="py-16 md:py-20 lg:py-24">
+        <section id="about" className="py-16 md:py-20 lg:py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 md:mb-16 relative pb-5">
                     About me

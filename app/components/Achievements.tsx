@@ -18,17 +18,17 @@ export default function Achievements() {
     },
     {
       title: "3× Debate Competition Winner",
-      subtitle: "YMCA University Competitions",
-      year: "2016-2019",
-      description: "Won three major university-level debate competitions including Rostrum, Witswill, and NTPC Vigilance Awareness debate. Participated in 20+ inter-college/university events.",
+      subtitle: "Inter-School, Inter-College, Inter-University, State & National Level",
+      year: "2006-2019",
+      description: "Won <strong>three major university-level debate competitions</strong> including Rostrum, Witswill, and NTPC Vigilance Awareness debate, <strong>representing YMCA University</strong>. Participated in <strong>20+ inter-school, inter-college, inter-university, and state-level events</strong> throughout academic career.",
       icon: "fa-microphone",
       color: "from-purple-400 to-pink-500"
     },
     {
-      title: "2× Quiz Competition Winner",
-      subtitle: "University & National Level",
-      year: "2016-2017",
-      description: "Winner of Cultural Quiz at Youth Festival 2017 and <strong>All India Topper</strong> in GK round at national level competition by Unified Council.",
+      title: "10+ Quiz Competition Winner",
+      subtitle: "Inter-School, Inter-College, Inter-University, State & National Level",
+      year: "2006-2019",
+      description: "<strong>All India Topper</strong> in GK round at national level competition by Unified Council (2006). Winner of Cultural Quiz at Youth Festival 2017 and <strong>10+ quiz competitions</strong> across multiple genres including <strong>Honours, History, Culture, GK, Science</strong> at inter-school, inter-college, inter-university, state and national levels.",
       icon: "fa-lightbulb",
       color: "from-green-400 to-teal-500"
     },
