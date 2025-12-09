@@ -27,7 +27,7 @@ export default function NonProfitWork() {
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Non-Profit Work
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-0.5 bg-gray-800"></span>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-72 md:w-96 h-0.5 bg-gray-800"></span>
           <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-white px-2 whitespace-nowrap">
             Research & Community Projects
           </span>
