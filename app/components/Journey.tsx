@@ -1,19 +1,24 @@
 export default function Journey() {
   const education = [
     {
-      title: 'M.A In Psychology - Pt. JLN Government College, Faridabad (MDU, Rohtak)',
-      period: '2020 - 2022',
-      description: 'With Focus on Cyber Psychology and Human Machine Interaction',
+      title: 'M.A. In Psychology - Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)',
+      period: '2020 - 2022 (1st Division)',
+      description: 'With Focus on Social Psychology, Cyber Psychology and Human Machine Interaction',
     },
     {
-      title: 'B.tech In Electrical Engineering - J.C Bose YMCA University of Science & Technology',
-      period: '2016 - 2020',
+      title: 'M.S. In Computer Science - Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)',
+      period: 'Aug 2023 - Jul 2024 (Dropout after 1st year)',
+      description: 'Pursued advanced studies in Computer Science with focus on Machine Learning and Data Structures',
+    },
+    {
+      title: 'B.Tech In Electrical Engineering - J.C. Bose YMCA University of Science & Technology (Main Campus), Faridabad',
+      period: '2016 - 2020 (1st Division)',
       description: 'Active in Literary, Debating and Quizzing activities in Inter-College, Inter-University and State Level Competitions',
     },
     {
       title: 'Secondary & Senior Secondary School - Faridabad Model School',
-      period: '2013 - 2015',
-      description: 'I passed my Secondary education from CBSE board in 2015 with 10.0 CGPA & Class 12th with 80% and was District Topper in English Subject with 97% Score',
+      period: '2004 - 2016',
+      description: '<strong>All India 0.1% Topper</strong> (CBSE Class 10th, 2013) with perfect 10.0 CGPA. <strong>Faridabad District Topper in English</strong> (CBSE Class 12th, 2015) with 97% marks.',
     },
   ]
 
@@ -66,7 +71,10 @@ export default function Journey() {
                   <div className="bg-gray-50 p-6 rounded-md hover:shadow-lg transition-shadow duration-300">
                     <h4 className="text-xl font-medium mb-2">{item.title}</h4>
                     <span className="text-sm text-gray-600 block mb-3">{item.period}</span>
-                    <p className="text-gray-700">{item.description}</p>
+                    <p 
+                      className="text-gray-700"
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                    />
                   </div>
                 </div>
               ))}

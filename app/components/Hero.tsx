@@ -8,39 +8,79 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex items-center relative overflow-hidden"
     >
-      {/* Animated Network Background */}
+      {/* Animated Tech/Psychology Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        {/* Animated grid pattern */}
+        {/* Fast moving grid pattern - represents digital networks */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0" style={{
             backgroundImage: `
-              linear-gradient(90deg, rgba(220, 20, 60, 0.1) 1px, transparent 1px),
-              linear-gradient(rgba(220, 20, 60, 0.1) 1px, transparent 1px)
+              linear-gradient(90deg, rgba(220, 20, 60, 0.15) 1px, transparent 1px),
+              linear-gradient(rgba(220, 20, 60, 0.15) 1px, transparent 1px)
             `,
-            backgroundSize: '50px 50px',
-            animation: 'moveGrid 20s linear infinite'
+            backgroundSize: '40px 40px',
+            animation: 'moveGrid 8s linear infinite'
           }}></div>
         </div>
         
-        {/* Floating particles/nodes effect */}
-        <div className="absolute inset-0">
-          {[...Array(15)].map((_, i) => (
+        {/* Digital rain effect - binary code streaming */}
+        <div className="absolute inset-0 opacity-10">
+          {[...Array(30)].map((_, i) => (
             <div
-              key={i}
-              className="absolute w-2 h-2 bg-brand-crimson rounded-full opacity-60"
+              key={`rain-${i}`}
+              className="absolute text-brand-crimson font-mono text-xs"
               style={{
+                left: `${(i * 3.5) % 100}%`,
+                animation: `digitalRain ${3 + (i % 5)}s linear infinite`,
+                animationDelay: `${(i * 0.3) % 5}s`
+              }}
+            >
+              01010
+            </div>
+          ))}
+        </div>
+        
+        {/* Fast floating neural nodes - represents brain connections */}
+        <div className="absolute inset-0">
+          {[...Array(25)].map((_, i) => (
+            <div
+              key={`node-${i}`}
+              className="absolute rounded-full bg-brand-crimson opacity-70 shadow-lg shadow-brand-crimson/50"
+              style={{
+                width: `${4 + (i % 3) * 2}px`,
+                height: `${4 + (i % 3) * 2}px`,
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
-                animation: `float ${5 + Math.random() * 10}s ease-in-out infinite`,
-                animationDelay: `${Math.random() * 5}s`
+                animation: `float ${3 + Math.random() * 4}s ease-in-out infinite`,
+                animationDelay: `${Math.random() * 3}s`
               }}
             ></div>
           ))}
         </div>
 
-        {/* Pulsing circles for psychology/connectivity theme */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        {/* Neural connection lines */}
+        <svg className="absolute inset-0 w-full h-full opacity-20">
+          {[...Array(15)].map((_, i) => (
+            <line
+              key={`line-${i}`}
+              x1={`${Math.random() * 100}%`}
+              y1={`${Math.random() * 100}%`}
+              x2={`${Math.random() * 100}%`}
+              y2={`${Math.random() * 100}%`}
+              stroke="#dc143c"
+              strokeWidth="1"
+              className="animate-pulse"
+              style={{
+                animationDelay: `${i * 0.2}s`,
+                animationDuration: `${2 + (i % 3)}s`
+              }}
+            />
+          ))}
+        </svg>
+
+        {/* Fast pulsing brain waves */}
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '2s' }}></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s', animationDuration: '2.5s' }}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-red-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s', animationDuration: '3s' }}></div>
       </div>
 
       {/* Dark overlay for better text readability */}
@@ -52,22 +92,43 @@ export default function Hero() {
             transform: translate(0, 0);
           }
           100% {
-            transform: translate(50px, 50px);
+            transform: translate(40px, 40px);
           }
         }
         
         @keyframes float {
           0%, 100% {
-            transform: translateY(0) translateX(0);
+            transform: translate(0, 0) scale(1);
+            opacity: 0.7;
           }
           25% {
-            transform: translateY(-20px) translateX(10px);
+            transform: translate(20px, -30px) scale(1.1);
+            opacity: 0.9;
           }
           50% {
-            transform: translateY(-10px) translateX(-10px);
+            transform: translate(-15px, -20px) scale(0.9);
+            opacity: 0.6;
           }
           75% {
-            transform: translateY(-30px) translateX(5px);
+            transform: translate(25px, -40px) scale(1.05);
+            opacity: 0.8;
+          }
+        }
+        
+        @keyframes digitalRain {
+          0% {
+            transform: translateY(-100vh);
+            opacity: 0;
+          }
+          10% {
+            opacity: 1;
+          }
+          90% {
+            opacity: 1;
+          }
+          100% {
+            transform: translateY(100vh);
+            opacity: 0;
           }
         }
       `}</style>

@@ -4,15 +4,15 @@ export default function Achievements() {
       title: "All India 0.1% Topper",
       subtitle: "CBSE Class 10th Board Examination",
       year: "2013",
-      description: "Achieved perfect 10.0 CGPA, ranking among top 0.1% students across India in CBSE matriculation examination.",
+      description: "Achieved perfect 10.0 CGPA, ranking among <strong>top 0.1% students across India</strong> in CBSE matriculation examination.",
       icon: "fa-trophy",
       color: "from-yellow-400 to-amber-500"
     },
     {
-      title: "District Topper - English (Core)",
+      title: "Faridabad District Topper - English (Core)",
       subtitle: "CBSE Class 12th Board Examination",
       year: "2015",
-      description: "Secured district's highest marks in English (Core) and ranked among All India 0.1%ile toppers in the subject.",
+      description: "Secured <strong>district's highest marks in English (Core)</strong> with 97% and ranked among <strong>All India 0.1%ile toppers</strong> in the subject.",
       icon: "fa-medal",
       color: "from-blue-400 to-indigo-500"
     },
@@ -28,15 +28,15 @@ export default function Achievements() {
       title: "2× Quiz Competition Winner",
       subtitle: "University & National Level",
       year: "2016-2017",
-      description: "Winner of Cultural Quiz at Youth Festival 2017 and All India Topper in GK round at national level competition by Unified Council.",
+      description: "Winner of Cultural Quiz at Youth Festival 2017 and <strong>All India Topper</strong> in GK round at national level competition by Unified Council.",
       icon: "fa-lightbulb",
       color: "from-green-400 to-teal-500"
     },
     {
-      title: "Founder - NEWS YMCA",
+      title: "Founder - NEWS YMCA (Non-Profit)",
       subtitle: "University Student News Portal",
-      year: "2017",
-      description: "Founded and single-handedly developed a student news website serving YMCA University and 15+ affiliated colleges, becoming a hit platform among students.",
+      year: "2017-2020",
+      description: "Founded and single-handedly developed a <strong>free student news website</strong> serving YMCA University and 15+ affiliated colleges. <strong>3 years of non-profit service</strong> helping students without any monetary gains, donations, or commercial intent.",
       icon: "fa-newspaper",
       color: "from-cyan-400 to-blue-500"
     },
@@ -49,18 +49,34 @@ export default function Achievements() {
       color: "from-red-400 to-rose-500"
     },
     {
-      title: "100% Attendance Award (2 Years)",
-      subtitle: "Academic Excellence",
-      year: "2012-2013",
-      description: "Received 100% attendance awards for two consecutive years and 'Best Student Award' three times during school years.",
+      title: "100% Attendance Award - 2 Years Continuous",
+      subtitle: "Academic Excellence & Discipline",
+      year: "Apr 2011 - Mar 2013",
+      description: "Received <strong>100% attendance awards for 730+ consecutive days</strong> (April 2011 to March 2013) without a single absence, demonstrating exceptional dedication and discipline throughout two complete academic years.",
       icon: "fa-award",
       color: "from-orange-400 to-red-500"
     },
     {
+      title: "2× Founder's Medal Award",
+      subtitle: "Best Student All-Round Performance",
+      year: "2013 & 2015",
+      description: "Awarded <strong>Founder's Medal twice</strong> (2013 and 2015) for best all-round performance in academics, extracurricular activities, and leadership during school years.",
+      icon: "fa-star",
+      color: "from-pink-400 to-rose-500"
+    },
+    {
+      title: "Merit Honour for All-Round Performance",
+      subtitle: "Faridabad Model School",
+      year: "Dec 2016",
+      description: "Received <strong>Merit Honour</strong> for overall excellence in academics, extra-curricular activities, and qualifying <strong>IIT-JEE Mains 2016</strong>.",
+      icon: "fa-certificate",
+      color: "from-indigo-400 to-purple-500"
+    },
+    {
       title: "Published Environmental Writer",
       subtitle: "Rajasthan Newspapers",
-      year: "2024",
-      description: "Articles on Save Aravali campaign published in local newspapers across multiple cities in Rajasthan, advocating for environmental protection.",
+      year: "2025",
+      description: "Articles on <strong>Save Aravali campaign</strong> published in local newspapers across multiple cities in Rajasthan, advocating for environmental protection and raising public awareness.",
       icon: "fa-pen-nib",
       color: "from-emerald-400 to-green-500"
     }
@@ -100,9 +116,10 @@ export default function Achievements() {
                 <p className="text-[#dc143c] font-medium text-sm mb-3">
                   {achievement.subtitle}
                 </p>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {achievement.description}
-                </p>
+                <p 
+                  className="text-gray-600 leading-relaxed text-sm"
+                  dangerouslySetInnerHTML={{ __html: achievement.description }}
+                />
               </div>
             </div>
           ))}

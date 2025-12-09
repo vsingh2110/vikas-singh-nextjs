@@ -4,8 +4,8 @@ export default function NonProfitWork() {
       name: "CogniSocial Research",
       tagline: "Digital Influence & Social Psychology Research",
       period: "2024 - Present",
-      role: "Founder & Editor",
-      description: "Independent research organization investigating how algorithmic systems, interface design, and information architectures shape attention, belief formation, and social consensus. Researching algorithmic amplification, digital propaganda, narrative engineering, misinformation spread, and platform governance ethics.",
+      role: "Founder & Editor (Non-Profit)",
+      description: "Independent non-profit research organization investigating how algorithmic systems, interface design, and information architectures shape attention, belief formation, and social consensus. Committed to social awakening and betterment of society through research on algorithmic amplification, digital propaganda, narrative engineering, misinformation spread, and platform governance ethics. All research is freely available for public benefit.",
       website: "https://github.com/vsingh2110/mindscape-research",
       icon: "fa-brain",
       color: "bg-gradient-to-br from-purple-500 to-indigo-600"
@@ -13,9 +13,9 @@ export default function NonProfitWork() {
     {
       name: "NEWS YMCA",
       tagline: "University News & Student Help Portal",
-      period: "2017 - 2020",
-      role: "Founder & Editor-in-Chief",
-      description: "Single-handedly created and managed a WordPress-based news and help portal for YMCA University students. Served 15+ affiliated colleges with university news, student resources, and information. Became a hit platform among students during its active years.",
+      period: "2017 - 2020 (3 Years)",
+      role: "Founder & Editor-in-Chief (Non-Profit)",
+      description: "Single-handedly created and managed a WordPress-based news and help portal for YMCA University students. Served 15+ affiliated colleges with university news, student resources, and information completely free of charge. 3 years of dedicated non-profit service helping thousands of students without any monetary gains, charity donations, or commercial intent. Platform became immensely popular among students during its active years.",
       website: "newsymca.com",
       icon: "fa-newspaper",
       color: "bg-gradient-to-br from-blue-500 to-cyan-600"
