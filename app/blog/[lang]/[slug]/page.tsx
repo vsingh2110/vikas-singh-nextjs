@@ -6,6 +6,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Navbar from '@/app/components/Navbar'
 import LanguageSwitcher from '@/app/components/LanguageSwitcher'
 import AuthorBio from '@/app/components/AuthorBio'
+import ReadingProgress from '@/app/components/ReadingProgress'
 import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
@@ -161,6 +162,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
   return (
     <>
+      <ReadingProgress />
       <Navbar />
       
       {/* Set HTML lang attribute dynamically */}
