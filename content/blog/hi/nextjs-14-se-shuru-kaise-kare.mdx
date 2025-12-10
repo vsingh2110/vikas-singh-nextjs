@@ -1,0 +1,165 @@
+---
+title: "Next.js 14 से शुरू कैसे करें: एक व्यापक गाइड"
+excerpt: "Next.js 14 के साथ आधुनिक वेब एप्लिकेशन बनाना सीखें, जिसमें नया App Router, Server Components और परफॉर्मेंस ऑप्टिमाइजेशन तकनीक शामिल हैं।"
+image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&auto=format&fit=crop&q=80"
+date: "2025-01-15"
+category: "वेब डेवलपमेंट"
+author: "विकास सिंह"
+language: "hi"
+alternateLanguage: "en"
+alternateSlug: "getting-started-with-nextjs"
+tags: ["Next.js", "React", "वेब डेवलपमेंट", "JavaScript"]
+---
+
+# Next.js 14 से शुरू कैसे करें: एक व्यापक गाइड
+
+Next.js 14 ने वेब एप्लिकेशन बनाने के तरीके में क्रांति ला दी है। App Router, Server Components और बेहतर परफॉर्मेंस फीचर्स के साथ, यह दुनिया भर के React डेवलपर्स के लिए पसंदीदा फ्रेमवर्क बन गया है।
+
+## Next.js क्यों चुनें?
+
+<figure className="float-right ml-6 mb-6 max-w-md">
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80" alt="लैपटॉप स्क्रीन पर कोड" className="rounded-lg shadow-lg" />
+  <figcaption className="text-sm text-gray-600 mt-2 text-center">Next.js के साथ आधुनिक वेब डेवलपमेंट</figcaption>
+</figure>
+
+Next.js कई प्रमुख लाभ प्रदान करता है जो इसे अन्य React फ्रेमवर्क से अलग बनाते हैं:
+
+- **सर्वर-साइड रेंडरिंग (SSR)**: सर्वर पर पेज रेंडर करके SEO और प्रारंभिक पेज लोड परफॉर्मेंस में सुधार करता है
+- **स्टैटिक साइट जेनरेशन (SSG)**: अधिकतम गति और दक्षता के लिए बिल्ड टाइम पर पेज को पहले से रेंडर करता है
+- **API Routes**: एक ही जगह पर अपना बैकएंड और फ्रंटएंड बनाएं, जिससे डेवलपमेंट सरल हो जाता है
+- **इमेज ऑप्टिमाइज़ेशन**: स्वचालित इमेज ऑप्टिमाइज़ेशन और लेजी लोडिंग बॉक्स से बाहर
+- **TypeScript समर्थन**: शून्य कॉन्फ़िगरेशन के साथ प्रथम श्रेणी का TypeScript समर्थन
+
+[State of JS 2024 सर्वेक्षण](https://stateofjs.com) के अनुसार, Next.js डेवलपर्स के बीच 90% से अधिक संतुष्टि रेटिंग के साथ काम करने के लिए सबसे संतोषजनक फ्रेमवर्क में से एक बन गया है।
+
+## शुरुआत करना
+
+एक नया Next.js प्रोजेक्ट बनाने के लिए, अपने टर्मिनल में निम्नलिखित कमांड चलाएं:
+
+```bash
+npx create-next-app@latest my-app --typescript --tailwind --app
+```
+
+यह कमांड स्वचालित रूप से TypeScript और Tailwind CSS के साथ एक नया Next.js प्रोजेक्ट सेट अप करेगा। `--app` फ्लैग नए App Router को सक्षम करता है, जो नए प्रोजेक्ट्स के लिए अनुशंसित दृष्टिकोण है।
+
+## App Router बनाम Pages Router
+
+> "App Router उस तरीके में एक प्रतिमान बदलाव का प्रतिनिधित्व करता है जिस तरह से हम React एप्लिकेशन बनाते हैं, डिफ़ॉल्ट रूप से सर्वर-फर्स्ट रेंडरिंग और बेहतर परफॉर्मेंस लाता है।" - Vercel टीम
+
+Next.js 14 App Router का परिचय देता है, जो पारंपरिक Pages Router की तुलना में कई सुधार प्रदान करता है:
+
+### मुख्य फायदे
+
+1. **डिफ़ॉल्ट रूप से React Server Components**: JavaScript बंडल साइज़ कम करें और परफॉर्मेंस में सुधार करें
+2. **बेहतर लेआउट और नेस्टेड रूटिंग**: आसानी से जटिल लेआउट बनाएं
+3. **बिल्ट-इन लोडिंग और एरर स्टेट्स**: लोडिंग स्केलेटन और एरर बाउंड्री के साथ बेहतर उपयोगकर्ता अनुभव
+4. **स्ट्रीमिंग और सस्पेंस समर्थन**: तेज़ अनुभव के लिए प्रगतिशील रेंडरिंग
+
+<figure className="my-8">
+  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&auto=format&fit=crop&q=80" alt="कोड आर्किटेक्चर" className="rounded-lg shadow-xl w-full" />
+  <figcaption className="text-sm text-gray-600 mt-2 text-center">उचित आर्किटेक्चर के साथ स्केलेबल एप्लिकेशन बनाना</figcaption>
+</figure>
+
+## Server Components: React का भविष्य
+
+Server Components Next.js 14 की सबसे रोमांचक विशेषताओं में से एक है। वे आपको सर्वर पर कंपोनेंट्स को रेंडर करने की अनुमति देते हैं, जिससे क्लाइंट को भेजे गए JavaScript की मात्रा कम हो जाती है।
+
+```typescript
+// app/components/UserProfile.tsx
+// यह डिफ़ॉल्ट रूप से एक Server Component है
+export default async function UserProfile({ userId }: { userId: string }) {
+  const user = await fetchUser(userId)
+  
+  return (
+    <div className="profile">
+      <h1>{user.name}</h1>
+      <p>{user.bio}</p>
+    </div>
+  )
+}
+```
+
+Server Components के लाभ में शामिल हैं:
+
+- **छोटे बंडल साइज़**: भारी डिपेंडेंसी को सर्वर पर रखें
+- **सीधा डेटाबेस एक्सेस**: अपने कंपोनेंट्स में सीधे डेटाबेस क्वेरी करें
+- **बेहतर सुरक्षा**: संवेदनशील डेटा और लॉजिक को सर्वर पर रखें
+- **बेहतर परफॉर्मेंस**: क्लाइंट-साइड JavaScript निष्पादन को कम करें
+
+## परफॉर्मेंस ऑप्टिमाइज़ेशन तकनीकें
+
+<figure className="float-left mr-6 mb-6 max-w-md">
+  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80" alt="परफॉर्मेंस मेट्रिक्स" className="rounded-lg shadow-lg" />
+  <figcaption className="text-sm text-gray-600 mt-2 text-center">बेहतर परफॉर्मेंस के लिए ऑप्टिमाइज़ करना</figcaption>
+</figure>
+
+Next.js 14 बिल्ट-इन परफॉर्मेंस ऑप्टिमाइज़ेशन के साथ आता है:
+
+### 1. इमेज ऑप्टिमाइज़ेशन
+
+Next.js Image कंपोनेंट स्वचालित रूप से इमेज को ऑप्टिमाइज़ करता है:
+
+```tsx
+import Image from 'next/image'
+
+<Image
+  src="/profile.jpg"
+  alt="प्रोफाइल"
+  width={800}
+  height={600}
+  priority // फोल्ड इमेज के ऊपर पहले लोड करें
+/>
+```
+
+### 2. फ़ॉन्ट ऑप्टिमाइज़ेशन
+
+स्वचालित फ़ॉन्ट ऑप्टिमाइज़ेशन के लिए `next/font` का उपयोग करें:
+
+```typescript
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+```
+
+### 3. मेटाडेटा API
+
+नए मेटाडेटा API के साथ SEO में सुधार करें:
+
+```typescript
+export const metadata = {
+  title: 'मेरा पेज',
+  description: 'पेज विवरण',
+  openGraph: {
+    images: ['/og-image.jpg'],
+  },
+}
+```
+
+## वास्तविक दुनिया के उपयोग के मामले
+
+कई प्रमुख कंपनियों ने अपने प्रोडक्शन एप्लिकेशन के लिए Next.js को अपनाया है:
+
+- **Netflix**: अपने लैंडिंग पेजों के लिए Next.js का उपयोग करता है
+- **Twitch**: अपने डेवलपर पोर्टल को Next.js के साथ बनाया
+- **TikTok**: अपनी वेब एप्लिकेशन के लिए Next.js का उपयोग करता है
+- **Nike**: ई-कॉमर्स अनुभवों के लिए Next.js का लाभ उठाता है
+
+इन कंपनियों ने इसकी परफॉर्मेंस, डेवलपर अनुभव और स्केलेबिलिटी के लिए Next.js को चुना।
+
+## निष्कर्ष
+
+Next.js 14 React डेवलपमेंट की अत्याधुनिक तकनीक का प्रतिनिधित्व करता है। चाहे आप एक साधारण ब्लॉग, एक जटिल ई-कॉमर्स प्लेटफ़ॉर्म, या एक सोशल मीडिया एप्लिकेशन बना रहे हों, Next.js आपको सफल होने के लिए आवश्यक उपकरण और लचीलापन प्रदान करता है।
+
+Server Components, बेहतर रूटिंग और बिल्ट-इन ऑप्टिमाइज़ेशन का संयोजन तेज़, SEO-फ्रेंडली वेब एप्लिकेशन बनाना पहले से कहीं अधिक आसान बनाता है। जैसे-जैसे इकोसिस्टम विकसित होता जा रहा है, Next.js आधुनिक वेब डेवलपमेंट में सबसे आगे बना हुआ है।
+
+## संदर्भ और आगे पढ़ना
+
+1. [Next.js आधिकारिक दस्तावेज़ीकरण](https://nextjs.org/docs) - Next.js के लिए निश्चित गाइड
+2. [React Server Components RFC](https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md) - Server Components को समझना
+3. [Vercel ब्लॉग: Next.js 14 का परिचय](https://vercel.com/blog/next-14) - आधिकारिक रिलीज घोषणा
+4. [Web.dev परफॉर्मेंस गाइड](https://web.dev/performance/) - सामान्य वेब परफॉर्मेंस सर्वोत्तम अभ्यास
+5. [State of JS 2024](https://stateofjs.com) - डेवलपर संतुष्टि सर्वेक्षण
+
+---
+
+*प्रकाशित: 15 जनवरी, 2025 | अपडेट किया गया: 15 जनवरी, 2025*
