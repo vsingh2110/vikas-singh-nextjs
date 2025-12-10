@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden"
+      className="min-h-[95vh] md:min-h-[93vh] flex items-center relative overflow-hidden"
     >
       {/* Ultra Complex Animated Tech/Psychology/HMI Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -384,13 +384,13 @@ export default function Hero() {
       `}</style>
       <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28 relative z-10">
         <div className="text-white font-ubuntu">
-          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-[38px] 2xl:text-[44px] leading-tight">
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[28px] xl:text-[38px] 2xl:text-[44px] leading-tight">
             Hello, my name is
           </div>
-          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[85px] xl:text-[100px] 2xl:text-[120px] font-semibold -ml-1 leading-tight mt-2">
+          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[75px] xl:text-[100px] 2xl:text-[120px] font-semibold -ml-1 leading-tight mt-2">
             Vikas Singh
           </div>
-          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] xl:text-[56px] 2xl:text-[64px] my-4 sm:my-5 leading-tight min-h-[70px] sm:min-h-[90px] lg:min-h-[120px] xl:min-h-[140px] 2xl:min-h-[160px]">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] xl:text-[56px] 2xl:text-[64px] my-4 sm:my-5 leading-snug min-h-[70px] sm:min-h-[90px] lg:min-h-[110px] xl:min-h-[140px] 2xl:min-h-[160px]">
             And I&apos;m a{' '}
             <span className="text-[#dc143c] font-medium inline-block">
               <TypeAnimation
@@ -414,7 +414,7 @@ export default function Hero() {
           </div>
           <a
             href="/blog"
-            className="inline-block bg-[#dc143c] text-white text-base sm:text-lg md:text-xl lg:text-[28px] xl:text-[32px] 2xl:text-[36px] px-6 sm:px-7 md:px-8 lg:px-10 xl:px-12 2xl:px-14 py-2 sm:py-2.5 md:py-3 lg:py-4 xl:py-5 mt-4 sm:mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
+            className="inline-block bg-[#dc143c] text-white text-base sm:text-lg md:text-xl lg:text-[24px] xl:text-[32px] 2xl:text-[36px] px-6 sm:px-7 md:px-8 lg:px-9 xl:px-12 2xl:px-14 py-2 sm:py-2.5 md:py-3 lg:py-3.5 xl:py-5 mt-4 sm:mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
           >
             Read My Blogs
           </a>

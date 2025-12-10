@@ -39,26 +39,26 @@ export default function Navbar() {
           : 'bg-transparent py-8'
       }`}
     >
-      <div className="max-w-7xl lg:max-w-[1280px] xl:max-w-[1480px] 2xl:max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20">
+      <div className="max-w-7xl lg:max-w-[1200px] xl:max-w-[1480px] 2xl:max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="logo">
             <Link
               href="/"
-              className="text-white text-3xl lg:text-4xl xl:text-5xl font-semibold font-heading flex flex-col"
+              className="text-white text-3xl lg:text-3xl xl:text-5xl font-semibold font-heading flex flex-col"
             >
               <span>Portfo<span className={`transition-colors duration-300 ${isBlogPage || isScrolled ? 'text-white' : 'text-brand-crimson'}`}>lio.</span></span>
-              <span className="text-xs lg:text-sm xl:text-base text-right mt-[-4px]">Vikas Singh</span>
+              <span className="text-xs lg:text-xs xl:text-base text-right mt-[-4px]">Vikas Singh</span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-6 xl:space-x-8 2xl:space-x-10">
+          <ul className="hidden lg:flex space-x-4 xl:space-x-8 2xl:space-x-10">
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className={`text-white text-lg lg:text-xl xl:text-2xl font-medium transition-colors duration-300 ${
+                  className={`text-white text-base lg:text-lg xl:text-2xl font-medium transition-colors duration-300 ${
                     isBlogPage || isScrolled
                       ? 'hover:text-white/90'
                       : 'hover:text-brand-crimson'

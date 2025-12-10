@@ -73,20 +73,20 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <i className="fas fa-map-marker-alt text-brand-crimson text-2xl mt-1"></i>
+                <i className="fas fa-map-marker-alt text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Address</h4>
-                  <p className="text-gray-600">Faridabad, Delhi(NCR) Haryana</p>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Address</h4>
+                  <p className="text-gray-600 lg:text-lg xl:text-xl">Faridabad, Delhi(NCR) Haryana</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <i className="fa fa-phone text-brand-crimson text-2xl mt-1"></i>
+                <i className="fa fa-phone text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Mobile</h4>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Mobile</h4>
                   <a
                     href="tel:+91-9716186925"
-                    className="text-gray-600 hover:text-brand-crimson transition-colors"
+                    className="text-gray-600 hover:text-brand-crimson transition-colors lg:text-lg xl:text-xl"
                   >
                     +91-9716186925
                   </a>
@@ -94,12 +94,12 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <i className="fas fa-envelope text-brand-crimson text-2xl mt-1"></i>
+                <i className="fas fa-envelope text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg font-medium mb-1">Send Email</h4>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Send Email</h4>
                   <a
                     href="mailto:vsingh2110@gmail.com"
-                    className="text-gray-600 hover:text-brand-crimson transition-colors break-all"
+                    className="text-gray-600 hover:text-brand-crimson transition-colors break-all lg:text-lg xl:text-xl"
                   >
                     vsingh2110@gmail.com
                   </a>

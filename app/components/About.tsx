@@ -51,10 +51,10 @@ export default function About() {
                                 />
                             </span>
                         </div>
-                        <p className="text-gray-700 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed mb-6">
+                        <p className="text-gray-700 text-base md:text-lg lg:text-[22px] xl:text-[26px] 2xl:text-[30px] leading-relaxed mb-6">
                             Social Psychologist and Software Professional researching how digital platforms shape human cognition and behavior. Founder of CogniSocial Research, investigating algorithmic influence, digital propaganda, and platform ethics.
                         </p>
-                        <p className="text-gray-700 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed mb-6">
+                        <p className="text-gray-700 text-base md:text-lg lg:text-[22px] xl:text-[26px] 2xl:text-[30px] leading-relaxed mb-6">
                             Technical expertise in React.js, Next.js, TypeScript, and SEO/AISEO/GEO/AEO. Environmental & activist, former Working President as Student Leader at University level for a National Party, published writer in regional newspapers. Former founder of NEWS YMCA student portal.
                         </p>
                         <a
