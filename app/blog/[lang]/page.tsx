@@ -1,13 +1,13 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import Navbar from '@/app/components/Navbar'
 import LanguageSwitcher from '@/app/components/LanguageSwitcher'
 import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
+import BlogGrid from '@/app/components/BlogGrid'
 import { getAllPosts } from '@/lib/blog'
+import Link from 'next/link'
 
 interface PageProps {
   params: {
@@ -68,7 +68,6 @@ export default function BlogListingPage({ params }: PageProps) {
     en: {
       title: 'Blog',
       subtitle: 'Insights on psychology, technology, digital platforms, and social change',
-      readMore: 'Read Article',
       noPostsTitle: 'No posts yet',
       noPostsText: 'Check back soon for new content, or switch to',
       switchTo: 'English',
@@ -76,7 +75,6 @@ export default function BlogListingPage({ params }: PageProps) {
     hi: {
       title: 'ब्लॉग',
       subtitle: 'मनोविज्ञान, प्रौद्योगिकी, डिजिटल प्लेटफार्मों और सामाजिक परिवर्तन पर अंतर्दृष्टि',
-      readMore: 'लेख पढ़ें',
       noPostsTitle: 'अभी तक कोई पोस्ट नहीं',
       noPostsText: 'नई सामग्री के लिए जल्द ही वापस जांचें, या स्विच करें',
       switchTo: 'हिंदी',
@@ -89,21 +87,21 @@ export default function BlogListingPage({ params }: PageProps) {
     <>
       <Navbar />
       
-      <main className="min-h-screen bg-white pt-24 pb-16">
-        <div className="max-w-7xl lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+      <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
+        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header with Language Switcher */}
-          <div className="flex flex-col items-center mb-12 md:mb-16">
-            <div className="text-center mb-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold font-heading mb-4">
+          <div className="flex flex-col items-center mb-8 sm:mb-12">
+            <div className="text-center mb-4 sm:mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold font-heading mb-2 sm:mb-4">
                 {text.title}
               </h1>
-              <p className="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-gray-600 max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl lg:max-w-3xl mx-auto px-4">
                 {text.subtitle}
               </p>
             </div>
             
             {/* Language Switcher */}
-            <div className="mt-4">
+            <div className="mt-2 sm:mt-4">
               <LanguageSwitcher 
                 currentLang={lang}
                 basePath="/blog"
@@ -129,73 +127,9 @@ export default function BlogListingPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* Blog Grid */}
+          {/* Blog Grid with Category Filter */}
           {posts.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 xl:gap-12 2xl:gap-14">
-              {posts.map((post) => (
-                <Link
-                  key={post.slug}
-                  href={`/blog/${lang}/${post.slug}`}
-                  className="group"
-                >
-                  <article className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-gray-100">
-                    {/* Image */}
-                    <div className="relative h-48 lg:h-56 xl:h-64 2xl:h-72 overflow-hidden">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-300"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className="absolute top-4 left-4 bg-brand-crimson text-white text-sm font-medium px-3 py-1 rounded-full shadow-lg">
-                        {post.category}
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 flex-1 flex flex-col">
-                      <div className="flex items-center gap-3 text-sm text-gray-500 mb-3">
-                        <time dateTime={post.date}>
-                          {new Date(post.date).toLocaleDateString(lang === 'en' ? 'en-US' : 'hi-IN', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
-                          })}
-                        </time>
-                        <span>•</span>
-                        <span>{post.readTime}</span>
-                      </div>
-
-                      <h2 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-brand-crimson transition-colors line-clamp-2 font-heading">
-                        {post.title}
-                      </h2>
-
-                      <p className="text-gray-600 mb-4 flex-1 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-
-                      <div className="inline-flex items-center gap-2 bg-brand-crimson text-white px-6 py-3 rounded-lg font-semibold hover:bg-dark-crimson transition-all duration-300 shadow-md hover:shadow-lg self-start group">
-                        {text.readMore}
-                        <svg
-                          className="w-5 h-5 group-hover:translate-x-1 transition-transform"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </article>
-                </Link>
-              ))}
-            </div>
+            <BlogGrid posts={posts} lang={lang} />
           )}
         </div>
       </main>

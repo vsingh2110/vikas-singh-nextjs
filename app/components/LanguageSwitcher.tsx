@@ -35,7 +35,7 @@ export default function LanguageSwitcher({
   }
 
   const languages = [
-    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'en', label: 'English', flag: '🇺🇸' },
     { code: 'hi', label: 'हिंदी', flag: '🇮🇳' }
   ]
 
