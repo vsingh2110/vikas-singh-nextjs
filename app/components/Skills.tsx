@@ -22,33 +22,33 @@ export default function Skills() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 xl:gap-20 2xl:gap-24">
           {/* Left Column - Text */}
           <div className="lg:w-1/2">
-            <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium mb-4 lg:mb-6">
+            <h3 className="text-2xl md:text-3xl lg:text-[26px] xl:text-[32px] 2xl:text-[38px] font-medium mb-4 lg:mb-6">
               My Technical Skills & Experiences
             </h3>
-            <p className="text-gray-700 text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed mb-6">
+            <p className="text-gray-700 text-base md:text-lg lg:text-[15px] xl:text-[18px] 2xl:text-[21px] leading-relaxed mb-6">
               I have work experience and skills in the following profiles:<br/><br/>
               <strong>Digital Marketing:</strong> Digital Marketing Executive, On-Page and Off-page SEO, AI-SEO (AISEO), Generative Engine Optimization (GEO), Answer Engine Optimization (AEO), SMO, SEM, SMM, Content Writer, Blogger, Google Ads, Meta Ads (Facebook & Instagram), LinkedIn Ads, Google Analytics, Google Search Console<br/><br/>
               <strong>Web Development:</strong> WordPress designing & Development, Drupal Development, Shopify Development, Content Developer, CMS Development (PayLoad, WordPress, Shopify, Drupal, Magento)
             </p>
             <a
               href="#about"
-              className="inline-block bg-brand-crimson hover:bg-brand-crimson-dark text-white text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium px-8 lg:px-10 xl:px-12 2xl:px-14 py-3 lg:py-4 xl:py-5 rounded-md transition-colors duration-300"
+              className="inline-block bg-brand-crimson hover:bg-brand-crimson-dark text-white text-base lg:text-[15px] xl:text-[18px] 2xl:text-[21px] font-medium px-6 lg:px-8 xl:px-10 2xl:px-12 py-2.5 lg:py-3 xl:py-4 rounded-md transition-colors duration-300"
             >
               Read more
             </a>
           </div>
 
           {/* Right Column - Skills Bars */}
-          <div className="lg:w-1/2 w-full space-y-6 lg:space-y-8 xl:space-y-10">
+          <div className="lg:w-1/2 w-full space-y-6 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
             {skills.map((skill, index) => (
               <div key={index}>
                 <div className="flex justify-between mb-2">
-                  <span className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">{skill.name}</span>
-                  <span className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">{skill.percentage}%</span>
+                  <span className="text-base lg:text-[15px] xl:text-[18px] 2xl:text-[21px] font-medium">{skill.name}</span>
+                  <span className="text-base lg:text-[15px] xl:text-[18px] 2xl:text-[21px] font-medium">{skill.percentage}%</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-3 lg:h-4 xl:h-5 2xl:h-6">
+                <div className="w-full bg-gray-200 rounded-full h-3 lg:h-3 xl:h-4 2xl:h-5">
                   <div
-                    className="bg-brand-crimson h-3 lg:h-4 xl:h-5 2xl:h-6 rounded-full transition-all duration-1000 ease-out"
+                    className="bg-brand-crimson h-3 lg:h-3 xl:h-4 2xl:h-5 rounded-full transition-all duration-1000 ease-out"
                     style={{ width: `${skill.percentage}%` }}
                   ></div>
                 </div>

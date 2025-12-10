@@ -44,7 +44,7 @@ export default function SocialActivities() {
 
   return (
     <section id="social-activities" className="bg-gray-100 py-20">
-      <div className="max-w-[1300px] mx-auto px-6 md:px-10">
+      <div className="max-w-[1300px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6 md:px-10 xl:px-12 2xl:px-16">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Social Activities
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-80 md:w-[400px] h-0.5 bg-gray-800"></span>
@@ -53,27 +53,27 @@ export default function SocialActivities() {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-10 2xl:gap-12">
           {activities.map((activity, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
+              className="bg-white rounded-lg shadow-md p-6 xl:p-8 2xl:p-10 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
             >
               {/* Desktop layout: icon on left */}
               <div className="hidden md:flex items-start gap-4">
-                <div className="text-[#dc143c] text-3xl flex-shrink-0 mt-1">
+                <div className="text-[#dc143c] text-3xl xl:text-4xl 2xl:text-5xl flex-shrink-0 mt-1">
                   <i className={`fas ${activity.icon}`}></i>
                 </div>
                 <div className="flex-1">
-                  <h3 className="font-ubuntu text-xl font-semibold text-gray-800 mb-1">
+                  <h3 className="font-ubuntu text-xl xl:text-2xl 2xl:text-3xl font-semibold text-gray-800 mb-1">
                     {activity.organization}
                   </h3>
-                  <p className="text-[#dc143c] font-medium mb-1">{activity.role}</p>
-                  <p className="text-gray-600 text-sm mb-2">
+                  <p className="text-[#dc143c] font-medium mb-1 xl:text-lg 2xl:text-xl">{activity.role}</p>
+                  <p className="text-gray-600 text-sm xl:text-base 2xl:text-lg mb-2">
                     <i className="far fa-calendar mr-2"></i>
                     {activity.period} • {activity.institution}
                   </p>
-                  <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: activity.description }} />
+                  <p className="text-gray-700 leading-relaxed xl:text-base 2xl:text-lg" dangerouslySetInnerHTML={{ __html: activity.description }} />
                 </div>
               </div>
               

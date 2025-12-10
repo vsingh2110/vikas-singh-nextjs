@@ -39,7 +39,7 @@ export default function Navbar() {
           : 'bg-transparent py-8'
       }`}
     >
-      <div className="max-w-7xl lg:max-w-[1200px] xl:max-w-[1480px] 2xl:max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-20">
+      <div className="max-w-7xl lg:max-w-[1320px] xl:max-w-[1600px] 2xl:max-w-[1840px] mx-auto px-4 sm:px-6 lg:px-4 xl:px-8 2xl:px-12">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="logo">
@@ -53,12 +53,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-4 xl:space-x-8 2xl:space-x-10">
+          <ul className="hidden lg:flex space-x-2 xl:space-x-4 2xl:space-x-6">
             {menuItems.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
-                  className={`text-white text-base lg:text-lg xl:text-2xl font-medium transition-colors duration-300 ${
+                  className={`text-white text-sm lg:text-[15px] xl:text-xl 2xl:text-2xl font-medium transition-colors duration-300 ${
                     isBlogPage || isScrolled
                       ? 'hover:text-white/90'
                       : 'hover:text-brand-crimson'

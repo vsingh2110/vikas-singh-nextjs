@@ -32,13 +32,13 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-md p-8 md:p-10 lg:p-12 xl:p-14 2xl:p-16 text-center cursor-pointer transition-all duration-300 hover:bg-[#dc143c] hover:scale-105 group border border-gray-200"
+              className="bg-gray-50 rounded-md p-8 md:p-10 lg:p-10 xl:p-14 2xl:p-16 text-center cursor-pointer transition-all duration-300 hover:bg-[#dc143c] hover:scale-105 group border border-gray-200"
             >
               <div className="mb-4 transition-all duration-300">
-                <i className={`${service.icon} text-4xl sm:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-[#dc143c] group-hover:text-white transition-colors duration-300`}></i>
+                <i className={`${service.icon} text-4xl sm:text-5xl lg:text-[40px] xl:text-6xl 2xl:text-7xl text-[#dc143c] group-hover:text-white transition-colors duration-300`}></i>
               </div>
-              <h3 className="text-xl sm:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium mb-3 sm:mb-4 text-gray-800 group-hover:text-white transition-colors duration-300">{service.title}</h3>
-              <p className="text-sm sm:text-base lg:text-base xl:text-lg 2xl:text-xl text-gray-700 group-hover:text-white transition-colors duration-300">{service.description}</p>
+              <h3 className="text-xl sm:text-2xl lg:text-[19px] xl:text-3xl 2xl:text-4xl font-medium mb-3 sm:mb-4 text-gray-800 group-hover:text-white transition-colors duration-300">{service.title}</h3>
+              <p className="text-sm sm:text-base lg:text-[13px] xl:text-lg 2xl:text-xl text-gray-700 group-hover:text-white transition-colors duration-300">{service.description}</p>
             </div>
           ))}
         </div>

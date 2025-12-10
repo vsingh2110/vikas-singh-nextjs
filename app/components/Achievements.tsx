@@ -84,7 +84,7 @@ export default function Achievements() {
 
   return (
     <section id="achievements" className="bg-gray-100 py-20">
-      <div className="max-w-[1300px] mx-auto px-6 md:px-10">
+      <div className="max-w-[1300px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6 md:px-10 xl:px-12 2xl:px-16">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           Major Achievements
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-64 md:w-96 h-0.5 bg-gray-800"></span>
@@ -93,31 +93,31 @@ export default function Achievements() {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-10 2xl:gap-12">
           {achievements.map((achievement, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group"
             >
-              <div className={`bg-gradient-to-r ${achievement.color} p-4 text-white`}>
+              <div className={`bg-gradient-to-r ${achievement.color} p-4 xl:p-5 2xl:p-6 text-white`}>
                 <div className="flex items-center justify-between">
-                  <div className="text-4xl">
+                  <div className="text-4xl xl:text-5xl 2xl:text-6xl">
                     <i className={`fas ${achievement.icon}`}></i>
                   </div>
-                  <span className="text-sm font-semibold bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
+                  <span className="text-sm xl:text-base 2xl:text-lg font-semibold bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
                     {achievement.year}
                   </span>
                 </div>
               </div>
               
-              <div className="p-6">
-                <h3 className="font-ubuntu text-xl font-bold text-gray-800 mb-2 group-hover:text-[#dc143c] transition-colors">
+              <div className="p-6 xl:p-7 2xl:p-8">
+                <h3 className="font-ubuntu text-xl xl:text-2xl 2xl:text-3xl font-bold text-gray-800 mb-2 group-hover:text-[#dc143c] transition-colors">
                   {achievement.title}
                 </h3>
-                <p className="text-[#dc143c] font-medium text-sm mb-3">
+                <p className="text-[#dc143c] font-medium text-sm xl:text-base 2xl:text-lg mb-3">
                   {achievement.subtitle}
                 </p>
-                <p className="text-gray-600 leading-relaxed text-sm" dangerouslySetInnerHTML={{ __html: achievement.description }} />
+                <p className="text-gray-600 leading-relaxed text-sm xl:text-base 2xl:text-lg" dangerouslySetInnerHTML={{ __html: achievement.description }} />
               </div>
             </div>
           ))}
