@@ -2,7 +2,7 @@
 
 **Welcome to the project documentation!** This folder contains all the information you need to understand, work on, and contribute to the Vikas Singh Portfolio & Blog Website project.
 
-**Last Updated:** December 9, 2025
+**Last Updated:** December 10, 2025 (Evening Session)
 
 ---
 
@@ -66,13 +66,20 @@
 | File | Purpose | When to Read |
 |------|---------|--------------|
 | **best-practices.md** | Coding standards & conventions | During development |
-| **general-development-notes.md** | Compiled technical knowledge | When stuck or researching |
+| **DEPLOYMENT-CHECKLIST-BLOG-SYSTEM.md** | Pre/post deployment checklist | Before deploying blog (NEW) |
 
 ### **📁 Folders**
 
 | Folder | Contents | Purpose |
 |--------|----------|---------|
 | **daily-logs/** | Session-specific work logs | Historical context, debugging |
+
+**Daily Logs:**
+- `2025-12-09-initial-setup.md` - Project initialization
+- `2025-12-09-content-refinement.md` - Content updates
+- `2025-12-09-deployment-fixes.md` - Deployment preparation
+- `2025-12-10-ui-fixes-contact-form-web3forms.md` - UI refinements + contact form
+- `2025-12-10-bilingual-blog-system-implementation.md` - Complete blog system (NEW) ⭐
 
 ---
 

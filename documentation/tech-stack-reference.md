@@ -125,34 +125,83 @@ export default config
 
 ---
 
-## 🔧 PLANNED INTEGRATIONS
+## 📚 BLOG SYSTEM DEPENDENCIES (NEW - December 10, 2025)
 
-### **Future Dependencies (To Be Added):**
+### **gray-matter 4.0.3**
+**Purpose:** Parse frontmatter from Markdown/MDX files  
+**Why Chosen:** Industry standard, reliable, easy to use
 
-#### **Form Handling**
-- EmailJS (`@emailjs/browser`) or
-- Formspree or
-- Next.js API routes with Nodemailer
+**Usage:**
+```typescript
+import matter from 'gray-matter'
 
-#### **Animations**
-- Framer Motion (`framer-motion`) for complex animations
-- or React Type Animation (`react-type-animation`) for typing effects
+const fileContents = fs.readFileSync(filePath, 'utf8')
+const { data, content } = matter(fileContents)
+// data = frontmatter object
+// content = markdown content
+```
 
-#### **Content Management (Blog)**
-- File-based (Markdown with `gray-matter` and `remark`)
-- or Headless CMS (Contentful, Sanity, Strapi)
-
-#### **Analytics**
-- Google Analytics (`@next/third-parties`)
-- Vercel Analytics (built-in)
-
-#### **SEO**
-- Next.js built-in metadata API
-- `next-seo` package (optional)
+**Documentation:** https://github.com/jonschlinkert/gray-matter
 
 ---
 
-## 📁 FILE STRUCTURE
+### **next-mdx-remote 5.0.0**
+**Purpose:** Render MDX content in Next.js with Server Components  
+**Why Chosen:** Full MDX support, works with App Router, Server Components compatible
+
+**Usage:**
+```tsx
+import { MDXRemote } from 'next-mdx-remote/rsc'
+
+// In Server Component
+<MDXRemote source={content} components={customComponents} />
+```
+
+**Features:**
+- Custom component mapping
+- Server-side rendering
+- No build-time compilation needed
+- Works with dynamic content
+
+**Documentation:** https://github.com/hashicorp/next-mdx-remote
+
+---
+
+### **reading-time 1.5.0**
+**Purpose:** Calculate estimated reading time for blog posts  
+**Why Chosen:** Simple, accurate, standard calculation
+
+**Usage:**
+```typescript
+import readingTime from 'reading-time'
+
+const stats = readingTime(content)
+console.log(stats.text) // "5 min read"
+console.log(stats.minutes) // 5
+console.log(stats.words) // 1250
+```
+
+**Documentation:** https://github.com/ngryman/reading-time.js
+
+---
+
+## 🔧 EXISTING & UPDATED INTEGRATIONS
+
+### **Form Handling**
+- ✅ **Web3Forms** - Contact form with email notifications
+- Package: `react-phone-number-input` for international phone input
+
+### **Animations**
+- ✅ **React Type Animation** (`react-type-animation@3.2.0`) - Typing effects in Hero and About sections
+
+### **Content Management (Blog)**
+- ✅ **File-based with MDX** - Using gray-matter + next-mdx-remote
+- Content stored in `/content/blog/[lang]/` directory
+- Frontmatter for metadata, Markdown for content
+
+---
+
+## 📁 UPDATED FILE STRUCTURE
 
 ### **App Directory Structure:**
 ```
@@ -164,19 +213,37 @@ app/
 │   ├── Services.tsx
 │   ├── Skills.tsx
 │   ├── Journey.tsx
-│   ├── Projects.tsx
-│   ├── Team.tsx
+│   ├── Achievements.tsx
+│   ├── NonProfitWork.tsx
+│   ├── SocialActivities.tsx
 │   ├── Contact.tsx
 │   ├── SocialLinks.tsx
-│   └── Footer.tsx
-├── blog/                    # Blog section
-│   ├── page.tsx             # Blog list
-│   └── [slug]/
-│       └── page.tsx         # Blog post
-├── layout.tsx               # Root layout
-├── page.tsx                 # Home page
-├── globals.css              # Global styles
+│   ├── Footer.tsx
+│   ├── ScrollToTop.tsx
+│   ├── LanguageSwitcher.tsx    # NEW - Language toggle
+│   └── AuthorBio.tsx           # NEW - Author section
+├── blog/                        # Blog section
+│   ├── page.tsx                 # Redirect to /blog/en
+│   └── [lang]/                  # NEW - Language routing
+│       ├── page.tsx             # Blog listing (en/hi)
+│       └── [slug]/
+│           └── page.tsx         # Individual blog posts
+├── layout.tsx                   # Root layout
+├── page.tsx                     # Home page
+├── globals.css                  # Global styles + blog styles
 └── favicon.ico
+```
+
+### **Content Directory (NEW):**
+```
+content/
+└── blog/
+    ├── en/                              # English blog posts
+    │   ├── getting-started-with-nextjs.mdx
+    │   └── digital-marketing-trends-2025.mdx
+    └── hi/                              # Hindi blog posts
+        ├── nextjs-14-se-shuru-kaise-kare.mdx
+        └── digital-marketing-trends-2025.mdx
 ```
 
 ### **Library Directory:**
