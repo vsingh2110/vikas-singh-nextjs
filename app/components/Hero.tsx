@@ -56,7 +56,7 @@ export default function Hero() {
           {psychIcons.map((icon, i) => (
             <div
               key={`icon-${i}`}
-              className="absolute text-5xl drop-shadow-2xl"
+              className="absolute text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl drop-shadow-2xl"
               style={{
                 left: `${(i * 12 + 5) % 90}%`,
                 top: `${(i * 15 + 10) % 80}%`,
@@ -72,16 +72,16 @@ export default function Hero() {
 
         {/* Layer 3.5: HUGE Brain Representation - VERY VISIBLE */}
         <div className="absolute top-[5%] right-[3%] opacity-60">
-          <div className="text-[180px] md:text-[280px] animate-pulse" style={{ filter: 'drop-shadow(0 0 60px rgba(220, 20, 60, 1))' }}>
+          <div className="text-[180px] md:text-[280px] lg:text-[320px] xl:text-[400px] 2xl:text-[480px] animate-pulse" style={{ filter: 'drop-shadow(0 0 60px rgba(220, 20, 60, 1))' }}>
             🧠
           </div>
         </div>
 
         {/* Layer 3.6: Human-Computer Interface Visual */}
         <div className="absolute bottom-[20%] left-[8%] opacity-30">
-          <div className="flex items-center gap-4 text-6xl" style={{ filter: 'drop-shadow(0 0 20px rgba(100, 200, 255, 0.8))' }}>
+          <div className="flex items-center gap-4 text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl" style={{ filter: 'drop-shadow(0 0 20px rgba(100, 200, 255, 0.8))' }}>
             <span className="animate-pulse">👤</span>
-            <span className="text-4xl text-cyan-400">⟷</span>
+            <span className="text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-cyan-400">⟷</span>
             <span className="animate-pulse" style={{ animationDelay: '0.5s' }}>💻</span>
           </div>
         </div>
@@ -382,15 +382,15 @@ export default function Hero() {
           }
         }
       `}</style>
-      <div className="max-w-[1300px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-20 relative z-10">
+      <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] w-full mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28 relative z-10">
         <div className="text-white font-ubuntu">
-          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[27px] leading-tight">
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-[38px] 2xl:text-[44px] leading-tight">
             Hello, my name is
           </div>
-          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[75px] font-semibold -ml-1 leading-tight mt-2">
+          <div className="text-5xl sm:text-6xl md:text-7xl lg:text-[85px] xl:text-[100px] 2xl:text-[120px] font-semibold -ml-1 leading-tight mt-2">
             Vikas Singh
           </div>
-          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] my-4 sm:my-5 leading-tight min-h-[70px] sm:min-h-[90px] lg:min-h-[100px]">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] xl:text-[56px] 2xl:text-[64px] my-4 sm:my-5 leading-tight min-h-[70px] sm:min-h-[90px] lg:min-h-[120px] xl:min-h-[140px] 2xl:min-h-[160px]">
             And I&apos;m a{' '}
             <span className="text-[#dc143c] font-medium inline-block">
               <TypeAnimation
@@ -414,7 +414,7 @@ export default function Hero() {
           </div>
           <a
             href="/blog"
-            className="inline-block bg-[#dc143c] text-white text-base sm:text-lg md:text-xl lg:text-[25px] px-6 sm:px-7 md:px-8 lg:px-9 py-2 sm:py-2.5 md:py-3 mt-4 sm:mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
+            className="inline-block bg-[#dc143c] text-white text-base sm:text-lg md:text-xl lg:text-[28px] xl:text-[32px] 2xl:text-[36px] px-6 sm:px-7 md:px-8 lg:px-10 xl:px-12 2xl:px-14 py-2 sm:py-2.5 md:py-3 lg:py-4 xl:py-5 mt-4 sm:mt-5 rounded-md border-2 border-[#dc143c] hover:bg-transparent hover:text-[#dc143c] transition-all duration-300"
           >
             Read My Blogs
           </a>

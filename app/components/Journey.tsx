@@ -52,40 +52,40 @@ export default function Journey() {
 
   return (
     <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white">
-      <div className="max-w-[1300px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
-        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
+      <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
           My Journey
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 h-0.5 bg-[#111]"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2" style={{ backgroundColor: 'white' }}>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 lg:w-56 xl:w-64 2xl:w-72 h-0.5 bg-[#111]"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-[#dc143c] px-2" style={{ backgroundColor: 'white' }}>
             what I did
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 2xl:gap-20">
           {/* Education Column */}
           <div>
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#dc143c]"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 lg:w-1 bg-[#dc143c]"></div>
 
               {/* Header */}
-              <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
-                <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                <h3 className="text-xl sm:text-2xl font-ubuntu font-medium">Education</h3>
+              <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12 xl:pl-16">
+                <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium">Education</h3>
               </div>
 
               {/* Timeline Items */}
               {education.map((item, index) => (
-                <div key={index} className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
-                  <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
+                <div key={index} className="mb-6 sm:mb-8 xl:mb-10 relative pl-8 sm:pl-12 xl:pl-16">
+                  <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
+                  <div className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 xl:p-10 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
                     <h4 
-                      className="text-base sm:text-lg md:text-xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
+                      className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
-                    <span className="text-xs sm:text-sm text-gray-600 block mb-2 sm:mb-3">{item.period}</span>
+                    <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-gray-600 block mb-2 sm:mb-3">{ item.period}</span>
                     <p 
-                      className="text-sm sm:text-base text-gray-700"
+                      className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-700"
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
                   </div>
@@ -98,26 +98,26 @@ export default function Journey() {
           <div>
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-[#dc143c]"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 lg:w-1 bg-[#dc143c]"></div>
 
               {/* Header */}
-              <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
-                <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                <h3 className="text-xl sm:text-2xl font-ubuntu font-medium">Experience</h3>
+              <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12 xl:pl-16">
+                <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium">Experience</h3>
               </div>
 
               {/* Timeline Items */}
               {experience.map((item, index) => (
-                <div key={index} className="mb-6 sm:mb-8 relative pl-8 sm:pl-12">
-                  <div className="absolute left-[-9px] top-1 w-5 h-5 rounded-full bg-[#dc143c]"></div>
-                  <div className="bg-white p-4 sm:p-5 md:p-6 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
+                <div key={index} className="mb-6 sm:mb-8 xl:mb-10 relative pl-8 sm:pl-12 xl:pl-16">
+                  <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
+                  <div className="bg-white p-4 sm:p-5 md:p-6 lg:p-8 xl:p-10 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
                     <h4 
-                      className="text-base sm:text-lg md:text-xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
+                      className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
-                    <span className="text-xs sm:text-sm text-gray-600 block mb-2 sm:mb-3">{item.period}</span>
+                    <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl text-gray-600 block mb-2 sm:mb-3">{item.period}</span>
                     <p 
-                      className="text-sm sm:text-base text-gray-700"
+                      className="text-sm sm:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-700"
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
                   </div>

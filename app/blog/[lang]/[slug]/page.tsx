@@ -75,16 +75,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 // Custom MDX components with research article styling
 const components = {
   h1: (props: any) => (
-    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6 mt-12 first:mt-0" {...props} />
+    <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold font-heading text-gray-900 mb-6 mt-12 first:mt-0" {...props} />
   ),
   h2: (props: any) => (
-    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading text-gray-900 mb-5 mt-10 border-l-4 border-brand-crimson pl-4" {...props} />
+    <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold font-heading text-gray-900 mb-5 mt-10 border-l-4 border-brand-crimson pl-4" {...props} />
   ),
   h3: (props: any) => (
-    <h3 className="text-xl md:text-2xl font-semibold font-heading text-gray-800 mb-4 mt-8" {...props} />
+    <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold font-heading text-gray-800 mb-4 mt-8" {...props} />
   ),
   p: (props: any) => (
-    <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-6" {...props} />
+    <p className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed text-gray-700 mb-6" {...props} />
   ),
   a: (props: any) => (
     <a className="text-brand-crimson hover:underline font-medium" target="_blank" rel="noopener noreferrer" {...props} />
@@ -96,16 +96,16 @@ const components = {
     <ol className="list-decimal list-inside space-y-2 mb-6 text-gray-700 ml-4" {...props} />
   ),
   li: (props: any) => (
-    <li className="text-base md:text-lg leading-relaxed" {...props} />
+    <li className="text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl leading-relaxed" {...props} />
   ),
   blockquote: (props: any) => (
-    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-6 pr-6 py-4 my-8 italic text-lg md:text-xl text-gray-800 rounded-r-lg" {...props} />
+    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-6 pr-6 py-4 my-8 italic text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-gray-800 rounded-r-lg" {...props} />
   ),
   code: (props: any) => (
-    <code className="bg-gray-100 text-brand-crimson px-2 py-1 rounded text-sm font-mono" {...props} />
+    <code className="bg-gray-100 text-brand-crimson px-2 py-1 rounded text-sm lg:text-base xl:text-lg font-mono" {...props} />
   ),
   pre: (props: any) => (
-    <pre className="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto mb-6 text-sm md:text-base" {...props} />
+    <pre className="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto mb-6 text-sm md:text-base lg:text-lg xl:text-xl" {...props} />
   ),
   img: (props: any) => (
     <img className="rounded-lg my-6" {...props} />
@@ -114,7 +114,7 @@ const components = {
     <figure className="my-8" {...props} />
   ),
   figcaption: (props: any) => (
-    <figcaption className="text-sm text-gray-600 mt-2 text-center italic" {...props} />
+    <figcaption className="text-sm lg:text-base xl:text-lg text-gray-600 mt-2 text-center italic" {...props} />
   ),
   strong: (props: any) => (
     <strong className="font-bold text-gray-900" {...props} />
@@ -193,7 +193,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Hero Image */}
-        <div className="relative w-full h-64 md:h-96 lg:h-[500px] mb-8">
+        <div className="relative w-full h-64 md:h-96 lg:h-[85vh] mb-8">
           <Image
             src={post.image}
             alt={post.title}
@@ -211,10 +211,10 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Article Container */}
-        <article className="max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article className="max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
           {/* Header */}
           <header className="mb-10 border-b border-gray-200 pb-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6 leading-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold font-heading text-gray-900 mb-6 leading-tight">
               {post.title}
             </h1>
 
