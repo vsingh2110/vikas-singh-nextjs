@@ -927,3 +927,83 @@ Total: 12 pages successfully generated
 
 **Version:** 1.5.0  
 **Date:** December 11, 2025, 12:30 AM
+
+---
+
+## PART 3: TYPOGRAPHY & LAYOUT REFINEMENTS (DECEMBER 11, 2025 - 1:00 AM)
+
+**Version Update:** 1.5.0  1.5.1  
+**Focus:** Font-weight hierarchy, text size reductions, content width fixes, cover image improvements
+
+### User-Reported Issues (5 Screenshots)
+1. Back button not center-aligned vertically, not left-aligned horizontally
+2. Content layout narrowing in middle on large screens (1280+)
+3. Font-weight inconsistency (bold text using 700 like h1)
+4. Cover image box shrinking
+5. Text still too large on desktop and mobile
+6. Line-height too spacious in lists and citations
+
+### Changes Implemented
+
+#### 1. Font-Weight Hierarchy Fixed
+- h1: font-weight 700 (titles)
+- h2: font-weight 600 
+- h3: font-weight 500
+- strong: font-weight 500 (was 700/bold)
+- normal text: font-weight 400
+
+#### 2. Text Size Reductions (Round 2)
+- h1: text-xl2xl3xl3xl4xl (was 2xl3xl4xl4xl5xl)
+- h2: text-lgxl2xl2xl3xl (was xl2xl3xl3xl4xl)
+- h3: text-baselgxlxl2xl (was lgxl2xl2xl3xl)
+- p: text-xssmbasebaselg (was smbaselglgxl)
+- li: text-xssmbasebaselg with leading-snug
+- Links: text-[10px]xssm (for citations/references)
+
+#### 3. Citations & Blockquotes Minimized
+- Blockquote: text-[10px]xssmsmbase with leading-tight
+- Figcaption: text-[9px][10px]xs with leading-tight
+- Reduced padding and margins
+
+#### 4. List Line-Height Reduced
+- Changed from space-y-2 to space-y-1
+- Added leading-snug to list items
+- More compact appearance
+
+#### 5. Back Button Fixed
+- Container: max-w-[1920px] with full-width wrapper
+- Button: inline-flex with justify-center
+- Properly left-aligned with responsive padding
+- font-weight: 600
+
+#### 6. Content Width for Large Screens
+- Changed from max-w-7xl to max-w-[1920px]
+- Responsive padding: px-6px-8px-12px-16px-20px-32
+- Prevents narrowing on 1280px+ screens
+
+#### 7. Cover Image Enhanced
+- Height increased: h-64h-72h-96h-[28rem]h-[32rem]
+- Blurred background layer added (blur-2xl, scale-110, opacity-30)
+- Main image: object-contain (fits within box)
+- Background fills empty space with blurred version
+
+#### 8. Small Share Buttons at Article Start
+- Added WhatsApp, Facebook, Twitter icons
+- Text: "Share this article" in 10px-xs
+- Icons: w-4 h-4 (small, minimal)
+- No copy button (removed onClick handler that caused build hang)
+- Bilingual labels
+
+### Build Issue Resolved
+**Problem:** Build hanging at "Generating static pages (8/12)"
+**Cause:** onClick handler with navigator.clipboard in server component
+**Solution:** Removed copy link button with onClick from initial share section
+
+### Build Results
+ All 12 pages generated successfully
+ No TypeScript errors
+ Bundle size unchanged: 4.06 kB
+
+**Version:** 1.5.1  
+**Date:** December 11, 2025, 1:00 AM  
+**Status:** All typography and layout issues addressed
