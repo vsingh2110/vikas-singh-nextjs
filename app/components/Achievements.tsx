@@ -20,7 +20,7 @@ export default function Achievements() {
       title: "3× Debate Competition Winner",
       subtitle: "Inter-School, Inter-College, Inter-University, State & National Level",
       year: "2006-2019",
-      description: "Won <strong>three major university-level debate competitions</strong> including Rostrum, Witswill, and NTPC Vigilance Awareness debate, <strong>representing YMCA University</strong>. Participated in <strong>20+ inter-school, inter-college, inter-university, and state-level events</strong> throughout academic career.",
+      description: "Won <strong>three major university debates</strong> including Rostrum, Witswill, and NTPC Vigilance Awareness, <strong>representing YMCA University</strong>. Participated in <strong>20+ events</strong> throughout academic career.",
       icon: "fa-microphone",
       color: "from-purple-400 to-pink-500"
     },
@@ -28,7 +28,7 @@ export default function Achievements() {
       title: "10+ Quiz Competition Winner",
       subtitle: "Inter-School, Inter-College, Inter-University, State & National Level",
       year: "2006-2019",
-      description: "<strong>All India Topper in GK round</strong> at national level competition by Unified Council (2006). <strong>Winner of Cultural Quiz</strong> at Youth Festival 2017 and <strong>10+ quiz competitions</strong> across multiple genres including Honours, History, Culture, GK, Science at inter-school, inter-college, inter-university, state and national levels. <strong>Participated in 100+ quiz competitions</strong> throughout entire academic career from school to university level.",
+      description: "<strong>All India Topper in GK round</strong> by Unified Council (2006). <strong>Winner of Cultural Quiz</strong> at Youth Festival 2017 and <strong>10+ quiz competitions</strong> at inter-school, inter-college, inter-university, state and national levels. <strong>Participated in 100+ competitions</strong> throughout academic career.",
       icon: "fa-lightbulb",
       color: "from-green-400 to-teal-500"
     },

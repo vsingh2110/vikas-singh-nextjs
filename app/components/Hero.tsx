@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-[95vh] md:min-h-[93vh] flex items-center relative overflow-hidden"
+      className="min-h-[99vh] flex items-center relative overflow-hidden"
     >
       {/* Ultra Complex Animated Tech/Psychology/HMI Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">

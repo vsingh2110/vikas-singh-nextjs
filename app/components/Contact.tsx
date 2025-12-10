@@ -66,7 +66,7 @@ export default function Contact() {
           {/* Left Column - Contact Info */}
           <div className="lg:w-1/2">
             <h3 className="text-2xl md:text-3xl font-medium mb-4">Get in Touch</h3>
-            <p className="text-gray-700 text-base md:text-lg mb-8">
+            <p className="text-gray-700 text-base md:text-lg lg:text-[22px] xl:text-[26px] 2xl:text-[30px] mb-8">
               Please email or call me for any queries or requests related to Drupal, Wordpress, Paid Ads on
               Google/FB/Linkedin, or any Digital Marketing Support.
             </p>
