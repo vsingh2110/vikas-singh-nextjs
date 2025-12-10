@@ -90,7 +90,7 @@ export default function BlogListingPage({ params }: PageProps) {
       <Navbar />
       
       <main className="min-h-screen bg-white pt-24 pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header with Language Switcher */}
           <div className="flex flex-col items-center mb-12 md:mb-16">
             <div className="text-center mb-6">
@@ -175,10 +175,10 @@ export default function BlogListingPage({ params }: PageProps) {
                         {post.excerpt}
                       </p>
 
-                      <div className="flex items-center text-brand-crimson font-semibold group-hover:underline">
+                      <div className="inline-flex items-center gap-2 bg-brand-crimson text-white px-6 py-3 rounded-lg font-semibold hover:bg-dark-crimson transition-all duration-300 shadow-md hover:shadow-lg self-start group">
                         {text.readMore}
                         <svg
-                          className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform"
+                          className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"

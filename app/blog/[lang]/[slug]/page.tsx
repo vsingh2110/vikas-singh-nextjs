@@ -211,7 +211,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Article Container */}
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <article className="max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <header className="mb-10 border-b border-gray-200 pb-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-6 leading-tight">

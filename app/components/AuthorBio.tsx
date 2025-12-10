@@ -9,16 +9,16 @@ export default function AuthorBio({ language }: AuthorBioProps) {
   const content = {
     en: {
       title: 'About the Author',
-      name: 'Vikas Singh',
-      role: 'Social Psychologist & Software Professional',
-      bio: 'Founder of CogniSocial Research, investigating algorithmic influence, digital propaganda, and platform ethics. Researching how digital platforms shape human cognition and behavior.',
+      name: 'Vikas Singh "विमुक्त"',
+      role: 'Editor of CogniSocial Research',
+      bio: 'Software Professional, Social Psychologist, Digital Marketerer. Researching how digital platforms shape human cognition and behavior.',
       link: 'Learn More About Author'
     },
     hi: {
       title: 'लेखक के बारे में',
-      name: 'विकास सिंह',
-      role: 'सामाजिक मनोवैज्ञानिक और सॉफ्टवेयर प्रोफेशनल',
-      bio: 'CogniSocial Research के संस्थापक, एल्गोरिदमिक प्रभाव, डिजिटल प्रचार और प्लेटफ़ॉर्म नैतिकता की जांच कर रहे हैं। डिजिटल प्लेटफ़ॉर्म मानव संज्ञान और व्यवहार को कैसे आकार देते हैं, इस पर शोध कर रहे हैं।',
+      name: 'विकास सिंह "विमुक्त"',
+      role: 'CogniSocial Research के संपादक',
+      bio: 'सॉफ्टवेयर प्रोफेशनल, सामाजिक मनोवैज्ञानिक, डिजिटल मार्केटर। डिजिटल प्लेटफ़ॉर्म मानव संज्ञान और व्यवहार को कैसे आकार देते हैं, इस पर शोध करते हैं।',
       link: 'लेखक के बारे में और जानें'
     }
   }
@@ -56,7 +56,7 @@ export default function AuthorBio({ language }: AuthorBioProps) {
           </p>
           <Link
             href="/#about"
-            className="inline-flex items-center gap-2 text-brand-crimson font-semibold hover:underline group"
+            className="inline-flex items-center gap-2 bg-brand-crimson text-white px-6 py-3 rounded-lg font-semibold hover:bg-dark-crimson transition-all duration-300 shadow-md hover:shadow-lg group"
           >
             {text.link}
             <svg
