@@ -2,9 +2,9 @@
 
 **Project:** Vikas Singh Portfolio & Blog Website  
 **Feature:** Bilingual Blog System (Hindi + English)  
-**Version:** 1.3.0  
-**Last Updated:** December 10, 2025 (Evening - UI Improvements Added)  
-**Status:** ✅ Production Ready - Pending Deployment Testing
+**Version:** 1.4.0  
+**Last Updated:** December 11, 2025 (Blog List Page Improvements)  
+**Status:** ✅ Production Ready - Fully Enhanced
 
 ---
 
@@ -44,13 +44,19 @@ A complete bilingual blog system that supports Hindi and English languages with:
 - ✅ MDX content with frontmatter
 - ✅ Research article styling
 - ✅ Floating images with text wrap
-- ✅ Responsive design
-- ✅ Language switcher
+- ✅ Responsive design (330px - 1920px)
+- ✅ Language switcher with US flag (updated Dec 11)
 - ✅ Author bio component
 - ✅ Reading time calculation
-- ✅ **Live reading progress bar** (NEW - Dec 10 Evening)
-- ✅ **Button-style CTAs** (NEW - Dec 10 Evening)
-- ✅ **Responsive width expansion** for large screens (NEW - Dec 10 Evening)
+- ✅ **Live reading progress bar** (Dec 10)
+- ✅ **Button-style CTAs** (Dec 10)
+- ✅ **Category filter tabs** (NEW - Dec 11)
+- ✅ **Square aspect ratio images** (NEW - Dec 11)
+- ✅ **Local preview images** (NEW - Dec 11)
+- ✅ **IST timezone with date & time** (NEW - Dec 11)
+- ✅ **Author display on cards** (NEW - Dec 11)
+- ✅ **Compact card design** (NEW - Dec 11)
+- ✅ **4-column grid on large screens** (NEW - Dec 11)
 - ✅ Categories and tags
 - ✅ Hreflang tags for SEO
 
@@ -256,16 +262,23 @@ vikas-singh-nextjs/
 │   ├── blog/
 │   │   ├── page.tsx                         # Redirects to /blog/en
 │   │   └── [lang]/
-│   │       ├── page.tsx                     # Blog listing (en/hi)
+│   │       ├── page.tsx                     # Blog listing (en/hi) - Server Component
 │   │       └── [slug]/
 │   │           └── page.tsx                 # Individual blog posts
 │   │
 │   ├── components/
-│   │   ├── LanguageSwitcher.tsx            # Language toggle component
+│   │   ├── LanguageSwitcher.tsx            # Language toggle (US flag for English)
+│   │   ├── BlogGrid.tsx                    # Client component with category filters (NEW - Dec 11)
 │   │   ├── AuthorBio.tsx                   # Author bio component
+│   │   ├── ReadingProgress.tsx             # Scroll progress bar (Dec 10)
 │   │   └── (other components...)
 │   │
 │   └── globals.css                          # Includes blog styles
+│
+├── public/
+│   └── images/
+│       ├── nextjs-blog.jpg                  # Local preview image (NEW - Dec 11)
+│       └── digital-marketing-blog.jpg       # Local preview image (NEW - Dec 11)
 │
 └── documentation/
     ├── BLOG-SYSTEM-DOCUMENTATION.md         # This file
@@ -277,9 +290,11 @@ vikas-singh-nextjs/
 | File | Size | Lines | Purpose |
 |------|------|-------|---------|
 | `lib/blog.ts` | ~4 KB | 130 | Blog utility functions |
-| `LanguageSwitcher.tsx` | ~2.5 KB | 75 | Language toggle UI |
+| `LanguageSwitcher.tsx` | ~2.5 KB | 75 | Language toggle UI (US flag) |
+| `BlogGrid.tsx` | ~5 KB | 185 | Category filtering & grid (NEW) |
 | `AuthorBio.tsx` | ~2.5 KB | 80 | Author information |
-| `[lang]/page.tsx` | ~6 KB | 200 | Blog listing page |
+| `ReadingProgress.tsx` | ~1 KB | 30 | Scroll progress bar |
+| `[lang]/page.tsx` | ~5 KB | 140 | Blog listing page (server) |
 | `[lang]/[slug]/page.tsx` | ~10 KB | 320 | Individual blog post |
 
 ---
@@ -354,11 +369,87 @@ interface BlogPostMetadata {
 
 ---
 
-### **2. LanguageSwitcher Component**
+### **3. BlogGrid Component** (NEW - December 11, 2025)
+
+**File:** `app/components/BlogGrid.tsx`
+
+**Purpose:** Client-side category filtering and responsive card grid for blog listing
+
+**Props:**
+```typescript
+interface BlogGridProps {
+  posts: BlogPost[]           // Array of blog posts
+  lang: 'en' | 'hi'          // Current language
+}
+```
+
+**Features:**
+- Interactive category filter tabs (All, Web Development, Digital Marketing)
+- Client-side filtering with React hooks (useState, useMemo)
+- Square aspect ratio images
+- Compact card design with full responsive breakpoints
+- Author display with icon
+- IST timezone for date/time
+- 1→2→3→4 column grid (mobile to desktop)
+
+**Usage:**
+```tsx
+import BlogGrid from '@/app/components/BlogGrid'
+
+// In your page component
+const posts = getAllPosts('en')
+
+<BlogGrid posts={posts} lang="en" />
+```
+
+**State Management:**
+```typescript
+const [selectedCategory, setSelectedCategory] = useState<string>('All')
+
+// Get unique categories
+const categories = ['All', ...Array.from(new Set(allPosts.map(post => post.category)))]
+
+// Filter posts
+const posts = useMemo(() => {
+  if (selectedCategory === 'All') return allPosts
+  return allPosts.filter(post => post.category === selectedCategory)
+}, [allPosts, selectedCategory])
+```
+
+**Responsive Grid:**
+```tsx
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-7 xl:gap-8">
+  {/* Cards */}
+</div>
+```
+
+**Date Formatting (IST):**
+```typescript
+const formatDateTime = (dateString: string) => {
+  const date = new Date(dateString)
+  const options: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Asia/Kolkata',
+    hour12: true
+  }
+  return date.toLocaleString(lang === 'en' ? 'en-IN' : 'hi-IN', options)
+}
+```
+
+---
+
+### **4. LanguageSwitcher Component**
 
 **File:** `app/components/LanguageSwitcher.tsx`
 
 **Purpose:** Toggle between English and Hindi versions
+
+**Recent Updates (Dec 11):**
+- Changed English flag from 🇬🇧 to 🇺🇸
 
 **Props:**
 ```typescript

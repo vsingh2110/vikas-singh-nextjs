@@ -57,7 +57,8 @@ export default function BlogGrid({ posts: allPosts, lang }: BlogGridProps) {
       timeZone: 'Asia/Kolkata',
       hour12: true
     }
-    return date.toLocaleString(lang === 'en' ? 'en-IN' : 'hi-IN', options)
+    const formatted = date.toLocaleString(lang === 'en' ? 'en-IN' : 'hi-IN', options)
+    return `${formatted} IST`
   }
 
   return (
