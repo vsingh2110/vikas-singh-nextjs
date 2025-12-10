@@ -77,33 +77,33 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 // Custom MDX components with research article styling (REDUCED SIZES)
 const components = {
   h1: (props: any) => (
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold font-heading text-gray-900 mb-4 mt-8 first:mt-0" {...props} />
+    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold font-heading text-gray-900 mb-4 mt-8 first:mt-0" style={{fontWeight: 700}} {...props} />
   ),
   h2: (props: any) => {
     const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') || ''
-    return <h2 id={id} className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold font-heading text-gray-900 mb-4 mt-6 border-l-4 border-brand-crimson pl-4" {...props} />
+    return <h2 id={id} className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-heading text-gray-900 mb-4 mt-6 border-l-4 border-brand-crimson pl-4" style={{fontWeight: 600}} {...props} />
   },
   h3: (props: any) => {
     const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-') || ''
-    return <h3 id={id} className="text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-semibold font-heading text-gray-800 mb-3 mt-5" {...props} />
+    return <h3 id={id} className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-heading text-gray-800 mb-3 mt-5" style={{fontWeight: 500}} {...props} />
   },
   p: (props: any) => (
-    <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed text-gray-700 mb-5" {...props} />
+    <p className="text-xs sm:text-sm md:text-base lg:text-base xl:text-lg leading-relaxed text-gray-700 mb-5" {...props} />
   ),
   a: (props: any) => (
-    <a className="text-brand-crimson hover:underline font-medium text-xs sm:text-sm md:text-base" target="_blank" rel="noopener noreferrer" {...props} />
+    <a className="text-brand-crimson hover:underline font-medium text-[10px] sm:text-xs md:text-sm" target="_blank" rel="noopener noreferrer" {...props} />
   ),
   ul: (props: any) => (
-    <ul className="list-disc list-inside space-y-2 mb-5 text-gray-700 ml-4" {...props} />
+    <ul className="list-disc list-inside space-y-1 mb-5 text-gray-700 ml-4" {...props} />
   ),
   ol: (props: any) => (
-    <ol className="list-decimal list-inside space-y-2 mb-5 text-gray-700 ml-4" {...props} />
+    <ol className="list-decimal list-inside space-y-1 mb-5 text-gray-700 ml-4" {...props} />
   ),
   li: (props: any) => (
-    <li className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl leading-relaxed" {...props} />
+    <li className="text-xs sm:text-sm md:text-base lg:text-base xl:text-lg leading-snug" {...props} />
   ),
   blockquote: (props: any) => (
-    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-4 pr-4 py-3 my-5 italic text-xs sm:text-sm md:text-base lg:text-base xl:text-lg text-gray-700 rounded-r-lg" {...props} />
+    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-4 pr-4 py-2 my-4 italic text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-gray-600 rounded-r-lg leading-tight" {...props} />
   ),
   code: (props: any) => (
     <code className="bg-gray-100 text-brand-crimson px-1.5 py-0.5 rounded text-xs sm:text-sm md:text-base font-mono" {...props} />
@@ -118,10 +118,10 @@ const components = {
     <figure className="my-5" {...props} />
   ),
   figcaption: (props: any) => (
-    <figcaption className="text-xs sm:text-sm md:text-base text-gray-600 mt-2 text-center italic" {...props} />
+    <figcaption className="text-[9px] sm:text-[10px] md:text-xs text-gray-500 mt-1 text-center italic leading-tight" {...props} />
   ),
   strong: (props: any) => (
-    <strong className="font-bold text-gray-900" {...props} />
+    <strong className="text-gray-900" style={{fontWeight: 500}} {...props} />
   ),
   em: (props: any) => (
     <em className="italic text-gray-800" {...props} />
@@ -207,39 +207,55 @@ export default function BlogPostPage({ params }: PageProps) {
 
       <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
         {/* Back to Blogs Button - Left Aligned */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
-          <Link
-            href={`/blog/${lang}`}
-            className="inline-flex items-center gap-2 bg-brand-crimson text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition-colors text-sm shadow-md hover:shadow-lg"
-          >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 mb-4">
+          <div className="max-w-[1920px] mx-auto">
+            <Link
+              href={`/blog/${lang}`}
+              className="inline-flex items-center justify-center gap-2 bg-brand-crimson text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm shadow-md hover:shadow-lg"
+              style={{fontWeight: 600}}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            {text.backToBlogs}
-          </Link>
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              {text.backToBlogs}
+            </Link>
+          </div>
         </div>
 
-        {/* Hero Image */}
-        <div className="relative w-full h-56 sm:h-64 md:h-80 lg:h-96 mb-6">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+        {/* Hero Image with Blurred Background */}
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:h-[28rem] xl:h-[32rem] mb-6">
+          {/* Blurred background layer */}
+          <div className="absolute inset-0 overflow-hidden">
+            <Image
+              src={post.image}
+              alt=""
+              fill
+              className="object-cover blur-2xl scale-110 opacity-30"
+              sizes="100vw"
+            />
+          </div>
+          {/* Main image */}
+          <div className="relative h-full flex items-center justify-center">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-contain"
+              priority
+              sizes="100vw"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
           
           {/* Category Badge - Responsive */}
           <div className="absolute top-4 left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full shadow-lg">
@@ -247,8 +263,8 @@ export default function BlogPostPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Article Container - Expanded Width with Left Margin */}
-        <article className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
+        {/* Article Container - Expanded Width */}
+        <article className="w-full max-w-[1920px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-32">
           {/* Breadcrumb */}
           <div className="text-xs sm:text-sm text-gray-500 mb-3 flex items-center gap-2">
             <span>{text.blog}</span>
@@ -260,7 +276,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
           {/* Header */}
           <header className="mb-6 sm:mb-8 border-b border-gray-200 pb-6">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-gray-900 mb-4 leading-tight">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading text-gray-900 mb-4 leading-tight" style={{fontWeight: 700}}>
               {post.title}
             </h1>
 
@@ -290,9 +306,53 @@ export default function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Excerpt */}
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
               {post.excerpt}
             </p>
+
+            {/* Small Share Buttons at Start */}
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wide">
+                  {lang === 'en' ? 'Share this article' : 'इस लेख को साझा करें'}
+                </span>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={`https://wa.me/?text=${encodeURIComponent(`${post.title} - ${fullUrl}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-green-600 transition-colors"
+                    title="WhatsApp"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(fullUrl)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-blue-600 transition-colors"
+                    title="Facebook"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </a>
+                  <a
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(fullUrl)}&text=${encodeURIComponent(post.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-blue-400 transition-colors"
+                    title="Twitter"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
           </header>
 
           {/* Table of Contents - Collapsible */}
