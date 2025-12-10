@@ -1,16 +1,16 @@
 # Tech Stack Reference
 
 **Project:** Vikas Singh Portfolio & Blog Website  
-**Last Updated:** December 9, 2025  
+**Last Updated:** December 10, 2025 (Evening Session)  
 **Purpose:** Comprehensive technical documentation of all technologies, packages, and configurations
 
 ---
 
 ## 📦 CORE DEPENDENCIES
 
-### **Next.js 14.2.18**
+### **Next.js 14.2.33**
 **Purpose:** React framework for production  
-**Why Chosen:** Server-side rendering, routing, performance, image optimization, and safe version (pre-December security issues)
+**Why Chosen:** Server-side rendering, routing, performance, image optimization, and safe version (security patched)
 
 **Key Features Used:**
 - App Router (modern routing system)
