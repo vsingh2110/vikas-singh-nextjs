@@ -45,7 +45,7 @@ body {
   position: relative;
   margin: 2rem 0 4rem 0;
   padding: 0;
-  background: #f3f4f6;
+  background: #e5e7eb;
   overflow: visible;
   height: 65vh;
   display: flex;
@@ -63,8 +63,8 @@ body {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
-  filter: blur(40px);
-  opacity: 0.4;
+  filter: blur(20px);
+  opacity: 0.25;
   z-index: 0;
 }
 
@@ -192,9 +192,10 @@ body {
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
     height: auto;
     min-height: 300px;
-    margin: 1rem 0 3.5rem 0;
+    margin: 1rem 0 4rem 0;
     padding: 0;
     background: transparent;
+    display: block;
   }
   
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
@@ -207,13 +208,16 @@ body {
     height: auto;
     max-height: 50vh;
     object-fit: contain;
+    display: block;
+    position: static;
   }
   
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
-    position: relative;
-    bottom: auto;
+    position: static;
+    display: block;
+    width: 100%;
     margin-top: 0.75rem;
-    padding: 0;
+    padding: 0 1rem;
   }
   
   .prose .image-pair {
