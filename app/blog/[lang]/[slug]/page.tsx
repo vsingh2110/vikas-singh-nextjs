@@ -211,7 +211,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
       <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
         {/* Back Button and Reading Mode Toggle Section */}
-        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-4 pt-1.5 sm:pt-0 flex items-center justify-between gap-4 flex-wrap">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-3 mt-4 sm:pt-0 flex items-center justify-between gap-4 flex-wrap">
           <Link
             href={`/blog/${lang}`}
             className="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-crimson text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-lg hover:bg-red-700 transition-colors text-xs sm:text-sm md:text-base shadow-md hover:shadow-lg font-semibold"
