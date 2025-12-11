@@ -41,7 +41,7 @@ body {
 /* Blog Content Images */
 
 /* 1. Single Center Image (Biggest) - 65vh with blur background */
-.prose figure {
+.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
   position: relative;
   margin: 2rem 0;
   padding: 0;
@@ -53,7 +53,7 @@ body {
   justify-content: center;
 }
 
-.prose figure::before {
+.prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -65,7 +65,7 @@ body {
   z-index: 0;
 }
 
-.prose figure img {
+.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
   position: relative;
   z-index: 10;
   max-height: 100%;
@@ -73,6 +73,19 @@ body {
   width: auto;
   object-fit: contain;
   margin: 0;
+}
+
+.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
 }
 
 /* 2. Two Parallel Center Images (Smaller than single) - 50vh */
@@ -86,7 +99,7 @@ body {
   padding: 0;
   background: #f3f4f6;
   overflow: hidden;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .prose .image-pair::before {
@@ -108,57 +121,99 @@ body {
   flex: 1;
   max-width: 45%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 10;
   background: none;
 }
 
 .prose .image-pair figure::before {
-  display: none;
+  display: none !important;
 }
 
-.prose .image-pair img {
-  max-height: 100%;
-  height: 100%;
-  width: auto;
+.prose .image-pair figure img {
+  width: 100%;
+  height: 50vh;
   object-fit: contain;
   margin: 0;
 }
 
-/* 3 & 4. Left/Right Floating Images (Smallest) - No blur, text wrap */
-.prose .float-left,
-.prose .float-right {
+.prose .image-pair figure figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+/* 3 & 4. Left/Right Floating Images (Smallest) - No blur, text wrap, NO captions showing */
+.prose figure.float-left,
+.prose figure.float-right {
   background: none !important;
   padding: 0 !important;
   margin: 0.5rem !important;
-  border-radius: 0.5rem;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 280px !important;
+  height: auto !important;
+  display: block !important;
 }
 
-.prose .float-left {
+.prose figure.float-left {
   float: left;
   margin-right: 1.5rem !important;
 }
 
-.prose .float-right {
+.prose figure.float-right {
   float: right;
   margin-left: 1.5rem !important;
 }
 
-.prose .float-left::before,
-.prose .float-right::before {
+.prose figure.float-left::before,
+.prose figure.float-right::before {
   display: none !important;
 }
 
-.prose .float-left img,
-.prose .float-right img {
+.prose figure.float-left img,
+.prose figure.float-right img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 280px;
   width: auto;
   height: auto;
   border-radius: 0.5rem;
+  margin: 0;
+}
+
+.prose figure.float-left figcaption,
+.prose figure.float-right figcaption {
+  display: none !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
+    height: 50vh;
+  }
+  
+  .prose .image-pair {
+    flex-direction: column;
+    min-height: auto;
+    gap: 1rem;
+  }
+  
+  .prose .image-pair figure {
+    max-width: 100%;
+    height: 40vh;
+  }
+  
+  .prose .image-pair figure img {
+    height: 40vh;
+  }
+  
+  .prose figure.float-left,
+  .prose figure.float-right {
+    float: none !important;
+    max-width: 100% !important;
+    margin: 1rem 0 !important;
+  }
 }
 
 @media (max-width: 768px) {
