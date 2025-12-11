@@ -10,6 +10,8 @@ import ReadingProgress from '@/app/components/ReadingProgress'
 import TableOfContents from '@/app/components/TableOfContents'
 import TopShareButtons from '@/app/components/TopShareButtons'
 import SocialShare from '@/app/components/SocialShare'
+import ReadingModeToggle from '@/app/components/ReadingModeToggle'
+import ImagePair from '@/app/components/ImagePair'
 import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
@@ -130,6 +132,7 @@ const components = {
   hr: (props: any) => (
     <hr className="my-8 border-t-2 border-gray-200" {...props} />
   ),
+  ImagePair: ImagePair,
 }
 
 export default function BlogPostPage({ params }: PageProps) {
@@ -207,45 +210,49 @@ export default function BlogPostPage({ params }: PageProps) {
       <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang = "${lang}";` }} />
 
       <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
-        {/* Back to Blogs Button - Left Aligned */}
-        <div className="w-full max-w-[1920px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-32 mb-4">
-          <Link
-            href={`/blog/${lang}`}
-            className="inline-flex items-center justify-center gap-2 bg-brand-crimson text-white px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors text-sm sm:text-base shadow-md hover:shadow-lg"
-            style={{fontWeight: 600}}
-          >
-            <svg
-              className="w-4 h-4 sm:w-5 sm:h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        {/* Back Button and Reading Mode Toggle Section */}
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-4">
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <Link
+              href={`/blog/${lang}`}
+              className="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-crimson text-white px-3 py-2 sm:px-4 sm:py-2.5 md:px-5 md:py-2.5 rounded-lg hover:bg-red-700 transition-colors text-xs sm:text-sm md:text-base shadow-md hover:shadow-lg font-semibold"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            {text.backToBlogs}
-          </Link>
+              <svg
+                className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              {text.backToBlogs}
+            </Link>
+            
+            <ReadingModeToggle language={lang} />
+          </div>
         </div>
 
         {/* Hero Image with Blurred Background */}
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:h-[28rem] xl:h-[32rem] mb-6">
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:h-[28rem] xl:h-[32rem] mb-6 bg-gray-200">
           {/* Blurred background layer */}
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden bg-gray-300">
             <Image
               src={post.image}
               alt=""
               fill
-              className="object-cover blur-3xl scale-110 opacity-50"
+              className="object-cover blur-3xl scale-125 opacity-70"
               sizes="100vw"
               priority
+              quality={30}
             />
           </div>
           {/* Main image */}
-          <div className="relative h-full flex items-center justify-center">
+          <div className="relative h-full flex items-center justify-center z-10">
             <Image
               src={post.image}
               alt={post.title}
@@ -253,6 +260,7 @@ export default function BlogPostPage({ params }: PageProps) {
               className="object-contain"
               priority
               sizes="100vw"
+              quality={90}
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -314,8 +322,10 @@ export default function BlogPostPage({ params }: PageProps) {
           {/* Top Share Buttons - Client Component */}
           <TopShareButtons title={post.title} url={fullUrl} language={lang} />
 
-          {/* Table of Contents - Collapsible */}
-          <TableOfContents headings={headings} language={lang} />
+          {/* Table of Contents - Collapsible - with margin top */}
+          <div className="mt-6 sm:mt-8">
+            <TableOfContents headings={headings} language={lang} />
+          </div>
 
           {/* Article Content - Research Paper Style */}
           <div className="prose prose-sm sm:prose-base max-w-none blog-content">
