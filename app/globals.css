@@ -56,7 +56,10 @@ body {
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
@@ -70,7 +73,7 @@ body {
   z-index: 10;
   max-height: 100%;
   height: 100%;
-  max-width: 70%;
+  max-width: 65%;
   width: auto;
   object-fit: contain;
   margin: 0 auto;
@@ -85,50 +88,34 @@ body {
   text-align: center;
   color: #6b7280;
   font-size: 0.875rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   background: transparent;
 }
 
-/* 2. Two Parallel Center Images - Card boxes with blur background on sides */
+/* 2. Two Parallel Center Images - Simple, no blur, bigger images */
 .prose .image-pair {
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 4%;
-  margin: 2rem 0 4rem 0;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem 0;
   padding: 0;
-  background: #f3f4f6;
-  overflow: visible;
-  min-height: 50vh;
+  background: transparent;
 }
 
 .prose .image-pair::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: var(--image-url);
-  background-size: cover;
-  background-position: center;
-  filter: blur(40px);
-  opacity: 0.4;
-  z-index: 0;
+  display: none;
 }
 
 .prose .image-pair figure {
-  position: relative;
   margin: 0;
-  padding: 1.5rem;
-  flex: 0 0 45%;
-  max-width: 45%;
+  padding: 0;
+  flex: 1;
+  max-width: 48%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 10;
-  background: white;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: none;
 }
 
 .prose .image-pair figure::before {
@@ -137,11 +124,12 @@ body {
 
 .prose .image-pair figure img {
   width: 100%;
-  max-height: 46vh;
   height: auto;
+  max-height: 55vh;
   object-fit: contain;
   margin: 0;
   border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .prose .image-pair figure figcaption {
@@ -150,6 +138,7 @@ body {
   color: #6b7280;
   font-size: 0.875rem;
   line-height: 1.4;
+  padding: 0 0.5rem;
 }
 
 /* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible */
@@ -202,8 +191,8 @@ body {
 @media (max-width: 768px) {
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
     height: auto;
-    min-height: 50vh;
-    margin: 1rem 0 3rem 0;
+    min-height: 300px;
+    margin: 1rem 0 3.5rem 0;
     padding: 0;
     background: transparent;
   }
@@ -214,34 +203,26 @@ body {
   
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     max-height: 50vh;
+    object-fit: contain;
   }
   
   .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
     position: relative;
     bottom: auto;
     margin-top: 0.75rem;
+    padding: 0;
   }
   
   .prose .image-pair {
     flex-direction: column;
     gap: 2rem;
-    padding: 0;
-    background: transparent;
-    min-height: auto;
-  }
-  
-  .prose .image-pair::before {
-    display: none;
   }
   
   .prose .image-pair figure {
     max-width: 100%;
-    flex: none;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
   }
   
   .prose .image-pair figure img {
