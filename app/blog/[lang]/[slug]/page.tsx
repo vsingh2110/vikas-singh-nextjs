@@ -211,7 +211,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
       <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
         {/* Back Button and Reading Mode Toggle Section */}
-        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-4">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-4 pt-1.5 sm:pt-0">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <Link
               href={`/blog/${lang}`}
@@ -245,7 +245,7 @@ export default function BlogPostPage({ params }: PageProps) {
               src={post.image}
               alt=""
               fill
-              className="object-cover blur-3xl scale-125 opacity-70"
+              className="object-cover blur-xl scale-125 opacity-70"
               sizes="100vw"
               priority
               quality={30}
