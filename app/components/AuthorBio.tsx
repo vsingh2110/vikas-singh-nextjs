@@ -11,14 +11,14 @@ export default function AuthorBio({ language }: AuthorBioProps) {
       title: 'About the Author',
       name: 'Vikas Singh "विमुक्त"',
       role: 'Editor of CogniSocial Research',
-      bio: 'Software Professional, Social Psychologist, Digital Marketerer. Researching how digital platforms shape human cognition and behavior.',
+      bio: 'Software Professional, Social Psychologist, Digital Marketer, Environmental & Civil Rights Activist. Researching how digital platforms shape human cognition and behavior, while advocating for social justice, environmental protection, and civil liberties.',
       link: 'Learn More About Author'
     },
     hi: {
       title: 'लेखक के बारे में',
       name: 'विकास सिंह "विमुक्त"',
       role: 'CogniSocial Research के संपादक',
-      bio: 'सॉफ्टवेयर प्रोफेशनल, सामाजिक मनोवैज्ञानिक, डिजिटल मार्केटर। डिजिटल प्लेटफ़ॉर्म मानव संज्ञान और व्यवहार को कैसे आकार देते हैं, इस पर शोध करते हैं।',
+      bio: 'सॉफ्टवेयर प्रोफेशनल, सामाजिक मनोवैज्ञानिक, डिजिटल मार्केटर, पर्यावरण और नागरिक अधिकार कार्यकर्ता। डिजिटल प्लेटफ़ॉर्म मानव संज्ञान और व्यवहार को कैसे आकार देते हैं, इस पर शोध करते हुए सामाजिक न्याय, पर्यावरण संरक्षण और नागरिक स्वतंत्रता के लिए वकालत करते हैं।',
       link: 'लेखक के बारे में और जानें'
     }
   }
@@ -55,7 +55,7 @@ export default function AuthorBio({ language }: AuthorBioProps) {
             {text.bio}
           </p>
           <Link
-            href="/#about"
+            href="/#"
             className="inline-flex items-center gap-2 bg-brand-crimson text-white px-6 lg:px-8 xl:px-10 py-3 lg:py-4 xl:py-5 rounded-lg font-semibold hover:bg-dark-crimson transition-all duration-300 shadow-md hover:shadow-lg group lg:text-lg xl:text-xl 2xl:text-2xl"
           >
             {text.link}

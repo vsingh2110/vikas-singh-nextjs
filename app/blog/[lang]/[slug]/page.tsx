@@ -88,7 +88,7 @@ const components = {
     return <h3 id={id} className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-heading text-gray-800 mb-3 mt-5" style={{fontWeight: 500}} {...props} />
   },
   p: (props: any) => (
-    <p className="text-xs sm:text-sm md:text-base lg:text-base xl:text-lg leading-relaxed text-gray-700 mb-5" {...props} />
+    <p className="text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base leading-relaxed text-gray-700 mb-5" {...props} />
   ),
   a: (props: any) => (
     <a className="text-brand-crimson hover:underline font-medium text-[10px] sm:text-xs md:text-sm" target="_blank" rel="noopener noreferrer" {...props} />
@@ -100,7 +100,7 @@ const components = {
     <ol className="list-decimal list-inside space-y-1 mb-5 text-gray-700 ml-4" {...props} />
   ),
   li: (props: any) => (
-    <li className="text-xs sm:text-sm md:text-base lg:text-base xl:text-lg leading-snug" {...props} />
+    <li className="text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base leading-snug" {...props} />
   ),
   blockquote: (props: any) => (
     <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-4 pr-4 py-2 my-4 italic text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-gray-600 rounded-r-lg leading-tight" {...props} />
@@ -207,29 +207,27 @@ export default function BlogPostPage({ params }: PageProps) {
 
       <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
         {/* Back to Blogs Button - Left Aligned */}
-        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 mb-4">
-          <div className="max-w-[1920px] mx-auto">
-            <Link
-              href={`/blog/${lang}`}
-              className="inline-flex items-center justify-center gap-2 bg-brand-crimson text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm shadow-md hover:shadow-lg"
-              style={{fontWeight: 600}}
+        <div className="w-full max-w-[1920px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-32 mb-4">
+          <Link
+            href={`/blog/${lang}`}
+            className="inline-flex items-center justify-center gap-2 bg-brand-crimson text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm shadow-md hover:shadow-lg"
+            style={{fontWeight: 600}}
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-              {text.backToBlogs}
-            </Link>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+            {text.backToBlogs}
+          </Link>
         </div>
 
         {/* Hero Image with Blurred Background */}
@@ -267,9 +265,9 @@ export default function BlogPostPage({ params }: PageProps) {
         <article className="w-full max-w-[1920px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-32">
           {/* Breadcrumb */}
           <div className="text-xs sm:text-sm text-gray-500 mb-3 flex items-center gap-2">
-            <span>{text.blog}</span>
+            <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{text.blog}</Link>
             <span>→</span>
-            <span>{lang === 'en' ? 'English' : 'हिंदी'}</span>
+            <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{lang === 'en' ? 'English' : 'हिंदी'}</Link>
             <span>→</span>
             <span className="text-gray-700 font-medium line-clamp-1">{post.title}</span>
           </div>

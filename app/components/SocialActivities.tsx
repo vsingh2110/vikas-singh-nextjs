@@ -34,10 +34,10 @@ export default function SocialActivities() {
     },
     {
       organization: "Student Leader - Political Organization(Hidden)",
-      role: "Working President-Univeristy & Faridabad District Media Coordinator",
+      role: "Working President-University & District Convenor for Media",
       period: "2017 - Early 2020",
       institution: "University Student Organization of *Hidden* ",
-      description: "Served as <strong>Working President</strong> for university students and <strong>District(Faridabad) Media Coordinator</strong> for a major national political-social organization's student leadership *Name Hidden*.",
+      description: "Served as <strong>Working President</strong> for university's student unit of a national party, and also served as <strong>District Convenor for Print and Digital Media</strong> for same student wing of a national party (*Name Hidden*).",
       icon: "fa-users"
     }
   ];
