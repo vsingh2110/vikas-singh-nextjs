@@ -272,7 +272,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Article Container - Expanded Width */}
-        <article className="w-full max-w-[1920px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20 2xl:px-32">
+        <article className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
           {/* Breadcrumb */}
           <div className="text-xs sm:text-sm text-gray-500 mb-3 flex items-center gap-2">
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{text.blog}</Link>

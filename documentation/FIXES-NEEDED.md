@@ -268,8 +268,12 @@ await navigator.share({
 - **Navbar.tsx:** Changed from multiple max-width values to `max-w-[1920px]`
 - **Navbar.tsx:** Standardized padding to `px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20`
 - **page.tsx:** Added `pt-1.5 sm:pt-0` for mobile top padding
+- **Committed:** e4a58ea (Dec 12, 2025)
+- **Rebuild Triggered:** 55b5b4f (Dec 12, 2025) - Force Vercel redeploy
 
-**Status:** ✅ CODE COMPLETE - Ready for testing
+**Status:** ✅ CODE COMPLETE - ⏳ WAITING FOR VERCEL DEPLOYMENT
+
+**Note:** Initial deployment showed old widths (700/720px) due to cache. Triggered rebuild to force fresh deployment.
 
 **Estimated Time:** 30-45 minutes
 
