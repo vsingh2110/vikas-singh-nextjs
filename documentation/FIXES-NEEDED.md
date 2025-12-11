@@ -1,7 +1,7 @@
 # FIXES NEEDED - December 12, 2025
 
-**STATUS:** Active Issues Tracker - Single Source of Truth  
-**Last Updated:** December 12, 2025 - 11:30 PM  
+**STATUS:** Most Issues Resolved - Minor Blur Issue Remaining  
+**Last Updated:** December 12, 2025 - 11:45 PM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
 
 ---
@@ -15,44 +15,45 @@
 **Files Modified:**
 - `app/blog/[lang]/[slug]/page.tsx` - Back button section spacing
 
----
+### ✅ ISSUE #2: Preview Hero Image Blur
+**Status:** FIXED  
+**Solution:** Reduced blur from `blur-xl` to `blur-sm` with `scale-150` and `opacity-40`  
+**Commit:** ce522da, aa21dd5  
 
-## 🚨 CRITICAL ISSUES - HIGHEST PRIORITY
+### ✅ ISSUE #3: Blog Image System - 4 Types Implemented
+**Status:** COMPLETED - All 4 image types working  
+**Types Implemented:**
+1. **Single Center Image** (Biggest) - 65vh with subtle blur background
+2. **Two Parallel Images** (Medium) - 55vh each, side by side, no blur
+3. **Left Floating Image** (Smallest) - 400px, text wrap, with caption
+4. **Right Floating Image** (Smallest) - 400px, text wrap, with caption
 
-### ❌ ISSUE #2: Hero Blurred Background Too Blurry/Solid
-**Status:** NEEDS REDUCTION  
-**User Reports:** "Background needs LESS blur - still looking like solid colour"  
-**Current State:** Using `blur-xl` (already reduced from `blur-3xl`)
-**File:** `app/blog/[lang]/[slug]/page.tsx`
+**Commits:** d6046c3, 90b5cc4, c4dfaab, 7a6e62c, 94db73d, e742e15
 
-**Solution Approach:**
-- Further reduce blur or adjust opacity
-- Make background image more recognizable
-
----
-
-### ❌ ISSUE #3: Blog Image Backgrounds Wrong Orientation
-**Status:** NEEDS FIX - HIGH PRIORITY  
-**User Reports:** "Background should extend left/right (full width), not top/bottom. Content should use full horizontal space without side backgrounds"  
-**Current Problem:** 
-- Image background blur extends top/bottom instead of left/right
-- Side padding creating unwanted background areas
-- Not utilizing full horizontal space
-
-**Solution Approach:**
-1. Make image container break out to full width (no side padding)
-2. Background blur should extend horizontally (left/right edges)
-3. Remove side backgrounds/padding from image frames
-4. Apply same fix to both single images and ImagePair component
-
-**Files to Modify:**
-- `app/blog/[lang]/[slug]/page.tsx` - Hero image section
-- `app/globals.css` - `.prose img` styles
-- `app/components/ImagePair.tsx` - Dual image layout
+### ✅ ISSUE #4: Mobile Image Layout
+**Status:** FIXED  
+**Solution:** All images stack vertically, no blur, captions display properly below images
+**Commit:** 94db73d
 
 ---
 
-### ❌ ISSUE #4: Blog Images Too Large
+## ⚠️ REMAINING ISSUES
+
+### ❌ ISSUE #5: Single Center Image Blur Background Not Visible in Desktop
+**Status:** PARTIALLY WORKING - Blur effect not showing prominently  
+**Current Settings:** `blur(4px) scale(1.5) opacity(0.4)` - copied from hero image  
+**Expected:** Subtle blur visible on left/right empty spaces like hero preview image  
+**Files:** `app/globals.css` - `.prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before`  
+**Priority:** LOW - Functional but aesthetic issue
+
+---
+
+## 📝 NOTES FOR NEXT SESSION
+
+1. Single center image blur might need further CSS debugging or different approach
+2. All 4 image types are functional and responsive
+3. Documentation updated with image usage guidelines
+4. Blog system fully operational with bilingual support
 - Test with different combinations until image is recognizable but still blurred
 
 **Priority:** HIGH
