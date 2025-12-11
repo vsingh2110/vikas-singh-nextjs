@@ -236,21 +236,21 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Hero Image with Blurred Background */}
-        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:h-[28rem] xl:h-[32rem] mb-6 bg-gray-200">
-          {/* Blurred background layer */}
+        <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 mb-6 bg-gray-200">
+          {/* Blurred background layer - extends horizontally */}
           <div className="absolute inset-0 overflow-hidden bg-gray-300">
             <Image
               src={post.image}
               alt=""
               fill
-              className="object-cover blur-xl scale-125 opacity-70"
+              className="object-cover blur-lg scale-150 opacity-60"
               sizes="100vw"
               priority
               quality={30}
             />
           </div>
           {/* Main image */}
-          <div className="relative h-full flex items-center justify-center z-10">
+          <div className="relative h-full flex items-center justify-center z-10 px-4">
             <Image
               src={post.image}
               alt={post.title}
@@ -261,7 +261,7 @@ export default function BlogPostPage({ params }: PageProps) {
               quality={90}
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           
           {/* Category Badge - Responsive */}
           <div className="absolute top-4 left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full shadow-lg">

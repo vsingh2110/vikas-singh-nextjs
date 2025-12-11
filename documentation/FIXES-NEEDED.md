@@ -1,53 +1,58 @@
 # FIXES NEEDED - December 12, 2025
 
 **STATUS:** Active Issues Tracker - Single Source of Truth  
-**Last Updated:** December 12, 2025  
+**Last Updated:** December 12, 2025 - 11:30 PM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
+
+---
+
+## ✅ COMPLETED ISSUES
+
+### ✅ ISSUE #1: Navbar Inconsistent Width Causing Back Button Misalignment
+**Status:** FIXED - User confirmed 75% working across all screens  
+**Solution Applied:** Changed back button spacing from `mb-4 pt-1.5` to `mb-3 mt-4`  
+**Commit:** 8a55be2  
+**Files Modified:**
+- `app/blog/[lang]/[slug]/page.tsx` - Back button section spacing
 
 ---
 
 ## 🚨 CRITICAL ISSUES - HIGHEST PRIORITY
 
-### ❌ ISSUE #1: Navbar Inconsistent Width Causing Back Button Misalignment
-**Status:** ROOT CAUSE IDENTIFIED  
-**User Reports:** "Navbar has position value 720px below 1280px and 700px from 1280px and above - causing back button section to not align"  
-**Files:** `app/components/Navbar.tsx`, `app/blog/[lang]/[slug]/page.tsx`
-
-**Root Cause Analysis:**
-- Navbar container width is INCONSISTENT across breakpoints
-- Below 1280px: 720px width
-- 1280px and above: 700px width
-- This causes the back button section (which follows navbar) to have misaligned padding
-- The section containing "Back to all posts" and "Theme switcher" cannot align properly because navbar width keeps changing
+### ❌ ISSUE #2: Hero Blurred Background Too Blurry/Solid
+**Status:** NEEDS REDUCTION  
+**User Reports:** "Background needs LESS blur - still looking like solid colour"  
+**Current State:** Using `blur-xl` (already reduced from `blur-3xl`)
+**File:** `app/blog/[lang]/[slug]/page.tsx`
 
 **Solution Approach:**
-1. **Fix Navbar width consistency** - Use same max-width across all breakpoints
-2. **Match back button container** - Ensure same padding/width as navbar
-3. **No changes needed** from 1024px to 1279px (already okay per user)
-4. **Mobile fix:** Add small top padding (0.3rem) to back button SECTION (not the flex container)
-
-**Files to Modify:**
-- `app/components/Navbar.tsx` - Fix container width
-- `app/blog/[lang]/[slug]/page.tsx` - Match back button section to navbar width
-
-**Priority:** HIGHEST - Root cause of alignment issues
+- Further reduce blur or adjust opacity
+- Make background image more recognizable
 
 ---
 
-### ❌ ISSUE #2: Hero Blurred Background Too Blurry/Solid
-**Status:** NEEDS LESS BLUR  
-**User Reports:** "Background needs MORE LESS blurry - still looking like solid colour, not recognizable as blurred image"  
-**File:** `app/blog/[lang]/[slug]/page.tsx`
-
-**Current Problem:**
-- Blur effect is TOO STRONG
-- Looks like solid grey color instead of recognizable blurred image
-- User wants to SEE the image even though blurred
+### ❌ ISSUE #3: Blog Image Backgrounds Wrong Orientation
+**Status:** NEEDS FIX - HIGH PRIORITY  
+**User Reports:** "Background should extend left/right (full width), not top/bottom. Content should use full horizontal space without side backgrounds"  
+**Current Problem:** 
+- Image background blur extends top/bottom instead of left/right
+- Side padding creating unwanted background areas
+- Not utilizing full horizontal space
 
 **Solution Approach:**
-- REDUCE blur amount (try blur-lg or blur-xl instead of blur-3xl)
-- May need to adjust opacity to make image more visible
-- Research Tailwind blur utilities: blur-sm, blur, blur-lg, blur-xl, blur-2xl, blur-3xl
+1. Make image container break out to full width (no side padding)
+2. Background blur should extend horizontally (left/right edges)
+3. Remove side backgrounds/padding from image frames
+4. Apply same fix to both single images and ImagePair component
+
+**Files to Modify:**
+- `app/blog/[lang]/[slug]/page.tsx` - Hero image section
+- `app/globals.css` - `.prose img` styles
+- `app/components/ImagePair.tsx` - Dual image layout
+
+---
+
+### ❌ ISSUE #4: Blog Images Too Large
 - Test with different combinations until image is recognizable but still blurred
 
 **Priority:** HIGH
