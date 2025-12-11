@@ -39,10 +39,9 @@ export default function Navbar() {
           : 'bg-transparent py-8'
       }`}
     >
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="logo">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 flex items-center justify-between">
+        {/* Logo */}
+        <div className="logo">
             <Link
               href="/"
               className="text-white text-3xl lg:text-3xl xl:text-5xl font-semibold font-heading flex flex-col"
@@ -78,7 +77,6 @@ export default function Navbar() {
           >
             <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
           </button>
-        </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
