@@ -243,7 +243,7 @@ export default function BlogPostPage({ params }: PageProps) {
               src={post.image}
               alt=""
               fill
-              className="object-cover blur-md scale-150 opacity-50"
+              className="object-cover blur-sm scale-150 opacity-40"
               sizes="100vw"
               priority
               quality={30}

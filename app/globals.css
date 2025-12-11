@@ -38,25 +38,16 @@ body {
   }
 }
 
-/* Blog Content Images - Center images with blur background */
-.prose img {
-  max-height: 60vh;
-  width: auto;
-  max-width: 60%;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  z-index: 10;
-}
+/* Blog Content Images */
 
-/* Center image container - full width frame, blur on sides */
+/* 1. Single Center Image (Biggest) - 65vh with blur background */
 .prose figure {
   position: relative;
   margin: 2rem 0;
   padding: 0;
   background: #f3f4f6;
   overflow: hidden;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +60,8 @@ body {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
-  filter: blur(80px);
-  opacity: 0.5;
+  filter: blur(40px);
+  opacity: 0.4;
   z-index: 0;
 }
 
@@ -84,43 +75,18 @@ body {
   margin: 0;
 }
 
-/* Floating images - NO blur, NO box, just text wrap */
-.prose .float-left,
-.prose .float-right {
-  background: none !important;
-  padding: 0 !important;
-  margin: 0.5rem !important;
-  border-radius: 0.5rem;
-  max-width: 300px;
-}
-
-.prose .float-left {
-  float: left;
-  margin-right: 1.5rem !important;
-}
-
-.prose .float-right {
-  float: right;
-  margin-left: 1.5rem !important;
-}
-
-.prose .float-left::before,
-.prose .float-right::before {
-  display: none !important;
-}
-
-/* Two Images Side by Side - 30% each with 40% gap */
+/* 2. Two Parallel Center Images (Smaller than single) - 50vh */
 .prose .image-pair {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
-  gap: 40%;
+  gap: 2rem;
   margin: 2rem 0;
   padding: 0;
   background: #f3f4f6;
   overflow: hidden;
-  height: 60vh;
+  height: 50vh;
 }
 
 .prose .image-pair::before {
@@ -130,8 +96,8 @@ body {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
-  filter: blur(80px);
-  opacity: 0.5;
+  filter: blur(40px);
+  opacity: 0.4;
   z-index: 0;
 }
 
@@ -139,7 +105,8 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  flex: 0 0 30%;
+  flex: 1;
+  max-width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +124,41 @@ body {
   width: auto;
   object-fit: contain;
   margin: 0;
+}
+
+/* 3 & 4. Left/Right Floating Images (Smallest) - No blur, text wrap */
+.prose .float-left,
+.prose .float-right {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0.5rem !important;
+  border-radius: 0.5rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.prose .float-left {
+  float: left;
+  margin-right: 1.5rem !important;
+}
+
+.prose .float-right {
+  float: right;
+  margin-left: 1.5rem !important;
+}
+
+.prose .float-left::before,
+.prose .float-right::before {
+  display: none !important;
+}
+
+.prose .float-left img,
+.prose .float-right img {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 768px) {
