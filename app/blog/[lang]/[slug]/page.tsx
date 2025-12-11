@@ -209,9 +209,9 @@ export default function BlogPostPage({ params }: PageProps) {
       {/* Set HTML lang attribute dynamically */}
       <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang = "${lang}";` }} />
 
-      <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16 w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+      <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
         {/* Back Button and Reading Mode Toggle Section */}
-        <div className="w-full mb-4 pt-1.5 sm:pt-0">
+        <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 mb-4 pt-1.5 sm:pt-0">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <Link
               href={`/blog/${lang}`}
@@ -272,7 +272,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Article Container - Expanded Width */}
-        <article className="w-full">
+        <article className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
           {/* Breadcrumb */}
           <div className="text-xs sm:text-sm text-gray-500 mb-3 flex items-center gap-2">
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{text.blog}</Link>
