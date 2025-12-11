@@ -63,8 +63,9 @@ body {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
-  filter: blur(20px);
-  opacity: 0.25;
+  filter: blur(4px);
+  transform: scale(1.5);
+  opacity: 0.4;
   z-index: 0;
 }
 
