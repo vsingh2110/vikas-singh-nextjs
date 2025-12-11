@@ -236,7 +236,7 @@ export default function BlogPostPage({ params }: PageProps) {
         </div>
 
         {/* Hero Image with Blurred Background */}
-        <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 mb-6 bg-gray-200">
+        <div className="relative w-full h-64 sm:h-72 md:h-96 lg:h-[28rem] xl:h-[32rem] mb-6 bg-gray-200">
           {/* Blurred background layer - extends horizontally */}
           <div className="absolute inset-0 overflow-hidden bg-gray-300">
             <Image

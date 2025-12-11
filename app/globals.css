@@ -38,11 +38,11 @@ body {
   }
 }
 
-/* Blog Content Images - Reduced Size with Blurred Background */
+/* Blog Content Images - Center images with blur background */
 .prose img {
-  max-height: 70vh;
+  max-height: 50vh;
   width: auto;
-  max-width: 100%;
+  max-width: 80%;
   margin: 2rem auto;
   display: block;
   border-radius: 0.5rem;
@@ -50,12 +50,13 @@ body {
   z-index: 10;
 }
 
+/* Center image container with blur background */
 .prose figure {
   position: relative;
-  margin: 2rem 0;
-  padding: 2rem;
-  background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
-  border-radius: 1rem;
+  margin: 3rem -2rem;
+  padding: 3rem 2rem;
+  background: #f3f4f6;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -66,16 +67,42 @@ body {
   background-image: var(--image-url);
   background-size: cover;
   background-position: center;
-  filter: blur(40px);
-  opacity: 0.3;
+  filter: blur(60px);
+  opacity: 0.4;
   z-index: 0;
 }
 
 .prose figure img {
   position: relative;
   z-index: 10;
-  max-height: 70vh;
+  max-height: 50vh;
+  max-width: 80%;
   margin: 0 auto;
+}
+
+/* Floating images - NO blur, NO box, just text wrap */
+.prose .float-left,
+.prose .float-right {
+  background: none !important;
+  padding: 0 !important;
+  margin: 0.5rem !important;
+  border-radius: 0.5rem;
+  max-width: 300px;
+}
+
+.prose .float-left {
+  float: left;
+  margin-right: 1.5rem !important;
+}
+
+.prose .float-right {
+  float: right;
+  margin-left: 1.5rem !important;
+}
+
+.prose .float-left::before,
+.prose .float-right::before {
+  display: none !important;
 }
 
 /* Two Images Side by Side */
