@@ -12,7 +12,7 @@ export default function TopShareButtons({ title, url, language }: TopShareButton
       try {
         await navigator.share({
           title: title,
-          text: `${title}`,
+          text: title,
           url: url
         })
       } catch (err) {
@@ -23,9 +23,9 @@ export default function TopShareButtons({ title, url, language }: TopShareButton
 
   const handleCopyLink = async () => {
     try {
-      const textToCopy = `${title} - ${url}`
+      const textToCopy = `${title}\n${url}`
       await navigator.clipboard.writeText(textToCopy)
-      alert(language === 'en' ? 'Link copied!' : 'लिंक कॉपी किया गया!')
+      alert(language === 'en' ? 'Title and link copied!' : 'शीर्षक और लिंक कॉपी किया गया!')
     } catch (err) {
       console.error('Failed to copy:', err)
     }
@@ -72,7 +72,7 @@ export default function TopShareButtons({ title, url, language }: TopShareButton
           </a>
           {/* Facebook */}
           <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&t=${encodeURIComponent(title)}`}
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#1877F2] hover:text-[#145dbf] transition-colors"

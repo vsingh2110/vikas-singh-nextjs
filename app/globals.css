@@ -44,15 +44,18 @@ body {
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
   position: relative;
   margin: 2rem 0 4rem 0;
-  padding: 0;
-  background: #e5e7eb;
-  overflow: visible;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fee2e2 100%);
+  overflow: hidden;
   height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+/* Create a subtle pattern background */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
   content: '';
   position: absolute;
@@ -60,24 +63,23 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: var(--image-url);
-  background-size: cover;
-  background-position: center;
-  filter: blur(4px);
-  transform: scale(1.5);
-  opacity: 0.4;
-  z-index: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(220, 20, 60, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
+  z-index: 1;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
   position: relative;
   z-index: 10;
   max-height: 100%;
-  height: 100%;
-  max-width: 65%;
+  height: auto;
+  max-width: 70%;
   width: auto;
   object-fit: contain;
   margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
@@ -400,4 +402,174 @@ body {
 
 .reading-dark-mode .bg-white {
   background-color: #1a1a1a !important;
+}
+
+/* Homepage Sections Dark Mode Fixes */
+
+/* About Section */
+.reading-dark-mode #about h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #about h2 span:first-of-type {
+  background-color: #1a1a1a !important;
+}
+
+.reading-dark-mode #about h2 span.absolute:last-of-type {
+  background-color: #1a1a1a !important;
+}
+
+.reading-dark-mode #about p {
+  color: #d4d4d4 !important;
+}
+
+.reading-dark-mode #about div[class*="text-2xl"] {
+  color: #ffffff !important;
+}
+
+/* Skills Section */
+.reading-dark-mode #skills {
+  background-color: #262626 !important;
+}
+
+.reading-dark-mode #skills h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #skills p {
+  color: #d4d4d4 !important;
+}
+
+.reading-dark-mode #skills h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #skills li {
+  color: #d4d4d4 !important;
+}
+
+/* Journey Section */
+.reading-dark-mode #journey h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #journey h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #journey p,
+.reading-dark-mode #journey li {
+  color: #d4d4d4 !important;
+}
+
+.reading-dark-mode #journey .bg-white {
+  background-color: #262626 !important;
+}
+
+/* Achievements Section */
+.reading-dark-mode #achievements {
+  background-color: #262626 !important;
+}
+
+.reading-dark-mode #achievements h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #achievements h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #achievements p {
+  color: #d4d4d4 !important;
+}
+
+/* Non-Profit Work Section */
+.reading-dark-mode #nonprofit h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #nonprofit h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #nonprofit p {
+  color: #d4d4d4 !important;
+}
+
+.reading-dark-mode #nonprofit .bg-white {
+  background-color: #262626 !important;
+}
+
+/* Social Activities Section */
+.reading-dark-mode #social-activities {
+  background-color: #262626 !important;
+}
+
+.reading-dark-mode #social-activities h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #social-activities h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #social-activities p {
+  color: #d4d4d4 !important;
+}
+
+/* Services Section */
+.reading-dark-mode #services h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #services h3 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #services p,
+.reading-dark-mode #services li {
+  color: #d4d4d4 !important;
+}
+
+.reading-dark-mode #services .bg-white {
+  background-color: #262626 !important;
+}
+
+/* Contact Section */
+.reading-dark-mode #contact {
+  background-color: #262626 !important;
+}
+
+.reading-dark-mode #contact h2 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode #contact label {
+  color: #e5e5e5 !important;
+}
+
+.reading-dark-mode #contact input,
+.reading-dark-mode #contact textarea,
+.reading-dark-mode #contact select {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-color: #404040 !important;
+}
+
+.reading-dark-mode #contact input::placeholder,
+.reading-dark-mode #contact textarea::placeholder {
+  color: #737373 !important;
+}
+
+/* Blog Home Page - Fix Blog Title and Cards */
+.reading-dark-mode h1 {
+  color: #ffffff !important;
+}
+
+.reading-dark-mode .bg-white[class*="rounded"] {
+  background-color: #262626 !important;
+}
+
+.reading-dark-mode .bg-white[class*="shadow"] {
+  background-color: #262626 !important;
 }

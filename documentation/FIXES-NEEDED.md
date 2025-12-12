@@ -1,8 +1,22 @@
-# FIXES NEEDED - December 12, 2025
+# FIXES NEEDED - December 13, 2025
 
-**STATUS:** Most Issues Resolved - Minor Blur Issue Remaining  
-**Last Updated:** December 12, 2025 - 11:45 PM  
+**STATUS:** Major Progress - 3 Critical Issues Fixed Today  
+**Last Updated:** December 13, 2025 - 12:50 AM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
+
+---
+
+## 🎉 TODAY'S PROGRESS (Dec 13, 2025)
+
+**Session Time:** 12:10 AM - 12:50 AM  
+**Issues Fixed:** 3 major issues
+**Build Status:** ✅ Passing (14.2.35)
+
+### Fixed Today:
+1. ✅ **Security Vulnerability** - npm audit fix (Next.js 14.2.35)
+2. ⚠️ **Single Center Image Blur** - New gradient approach (needs user feedback)
+3. ✅ **Dark Theme Styling** - Comprehensive CSS for all sections (needs testing)
+4. ✅ **Share Functionality** - Copy link, Facebook URL, native share (needs device testing)
 
 ---
 
@@ -35,16 +49,31 @@
 **Solution:** All images stack vertically, no blur, captions display properly below images
 **Commit:** 94db73d
 
+### ✅ ISSUE #5: High Severity npm Vulnerability
+**Status:** FIXED  
+**Solution:** Ran `npm audit fix` - Next.js updated from 14.2.33 to 14.2.35
+**Vulnerability:** CVE GHSA-mwv6-3258-q52c (Next.js DoS with Server Components)
+**Date Fixed:** December 13, 2025 - 12:10 AM
+**Result:** Build passing, 0 vulnerabilities remaining
+
 ---
 
 ## ⚠️ REMAINING ISSUES
 
-### ❌ ISSUE #5: Single Center Image Blur Background Not Visible in Desktop
-**Status:** PARTIALLY WORKING - Blur effect not showing prominently  
-**Current Settings:** `blur(4px) scale(1.5) opacity(0.4)` - copied from hero image  
-**Expected:** Subtle blur visible on left/right empty spaces like hero preview image  
-**Files:** `app/globals.css` - `.prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before`  
-**Priority:** LOW - Functional but aesthetic issue
+### ⚠️ ISSUE #6: Single Center Image Blur Background - NEW APPROACH TESTING
+**Status:** TESTING NEW SOLUTION  
+**Previous Problem:** `var(--image-url)` approach couldn't dynamically access image URLs  
+**New Solution:** Using gradient background with subtle radial patterns instead of actual blurred image  
+**Changes Made:**
+- Replaced blur background with gradient: `linear-gradient(135deg, #e0e7ff 0%, #fee2e2 100%)`
+- Added radial gradient patterns for depth (brand crimson + blue accents)
+- Increased image shadow for more prominence
+- Added border-radius for modern look
+- Image width increased to 70% (from 65%)
+
+**Files Modified:** `app/globals.css` (lines ~44-72)  
+**Testing Required:** User needs to check if gradient background looks better than plain grey  
+**Priority:** MEDIUM - Aesthetic improvement, needs user feedback
 
 ---
 
@@ -103,65 +132,25 @@
 
 ---
 
-### ❌ ISSUE #4: Dark Theme Applied to ALL Pages (Not Just Blog Posts)
-**Status:** UNINTENDED GLOBAL APPLICATION  
-**User Reports:** "Theme switcher affects ALL routes - blog home, main home, all pages turn dark"  
-**Files:** `app/components/ReadingModeToggle.tsx`, Multiple page components
+### ⚠️ ISSUE #7: Dark Theme Applied to ALL Pages - FIXED WITH COMPREHENSIVE STYLING
+**Status:** FIX APPLIED - NEEDS USER TESTING  
+**Previous Problem:** Dark theme affected all pages but many elements had poor visibility  
+**Solution Implemented:** Added comprehensive dark mode CSS for all homepage sections
 
-**Current Problem:**
-- Dark theme intended ONLY for blog post pages
-- Actually applies to entire website
-- Many sections have poor dark mode styling:
-  - Blog home: "Blog" title black on dark (invisible)
-  - Blog cards: Title black, entire card goes dark instead of light
-  - Main home sections: Multiple text visibility issues
+**Sections Fixed:**
+- ✅ About Section - Title, text, spans all white/light
+- ✅ Skills Section - Dark background, white headings, light text
+- ✅ Journey Section - White headings, light text, dark cards
+- ✅ Achievements Section - Dark background, white headings
+- ✅ Non-Profit Work Section - White headings, light text, dark cards
+- ✅ Social Activities Section - Dark background, white headings
+- ✅ Services Section - White headings, light text, dark cards
+- ✅ Contact Section - Dark background, white labels, dark inputs
+- ✅ Blog Home Page - White h1 title, dark card backgrounds
 
-**Solution Options:**
-1. **Option A:** Scope dark theme to ONLY blog post pages
-2. **Option B:** Fix dark mode styling for ALL pages
-
-**User Prefers:** Option B - Fix styling for all pages if we keep global dark mode
-
-**Sub-issues to Fix:**
-
-#### 4A. Blog Home Page (`/blog/[lang]`)
-- Page title "Blog" is black on dark theme (invisible)
-- Blog card titles black and invisible
-- Card backgrounds should stay lighter even in dark mode
-
-#### 4B. Main Home Page Sections
-
-**About Section:**
-- Title "About me" needs white color
-- Lines around subheading "who i am" need white
-- Text "I'm Vikas and I'm a" needs white
-
-**Skills Section (2nd section):**
-- Has grey background normally (for alternating pattern)
-- Not becoming dark in dark theme
-- Needs dark background in dark mode
-
-**Journey Section:**
-- Text visibility issues in dark mode
-
-**Achievements Section:**
-- Text/heading visibility issues
-
-**Non-Profit Work Section:**
-- Text visibility issues
-
-**Social Activities Section:**
-- Text visibility issues
-
-**Services Section:**
-- Text visibility issues
-
-**Contact Section:**
-- Text visibility issues
-
-**Footer:** Already okay (already dark/black)
-
-**Priority:** HIGH - If keeping global dark mode, must fix all pages
+**Files Modified:** `app/globals.css` (lines ~406-550+)  
+**Testing Required:** User needs to toggle dark mode and check all sections  
+**Priority:** HIGH - Critical for user experience
 
 ---
 **Status:** CODE UPDATED BUT USER REPORTS STILL BROKEN  
@@ -240,6 +229,45 @@ await navigator.share({
 **Priority:** MEDIUM - Needs comprehensive testing on actual devices
 
 ---
+
+### ⚠️ ISSUE #8: Share Functionality - FIXES APPLIED, NEEDS TESTING
+**Status:** CODE UPDATED - REQUIRES USER DEVICE TESTING  
+**Previous Problems:** Copy link formatting, Facebook parameters, native share text issues
+
+**Fixes Applied:**
+
+#### 8A. Copy Link Function ✅ FIXED
+**Change:** Modified to copy title and URL on separate lines instead of "Title - URL"
+**Before:** `${title} - ${url}`
+**After:** `${title}\\n${url}` (newline separator for better readability)
+**Files:** `TopShareButtons.tsx`, `SocialShare.tsx`
+
+#### 8B. Facebook Share URL ✅ FIXED
+**Change:** Removed invalid `&t=` parameter
+**Before:** `https://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`
+**After:** `https://www.facebook.com/sharer/sharer.php?u=${url}`
+**Note:** Facebook Sharer extracts title from page's Open Graph meta tags automatically
+**Files:** `TopShareButtons.tsx`, `SocialShare.tsx`
+
+#### 8C. Native Share API ✅ UPDATED
+**Change:** Simplified text parameter (removed template literal wrapper)
+**Before:** `text: \`${title}\``
+**After:** `text: title`
+**Note:** Some apps may still interpret "Next.js" as URL (app-specific behavior, not fixable)
+**Files:** `TopShareButtons.tsx`, `SocialShare.tsx`
+
+#### 8D. WhatsApp Desktop No Preview ⚠️ KNOWN LIMITATION
+**Status:** CANNOT FIX - WhatsApp Desktop limitation
+**Works:** WhatsApp mobile with link preview
+**Doesn't Work:** WhatsApp Desktop (no preview support)
+
+**Testing Required:**
+- [ ] Copy link - verify title and URL both copied with line break
+- [ ] Facebook - verify article shared with correct title from OG tags
+- [ ] Native share - test on multiple apps (Gmail, WhatsApp, etc.)
+- [ ] WhatsApp - test on mobile (should show preview)
+
+**Priority:** HIGH - Needs real device testing to confirm fixes
 
 ## ⏳ MEDIUM/LOW PRIORITY ISSUES
 

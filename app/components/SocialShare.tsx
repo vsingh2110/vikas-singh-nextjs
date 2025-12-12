@@ -24,9 +24,9 @@ export default function SocialShare({ title, url, language }: SocialShareProps) 
 
   const handleCopyLink = async () => {
     try {
-      const textToCopy = `${title} - ${url}`
+      const textToCopy = `${title}\n${url}`
       await navigator.clipboard.writeText(textToCopy)
-      alert(language === 'en' ? 'Link copied to clipboard!' : 'लिंक कॉपी किया गया!')
+      alert(language === 'en' ? 'Title and link copied to clipboard!' : 'शीर्षक और लिंक कॉपी किया गया!')
     } catch (err) {
       console.error('Failed to copy:', err)
     }
@@ -46,7 +46,7 @@ export default function SocialShare({ title, url, language }: SocialShareProps) 
               try {
                 await navigator.share({
                   title: title,
-                  text: `${title}`,
+                  text: title,
                   url: url
                 })
               } catch (err) {
@@ -93,7 +93,7 @@ export default function SocialShare({ title, url, language }: SocialShareProps) 
 
         {/* Facebook */}
         <a
-          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}&t=${encodedTitle}`}
+          href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-4 py-2 bg-[#1877F2] hover:bg-[#166FE5] text-white rounded-lg transition-colors text-sm"
