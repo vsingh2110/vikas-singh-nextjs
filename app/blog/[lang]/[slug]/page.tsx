@@ -65,7 +65,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           secureUrl: post.image,
           width: 1200,
           height: 630,
-          alt: post.title,
           type: 'image/jpeg',
         },
       ],
@@ -203,7 +202,7 @@ export default function BlogPostPage({ params }: PageProps) {
   }
 
   // Full URL for sharing
-  const fullUrl = `https://vikas-singh-nextjs.vercel.app/blog/${lang}/${params.slug}`
+  const fullUrl = `https://vikassingh.vercel.app/blog/${lang}/${params.slug}`
 
   return (
     <>
