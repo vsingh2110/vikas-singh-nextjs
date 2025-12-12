@@ -40,7 +40,7 @@ Multiple features were implemented but are **NOT VERIFIED WORKING**:
 
 ---
 
-## OVERVIEW
+## CREATING BLOG POSTS
 
 ### **What is This?**
 A complete bilingual blog system that supports Hindi and English languages with:
@@ -52,6 +52,38 @@ A complete bilingual blog system that supports Hindi and English languages with:
 - Reading time calculation
 - Author bio section
 - Language switcher component
+
+---
+
+## 🚨 CRITICAL CONTENT RULES - READ FIRST!
+
+### ❌ RULE #1: NO PERIODS IN TITLES WITHOUT SPACES
+**NEVER use periods between two words in blog titles or content that will be shared**
+
+**Why:** Periods without spaces after them make text look like URLs/domains to social media parsers.
+
+**Examples:**
+- ❌ **WRONG:** "Getting Started with Next.js" → Social media treats "Next.js" as clickable URL
+- ✅ **CORRECT:** "Getting Started with NextJS" → No period, works perfectly
+- ✅ **CORRECT:** "React. A complete guide" → Period has space after, so it's fine
+- ❌ **WRONG:** "Using Node.js for backend" → Looks like domain
+- ✅ **CORRECT:** "Using NodeJS for backend" → Clean, no URL confusion
+
+**Where This Applies:**
+- Blog post titles (frontmatter `title` field)
+- Excerpts/descriptions
+- Any text that appears in social shares
+- Meta descriptions
+
+**Platforms Affected:**
+- Facebook share (treats as URL)
+- LinkedIn share (treats as URL)  
+- Twitter/X share (treats as URL)
+- Native mobile share dialogs
+
+**This rule was discovered after hours of debugging social share issues!**
+
+---
 
 ### **Key Features**
 - ✅ Bilingual support (English + Hindi)
@@ -545,6 +577,17 @@ interface AuthorBioProps {
 
 ## CREATING BLOG POSTS
 
+### 🚨 **CRITICAL RULE BEFORE YOU START**
+
+**NEVER use periods in titles without spaces after them!**
+
+❌ **WRONG:** `title: "Getting Started with Next.js"`  
+✅ **CORRECT:** `title: "Getting Started with NextJS"`
+
+**Why?** Social media parsers treat "Next.js" as a clickable URL/domain, breaking share functionality.
+
+---
+
 ### **Step-by-Step Guide**
 
 #### **Step 1: Create MDX File**
@@ -571,7 +614,7 @@ Required fields:
 
 ```yaml
 ---
-title: "Your Post Title"
+title: "Your Post Title (NO PERIODS without spaces!)"
 excerpt: "Brief description (150-200 characters)"
 image: "https://images.unsplash.com/photo-xxx?w=1200"
 date: "2025-01-15"

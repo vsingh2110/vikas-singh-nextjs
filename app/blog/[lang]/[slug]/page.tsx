@@ -62,9 +62,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [
         {
           url: post.image,
+          secureUrl: post.image,
           width: 1200,
           height: 630,
           alt: post.title,
+          type: 'image/jpeg',
         },
       ],
     },
@@ -72,7 +74,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      images: {
+        url: post.image,
+        alt: post.title,
+      },
+      creator: '@vs_vimukt',
+      site: '@vs_vimukt',
     },
   }
 }

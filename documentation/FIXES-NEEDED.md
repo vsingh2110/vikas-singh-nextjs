@@ -17,6 +17,10 @@ e# FIXES NEEDED - December 13, 2025
 2. ⚠️ **Single Center Image Blur** - New gradient approach (needs user feedback)
 3. ✅ **Dark Theme Styling** - Comprehensive CSS for all sections (needs testing)
 4. ✅ **Share Functionality** - Copy link, Facebook URL, native share (needs device testing)
+5. ✅ **metadataBase** - Added for absolute OG image URLs
+6. ✅ **NextJS Title Fix** - Removed periods to prevent URL parsing
+7. ✅ **OG Image Meta Tags** - Added type, secureUrl, alt for images
+8. ✅ **Twitter Card Meta** - Added alt, creator, site fields
 
 ---
 
