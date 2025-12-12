@@ -72,14 +72,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@vs_vimukt',
+      creator: '@vs_vimukt',
       title: post.title,
       description: post.excerpt,
-      images: {
-        url: post.image,
-        alt: post.title,
-      },
-      creator: '@vs_vimukt',
-      site: '@vs_vimukt',
+      images: [post.image],
     },
   }
 }
