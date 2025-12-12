@@ -39,7 +39,7 @@ export default function AuthorBio({ language }: AuthorBioProps) {
             alt={text.name}
             width={90}
             height={90}
-            className="rounded-full object-cover border-2 border-white shadow-lg lg:w-[140px] lg:h-[140px]"
+            className="rounded-full object-cover border-2 border-white shadow-lg lg:w-[170px] lg:h-[170px]"
           />
         </div>
 
