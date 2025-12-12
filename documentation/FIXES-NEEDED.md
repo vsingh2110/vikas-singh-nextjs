@@ -1,29 +1,60 @@
 # FIXES NEEDED - December 13, 2025
 
-**STATUS:** All Issues Resolved  
-**Last Updated:** December 13, 2025 - 1:30 AM  
+**STATUS:** Theme Switcher Pending - 90% Complete  
+**Last Updated:** December 13, 2025 - 2:00 AM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
 
 ---
 
 ## 🎉 TODAY'S PROGRESS (Dec 13, 2025)
 
-**Session Time:** 12:10 AM - 1:30 AM  
-**Issues Fixed:** All major issues
+**Session Time:** 12:10 AM - 2:00 AM  
+**Issues Fixed:** All major blog and sharing issues  
 **Build Status:** ✅ Passing (14.2.35)
 
 ### Fixed Today:
 1. ✅ **Security Vulnerability** - npm audit fix (Next.js 14.2.35)
-2. ✅ **Single Center Image (Desktop)** - FULLY FIXED: Full height (100%), blur background, caption visible, no top/bottom margin
+2. ✅ **Single Center Image (Desktop)** - FULLY FIXED: Full height (100%), blur from actual image, caption visible, no top/bottom margin
 3. ✅ **Single Center Image (Mobile)** - FULLY FIXED: Clean layout, no card effect, caption outside
-4. ✅ **Dark Theme Styling** - Comprehensive CSS for all sections (needs testing)
+4. ✅ **Dark Theme Styling** - Comprehensive CSS for all sections (150+ lines)
 5. ✅ **Link Sharing** - DONE with platform limitations (Facebook/LinkedIn OG-only, Twitter 7-day cache)
-6. ✅ **metadataBase** - Added for absolute OG image URLs
+6. ✅ **metadataBase** - Added for absolute OG image URLs (correct domain: vikassingh.vercel.app)
 7. ✅ **NextJS Title Fix** - Removed periods to prevent URL parsing
-8. ✅ **OG Image Meta Tags** - Added type, secureUrl, alt for images
-9. ✅ **Twitter Card Meta** - Added alt, creator, site fields
+8. ✅ **OG Image Meta Tags** - Added type, secureUrl, width, height for images
+9. ✅ **Twitter Card Meta** - Added creator, site, images array
 10. ✅ **Facebook Domain Verification** - Added meta tag for Business Manager
-11. ✅ **Author Bio Size** - Reduced by 65% for both mobile and desktop
+11. ✅ **Author Bio Component** - Reduced by 65%, proper image sizing (170px desktop, 90px mobile)
+
+---
+
+## 🎨 PENDING WORK - THEME SWITCHER (Next Priority)
+
+### Current Status: ~75% Pages Correct in Dark Mode
+- Blog reading mode fully styled
+- Most homepage sections ready
+- Need final color corrections for text and cards
+
+### Theme Switcher Challenges:
+1. **Homepage:** Transparent navbar in hero, red background on scroll only
+2. **Blog List:** Space available right side below navbar (good placement option)
+3. **Implementation:** Add switcher, connect to CSS, persist preference, smooth transitions
+
+---
+
+## 🚀 FUTURE ROADMAP (After Theme Switcher)
+
+### Phase 1: SEO & Performance
+- JSON-LD structured data (Article, Person, BreadcrumbList)
+- WCAG 2.1 AA accessibility compliance
+- Lighthouse 95+ scores target
+- Core Web Vitals optimization
+- Multi-tool testing (PageSpeed, GTmetrix, WebPageTest, Pingdom)
+
+### Phase 2: Content Production
+- Real blog posts (English + Hindi)
+- Image optimization
+- Internal linking strategy
+- Social media integration
 
 ---
 
