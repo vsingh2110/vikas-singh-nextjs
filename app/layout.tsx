@@ -17,6 +17,7 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://vikas-singh-nextjs.vercel.app'),
   title: "Vikas Singh | Frontend Developer & Digital Marketing Expert",
   description: "Portfolio of Vikas Singh - Frontend Developer specializing in React, Next.js, and Digital Marketing. Electrical Engineering graduate with expertise in web development and paid advertising.",
   keywords: ["Frontend Developer", "React", "Next.js", "Digital Marketing", "SEO", "WordPress", "Shopify", "Google Ads", "Facebook Ads"],
