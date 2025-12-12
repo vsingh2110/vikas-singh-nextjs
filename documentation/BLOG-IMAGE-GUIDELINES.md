@@ -5,6 +5,22 @@ The blog system supports 4 distinct image types, each with specific use cases an
 
 ---
 
+## 🚨 CRITICAL BLOG CONTENT RULES
+
+### ❌ NEVER USE PERIODS IN TITLES WITHOUT SPACES
+**Rule:** NO periods between two words in titles/URLs (like "Next.js")  
+**Reason:** Period makes it look like a domain/URL (e.g., "Next.js" looks like "Next.js" domain)  
+**Correct:** "NextJS" or "Next JS" (with space after period)  
+**Wrong:** "Next.js" (social media parsers treat as clickable URL)
+
+**Examples:**
+- ✅ "Getting Started with NextJS 14"
+- ✅ "React. A beginner's guide" (period has space after)
+- ❌ "Getting Started with Next.js 14" (looks like domain)
+- ❌ "Using Node.js for backend" (looks like domain)
+
+---
+
 ## 4 Image Types
 
 ### 1. Single Center Image (Biggest)
