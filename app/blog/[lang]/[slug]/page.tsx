@@ -386,6 +386,19 @@ export default function BlogPostPage({ params }: PageProps) {
       <SocialLinks />
       <Footer />
       <ScrollToTop />
+      
+      {/* Script to set background image for center images */}
+      <script dangerouslySetInnerHTML={{ __html: `
+        document.addEventListener('DOMContentLoaded', function() {
+          const figures = document.querySelectorAll('.prose figure:not(.float-left):not(.float-right):not(.image-pair figure)');
+          figures.forEach(function(figure) {
+            const img = figure.querySelector('img');
+            if (img && img.src) {
+              figure.style.setProperty('--bg-image', 'url(' + img.src + ')');
+            }
+          });
+        });
+      ` }} />
     </>
   )
 }
