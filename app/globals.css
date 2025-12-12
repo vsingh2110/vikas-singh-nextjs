@@ -43,9 +43,9 @@ body {
 /* 1. Single Center Image (Biggest) - Full height with blur background, caption OUTSIDE */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
   position: relative;
-  margin: 2rem 0 4rem 0;
+  margin: 0 0 4.5rem 0;
   padding: 0 2rem;
-  overflow: hidden;
+  overflow: visible;
   height: 65vh;
   display: flex;
   align-items: center;
@@ -64,10 +64,10 @@ body {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-  filter: blur(40px);
-  transform: scale(1.1);
+  filter: blur(15px);
+  transform: scale(1.05);
   z-index: 1;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
@@ -85,7 +85,7 @@ body {
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
   position: absolute;
-  bottom: -3rem;
+  bottom: -3.5rem;
   left: 0;
   right: 0;
   z-index: 20;
