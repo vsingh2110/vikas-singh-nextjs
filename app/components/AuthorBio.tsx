@@ -33,13 +33,13 @@ export default function AuthorBio({ language }: AuthorBioProps) {
       
       <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 items-start">
         {/* Author Image */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 self-stretch flex items-center">
           <Image
             src="/images/vikas-socialist.png"
             alt={text.name}
-            width={60}
-            height={60}
-            className="rounded-full object-cover border-2 border-white shadow-lg lg:w-[70px] lg:h-[70px]"
+            width={90}
+            height={90}
+            className="rounded-full object-cover border-2 border-white shadow-lg lg:w-full lg:h-full lg:max-w-[140px] lg:max-h-[140px]"
           />
         </div>
 
