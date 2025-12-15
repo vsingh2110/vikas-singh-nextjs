@@ -94,7 +94,7 @@ const components = {
     return <h3 id={id} className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl font-heading text-gray-800 mb-3 mt-5" style={{fontWeight: 500}} {...props} />
   },
   p: (props: any) => (
-    <p className="text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base leading-relaxed text-gray-700 mb-5" {...props} />
+    <p className="text-sm sm:text-xs md:text-sm lg:text-sm xl:text-base leading-relaxed text-gray-700 mb-5" {...props} />
   ),
   a: (props: any) => (
     <a className="text-brand-crimson hover:underline font-medium text-[10px] sm:text-xs md:text-sm" target="_blank" rel="noopener noreferrer" {...props} />
@@ -106,10 +106,10 @@ const components = {
     <ol className="list-decimal list-inside space-y-1 mb-5 text-gray-700 ml-4" {...props} />
   ),
   li: (props: any) => (
-    <li className="text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base leading-snug" {...props} />
+    <li className="text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base leading-snug" {...props} />
   ),
   blockquote: (props: any) => (
-    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-4 pr-4 py-2 my-4 italic text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base text-gray-600 rounded-r-lg leading-tight" {...props} />
+    <blockquote className="border-l-4 border-brand-crimson bg-gray-50 pl-4 pr-4 py-2 my-4 italic text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base text-gray-600 rounded-r-lg leading-tight" {...props} />
   ),
   code: (props: any) => (
     <code className="bg-gray-100 text-brand-crimson px-1.5 py-0.5 rounded text-xs sm:text-sm md:text-base font-mono" {...props} />
@@ -124,7 +124,7 @@ const components = {
     <figure className="my-5" {...props} />
   ),
   figcaption: (props: any) => (
-    <figcaption className="text-[9px] sm:text-[10px] md:text-xs text-gray-500 mt-1 text-center italic leading-tight" {...props} />
+    <figcaption className="text-[10px] sm:text-[10px] md:text-xs text-gray-500 mt-1 text-center italic leading-tight" {...props} />
   ),
   strong: (props: any) => (
     <strong className="text-gray-900" style={{fontWeight: 500}} {...props} />
