@@ -399,6 +399,117 @@ export default function BlogPostPage({ params }: PageProps) {
           });
         });
       ` }} />
+
+      {/* JSON-LD Structured Data - Article Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: post.title,
+            description: post.excerpt,
+            image: `https://vikassingh.vercel.app${post.image}`,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
+              '@type': 'Person',
+              name: post.author,
+              url: 'https://vikassingh.vercel.app',
+            },
+            publisher: {
+              '@type': 'Person',
+              name: 'Vikas Singh',
+              url: 'https://vikassingh.vercel.app',
+            },
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': fullUrl,
+            },
+            articleSection: post.category,
+            keywords: post.tags?.join(', '),
+            inLanguage: lang === 'en' ? 'en-US' : 'hi-IN',
+          }),
+        }}
+      />
+
+      {/* JSON-LD Structured Data - BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://vikassingh.vercel.app',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: text.blog,
+                item: `https://vikassingh.vercel.app/blog/${lang}`,
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: post.title,
+                item: fullUrl,
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* JSON-LD Structured Data - WebPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': fullUrl,
+            url: fullUrl,
+            name: post.title,
+            description: post.excerpt,
+            inLanguage: lang === 'en' ? 'en-US' : 'hi-IN',
+            isPartOf: {
+              '@type': 'WebSite',
+              name: 'Vikas Singh Portfolio',
+              url: 'https://vikassingh.vercel.app',
+            },
+            breadcrumb: {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: 'https://vikassingh.vercel.app',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: text.blog,
+                  item: `https://vikassingh.vercel.app/blog/${lang}`,
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: post.title,
+                },
+              ],
+            },
+            primaryImageOfPage: {
+              '@type': 'ImageObject',
+              url: `https://vikassingh.vercel.app${post.image}`,
+            },
+          }),
+        }}
+      />
     </>
   )
 }
