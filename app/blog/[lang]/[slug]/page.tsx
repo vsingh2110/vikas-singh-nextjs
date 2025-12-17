@@ -66,6 +66,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           width: 1424,
           height: 752,
           alt: post.title,
+          type: 'image/png',
         },
       ],
     },
@@ -206,22 +207,6 @@ export default function BlogPostPage({ params }: PageProps) {
 
   return (
     <>
-      {/* Explicit meta tags for WhatsApp - placed before any rendering */}
-      <head>
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
-        <meta property="og:image" content={`https://vikassingh.vercel.app${post.image}`} />
-        <meta property="og:image:secure_url" content={`https://vikassingh.vercel.app${post.image}`} />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1424" />
-        <meta property="og:image:height" content="752" />
-        <meta property="og:image:alt" content={post.title} />
-        <meta property="og:url" content={fullUrl} />
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={`https://vikassingh.vercel.app${post.image}`} />
-      </head>
-      
       <ReadingProgress />
       <Navbar />
       
