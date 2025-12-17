@@ -61,11 +61,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       images: [
         {
-          url: post.image,
-          secureUrl: post.image,
-          width: 1200,
-          height: 630,
-          type: 'image/jpeg',
+          url: `https://vikassingh.vercel.app${post.image}`,
+          secureUrl: `https://vikassingh.vercel.app${post.image}`,
+          width: 1424,
+          height: 752,
+          alt: post.title,
         },
       ],
     },
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       creator: '@vs_vimukt',
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      images: [`https://vikassingh.vercel.app${post.image}`],
     },
   }
 }
@@ -206,6 +206,22 @@ export default function BlogPostPage({ params }: PageProps) {
 
   return (
     <>
+      {/* Explicit meta tags for WhatsApp - placed before any rendering */}
+      <head>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:image" content={`https://vikassingh.vercel.app${post.image}`} />
+        <meta property="og:image:secure_url" content={`https://vikassingh.vercel.app${post.image}`} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1424" />
+        <meta property="og:image:height" content="752" />
+        <meta property="og:image:alt" content={post.title} />
+        <meta property="og:url" content={fullUrl} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`https://vikassingh.vercel.app${post.image}`} />
+      </head>
+      
       <ReadingProgress />
       <Navbar />
       
@@ -266,8 +282,8 @@ export default function BlogPostPage({ params }: PageProps) {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           
-          {/* Category Badge - Responsive */}
-          <div className="absolute top-4 left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full shadow-lg">
+          {/* Category Badge - Responsive - Fixed z-index */}
+          <div className="absolute top-4 left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full shadow-lg z-20">
             {post.category}
           </div>
         </div>
