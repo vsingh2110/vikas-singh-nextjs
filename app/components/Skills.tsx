@@ -9,12 +9,12 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-16 md:py-20 lg:py-24 bg-gray-100 dark:bg-gray-900">
+    <section id="skills" className="py-16 md:py-20 lg:py-24 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-7xl lg:max-w-[1280px] xl:max-w-[1480px] 2xl:max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 2xl:px-20">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 md:mb-16 relative pb-5 dark:text-white">
           My Technical Skills
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-44 lg:w-56 xl:w-64 2xl:w-72 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-brand-crimson bg-gray-100 dark:bg-gray-900 px-2">
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-xl text-brand-crimson bg-gray-100 dark:bg-gray-800 px-2">
             what i know
           </span>
         </h2>

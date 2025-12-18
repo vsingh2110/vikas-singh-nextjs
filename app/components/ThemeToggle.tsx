@@ -46,7 +46,7 @@ export default function ThemeToggle() {
     <div className="flex items-center gap-1.5 bg-white/20 dark:bg-gray-800/50 rounded-lg p-0.5 backdrop-blur-sm">
       {/* Light Mode Button */}
       <button
-        onClick={() => !isDark && toggleTheme()}
+        onClick={() => isDark && toggleTheme()}
         className={`flex items-center gap-1 px-2 py-1.5 rounded-md transition-all text-xs font-medium ${
           !isDark 
             ? 'bg-white text-brand-crimson shadow-sm' 
@@ -62,7 +62,7 @@ export default function ThemeToggle() {
 
       {/* Dark Mode Button */}
       <button
-        onClick={() => isDark && toggleTheme()}
+        onClick={() => !isDark && toggleTheme()}
         className={`flex items-center gap-1 px-2 py-1.5 rounded-md transition-all text-xs font-medium ${
           isDark 
             ? 'bg-gray-800 text-white shadow-sm' 

@@ -327,7 +327,25 @@ body {
 }
 
 .reading-dark-mode article {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
+  color: #e5e5e5 !important;
+}
+
+/* Protect blog content from navbar dark mode - Always light unless reading mode */
+.blog-content,
+.blog-content figure,
+.blog-content .prose {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Blog post hero image should never change */
+.blog-content figure:not(.float-left):not(.float-right):not(.image-pair figure),
+.blog-content .image-pair figure,
+.blog-content figure.float-left,
+.blog-content figure.float-right {
+  background: transparent !important;
+  filter: none !important;
 }
 
 .reading-dark-mode .prose {
