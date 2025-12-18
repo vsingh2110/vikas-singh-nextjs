@@ -51,7 +51,7 @@ body {
   }
 }
 
-/* Blog Content Images - Protected from dark mode interference */
+/* Blog Content Images */
 
 /* 1. Single Center Image (Biggest) - Full height with blur background, caption OUTSIDE */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
@@ -63,11 +63,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent !important;
-  filter: none !important;
+  background: transparent;
 }
 
-/* Blurred background image - always light regardless of theme */
+/* Blurred background image */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
   content: '';
   position: absolute;
@@ -78,11 +77,10 @@ body {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-  filter: blur(15px) !important;
+  filter: blur(15px);
   transform: scale(1.05);
   z-index: 1;
-  opacity: 0.5 !important;
-  background-color: transparent !important;
+  opacity: 0.5;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
@@ -94,9 +92,8 @@ body {
   max-width: 90%;
   object-fit: contain;
   margin: 0 auto;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  filter: none !important;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
@@ -109,7 +106,7 @@ body {
   color: #6b7280;
   font-size: 0.875rem;
   padding: 0.5rem 1rem;
-  background: transparent !important;
+  background: transparent;
 }
 
 /* 2. Two Parallel Center Images - Simple, no blur, bigger images */
@@ -120,7 +117,7 @@ body {
   gap: 2rem;
   margin: 2rem 0;
   padding: 0;
-  background: transparent !important;
+  background: transparent;
 }
 
 .prose .image-pair::before {
@@ -135,7 +132,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: none !important;
+  background: none;
 }
 
 .prose .image-pair figure::before {
@@ -161,27 +158,25 @@ body {
   padding: 0 0.5rem;
 }
 
-/* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible - Protected from dark mode */
+/* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible */
 .prose figure.float-left,
 .prose figure.float-right {
-  background: none !important;
-  padding: 0 !important;
-  max-width: 400px !important;
-  width: 400px !important;
-  height: auto !important;
-  display: block !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: none;
+  padding: 0;
+  max-width: 400px;
+  width: 400px;
+  height: auto;
+  display: block;
 }
 
 .prose figure.float-left {
   float: left;
-  margin: 0.5rem 1.5rem 1rem 0 !important;
+  margin: 0.5rem 1.5rem 1rem 0;
 }
 
 .prose figure.float-right {
   float: right;
-  margin: 0.5rem 0 1rem 1.5rem !important;
+  margin: 0.5rem 0 1rem 1.5rem;
 }
 
 .prose figure.float-left::before,
@@ -322,130 +317,68 @@ body {
   clear: both;
 }
 
-/* Reading Mode - Dark Theme */
-.reading-dark-mode main {
-  background-color: #1a1a1a !important;
-  transition: background-color 0.3s ease;
-}
-
-.reading-dark-mode article {
-  background-color: #1a1a1a !important;
-  color: #e5e5e5 !important;
-}
-
-/* Protect blog content from navbar dark mode - Always light unless reading mode */
-.blog-content,
-.blog-content figure,
-.blog-content .prose {
-  background-color: transparent !important;
-  color: inherit !important;
-}
-
-/* Blog post hero image should never change */
-.blog-content figure:not(.float-left):not(.float-right):not(.image-pair figure),
-.blog-content .image-pair figure,
-.blog-content figure.float-left,
-.blog-content figure.float-right {
-  background: transparent !important;
-  filter: none !important;
-}
-
-.reading-dark-mode .prose {
-  color: #e5e5e5;
-}
-
-.reading-dark-mode .prose h1,
-.reading-dark-mode .prose h2,
-.reading-dark-mode .prose h3,
-.reading-dark-mode .prose h4,
-.reading-dark-mode .prose h5,
-.reading-dark-mode .prose h6 {
-  color: #ffffff;
-}
-
-.reading-dark-mode .prose p,
-.reading-dark-mode .prose li,
-.reading-dark-mode .prose td,
-.reading-dark-mode .prose th {
+/* Typography - Dark Mode for Prose */
+.dark .prose {
   color: #d4d4d4;
 }
 
-.reading-dark-mode .prose strong {
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
   color: #ffffff;
 }
 
-.reading-dark-mode .prose a {
+.dark .prose p,
+.dark .prose li {
+  color: #d4d4d4;
+}
+
+.dark .prose strong {
+  color: #ffffff;
+}
+
+.dark .prose a {
   color: #60a5fa;
 }
 
-.reading-dark-mode .prose a:hover {
+.dark .prose a:hover {
   color: #93c5fd;
 }
 
-.reading-dark-mode .prose code {
+.dark .prose code {
   background-color: #2d2d2d;
   color: #fbbf24;
 }
 
-.reading-dark-mode .prose pre {
+.dark .prose pre {
   background-color: #2d2d2d;
   border: 1px solid #404040;
 }
 
-.reading-dark-mode .prose blockquote {
+.dark .prose blockquote {
   border-left-color: #dc2626;
   color: #d4d4d4;
+  background-color: #1f2937;
+}
+
+.dark .prose table {
   background-color: #262626;
 }
 
-.reading-dark-mode .prose table {
-  background-color: #262626;
-}
-
-.reading-dark-mode .prose thead {
+.dark .prose thead {
   background-color: #2d2d2d;
   color: #ffffff;
 }
 
-.reading-dark-mode .prose tbody tr {
+.dark .prose tbody tr {
   border-bottom-color: #404040;
 }
 
-.reading-dark-mode .prose img {
+.dark .prose img {
   border-radius: 0.5rem;
-}
-
-/* Dark mode for other blog elements */
-.reading-dark-mode .border-gray-100 {
-  border-color: #404040 !important;
-}
-
-.reading-dark-mode .border-gray-200 {
-  border-color: #404040 !important;
-}
-
-.reading-dark-mode .text-gray-900 {
-  color: #ffffff !important;
-}
-
-.reading-dark-mode .text-gray-700 {
-  color: #d4d4d4 !important;
-}
-
-.reading-dark-mode .text-gray-600 {
-  color: #a3a3a3 !important;
-}
-
-.reading-dark-mode .text-gray-500 {
-  color: #737373 !important;
-}
-
-.reading-dark-mode .bg-gray-50 {
-  background-color: #262626 !important;
-}
-
-.reading-dark-mode .bg-white {
-  background-color: #1a1a1a !important;
 }
 
 /* Homepage Sections Dark Mode Fixes */
