@@ -1,47 +1,180 @@
-# FIXES NEEDED - December 13, 2025
+# FIXES NEEDED - December 18, 2025
 
-**STATUS:** Theme Switcher Pending - 90% Complete  
-**Last Updated:** December 13, 2025 - 2:00 AM  
+**STATUS:** Theme & Mobile Menu Issues - Critical Priority  
+**Last Updated:** December 18, 2025 - 11:50 PM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
 
 ---
 
-## 🎉 TODAY'S PROGRESS (Dec 13, 2025)
+## 🚨 CURRENT CRITICAL ISSUES (Dec 18, 2025)
 
-**Session Time:** 12:10 AM - 2:00 AM  
-**Issues Fixed:** All major blog and sharing issues  
-**Build Status:** ✅ Passing (14.2.35)
+### Issue #1: Home Page Dark Mode Visibility ❌
+**Status:** BROKEN - Cards/text not visible in dark mode  
+**Problem:** 
+- Many text elements are almost black/dark in dark mode (not enough contrast)
+- Box/cards have same color as background (not appearing as cards)
+- Skills section, Journey section, Achievements cards need dark mode classes
 
-### Fixed Today:
-1. ✅ **Security Vulnerability** - npm audit fix (Next.js 14.2.35)
-2. ✅ **Single Center Image (Desktop)** - FULLY FIXED: Full height (100%), blur from actual image, caption visible, no top/bottom margin
-3. ✅ **Single Center Image (Mobile)** - FULLY FIXED: Clean layout, no card effect, caption outside
-4. ✅ **Dark Theme Styling** - Comprehensive CSS for all sections (150+ lines)
-5. ✅ **Link Sharing** - DONE with platform limitations (Facebook/LinkedIn OG-only, Twitter 7-day cache)
-6. ✅ **metadataBase** - Added for absolute OG image URLs (correct domain: vikassingh.vercel.app)
-7. ✅ **NextJS Title Fix** - Removed periods to prevent URL parsing
-8. ✅ **OG Image Meta Tags** - Added type, secureUrl, width, height for images
-9. ✅ **Twitter Card Meta** - Added creator, site, images array
-10. ✅ **Facebook Domain Verification** - Added meta tag for Business Manager
-11. ✅ **Author Bio Component** - Reduced by 65%, proper image sizing (170px desktop, 90px mobile)
+**Solution Required:**
+- Add `dark:bg-gray-800` to all card containers
+- Add `dark:text-white` to headings
+- Add `dark:text-gray-300` to body text
+- Add `dark:border-gray-700` to borders
 
----
-
-## 🎨 PENDING WORK - THEME SWITCHER (Next Priority)
-
-### Current Status: ~75% Pages Correct in Dark Mode
-- Blog reading mode fully styled
-- Most homepage sections ready
-- Need final color corrections for text and cards
-
-### Theme Switcher Challenges:
-1. **Homepage:** Transparent navbar in hero, red background on scroll only
-2. **Blog List:** Space available right side below navbar (good placement option)
-3. **Implementation:** Add switcher, connect to CSS, persist preference, smooth transitions
+**Files to Fix:**
+- `app/components/About.tsx`
+- `app/components/Skills.tsx`
+- `app/components/Journey.tsx`
+- `app/components/Achievements.tsx`
+- `app/components/NonProfitWork.tsx`
+- `app/components/SocialActivities.tsx`
+- `app/components/Services.tsx`
 
 ---
 
-## 🚀 FUTURE ROADMAP (After Theme Switcher)
+### Issue #2: Theme Switch Button Missing ⏳
+**Status:** NOT IMPLEMENTED  
+**Problem:** No way for users to toggle between light/dark themes
+
+**Solution Required:**
+- Create ThemeToggle component with sun/moon icons
+- Add to Navbar component (visible on all pages)
+- Persist preference in localStorage
+- Smooth transition animations
+
+**Implementation Steps:**
+1. Create `app/components/ThemeToggle.tsx`
+2. Add to Navbar (top-right corner, before hamburger menu)
+3. Connect to Tailwind's dark mode (class strategy)
+4. Add smooth transitions in globals.css
+
+---
+
+### Issue #3: Mobile Menu - Dark Theme Issues ❌
+**Status:** BROKEN in dark mode  
+**Problem:** 
+- Menu dropdown has black text on dark background (not visible)
+- Menu links not readable
+- No proper contrast
+
+**Solution Required:**
+- Add `dark:bg-gray-800` to menu container
+- Add `dark:text-white` to menu items
+- Add `dark:border-gray-700` to menu borders
+
+**File to Fix:**
+- `app/components/Navbar.tsx`
+
+---
+
+### Issue #4: Mobile Menu Close Button Visibility ⚠️
+**Status:** POOR UX - Close icon camouflages with content  
+**Problem:** 
+- X (close) icon not clearly visible
+- No background/button styling
+- Users don't notice it
+
+**Solution Required:**
+- Add button background with `bg-red-600 hover:bg-red-700`
+- Add padding and rounded corners
+- Make it look like a clear, clickable button
+- Position: top-right corner with proper spacing
+
+**File to Fix:**
+- `app/components/Navbar.tsx`
+
+---
+
+### Issue #5: Mobile Menu - Click Outside to Close ⏳
+**Status:** NOT IMPLEMENTED  
+**Problem:** 
+- Menu only closes via X button or menu item click
+- Users expect to close by clicking outside menu
+- Poor UX
+
+**Solution Required:**
+- Add useEffect with document click listener
+- Detect clicks outside menu container
+- Close menu when clicking backdrop/outside area
+- Common mobile menu pattern
+
+**File to Fix:**
+- `app/components/Navbar.tsx`
+
+---
+
+## 📋 IMPLEMENTATION PLAN - PRIORITIZED CHUNKS
+
+### Chunk 1: Mobile Menu Fixes (Highest Priority) 🔴
+**Time:** ~30 minutes  
+**Tasks:**
+1. Fix mobile menu dark mode visibility
+2. Make close button prominent with bg-red-600 button styling
+3. Add click-outside-to-close functionality
+4. Test on mobile and desktop
+
+**Files:**
+- `app/components/Navbar.tsx`
+
+---
+
+### Chunk 2: Home Page Dark Mode (High Priority) 🟠
+**Time:** ~45 minutes  
+**Tasks:**
+1. Add dark mode classes to About component
+2. Add dark mode classes to Skills component  
+3. Add dark mode classes to Journey component
+4. Add dark mode classes to Achievements cards
+5. Add dark mode classes to NonProfitWork component
+6. Add dark mode classes to SocialActivities component
+7. Add dark mode classes to Services component
+8. Test all sections in dark mode
+
+**Files:**
+- Multiple component files listed above
+
+---
+
+### Chunk 3: Theme Toggle Button (Medium Priority) 🟡
+**Time:** ~40 minutes  
+**Tasks:**
+1. Create ThemeToggle component
+2. Add sun/moon SVG icons
+3. Implement toggle logic with localStorage
+4. Add to Navbar (all pages)
+5. Add smooth transitions
+6. Test persistence across page reloads
+
+**Files:**
+- `app/components/ThemeToggle.tsx` (new)
+- `app/components/Navbar.tsx` (updated)
+- `app/globals.css` (transitions)
+
+---
+
+## 🎉 RECENTLY COMPLETED (Dec 18, 2025)
+
+### ✅ Blog List Page Theme Fixes
+- Added dark mode support to blog list page
+- Fixed blog title padding (no more hidden text under navbar)
+- Blog preview images now show full with blur background
+- Mobile category badge positioned higher (no overlap)
+
+### ✅ Vercel Analytics
+- Installed @vercel/analytics package
+- Integrated Analytics component in layout
+- Page view tracking active
+
+### ✅ Dhurandhar Blog Images
+- Added 12+ images throughout the article
+- Fixed image paths and captions
+- All images displaying correctly
+
+---
+
+## 🎨 PREVIOUSLY PENDING - THEME SWITCHER
+
+### Current Status: Blog Pages Complete, Home Page Needs Work
 
 ### Phase 1: SEO & Performance
 - JSON-LD structured data (Article, Person, BreadcrumbList)

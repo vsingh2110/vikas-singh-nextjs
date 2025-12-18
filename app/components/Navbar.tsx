@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -9,6 +9,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const isBlogPage = pathname?.startsWith('/blog')
+  const mobileMenuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,23 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isMobileMenuOpen])
 
   const menuItems = [
     { name: 'Home', href: '/#home' },
@@ -80,19 +98,43 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <ul className="lg:hidden mt-4 bg-white rounded-lg shadow-lg p-4 space-y-2">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  className="block text-gray-800 text-lg font-medium py-2 hover:text-brand-crimson transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <>
+            {/* Backdrop */}
+            <div 
+              className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            
+            {/* Menu Container */}
+            <div 
+              ref={mobileMenuRef}
+              className="lg:hidden fixed top-0 right-0 h-full w-[280px] bg-white dark:bg-gray-800 shadow-2xl z-50 transform transition-transform duration-300"
+            >
+              {/* Close Button - Styled as Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-4 right-4 bg-brand-crimson hover:bg-red-700 text-white p-2 rounded-lg shadow-lg transition-colors duration-200"
+                aria-label="Close menu"
+              >
+                <i className="fas fa-times text-xl"></i>
+              </button>
+
+              {/* Menu Items */}
+              <ul className="mt-16 px-4 space-y-1">
+                {menuItems.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="block text-gray-800 dark:text-gray-200 text-lg font-medium py-3 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-brand-crimson transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </>
         )}
       </div>
     </nav>
