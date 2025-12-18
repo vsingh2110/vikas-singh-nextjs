@@ -40,6 +40,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
+  // Detect image type and dimensions from the image path
+  const imageExtension = post.image.split('.').pop()?.toLowerCase()
+  const imageType = imageExtension === 'png' ? 'image/png' : 
+                    imageExtension === 'jpg' || imageExtension === 'jpeg' ? 'image/jpeg' :
+                    imageExtension === 'webp' ? 'image/webp' : 'image/jpeg'
+  
+  // Use appropriate dimensions based on common OG image standards
+  // WhatsApp prefers 1.91:1 ratio (1200x630 is standard)
+  const ogImageWidth = 1200
+  const ogImageHeight = 630
+
   return {
     title: `${post.title} | Vikas Singh`,
     description: post.excerpt,
@@ -53,7 +64,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `/blog/${lang}/${slug}`,
+      url: `https://vikassingh.vercel.app/blog/${lang}/${slug}`,
       siteName: 'Vikas Singh',
       locale: lang === 'en' ? 'en_US' : 'hi_IN',
       type: 'article',
@@ -63,10 +74,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         {
           url: `https://vikassingh.vercel.app${post.image}`,
           secureUrl: `https://vikassingh.vercel.app${post.image}`,
-          width: 1424,
-          height: 752,
+          width: ogImageWidth,
+          height: ogImageHeight,
           alt: post.title,
-          type: 'image/png',
+          type: imageType,
         },
       ],
     },
