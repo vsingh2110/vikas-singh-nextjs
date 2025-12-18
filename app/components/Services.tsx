@@ -18,12 +18,12 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="py-16 md:py-20 lg:py-24 bg-gray-100 dark:bg-gray-800">
+    <section id="services" className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-900">
       <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5 dark:text-white">
           My services
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-40 sm:w-48 md:w-56 lg:w-64 xl:w-72 2xl:w-80 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-gray-100 dark:bg-gray-800 px-2">
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] bg-white dark:bg-gray-900 px-2">
             what i provide
           </span>
         </h2>

@@ -26,8 +26,8 @@ export default function AuthorBio({ language }: AuthorBioProps) {
   const text = content[language]
 
   return (
-    <div className="bg-gray-50 rounded-xl p-3 md:p-4 lg:p-5 border border-gray-200 my-8">
-      <h3 className="text-sm lg:text-base font-bold mb-3 text-gray-900 font-heading">
+    <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-3 md:p-4 lg:p-5 border border-gray-200 dark:border-gray-700 my-8">
+      <h3 className="text-sm lg:text-base font-bold mb-3 text-gray-900 dark:text-white font-heading">
         {text.title}
       </h3>
       
@@ -45,13 +45,13 @@ export default function AuthorBio({ language }: AuthorBioProps) {
 
         {/* Author Info */}
         <div className="flex-1">
-          <h4 className="text-base lg:text-lg font-bold text-gray-900 mb-1 font-heading">
+          <h4 className="text-base lg:text-lg font-bold text-gray-900 dark:text-white mb-1 font-heading">
             {text.name}
           </h4>
           <p className="text-brand-crimson font-medium mb-2 text-xs lg:text-sm">
             {text.role}
           </p>
-          <p className="text-gray-600 leading-relaxed mb-3 text-xs lg:text-sm">
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-3 text-xs lg:text-sm">
             {text.bio}
           </p>
           <Link

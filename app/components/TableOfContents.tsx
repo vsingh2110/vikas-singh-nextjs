@@ -18,12 +18,12 @@ export default function TableOfContents({ headings, language }: TableOfContentsP
   if (headings.length === 0) return null
 
   return (
-    <div className="mb-8 border border-gray-200 rounded-lg overflow-hidden">
+    <div className="mb-8 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 transition-colors"
+        className="w-full flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
       >
-        <span className="font-semibold text-gray-900 text-sm sm:text-base">
+        <span className="font-semibold text-gray-900 dark:text-white text-sm sm:text-base">
           {text[language]}
         </span>
         <svg
@@ -37,7 +37,7 @@ export default function TableOfContents({ headings, language }: TableOfContentsP
       </button>
       
       {isOpen && (
-        <nav className="p-4 bg-white">
+        <nav className="p-4 bg-white dark:bg-gray-900">
           <ul className="space-y-2">
             {headings.map((heading) => (
               <li
@@ -46,7 +46,7 @@ export default function TableOfContents({ headings, language }: TableOfContentsP
               >
                 <a
                   href={`#${heading.id}`}
-                  className="text-sm text-gray-600 hover:text-brand-crimson transition-colors block py-1"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-brand-crimson transition-colors block py-1"
                   onClick={() => setIsOpen(false)}
                 >
                   {heading.text}
