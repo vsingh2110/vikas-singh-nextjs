@@ -51,7 +51,7 @@ body {
   }
 }
 
-/* Blog Content Images */
+/* Blog Content Images - Protected from dark mode interference */
 
 /* 1. Single Center Image (Biggest) - Full height with blur background, caption OUTSIDE */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
@@ -63,10 +63,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: transparent !important;
 }
 
-/* Blurred background image */
+/* Blurred background image - always light regardless of theme */
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
   content: '';
   position: absolute;
@@ -80,7 +80,8 @@ body {
   filter: blur(15px);
   transform: scale(1.05);
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.5 !important;
+  background-color: transparent !important;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
@@ -117,7 +118,7 @@ body {
   gap: 2rem;
   margin: 2rem 0;
   padding: 0;
-  background: transparent;
+  background: transparent !important;
 }
 
 .prose .image-pair::before {
@@ -132,7 +133,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: none;
+  background: none !important;
 }
 
 .prose .image-pair figure::before {
@@ -158,7 +159,7 @@ body {
   padding: 0 0.5rem;
 }
 
-/* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible */
+/* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible - Protected from dark mode */
 .prose figure.float-left,
 .prose figure.float-right {
   background: none !important;
@@ -167,6 +168,8 @@ body {
   width: 400px !important;
   height: auto !important;
   display: block !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .prose figure.float-left {

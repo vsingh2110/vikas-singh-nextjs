@@ -58,7 +58,7 @@ export default function Navbar() {
           : 'bg-transparent py-8'
       }`}
     >
-      <div className="max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 flex items-center justify-between">
+      <div className="max-w-[1920px] mx-auto px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 flex items-center justify-between">
         {/* Logo */}
         <div className="logo">
             <Link
@@ -71,8 +71,8 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-4">
-            <ul className="flex space-x-2 xl:space-x-4 2xl:space-x-6">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3">
+            <ul className="flex space-x-1 xl:space-x-2 2xl:space-x-3">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <Link
