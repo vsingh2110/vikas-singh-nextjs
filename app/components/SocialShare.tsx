@@ -33,8 +33,8 @@ export default function SocialShare({ title, url, language }: SocialShareProps) 
   }
 
   return (
-    <div className="mt-8 mb-12 py-6 border-t border-b border-gray-200">
-      <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-4">
+    <div className="mt-8 mb-12 py-6 border-t border-b border-gray-200 dark:border-gray-700">
+      <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-4">
         {text[language]}
       </h3>
       
@@ -68,7 +68,7 @@ export default function SocialShare({ title, url, language }: SocialShareProps) 
         {/* Copy Link */}
         <button
           onClick={handleCopyLink}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors text-sm"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg transition-colors text-sm"
           title="Copy Link"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

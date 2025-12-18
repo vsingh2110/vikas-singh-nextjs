@@ -51,12 +51,12 @@ export default function Journey() {
   ]
 
   return (
-    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-800">
+    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-900">
       <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5 dark:text-white">
           My Journey
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 lg:w-56 xl:w-64 2xl:w-72 h-0.5 bg-[#111] dark:bg-gray-300"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2 bg-white dark:bg-gray-800">
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2 bg-white dark:bg-gray-900">
             what I did
           </span>
         </h2>

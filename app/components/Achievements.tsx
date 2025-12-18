@@ -83,12 +83,12 @@ export default function Achievements() {
   ];
 
   return (
-    <section id="achievements" className="bg-gray-100 dark:bg-gray-900 py-20">
+    <section id="achievements" className="bg-gray-100 dark:bg-gray-800 py-20">
       <div className="max-w-[1300px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6 md:px-10 xl:px-12 2xl:px-16">
         <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5 dark:text-white">
           Major Achievements
           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-64 md:w-96 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-gray-100 dark:bg-gray-900 px-2 whitespace-nowrap">
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-gray-100 dark:bg-gray-800 px-2 whitespace-nowrap">
             Milestones & Recognition
           </span>
         </h2>
