@@ -23,12 +23,12 @@ export default function NonProfitWork() {
   ];
 
   return (
-    <section id="nonprofit" className="bg-white py-20">
+    <section id="nonprofit" className="bg-white dark:bg-gray-800 py-20">
       <div className="max-w-[1300px] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-6 md:px-10 xl:px-12 2xl:px-16">
-        <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
+        <h2 className="text-center text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5 dark:text-white">
           Non-Profit Work
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-72 md:w-96 h-0.5 bg-gray-800"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-white px-2 whitespace-nowrap">
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-72 md:w-96 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-sm sm:text-base md:text-xl text-[#dc143c] bg-white dark:bg-gray-800 px-2 whitespace-nowrap">
             Research & Community Projects
           </span>
         </h2>
@@ -37,7 +37,7 @@ export default function NonProfitWork() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              className="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-600"
             >
               <div className="md:flex">
                 <div className={`md:w-2/5 ${project.color} p-8 xl:p-10 2xl:p-12 text-white flex flex-col justify-center items-center`}>
@@ -63,7 +63,7 @@ export default function NonProfitWork() {
                     </span>
                   </div>
                   
-                  <p className="text-gray-700 leading-relaxed mb-6 xl:text-lg 2xl:text-xl">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 xl:text-lg 2xl:text-xl">
                     {project.description}
                   </p>
 

@@ -52,12 +52,12 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-20 lg:py-24 bg-[#F3F4F6]">
+    <section id="contact" className="py-16 md:py-20 lg:py-24 bg-[#F3F4F6] dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 md:mb-16 relative pb-5">
+        <h2 className="text-center text-4xl md:text-5xl font-medium font-heading mb-12 md:mb-16 relative pb-5 dark:text-white">
           Contact me
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-0.5 bg-gray-800"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-brand-crimson bg-[#F3F4F6] px-2">
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 md:w-64 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-brand-crimson bg-[#F3F4F6] dark:bg-gray-900 px-2">
             get in touch
           </span>
         </h2>
@@ -65,8 +65,8 @@ export default function Contact() {
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Column - Contact Info */}
           <div className="lg:w-1/2">
-            <h3 className="text-2xl md:text-3xl font-medium mb-4">Get in Touch</h3>
-            <p className="text-gray-700 text-base md:text-lg lg:text-[22px] xl:text-[26px] 2xl:text-[30px] mb-8">
+            <h3 className="text-2xl md:text-3xl font-medium mb-4 dark:text-white">Get in Touch</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-base md:text-lg lg:text-[22px] xl:text-[26px] 2xl:text-[30px] mb-8">
               Please email or call me for any queries or requests related to Drupal, Wordpress, Paid Ads on
               Google/FB/Linkedin, or any Digital Marketing Support.
             </p>
@@ -75,18 +75,18 @@ export default function Contact() {
               <div className="flex items-start gap-4">
                 <i className="fas fa-map-marker-alt text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Address</h4>
-                  <p className="text-gray-600 lg:text-lg xl:text-xl">Faridabad, Delhi(NCR) Haryana</p>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1 dark:text-white">Address</h4>
+                  <p className="text-gray-600 dark:text-gray-400 lg:text-lg xl:text-xl">Faridabad, Delhi(NCR) Haryana</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <i className="fa fa-phone text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Mobile</h4>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1 dark:text-white">Mobile</h4>
                   <a
                     href="tel:+91-9716186925"
-                    className="text-gray-600 hover:text-brand-crimson transition-colors lg:text-lg xl:text-xl"
+                    className="text-gray-600 dark:text-gray-400 hover:text-brand-crimson transition-colors lg:text-lg xl:text-xl"
                   >
                     +91-9716186925
                   </a>
@@ -96,10 +96,10 @@ export default function Contact() {
               <div className="flex items-start gap-4">
                 <i className="fas fa-envelope text-brand-crimson text-2xl lg:text-3xl xl:text-4xl mt-1"></i>
                 <div>
-                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1">Send Email</h4>
+                  <h4 className="text-lg lg:text-xl xl:text-2xl font-medium mb-1 dark:text-white">Send Email</h4>
                   <a
                     href="mailto:vsingh2110@gmail.com"
-                    className="text-gray-600 hover:text-brand-crimson transition-colors break-all lg:text-lg xl:text-xl"
+                    className="text-gray-600 dark:text-gray-400 hover:text-brand-crimson transition-colors break-all lg:text-lg xl:text-xl"
                   >
                     vsingh2110@gmail.com
                   </a>
@@ -110,7 +110,7 @@ export default function Contact() {
 
           {/* Right Column - Contact Form */}
           <div className="lg:w-1/2">
-            <h3 className="text-2xl md:text-3xl font-medium mb-6">Message me</h3>
+            <h3 className="text-2xl md:text-3xl font-medium mb-6 dark:text-white">Message me</h3>
             
             {formMessage && (
               <div className={`mb-4 p-4 rounded-md ${
@@ -142,7 +142,7 @@ export default function Contact() {
                   placeholder="Name *"
                   required
                   disabled={formStatus === 'submitting'}
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed bg-white dark:bg-gray-800 dark:text-white"
                 />
                 <input
                   type="email"
@@ -150,7 +150,7 @@ export default function Contact() {
                   placeholder="Email *"
                   required
                   disabled={formStatus === 'submitting'}
-                  className="flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex-1 px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed bg-white dark:bg-gray-800 dark:text-white"
                 />
               </div>
               
@@ -173,7 +173,7 @@ export default function Contact() {
                 name="subject"
                 placeholder="Subject (Optional)"
                 disabled={formStatus === 'submitting'}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent disabled:opacity-50 disabled:cursor-not-allowed bg-white dark:bg-gray-800 dark:text-white"
               />
               <textarea
                 name="message"
@@ -181,7 +181,7 @@ export default function Contact() {
                 rows={10}
                 placeholder="Message (Optional)"
                 disabled={formStatus === 'submitting'}
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent resize-none disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-crimson focus:border-transparent resize-none disabled:opacity-50 disabled:cursor-not-allowed bg-white dark:bg-gray-800 dark:text-white"
               ></textarea>
               <button
                 type="submit"
@@ -203,6 +203,11 @@ export default function Contact() {
                 border-radius: 0.375rem;
                 font-size: 1rem;
                 outline: none;
+              }
+              :global(.dark) .phone-input-wrapper :global(.PhoneInputInput) {
+                background-color: #1f2937;
+                border-color: #4b5563;
+                color: white;
               }
               .phone-input-wrapper :global(.PhoneInputInput:focus) {
                 ring: 2px;

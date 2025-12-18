@@ -51,12 +51,12 @@ export default function Journey() {
   ]
 
   return (
-    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white">
+    <section id="resumes" className="py-16 md:py-20 lg:py-24 bg-white dark:bg-gray-800">
       <div className="max-w-[1300px] lg:max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1800px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 2xl:px-28">
-        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5">
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-medium font-ubuntu mb-12 md:mb-16 relative pb-5 dark:text-white">
           My Journey
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 lg:w-56 xl:w-64 2xl:w-72 h-0.5 bg-[#111]"></span>
-          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2" style={{ backgroundColor: 'white' }}>
+          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 sm:w-44 lg:w-56 xl:w-64 2xl:w-72 h-0.5 bg-[#111] dark:bg-gray-300"></span>
+          <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-base sm:text-lg md:text-xl text-[#dc143c] px-2 bg-white dark:bg-gray-800">
             what I did
           </span>
         </h2>
@@ -71,7 +71,7 @@ export default function Journey() {
               {/* Header */}
               <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12 xl:pl-16">
                 <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium">Education</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium dark:text-white">Education</h3>
               </div>
 
               {/* Timeline Items */}
@@ -103,21 +103,21 @@ export default function Journey() {
               {/* Header */}
               <div className="mb-6 sm:mb-8 relative pl-8 sm:pl-12 xl:pl-16">
                 <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-7 lg:h-7 xl:w-8 xl:h-8 rounded-full bg-[#dc143c]"></div>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium">Experience</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-ubuntu font-medium dark:text-white">Experience</h3>
               </div>
 
               {/* Timeline Items */}
               {experience.map((item, index) => (
                 <div key={index} className="mb-6 sm:mb-8 xl:mb-10 relative pl-8 sm:pl-12 xl:pl-16">
                   <div className="absolute left-[-9px] lg:left-[-13px] top-1 w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 rounded-full bg-[#dc143c]"></div>
-                  <div className="bg-white p-4 sm:p-5 md:p-6 lg:p-6 xl:p-8 2xl:p-10 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 group">
+                  <div className="bg-white dark:bg-gray-700 p-4 sm:p-5 md:p-6 lg:p-6 xl:p-8 2xl:p-10 rounded-md shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-600 group">
                     <h4 
-                      className="text-base sm:text-lg md:text-xl lg:text-[16px] xl:text-[19px] 2xl:text-[22px] font-medium mb-2 group-hover:text-[#dc143c] transition-colors duration-300"
+                      className="text-base sm:text-lg md:text-xl lg:text-[16px] xl:text-[19px] 2xl:text-[22px] font-medium mb-2 dark:text-white group-hover:text-[#dc143c] transition-colors duration-300"
                       dangerouslySetInnerHTML={{ __html: item.title }}
                     />
-                    <span className="text-xs sm:text-sm lg:text-[13px] xl:text-[15px] 2xl:text-[17px] text-gray-600 block mb-2 sm:mb-3">{item.period}</span>
+                    <span className="text-xs sm:text-sm lg:text-[13px] xl:text-[15px] 2xl:text-[17px] text-gray-600 dark:text-gray-400 block mb-2 sm:mb-3">{item.period}</span>
                     <p 
-                      className="text-sm sm:text-base lg:text-[14px] xl:text-[16px] 2xl:text-[18px] text-gray-700"
+                      className="text-sm sm:text-base lg:text-[14px] xl:text-[16px] 2xl:text-[18px] text-gray-700 dark:text-gray-300"
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
                   </div>
