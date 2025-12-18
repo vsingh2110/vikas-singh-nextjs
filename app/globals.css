@@ -77,10 +77,10 @@ body {
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
-  filter: blur(15px);
+  filter: blur(10px);
   transform: scale(1.05);
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
