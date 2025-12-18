@@ -92,17 +92,30 @@ export default function BlogGrid({ posts: allPosts, lang }: BlogGridProps) {
             href={`/blog/${lang}/${post.slug}`}
             className="group"
           >
-            <article className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-gray-100">
-              {/* Square Image */}
-              <div className="relative w-full aspect-square overflow-hidden">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                />
-                <div className="absolute top-2 left-2 bg-brand-crimson text-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full shadow-lg">
+            <article className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-gray-100 dark:border-gray-700">
+              {/* Image with blur background like hero banner */}
+              <div className="relative w-full aspect-square overflow-hidden bg-gray-100 dark:bg-gray-900">
+                {/* Background blur image */}
+                <div className="absolute inset-0 z-0">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover blur-sm scale-150 opacity-40"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  />
+                </div>
+                {/* Main image */}
+                <div className="relative z-10 w-full h-full flex items-center justify-center p-4">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
+                  />
+                </div>
+                <div className="absolute top-2 left-2 bg-brand-crimson text-white text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full shadow-lg z-20">
                   {post.category}
                 </div>
               </div>
@@ -110,7 +123,7 @@ export default function BlogGrid({ posts: allPosts, lang }: BlogGridProps) {
               {/* Content */}
               <div className="p-3 sm:p-4 flex-1 flex flex-col">
                 {/* Date and Read Time */}
-                <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-gray-500 mb-2">
+                <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-2">
                   <time dateTime={post.date} className="flex items-center gap-1">
                     <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -127,12 +140,12 @@ export default function BlogGrid({ posts: allPosts, lang }: BlogGridProps) {
                 </div>
 
                 {/* Title - Show full title */}
-                <h2 className="text-sm sm:text-base md:text-lg font-bold mb-2 group-hover:text-brand-crimson transition-colors font-heading line-clamp-2">
+                <h2 className="text-sm sm:text-base md:text-lg font-bold mb-2 group-hover:text-brand-crimson transition-colors font-heading line-clamp-2 text-gray-900 dark:text-white">
                   {post.title}
                 </h2>
 
                 {/* Author */}
-                <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600 mb-2">
+                <div className="flex items-center gap-2 text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-2">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
@@ -140,7 +153,7 @@ export default function BlogGrid({ posts: allPosts, lang }: BlogGridProps) {
                 </div>
 
                 {/* Excerpt */}
-                <p className="text-xs sm:text-sm text-gray-600 mb-3 flex-1 line-clamp-2">
+                <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 flex-1 line-clamp-2">
                   {post.excerpt}
                 </p>
 

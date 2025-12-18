@@ -278,8 +278,8 @@ export default function BlogPostPage({ params }: PageProps) {
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           
-          {/* Category Badge - Responsive - Fixed z-index */}
-          <div className="absolute top-4 left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full shadow-lg z-20">
+          {/* Category Badge - Responsive - Fixed z-index - Higher on mobile */}
+          <div className="absolute top-2 sm:top-4 left-2 sm:left-4 bg-brand-crimson text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium px-2 sm:px-3 md:px-5 py-1 sm:py-1.5 md:py-2 rounded-full shadow-lg z-20">
             {post.category}
           </div>
         </div>

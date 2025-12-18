@@ -87,15 +87,15 @@ export default function BlogListingPage({ params }: PageProps) {
     <>
       <Navbar />
       
-      <main className="min-h-screen bg-white pt-20 sm:pt-24 pb-12 sm:pb-16">
+      <main className="min-h-screen bg-white dark:bg-gray-900 pt-20 sm:pt-28 pb-12 sm:pb-16">
         <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header with Language Switcher */}
           <div className="flex flex-col items-center mb-8 sm:mb-12">
             <div className="text-center mb-4 sm:mb-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold font-heading mb-2 sm:mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold font-heading mb-2 sm:mb-4 text-gray-900 dark:text-white">
                 {text.title}
               </h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl lg:max-w-3xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-2xl lg:max-w-3xl mx-auto px-4">
                 {text.subtitle}
               </p>
             </div>
@@ -112,10 +112,10 @@ export default function BlogListingPage({ params }: PageProps) {
           {/* No Posts Message */}
           {posts.length === 0 && (
             <div className="text-center py-16">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 {text.noPostsTitle}
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {text.noPostsText} {lang === 'en' ? 'Hindi' : 'English'}.
               </p>
               <Link
