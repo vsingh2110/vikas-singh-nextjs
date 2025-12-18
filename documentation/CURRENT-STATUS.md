@@ -1,9 +1,9 @@
-# Current Project Status - Updated December 18, 2025
+# Current Project Status - Updated December 19, 2025
 
 **Project:** Vikas Singh Portfolio & Blog Website  
 **Tech Stack:** Next.js 14.2.35, TypeScript, Tailwind CSS, MDX  
-**Last Updated:** December 18, 2025, 11:55 PM IST (Updated after theme fixes)  
-**Status:** ✅ ALL SYSTEMS OPERATIONAL - Theme system fully working
+**Last Updated:** December 19, 2025, 12:45 AM IST (Updated after blog system enhancements)  
+**Status:** ✅ ALL SYSTEMS OPERATIONAL - Blog system optimized
 
 ---
 
@@ -53,7 +53,16 @@ Modern portfolio website with bilingual blog system featuring:
 - ✅ Next.js 14 से शुरू कैसे करें (HI)
 - ✅ Dhurandhar Film Controversy Analysis (HI) - 15,000+ words
 
-### Recent Fixes (Dec 18, 2025)
+### Recent Fixes (Dec 19, 2025)
+**Blog System Enhancements:**
+- ✅ Blog image blur background now works on client-side navigation (useEffect solution)
+- ✅ Blur effect optimized (10px blur, 0.6 opacity for better visibility)
+- ✅ Language toggle fixed - no more 404 errors between EN/HI posts
+- ✅ English Dhurandhar blog completely rewritten with natural writing
+- ✅ All 15+ images added to English version (film critics, Major Mohit Sharma, attacks, currency, characters, dialogue, etc.)
+- ✅ Alternate language metadata added to both EN/HI versions
+
+**Recent Fixes (Dec 18, 2025)
 **Morning/Afternoon:**
 - ✅ Z-index issue with category badge (now visible above hero image)
 - ✅ Image filename spaces removed (better URL encoding)
@@ -79,6 +88,13 @@ Modern portfolio website with bilingual blog system featuring:
   - ✅ Achievements section
   - ✅ NonProfitWork section
   - ✅ SocialActivities section
+
+---
+
+## ⚠️ Known Issues
+
+### High Priority
+- ⚠️ **Footer dark mode** - Footer background needs proper dark mode styling/contrast
   - ✅ Services section
   - ✅ Contact section (including form fields)
   - ✅ Footer section

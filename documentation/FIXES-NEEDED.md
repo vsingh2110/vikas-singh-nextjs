@@ -1,8 +1,89 @@
-# FIXES NEEDED - December 18, 2025
+# FIXES NEEDED - December 19, 2025
 
-**STATUS:** ✅ THEME SYSTEM FIXED - All Major Issues Resolved  
-**Last Updated:** December 18, 2025 - 11:55 PM (Updated after theme fixes)  
+**STATUS:** ⚠️ ONE ISSUE PENDING - Footer dark mode needs attention  
+**Last Updated:** December 19, 2025 - 12:45 AM (Updated after blog system fixes)  
 **Purpose:** Central tracking file for all outstanding bugs and issues
+
+---
+
+---
+
+## 🚨 HIGH PRIORITY: Footer Dark Mode Issue
+
+### Footer Background in Dark Mode ⚠️
+**Status:** PENDING  
+**Priority:** High  
+**Reported:** December 19, 2025
+
+**Issue:**
+Footer component doesn't have proper background styling/contrast in dark mode. Background needs better visibility and contrast for dark theme.
+
+**Location:**
+- `app/components/Footer.tsx`
+
+**Next Steps:**
+1. Inspect current Footer.tsx dark mode classes
+2. Add proper dark:bg-* classes for better contrast
+3. Test with both light and dark themes
+4. Verify text readability on dark background
+
+---
+
+## ✅ COMPLETED: Blog System Enhancements (Dec 19, 2025)
+
+### Blog Blur Background Fixed ✅
+**Status:** COMPLETED - December 19, 2025  
+**Priority:** Was medium, now resolved
+
+**What Was Fixed:**
+1. ✅ **Blur background now appears on navigation** - Created BlurBackgroundScript.tsx with useEffect
+2. ✅ **Works on client-side routing** - No longer requires page reload
+3. ✅ **Blur optimized** - Reduced from 15px to 10px, opacity increased from 0.5 to 0.6
+4. ✅ **Better background visibility** - Users can see more of the background image
+
+**Root Cause:**
+- Script used DOMContentLoaded which doesn't fire on Next.js client-side navigation
+- Solution: React useEffect hook runs on every component mount
+
+**Files Changed:**
+- Created: `app/components/BlurBackgroundScript.tsx` (new component)
+- Modified: `app/blog/[lang]/[slug]/page.tsx` (integrated component)
+- Modified: `app/globals.css` (optimized blur values)
+
+### Language Toggle Fixed ✅
+**Status:** COMPLETED - December 19, 2025  
+**Priority:** Was medium, now resolved
+
+**What Was Fixed:**
+- ✅ Language toggle no longer shows 404 errors
+- ✅ Proper routing between English/Hindi blog posts
+- ✅ Alternate language metadata added to frontmatter
+
+**Files Changed:**
+- `content/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan.mdx` - Added alternateLanguage/alternateSlug
+- `content/blog/hi/dhurandhar-film-controversy-analysis.mdx` - Added alternateLanguage/alternateSlug
+
+### English Dhurandhar Blog Rewritten ✅
+**Status:** COMPLETED - December 19, 2025  
+**Priority:** Was critical, now resolved
+
+**What Was Fixed:**
+- ✅ Complete rewrite from Hindi original (414 lines)
+- ✅ All 15+ images added with proper figure tags and captions
+- ✅ Natural humanized English writing (not machine translated)
+- ✅ Professional quality content
+
+**Images Added:**
+- Film critics and statements (3 images)
+- Major Mohit Sharma memorial (3 images)
+- Director's tweet (1 image)
+- Attack scenes and consequences (4 images)
+- Currency/economic context (2 images)
+- Character and dialogue screenshots (2 images)
+- Rang De Basanti comparison (1 image)
+
+**File Changed:**
+- `content/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan.mdx` (deleted and recreated)
 
 ---
 
