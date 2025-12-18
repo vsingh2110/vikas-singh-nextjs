@@ -1,19 +1,60 @@
 # FIXES NEEDED - December 18, 2025
 
-**STATUS:** Theme & Mobile Menu Issues - Critical Priority  
-**Last Updated:** December 18, 2025 - 11:50 PM  
+**STATUS:** ⚠️ THEME SYSTEM COMPLETELY BROKEN - FIX FIRST  
+**Last Updated:** December 18, 2025 - 11:55 PM  
 **Purpose:** Central tracking file for all outstanding bugs and issues
 
 ---
 
-## 🚨 CURRENT CRITICAL ISSUES (Dec 18, 2025)
+## 🔴 CRITICAL PRIORITY #1: THEME TOGGLE NOT WORKING AT ALL
 
-### Issue #1: Home Page Dark Mode Visibility ❌
-**Status:** BROKEN - Cards/text not visible in dark mode  
+### Theme System Completely Broken ❌
+**Status:** BROKEN - BLOCKS ALL DARK MODE WORK  
+**Priority:** FIX THIS FIRST BEFORE ANYTHING ELSE
+
+**Problems:**
+1. **Theme toggle button doesn't work** - Button visible but clicking does nothing
+2. **Dark mode not activating** - Dark classes exist but theme stays light mode
+3. **Conflict with existing ReadingModeToggle** - Two theme systems competing:
+   - `ThemeToggle.tsx` (new, in Navbar, global) - doesn't work
+   - `ReadingModeToggle.tsx` (existing, in blog posts) - may be working
+4. **No system preference detection** - Site always loads light mode, ignoring OS dark mode
+5. **Theme icon needs different design** - Current icon may conflict with ReadingModeToggle
+
+**Root Causes to Investigate:**
+- Tailwind `darkMode: 'class'` config verification needed
+- localStorage key conflicts between two toggles
+- Dark class being added to html but Tailwind not responding
+- No `window.matchMedia('(prefers-color-scheme: dark)')` check
+- Two separate theme systems not coordinated
+
+**Files Involved:**
+- `tailwind.config.ts` - verify dark mode strategy
+- `app/components/ThemeToggle.tsx` - new global toggle (NOT WORKING)
+- `app/components/ReadingModeToggle.tsx` - existing blog toggle
+- `app/globals.css` - transitions added but theme not switching
+
+**Required Actions:**
+1. ✅ Check tailwind.config.ts for `darkMode: 'class'`
+2. ✅ Test if ReadingModeToggle works or is also broken
+3. ✅ Decide: unify theme systems or keep separate (global vs reading)
+4. ✅ Implement system preference: `window.matchMedia('(prefers-color-scheme: dark)')`
+5. ✅ Fix localStorage to save user preference
+6. ✅ Redesign toggle icon to differentiate from reading mode
+7. ✅ Test theme actually switches before continuing
+
+**Impact:** Dark mode unusable, all dark mode work blocked until this is fixed
+
+---
+
+## 🟠 Issue #2: Home Page Dark Mode Visibility (BLOCKED)
+**Status:** ⏳ IN PROGRESS (About Done, 6 Remaining) - BLOCKED BY THEME TOGGLE  
 **Problem:** 
 - Many text elements are almost black/dark in dark mode (not enough contrast)
 - Box/cards have same color as background (not appearing as cards)
 - Skills section, Journey section, Achievements cards need dark mode classes
+
+**Note:** Cannot properly test or continue until theme toggle works
 
 **Solution Required:**
 - Add `dark:bg-gray-800` to all card containers
@@ -22,12 +63,15 @@
 - Add `dark:border-gray-700` to borders
 
 **Files to Fix:**
-- `app/components/About.tsx`
-- `app/components/Skills.tsx`
-- `app/components/Journey.tsx`
-- `app/components/Achievements.tsx`
-- `app/components/NonProfitWork.tsx`
-- `app/components/SocialActivities.tsx`
+- ✅ `app/components/About.tsx` - DONE
+- ❌ `app/components/Skills.tsx` - NOT STARTED
+- ❌ `app/components/Journey.tsx` - NOT STARTED
+- ❌ `app/components/Achievements.tsx` - NOT STARTED
+- ❌ `app/components/NonProfitWork.tsx` - NOT STARTED
+- ❌ `app/components/SocialActivities.tsx` - NOT STARTED
+- ❌ `app/components/Services.tsx` - NOT STARTED
+- ❌ `app/components/Contact.tsx` - NOT STARTED
+- ❌ `app/components/Footer.tsx` - NOT STARTED
 - `app/components/Services.tsx`
 
 ---

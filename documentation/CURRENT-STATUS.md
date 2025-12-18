@@ -2,8 +2,8 @@
 
 **Project:** Vikas Singh Portfolio & Blog Website  
 **Tech Stack:** Next.js 14.2.35, TypeScript, Tailwind CSS, MDX  
-**Last Updated:** December 18, 2025, 11:30 PM IST  
-**Status:** ✅ Production Ready (with one known WhatsApp mobile cache issue)
+**Last Updated:** December 18, 2025, 11:55 PM IST  
+**Status:** ⚠️ CRITICAL ISSUE - Theme toggle not working, dark mode broken
 
 ---
 
