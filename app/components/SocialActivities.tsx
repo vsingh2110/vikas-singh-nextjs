@@ -57,7 +57,7 @@ export default function SocialActivities() {
           {activities.map((activity, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 xl:p-8 2xl:p-10 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
+              className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-6 xl:p-8 2xl:p-10 hover:shadow-xl transition-all duration-300 border-l-4 border-[#dc143c]"
             >
               {/* Desktop layout: icon on left */}
               <div className="hidden md:flex items-start gap-4">

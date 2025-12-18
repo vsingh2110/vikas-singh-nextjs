@@ -97,7 +97,7 @@ export default function Achievements() {
           {achievements.map((achievement, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group"
+              className="bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group"
             >
               <div className={`bg-gradient-to-r ${achievement.color} p-4 xl:p-5 2xl:p-6 text-white`}>
                 <div className="flex items-center justify-between">
