@@ -187,15 +187,33 @@ Your paragraph text continues here and wraps around the image in desktop view...
 
 ---
 
-## Current Issues
+## 🚨 CRITICAL: WhatsApp OG Image Requirements (Dec 18, 2025)
 
-**Single Center Image Blur Background:**
-- Expected: Subtle blur visible on left/right empty spaces
-- Current: Blur effect not showing prominently despite correct CSS
-- Settings: `blur(4px) scale(1.5) opacity(0.4)`
-- Priority: Low (functional, aesthetic issue only)
+### Issue Found:
+WhatsApp mobile and web have **strict file size limits** for OG preview images:
+- **Desktop App:** Accepts larger files (up to ~2MB)
+- **Mobile App:** Rejects files over **300-500KB**
+- **WhatsApp Web:** Rejects files over **300-500KB**
+
+### Solution:
+✅ **Keep all blog preview images under 300KB**
+✅ **Use JPG format** (better compression than PNG)
+✅ **Optimal dimensions:** 1200x630 (1.91:1 ratio - WhatsApp standard)
+✅ **Use absolute URLs** in metadata (already implemented)
+✅ **Dynamic image type detection** (already implemented)
+
+### Example Issue:
+- Dhurandhar blog original PNG: 1.7MB ❌ (failed on mobile/web)
+- Optimized to JPG: 185KB ✅ (works everywhere)
+
+### Prevention:
+Before adding any blog preview image:
+1. Check file size: `Get-ChildItem | Select-Object Name, @{N='SizeKB';E={[math]::Round($_.Length/1KB,2)}}`
+2. If over 300KB, compress using image optimization tools
+3. Prefer JPG over PNG for preview images
+4. Test on WhatsApp mobile after deployment
 
 ---
 
-**Last Updated:** December 12, 2025 - 11:50 PM  
-**Status:** Production Ready (except minor blur visibility issue)
+**Last Updated:** December 18, 2025 - 11:55 PM  
+**Status:** Production Ready

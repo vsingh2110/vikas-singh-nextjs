@@ -85,6 +85,41 @@ A complete bilingual blog system that supports Hindi and English languages with:
 
 ---
 
+### 🚨 RULE #2: WhatsApp OG Image File Size Limit (Dec 18, 2025)
+
+**CRITICAL:** WhatsApp has strict file size limits for Open Graph preview images
+
+**The Problem:**
+- WhatsApp Desktop: Accepts larger files (up to ~2MB) ✅
+- WhatsApp Mobile: Rejects files over **300-500KB** ❌
+- WhatsApp Web: Rejects files over **300-500KB** ❌
+
+**Real Example:**
+- Dhurandhar blog PNG: 1.7MB → Failed on mobile/web, worked on desktop only
+- Optimized to JPG: 185KB → Works perfectly everywhere ✅
+
+**Requirements:**
+1. **File Size:** Keep preview images under **300KB** (250KB is safer)
+2. **Format:** Prefer **JPG** over PNG (better compression)
+3. **Dimensions:** **1200x630** (1.91:1 ratio - WhatsApp/OG standard)
+4. **Type Detection:** Automatically handled by dynamic detection in code
+
+**How to Check Image Size:**
+```powershell
+Get-ChildItem "path\to\image" | Select-Object Name, @{N='SizeKB';E={[math]::Round($_.Length/1KB,2)}}
+```
+
+**Code Implementation (Already Fixed):**
+- Dynamic image type detection based on file extension (JPG/PNG/WEBP)
+- Standard 1200x630 dimensions for all OG images
+- Absolute URLs for all metadata
+- File: `app/blog/[lang]/[slug]/page.tsx`
+
+**Why New URLs Don't Help:**
+Changing URLs doesn't fix the issue if the image is still too large. WhatsApp will reject the image regardless of URL parameters or slug changes.
+
+---
+
 ### **Key Features**
 - ✅ Bilingual support (English + Hindi)
 - ✅ SEO-friendly URLs
