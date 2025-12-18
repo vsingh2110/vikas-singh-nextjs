@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import ThemeToggle from './ThemeToggle'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -70,31 +71,41 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex space-x-2 xl:space-x-4 2xl:space-x-6">
-            {menuItems.map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  className={`text-white text-sm lg:text-[15px] xl:text-xl 2xl:text-2xl font-medium transition-colors duration-300 ${
-                    isBlogPage || isScrolled
-                      ? 'hover:text-white/90'
-                      : 'hover:text-brand-crimson'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="hidden lg:flex items-center gap-4">
+            <ul className="flex space-x-2 xl:space-x-4 2xl:space-x-6">
+              {menuItems.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className={`text-white text-sm lg:text-[15px] xl:text-xl 2xl:text-2xl font-medium transition-colors duration-300 ${
+                      isBlogPage || isScrolled
+                        ? 'hover:text-white/90'
+                        : 'hover:text-brand-crimson'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* Theme Toggle */}
+            <ThemeToggle />
+          </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-white text-2xl"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle mobile menu"
-          >
-            <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
-          </button>
+          {/* Mobile Controls */}
+          <div className="lg:hidden flex items-center gap-3">
+            {/* Theme Toggle */}
+            <ThemeToggle />
+            
+            {/* Mobile Menu Button */}
+            <button
+              className="text-white text-2xl"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
+            >
+              <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+            </button>
+          </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
