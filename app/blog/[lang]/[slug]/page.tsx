@@ -287,22 +287,22 @@ export default function BlogPostPage({ params }: PageProps) {
         {/* Article Container - Expanded Width */}
         <article className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
           {/* Breadcrumb */}
-          <div className="text-xs sm:text-sm text-gray-500 mb-3 flex items-center gap-2">
+          <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 flex items-center gap-2">
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{text.blog}</Link>
             <span>→</span>
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{lang === 'en' ? 'English' : 'हिंदी'}</Link>
             <span>→</span>
-            <span className="text-gray-700 font-medium line-clamp-1">{post.title}</span>
+            <span className="text-gray-700 dark:text-gray-300 font-medium line-clamp-1">{post.title}</span>
           </div>
 
           {/* Header */}
-          <header className="mb-6 sm:mb-8 border-b border-gray-200 pb-6">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading text-gray-900 mb-4 leading-tight" style={{fontWeight: 700}}>
+          <header className="mb-6 sm:mb-8 border-b border-gray-200 dark:border-gray-700 pb-6">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading text-gray-900 dark:text-white mb-4 leading-tight" style={{fontWeight: 700}}>
               {post.title}
             </h1>
 
             {/* Meta Information with IST */}
-            <div className="flex flex-wrap items-center gap-3 text-gray-600 mb-4 text-xs sm:text-sm md:text-base">
+            <div className="flex flex-wrap items-center gap-3 text-gray-600 dark:text-gray-400 mb-4 text-xs sm:text-sm md:text-base">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -327,7 +327,7 @@ export default function BlogPostPage({ params }: PageProps) {
             </div>
 
             {/* Excerpt */}
-            <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
               {post.excerpt}
             </p>
           </header>
@@ -350,15 +350,15 @@ export default function BlogPostPage({ params }: PageProps) {
 
           {/* Tags */}
           {post.tags && post.tags.length > 0 && (
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <h3 className="text-xs sm:text-sm font-semibold text-gray-700 mb-3 uppercase tracking-wide">
+            <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+              <h3 className="text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 uppercase tracking-wide">
                 {text.tags}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium hover:bg-gray-200 transition-colors"
+                    className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
                   >
                     {tag}
                   </span>

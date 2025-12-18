@@ -14,7 +14,11 @@ export default function ReadingModeToggle({ language }: ReadingModeToggleProps) 
     const savedMode = localStorage.getItem('readingMode')
     if (savedMode === 'dark') {
       setIsDarkMode(true)
-      document.documentElement.classList.add('reading-dark-mode')
+      // Only add to main/article, not html element
+      const main = document.querySelector('main')
+      const article = document.querySelector('article')
+      if (main) main.classList.add('reading-dark-mode')
+      if (article) article.classList.add('reading-dark-mode')
     }
   }, [])
 
@@ -22,11 +26,16 @@ export default function ReadingModeToggle({ language }: ReadingModeToggleProps) 
     const newMode = !isDarkMode
     setIsDarkMode(newMode)
     
+    const main = document.querySelector('main')
+    const article = document.querySelector('article')
+    
     if (newMode) {
-      document.documentElement.classList.add('reading-dark-mode')
+      if (main) main.classList.add('reading-dark-mode')
+      if (article) article.classList.add('reading-dark-mode')
       localStorage.setItem('readingMode', 'dark')
     } else {
-      document.documentElement.classList.remove('reading-dark-mode')
+      if (main) main.classList.remove('reading-dark-mode')
+      if (article) article.classList.remove('reading-dark-mode')
       localStorage.setItem('readingMode', 'light')
     }
   }

@@ -1,22 +1,22 @@
 export default function Journey() {
   const education = [
     {
-      title: 'M.A. In Psychology<br/><span class="text-base font-normal text-gray-600">Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)</span>',
+      title: 'M.A. In Psychology<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)</span>',
       period: '2020 - 2022 (1st Division)',
       description: 'With Focus on Social Psychology, Cyber Psychology and Human Machine Interaction',
     },
     {
-      title: 'M.S. In Computer Science<br/><span class="text-base font-normal text-gray-600">Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)</span>',
+      title: 'M.S. In Computer Science<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Pt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak)</span>',
       period: 'Aug 2023 - Jul 2024 (Dropout after 1st year)',
       description: 'Pursued advanced studies in Computer Science with focus on Machine Learning and Data Structures',
     },
     {
-      title: 'B.Tech In Electrical Engineering<br/><span class="text-base font-normal text-gray-600">J.C. Bose YMCA University of Science & Technology (Main Campus), Faridabad</span>',
+      title: 'B.Tech In Electrical Engineering<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">J.C. Bose YMCA University of Science & Technology (Main Campus), Faridabad</span>',
       period: '2016 - 2020 (1st Division)',
       description: 'Active in Literary, Debating and Quizzing activities in Inter-College, Inter-University and State Level Competitions. <strong>Won multiple debate and quiz competitions</strong> representing the university.',
     },
     {
-      title: 'Secondary & Senior Secondary School<br/><span class="text-base font-normal text-gray-600">Faridabad Model School</span>',
+      title: 'Secondary & Senior Secondary School<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Faridabad Model School</span>',
       period: '2015',
       description: '<strong>All India 0.1% Topper</strong> (CBSE Class 10th, 2013) with perfect <strong>10.0/10.0 CGPA</strong>. <strong>Faridabad District Topper in English</strong> (CBSE Class 12th, 2015) with 97% marks. <strong>Won multiple quiz competitions</strong> at inter-school and school level throughout academic years.',
     },
@@ -24,27 +24,27 @@ export default function Journey() {
 
   const experience = [
     {
-      title: 'Front End Developer & Digital Marketing<br/><span class="text-base font-normal text-gray-600">Phantom Healthcare</span>',
+      title: 'Front End Developer & Digital Marketing<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Phantom Healthcare</span>',
       period: 'March 2021 - Present',
       description: 'Handling websites development, online and digital marketing activities with social media and website promotion with paid sponsored as well as organic work',
     },
     {
-      title: 'WordPress & Shopify Developer<br/><span class="text-base font-normal text-gray-600">Freelance Projects (Zara International & The Earth Store)</span>',
+      title: 'WordPress & Shopify Developer<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Freelance Projects (Zara International & The Earth Store)</span>',
       period: 'November 2020 - March 2021',
       description: 'WordPress development for B2B/B2C platforms, Shopify e-commerce management, SEO (On-page, Off-page, Technical), SMO, content writing, Google Analytics, market research & customer service',
     },
     {
-      title: 'Digital Marketing & Business Development<br/><span class="text-base font-normal text-gray-600">RuralShores Skills Academy</span>',
+      title: 'Digital Marketing & Business Development<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">RuralShores Skills Academy</span>',
       period: 'July 2020 - October 2020',
       description: 'Course development for online learning platform, content development, marketing strategy, social media marketing, and management of Pan India training centres',
     },
     {
-      title: 'WordPress Designer & Digital Marketing<br/><span class="text-base font-normal text-gray-600">Digitalforce Online (Internship)</span>',
+      title: 'WordPress Designer & Digital Marketing<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Digitalforce Online (Internship)</span>',
       period: 'June 2019 - December 2019',
       description: 'Client projects: Website content development, On-page/Off-page SEO, social media management, online reputation management for multiple brands',
     },
     {
-      title: 'Various Freelance Projects<br/><span class="text-base font-normal text-gray-600">Multiple Clients</span>',
+      title: 'Various Freelance Projects<br/><span class="text-base font-normal text-gray-600 dark:text-gray-400">Multiple Clients</span>',
       period: 'March 2017 - December 2020',
       description: 'WordPress websites and digital marketing projects for multiple clients across various industries',
     },
