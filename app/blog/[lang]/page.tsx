@@ -142,10 +142,6 @@ export default function BlogListingPage({ params }: PageProps) {
         ]}
       />
       <Navbar />
-
-  return (
-    <>
-      <Navbar />
       
       <main className="min-h-screen bg-white dark:bg-gray-900 pt-20 sm:pt-28 pb-12 sm:pb-16">
         <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
