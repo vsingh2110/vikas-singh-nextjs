@@ -1,0 +1,503 @@
+ META SEO Inspector page analysis
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis
+COMMON
+INFO head TITLE too long (>65 characters)
+doctype
+<!DOCTYPE html>
+html lang
+en
+content type
+text/html
+canonical
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis
+head title
+फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल | Vikas Singh
+(91 characters)
+description
+धुरंधर फिल्म समीक्षा - यहां मनोवैज्ञानिक छल-कपट की तकनीकें इस्तेमाल की गई हैं। Truth Anchoring, Selective Amnesia, Auditory Conditioning का विश्लेषण।
+(149 characters)
+keywords
+Dhurandhar Film, Political Cinema, Propaganda Analysis, 26/11 Mumbai Attack, Kandahar Hijack, Parliament Attack, Film Controversy, Media Manipulation
+( 8 items )
+INFO'keywords' meta tag is obsolete
+robots
+index, follow
+googlebot
+index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
+SOCIAL
+
+property
+og:title
+फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+property
+og:description
+धुरंधर फिल्म समीक्षा - यहां मनोवैज्ञानिक छल-कपट की तकनीकें इस्तेमाल की गई हैं। Truth Anchoring, Selective Amnesia, Auditory Conditioning का विश्लेषण।
+property
+og:url
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis
+property
+og:site_name
+Vikas Singh Portfolio
+property
+og:locale
+hi_IN
+property
+og:image
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+property
+og:image:secure_url
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+property
+og:image:width
+1200
+property
+og:image:height
+630
+property
+og:image:alt
+फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+property
+og:image:type
+image/jpeg
+property
+og:type
+article
+property
+article:published_time
+2025-12-15
+property
+article:author
+Vikas Singh
+property
+article:tag
+Dhurandhar Film
+property
+article:tag
+Political Cinema
+property
+article:tag
+Propaganda Analysis
+property
+article:tag
+26/11 Mumbai Attack
+property
+article:tag
+Kandahar Hijack
+property
+article:tag
+Parliament Attack
+property
+article:tag
+Film Controversy
+property
+article:tag
+Media Manipulation
+twitter:card
+summary_large_image
+twitter:site
+@vs_vimukt
+twitter:creator
+@vs_vimukt
+twitter:title
+फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+twitter:description
+धुरंधर फिल्म समीक्षा - यहां मनोवैज्ञानिक छल-कपट की तकनीकें इस्तेमाल की गई हैं। Truth Anchoring, Selective Amnesia, Auditory Conditioning का विश्लेषण।
+twitter:image
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+STRUCTURED DATA
+The following is a rough representation of the found structured data, for more insights please test here:
+•
+Schema Markup Validator
+
+•
+Google Rich Results Test
+@type: Person name: Vikas Singh
+@type: PostalAddress
+@type: EducationalOrganization name: Electrical Engineering
+@type: Occupation name: Frontend Developer
+@type: Country name: India
+@type: WebPage name: Blog - Web Development & Digital Marketing
+@type: WebSite name: Vikas Singh Portfolio
+@type: Person name: Vikas Singh
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: Blog
+@type: BlogPosting datePublished: 2025-12-15 dateModified: 2025-12-15
+@type: Person name: Vikas Singh
+@type: Person name: Vikas Singh
+@type: WebPage
+@type: Article datePublished: 2025-12-15 dateModified: 2025-12-15
+@type: Person name: Vikas Singh
+@type: Person name: Vikas Singh
+@type: WebPage
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: ब्लॉग
+@type: ListItem name: फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+@type: WebPage name: फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+@type: WebSite name: Vikas Singh Portfolio
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: ब्लॉग
+@type: ListItem name: फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल
+@type: ImageObject image INFOno image size provided
+MOBILE
+viewport
+width=device-width, initial-scale=1
+LARGE IMAGES
+
+vikassingh.vercel.app
+3000x3000 - 9.0MP - square
+MARKUP
+
+<html>
+(1)
+
+<img>
+(20)
+
+WARNING too many <h1> tags(2 items)
+h1 फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल (77 characters)
+h1 फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल (77 characters)
+h2 समीक्षकों (Critics) पर हमला (27 characters)
+h2 मेजर मोहित शर्मा का मामला (25 characters)
+h3 Viral Marketing का उदाहरण (25 characters)
+h3 Viral Marketing Strategy का Psychological Analysis (50 characters)
+h3 Court में पहुंचने के बाद 180-Degree Turn (40 characters)
+h2 फिल्म: काल्पनिक (Fictional) या वास्तविक (Real)? (47 characters)
+h3 Psychological Technique: जानबूझकर Strategic Ambiguity (अस्पष्टता) (65 characters)
+h2 26/11 मुंबई हमला: सच को Anchor (लंगर) की तरह इस्तेमाल करना (58 characters)
+h3 Truth Anchoring: एक Verified Fact से पूरा Credible बनाना , (58 characters)
+h3 Auditory Conditioning: Background Music का Sophisticated Manipulation (69 characters)
+h3 Selective Portrayal: Government को Systematically Weak दिखाना (61 characters)
+h3 2 October का Absurd (बेतुका) Logic (34 characters)
+h2 कंधार Hijack 1999: देशभक्ति से असफलता छिपाना (44 characters)
+h3 सच्चाई: मौलाना मसूद अजहर का खतरा (32 characters)
+h2 संसद हमला 2001: Selective Questioning (चुनिंदा सवाल) (52 characters)
+h3 दोहरा मापदंड (Double Standard): वाजपेयी vs मनमोहन सिंह (54 characters)
+h3 एक Fair (निष्पक्ष) नजरिया (25 characters)
+h2 26/11 के असली Heroes को भूल जाना: Selective Amnesia (चुनिंदा भूलना) (67 characters)
+h2 सबसे विवादास्पद (Controversial) दावा: नकली नोट के सांचे (Currency Plates) (73 characters)
+h3 फिल्म में क्या दिखाया (21 characters)
+h3 लेखक का उलझाव: अपराधी कौन - मंत्री या Company? (46 characters)
+h3 सवाल जो नहीं पूछे गए (20 characters)
+h2 फिल्म के किरदार: नकली नाम, असली चेहरे (37 characters)
+h2 देसी James Bond की भविष्यवाणी और Selective Action (चुनिंदा कार्रवाई) (68 characters)
+h3 Part-2 बनाने की घोषणा (21 characters)
+h3 Company का Contract रद्द करना भूल गए? (37 characters)
+h2 अरविंद मायाराम का मामला: Selective Memory (चुनिंदा याददाश्त) (60 characters)
+h2 IIT-IIM Lectures और Irony (विडंबना) (35 characters)
+h2 Censor Board की दोहरी नीति (Double Standards) (45 characters)
+h3 रंग दे बसंती का उदाहरण (22 characters)
+h2 फिल्म का चिंताजनक संदेश (23 characters)
+h2 निष्कर्ष (Conclusion) (21 characters)
+h3 Entertainment (मनोरंजन) के नजरिए से (35 characters)
+h3 जिम्मेदार नागरिक के नजरिए से (28 characters)
+h3 और नमन है फिल्म को बनाने वाले को - छप्पर फाड़ पैसा कमाएं शहीद फौज़ीओ के नाम पर बिना उन्हें उचित सम्मान दिए । (107 characters)
+h2 लेखक टिप्पणी (12 characters)
+h2 संदर्भ और उद्धरण (References and Citations) (43 characters)
+h3 संदर्भित प्रमुख घटनाएं और हमले (30 characters)
+h3 फिल्म समीक्षा और विवाद (22 characters)
+h3 मनोवैज्ञानिक और विपणन तकनीकें (29 characters)
+h3 राजनीतिक और ऐतिहासिक संदर्भ (27 characters)
+h3 खुफिया और सुरक्षा पर पृष्ठभूमि (30 characters)
+h3 अतिरिक्त संदर्भ (15 characters)
+h3 ORCID सबमिशन के लिए उद्धरण नोट (30 characters)
+h3 इस लेख को साझा करें (19 characters)
+h3 टैग (3 characters)
+h3 लेखक के बारे में (16 characters)
+h4 विकास सिंह "विमुक्त" (20 characters)
+h2 Social Linksconnect with me (27 characters) INFOContent seems to be hidden
+WARNING 5 links without anchor text or image
+internal
+ 
+(17)
+-
+external
+ 
+(62)
+-
+other
+ 
+(2)
+internal
+URL	REL	TEXT	TITLE	IMG
+https://vikassingh.vercel.app/		Portfolio.Vikas Singh		
+https://vikassingh.vercel.app/#home		Home		
+https://vikassingh.vercel.app/#about		About		
+https://vikassingh.vercel.app/#services		Services		
+https://vikassingh.vercel.app/#skills		Skills		
+https://vikassingh.vercel.app/#achievements		Achievements		
+https://vikassingh.vercel.app/#nonprofit		Research		
+https://vikassingh.vercel.app/#social-activities		Activism		
+https://vikassingh.vercel.app/#contact		Contact		
+https://vikassingh.vercel.app/blog		Blog		
+https://vikassingh.vercel.app/blog/hi		सभी पोस्ट पर वापस जाएं		yes
+https://vikassingh.vercel.app/blog/hi		ब्लॉग		
+https://vikassingh.vercel.app/blog/hi		हिंदी		
+https://vikassingh.vercel.app/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan		🇺🇸English		
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis#		🇮🇳हिंदी		
+https://vikassingh.vercel.app/#		लेखक के बारे में और जानें		yes
+https://vikassingh.vercel.app/blog/hi		सभी पोस्ट पर वापस जाएं		yes
+external
+URL	REL	TEXT	TITLE	IMG
+https://wa.me/?text=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2%20-%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer		WhatsApp	yes
+https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer		Facebook	yes
+https://twitter.com/intent/tweet?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis&text=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2	noopener noreferrer		Twitter	yes
+https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer		LinkedIn	yes
+https://www.thehindu.com/news/national/26/11-mumbai-terror-attacks-timeline/article25568513.ece	noopener noreferrer	द हिंदू: मुंबई आतंकी हमला टाइमलाइन		
+https://www.bbc.com/news/world-south-asia-11941747	noopener noreferrer	बीबीसी न्यूज: मुंबई हमला 2008		
+https://www.reuters.com/article/idINIndia-36781320081201/	noopener noreferrer	रॉयटर्स: 26/11 हैंडलर्स की ऑडियो रिकॉर्डिंग		
+https://timesofindia.indiatimes.com/india/tukaram-omble-the-brave-cop-who-caught-kasab-alive/articleshow/3827341.cms	noopener noreferrer	टाइम्स ऑफ इंडिया: तुकाराम ओंबले की बहादुरी		
+https://indianexpress.com/article/india/kandahar-hijack-ic-814-taliban-6672413/	noopener noreferrer	इंडियन एक्सप्रेस: IC-814 अपहरण टाइमलाइन		
+https://www.theguardian.com/world/1999/dec/31/india	noopener noreferrer	द गार्जियन: भारत का बंधक संकट		
+https://www.hindustantimes.com/india-news/how-india-s-ic-814-hijack-led-to-release-of-terrorists/story-6rJlWvXvGOi4R7DqZfBQHP.html	noopener noreferrer	हिंदुस्तान टाइम्स: मसूद अजहर की रिहाई		
+https://www.thehindu.com/news/national/Parliament-attack-case-timeline/article16849995.ece	noopener noreferrer	द हिंदू: संसद हमला रिपोर्ट		
+https://indianexpress.com/article/india/parliament-attack-anniversary-december-13-2001-security-breach-5502951/	noopener noreferrer	इंडियन एक्सप्रेस: 2001 संसद हमला वर्षगांठ		
+https://www.ndtv.com/india-news/how-5-terrorists-breached-parliament-security-in-2001-attack-1784563	noopener noreferrer	एनडीटीवी: संसद हमला सुरक्षा उल्लंघन		
+https://www.bbc.com/news/world-asia-india-35223572	noopener noreferrer	बीबीसी: पठानकोट हमले का विवरण		
+https://www.thehindu.com/news/national/pathankot-attack-a-timeline/article8066479.ece	noopener noreferrer	द हिंदू: पठानकोट टाइमलाइन		
+https://www.aljazeera.com/news/2016/9/18/deadly-kashmir-attack-on-indian-army-base	noopener noreferrer	अल जज़ीरा: उरी हमला रिपोर्ट		
+https://timesofindia.indiatimes.com/india/Uri-attack-All-you-need-to-know/articleshow/54388426.cms	noopener noreferrer	टाइम्स ऑफ इंडिया: उरी हमले का विवरण		
+https://www.reuters.com/article/idINKCN1Q30YD/	noopener noreferrer	रॉयटर्स: पुलवामा हमला रिपोर्ट		
+https://www.bbc.com/news/world-asia-india-47229170	noopener noreferrer	बीबीसी: कश्मीर पुलवामा हमला		
+https://www.theguardian.com/world/2019/feb/15/kashmir-attack-at-least-30-indian-paramilitaries-killed-by-car-bomb	noopener noreferrer	द गार्जियन: पुलवामा आतंकी हमला		
+https://thewire.in/film/anupama-chopra-suchitra-tyagi-online-harassment	noopener noreferrer	द वायर: फिल्म समीक्षकों को ऑनलाइन दुर्व्यवहार		
+https://scroll.in/article/film-criticism-democracy-harassment	noopener noreferrer	स्क्रॉल.इन: समीक्षकों को चुप कराने की संस्कृति		
+https://theprint.in/features/film-critics-harassment-free-speech/article123456/	noopener noreferrer	द प्रिंट: फिल्म समीक्षा में अभिव्यक्ति की स्वतंत्रता		
+https://www.hindustantimes.com/india-news/major-mohit-sharma-family-approaches-delhi-high-court-over-film/story-xyz123.html	noopener noreferrer	हिंदुस्तान टाइम्स: मेजर मोहित शर्मा परिवार की याचिका		
+https://indianexpress.com/article/entertainment/bollywood/dhurandhar-film-controversy-major-mohit-sharma/	noopener noreferrer	इंडियन एक्सप्रेस: धुरंधर फिल्म कानूनी नोटिस		
+https://www.livelaw.in/top-stories/delhi-high-court-dhurandhar-film-major-mohit-sharma-petition	noopener noreferrer	लाइव लॉ: दिल्ली हाई कोर्ट सुनवाई		
+https://gulfnews.com/entertainment/bollywood/film-dhurandhar-banned-uae-dubai	noopener noreferrer	गल्फ न्यूज: यूएई में फिल्म पर प्रतिबंध		
+https://www.khaleejtimes.com/entertainment/bollywood-film-banned-gcc-countries	noopener noreferrer	खलीज टाइम्स: फिल्म में विवादास्पद सामग्री		
+https://www.psychologytoday.com/intl/blog/the-athletes-way/201504/the-neuroscience-of-music-emotion-and-memory	noopener noreferrer	साइकोलॉजी टुडे: संगीत और भावनात्मक हेरफेर		
+https://myscp.onlinelibrary.wiley.com/doi/abs/10.1002/jcpy.1016	noopener noreferrer	जर्नल ऑफ कंज्यूमर साइकोलॉजी: पृष्ठभूमि संगीत प्रभाव		
+https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00174/full	noopener noreferrer	फ्रंटियर्स इन साइकोलॉजी: फिल्म धारणा में संगीत		
+https://hbr.org/2018/03/how-to-use-cognitive-dissonance-to-drive-sales	noopener noreferrer	हार्वर्ड बिजनेस रिव्यू: विपणन में संज्ञानात्मक असंगति		
+https://www.apa.org/pubs/highlights/spotlight/issue-91	noopener noreferrer	अमेरिकन साइकोलॉजिकल एसोसिएशन: संज्ञानात्मक असंगति सिद्धांत		
+https://www.technologyreview.com/2023/05/15/truth-anchoring-propaganda/	noopener noreferrer	एमआईटी टेक्नोलॉजी रिव्यू: गलत सूचना और सत्य एंकरिंग		
+https://www.cjr.org/analysis/documentary-fiction-blur.php	noopener noreferrer	कोलंबिया जर्नलिज्म रिव्यू: तथ्य और कल्पना का मिश्रण		
+https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=counterfeit-notes	noopener noreferrer	भारतीय रिजर्व बैंक: नकली मुद्रा रिपोर्ट		
+https://economictimes.indiatimes.com/news/economy/policy/fake-currency-problem-in-india/articleshow/	noopener noreferrer	इकोनॉमिक टाइम्स: नकली मुद्रा रैकेट		
+https://www.business-standard.com/article/economy-policy/fake-notes-continue-post-demonetization/	noopener noreferrer	बिजनेस स्टैंडर्ड: नोटबंदी के बाद नकली नोट		
+https://www.cfr.org/global-conflict-tracker/conflict/conflict-between-india-and-pakistan	noopener noreferrer	काउंसिल ऑन फॉरेन रिलेशंस: भारत-पाकिस्तान संघर्ष		
+https://www.brookings.edu/articles/india-pakistan-relations-kashmir-terrorism/	noopener noreferrer	ब्रुकिंग्स इंस्टीट्यूशन: कश्मीर संघर्ष विश्लेषण		
+https://www.thehindu.com/entertainment/movies/cbfc-certification-controversies/article/	noopener noreferrer	द हिंदू: सीबीएफसी दिशानिर्देश और विवाद		
+https://indianexpress.com/article/opinion/columns/film-censorship-in-india-cbfc/	noopener noreferrer	इंडियन एक्सप्रेस: भारत में फिल्म सेंसरशिप		
+https://www.livelaw.in/top-stories/supreme-court-film-censorship-freedom-expression/	noopener noreferrer	लाइव लॉ: फिल्म सेंसरशिप पर सुप्रीम कोर्ट		
+https://www.tandfonline.com/intelligence-operations-india	noopener noreferrer	स्ट्रैटेजिक एनालिसिस जर्नल: भारत में खुफिया अभियान		
+https://www.orfonline.org/research/intelligence-failures-terror-attacks/	noopener noreferrer	ऑब्जर्वर रिसर्च फाउंडेशन: खुफिया विफलताओं का विश्लेषण		
+https://reutersinstitute.politics.ox.ac.uk/digital-news-report/india	noopener noreferrer	रॉयटर्स इंस्टीट्यूट: भारत में डिजिटल प्रचार		
+https://thewire.in/tech/whatsapp-misinformation-india-politics	noopener noreferrer	द वायर: व्हाट्सएप और राजनीतिक गलत सूचना		
+https://academic.oup.com/joc/article-abstract/political-cinema-propaganda	noopener noreferrer	जर्नल ऑफ कम्युनिकेशन: राजनीतिक सिनेमा विश्लेषण		
+https://www.epw.in/journal/cinema-politics-india	noopener noreferrer	इकोनॉमिक एंड पॉलिटिकल वीकली: भारत में सिनेमा और राजनीति		
+https://orcid.org/	noopener noreferrer	ORCID.org: शोधकर्ताओं के लिए डिजिटल पहचानकर्ता		
+https://apastyle.apa.org/style-grammar-guidelines/references/examples/film-references	noopener noreferrer	एपीए स्टाइल: फिल्मों और मीडिया का उद्धरण		
+https://wa.me/?text=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer	WhatsApp	Share on WhatsApp	yes
+https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer	Facebook	Share on Facebook	yes
+https://twitter.com/intent/tweet?text=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2&url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer	Twitter	Share on X (Twitter)	yes
+https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis	noopener noreferrer	LinkedIn	Share on LinkedIn	yes
+https://www.facebook.com/singhsahab.vikas	noopener noreferrer			
+https://twitter.com/vs_vimukt	noopener noreferrer			
+https://www.linkedin.com/in/vikas-singh2110/	noopener noreferrer			
+https://github.com/vsingh2110	noopener noreferrer			
+https://wa.me/919716186925?text=Via%20Website%20of%20Vikas%20Singh	noopener noreferrer			
+https://github.com/vsingh2110/	noopener noreferrer	Vikas Singh		
+other
+URL	REL	TEXT	TITLE	IMG
+mailto:?subject=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2&body=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2%20-%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis			ईमेल	yes
+mailto:?subject=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2&body=%E0%A4%AB%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AE%20%E0%A4%A7%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%A7%E0%A4%B0%20%E0%A4%95%E0%A4%BE%20%E0%A4%B5%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%A6%20%7C%20%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A4%AA%E0%A5%87%E0%A4%AF%E0%A5%80%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20vs%20%E0%A4%AE%E0%A4%A8%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8%20%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%20%E0%A4%B8%E0%A4%B0%E0%A4%95%E0%A4%BE%E0%A4%B0%20%7C%20%E0%A4%AE%E0%A4%A8%E0%A5%8B%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%20%E0%A4%96%E0%A5%87%E0%A4%B2%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fhi%2Fdhurandhar-film-controversy-analysis		ईमेल	Share via Email	yes
+INFO 20 images (out of 20) with missing TITLE attribute
+INFO 19 images (out of 20) with missing LOADING attribute
+WARNING 19 images (out of 20) with missing WIDTH or HEIGHT attribute
+SRC	SIZE	LOADING	FETCH PR.	ALT	TITLE
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=30
+SRCSET: available
+SIZES: 100vw	
+REAL	800x420
+HTML	- x -
+high		
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=90
+SRCSET: available
+SIZES: 100vw	
+REAL	800x420
+HTML	- x -
+high	फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critic-anumpama-chopra-and-suchitra-tyagi.png
+REAL	606x374
+HTML	- x -
+auto	Film critics Anupama Chopra and Suchitra Tyagi	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critics-guild-statement-defending-critics-against-online-troll-and-harrasement.png
+REAL	800x807
+HTML	- x -
+auto	Film Critics Guild statement defending critics	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critics-guild-reply-defending-critics-against-online-troll-and-harrasement.png
+REAL	523x616
+HTML	- x -
+auto	Film Critics Guild reply defending critics	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/major-mohit-sharma-family-moves-delhi-high-court-to-ban-dhurandhar-movie.jpeg
+REAL	495x549
+HTML	- x -
+auto	Major Mohit Sharma family moves Delhi High Court	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/comparison-in-looks-of-major-mohit-sharma-in-real-life-to-dhurandhar-film-lead-character-in-film-played-by-ranveer-singh.jpeg
+REAL	495x619
+HTML	- x -
+auto	Comparison of Major Mohit Sharma looks	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/major-mohit-sharma-brother-madhur-sharma-wants-dignified-portreyel-and-respect-for-his-brother-in-dhurandhar-movie.jpeg
+REAL	515x498
+HTML	- x -
+auto	Major Mohit Sharma's brother Madhur Sharma	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/aditya-dhar-clarification-twitter-x-about-dhurandhar-movie-and-major-mohit-sharma.jpeg
+REAL	508x604
+HTML	- x -
+auto	Aditya Dhar Twitter clarification	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/26-11-mumbai-attack-taj-hotel.webp
+REAL	1600x900 (1.4MP)
+HTML	- x -
+auto	26/11 Mumbai attack at Taj Hotel	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/kandhar-highjack-indian-airlines-december-1999.jpg
+REAL	1200x720
+HTML	- x -
+auto	Kandahar hijack 1999	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/Parliament-attack-december-2001.jpg
+REAL	3000x3000 (9.0MP)
+HTML	- x -
+auto	Parliament attack 2001	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/tukaram-omble-who-took-40-bullets-to-capture-ajmal-kasab-alive.jpg
+REAL	720x360
+HTML	- x -
+auto	Tukaram Omble	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/former-finance-minister-of-india-P-chidamabram-with-his-son-karti-chidambaram_.jpg
+REAL	650x400
+HTML	- x -
+auto	Former Finance Minister P Chidambaram	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/fake-500-cuurency-notes-government-of-india-issues-high-alert.jpg
+REAL	505x600
+HTML	- x -
+auto	Fake 500 currency notes alert	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/fake-cuurency-notes-in-year-2025-rose-by-37-percent.jpg
+REAL	526x526
+HTML	- x -
+auto	Fake currency notes rise in 2025	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/Dhurandhar-movie-reel-characters-vs-real-life-characters.png
+REAL	615x558
+HTML	- x -
+auto	Dhurandhar movie characters comparison	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/ek-din-ayegi-aisi-sarkar-jise-desh-ki-fikra-hogi-r-madhavan.jpg
+REAL	1080x720
+HTML	- x -
+auto	R Madhavan dialogue	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/rang-de-basanti-movie-2006.jpg
+REAL	1500x700 (1.1MP)
+HTML	- x -
+auto	Rang De Basanti movie 2006	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fvikas-socialist.png&w=256&q=75
+SRCSET: available
+REAL	0x0
+HTML	90x90
+lazy	auto	विकास सिंह "विमुक्त"	
+Doctype is HTML5, there are HTML5 tags and no obsolete HTML tags were found.
+★
+★
+★
+★
+★
+EXTERNAL RESOURCES
+
+2 items
+vercel.live			n.a.
+www.googletagmanager.com			ANALYTICS
+RESOURCE HINTS
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/0484562807a97172-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/33a864272e2b3e97-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/3ecd40fce058ee61-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/70d2fd2b9078a5a3-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/8888a3826f4a3af4-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/b957ea75a84b6ea7-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/eafabf029ad39a43-s.p.woff2
+preload
+(as image) (fetchpriority=auto)
+https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg
+preload
+(as script) (fetchpriority=low)
+https://vikassingh.vercel.app/_next/static/chunks/webpack-0545654421cbb19d.js
+preload
+(as image) (fetchpriority=high)
+preload
+(as image) (fetchpriority=high)
+INLINE SVG
+
+total bytes
+9710
+
+ID	CLIENT SIZE	VIEWBOX	1ST LEVEL NODES	BYTES	PREVIEW	
+-	14x14	0 0 20 20	path (1)	638		
+-	14x14	0 0 20 20	path (1)	163		
+-	0x0	0 0 20 20	path (1)	638		
+-	0x0	0 0 20 20	path (1)	163		
+-	20x20	0 0 24 24	path (1)	219		
+-	16x16	0 0 24 24	path (1)	239		
+-	48x48	0 0 24 24	path (1)	431		
+-	48x48	0 0 24 24	path (1)	332		
+-	48x48	0 0 24 24	path (1)	1228		
+-	48x48	0 0 24 24	path (1)	410		
+-	48x48	0 0 24 24	path (1)	279		
+-	48x48	0 0 24 24	path (1)	622		
+-	48x48	0 0 24 24	path (1)	302		
+-	20x20	0 0 24 24	path (1)	208		
+-	16x16	0 0 24 24	path (1)	401		
+-	16x16	0 0 24 24	path (1)	302		
+-	16x16	0 0 24 24	path (1)	1198		
+-	16x16	0 0 24 24	path (1)	380		
+-	16x16	0 0 24 24	path (1)	249		
+-	16x16	0 0 24 24	path (1)	592		
+-	16x16	0 0 24 24	path (1)	272		
+-	16x16	0 0 24 24	path (1)	257		
+-	20x20	0 0 24 24	path (1)	187		
+Url
+COMMON
+SOCIAL
+STRUCTURED DATA
+MOBILE
+LARGE IMAGES
+MARKUP
+EXTERNAL RESOURCES
+RESOURCE HINTS
+OTHER META DATA
+print

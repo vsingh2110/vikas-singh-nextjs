@@ -1,0 +1,267 @@
+ META SEO Inspector page analysis
+https://vikassingh.vercel.app/
+COMMON
+doctype
+<!DOCTYPE html>
+html lang
+en
+content type
+text/html
+canonical
+https://vikassingh.vercel.app
+head title
+Vikas Singh | Frontend Developer & Digital Marketing Expert
+(59 characters)
+description
+Portfolio of Vikas Singh - Frontend Developer specializing in React, Next.js, and Digital Marketing. Expert in web development, SEO, Google Ads, Facebook Ads, WordPress, and Shopify. Electrical Engineering graduate with proven expertise in modern web technologies and paid advertising campaigns.
+(295 characters)
+WARNING description too long (>170 characters)
+keywords
+Frontend Developer,React Developer,Next.js Expert,Digital Marketing Specialist,SEO Expert,Web Developer,JavaScript Developer,TypeScript Developer,WordPress Developer,Shopify Expert,Google Ads Specialist,Facebook Ads Expert,Paid Advertising,UI/UX Developer,Full Stack Developer,Electrical Engineering,Portfolio Website,Web Development Services
+( 18 items )
+INFO'keywords' meta tag is obsolete
+robots
+index, follow
+googlebot
+index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
+SOCIAL
+
+property
+og:title
+Vikas Singh | Frontend Developer & Digital Marketing Expert
+property
+og:description
+Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising
+property
+og:url
+https://vikassingh.vercel.app
+property
+og:site_name
+Vikas Singh Portfolio
+property
+og:locale
+en_US
+property
+og:image
+
+https://vikassingh.vercel.app/images/og-image.jpg
+property
+og:image:width
+1200
+property
+og:image:height
+630
+property
+og:image:alt
+Vikas Singh - Frontend Developer & Digital Marketing Expert
+property
+og:type
+profile
+twitter:card
+summary_large_image
+twitter:title
+Vikas Singh | Frontend Developer & Digital Marketing Expert
+twitter:description
+Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising
+twitter:image
+https://vikassingh.vercel.app/images/og-image.jpg
+STRUCTURED DATA
+The following is a rough representation of the found structured data, for more insights please test here:
+•
+Schema Markup Validator
+
+•
+Google Rich Results Test
+@type: Person name: Vikas Singh
+@type: PostalAddress
+@type: EducationalOrganization name: Electrical Engineering
+@type: Occupation name: Frontend Developer
+@type: Country name: India
+MOBILE
+viewport
+width=device-width, initial-scale=1
+MARKUP
+
+<html>
+(1)
+
+<img>
+(2)
+
+<form>
+(1)
+
+WARNING missing <h1> tag
+h2 About mewho i am (16 characters) INFOContent seems to be hidden INFOfirst header tag should be h1
+h2 My Technical Skillswhat i know (30 characters) INFOContent seems to be hidden
+h3 My Technical Skills & Experiences (33 characters)
+h2 My Journeywhat I did (20 characters) INFOContent seems to be hidden
+h3 Education (9 characters)
+h4 M.A. In PsychologyPt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak) (83 characters) INFOContent seems to be hidden
+h4 M.S. In Computer SciencePt. Jawahar Lal Nehru Government College, Faridabad (MDU, Rohtak) (89 characters) INFOContent seems to be hidden
+h4 B.Tech In Electrical EngineeringJ.C. Bose YMCA University of Science & Technology (Main Campus), Faridabad (106 characters) INFOContent seems to be hidden
+h4 Secondary & Senior Secondary SchoolFaridabad Model School (57 characters) INFOContent seems to be hidden
+h3 Experience (10 characters)
+h4 Front End Developer & Digital MarketingPhantom Healthcare (57 characters) INFOContent seems to be hidden
+h4 WordPress & Shopify DeveloperFreelance Projects (Zara International & The Earth Store) (86 characters) INFOContent seems to be hidden
+h4 Digital Marketing & Business DevelopmentRuralShores Skills Academy (66 characters) INFOContent seems to be hidden
+h4 WordPress Designer & Digital MarketingDigitalforce Online (Internship) (70 characters) INFOContent seems to be hidden
+h4 Various Freelance ProjectsMultiple Clients (42 characters) INFOContent seems to be hidden
+h2 Major AchievementsMilestones & Recognition (42 characters) INFOContent seems to be hidden
+h3 All India 0.1% Topper (21 characters)
+h3 Faridabad District Topper - English (Core) (42 characters)
+h3 3× Debate Competition Winner (28 characters)
+h3 10+ Quiz Competition Winner (27 characters)
+h3 Founder - NEWS YMCA (Non-Profit) (32 characters)
+h3 IIT-JEE Mains Qualifier (23 characters)
+h3 100% Attendance Award - 2 Years Continuous (42 characters)
+h3 2× Founder's Medal Award (24 characters)
+h3 Merit Honour for All-Round Performance (38 characters)
+h3 Published Environmental Writer (30 characters)
+h2 Non-Profit WorkResearch & Community Projects (44 characters) INFOContent seems to be hidden
+h3 CogniSocial Research (20 characters)
+h3 NEWS YMCA (9 characters)
+h2 Social ActivitiesCommunity Engagement & Activism (48 characters) INFOContent seems to be hidden
+h3 Ananya - The Unparallel (23 characters)
+h3 Ananya - The Unparallel (23 characters)
+h3 Save Aravali Trust (18 characters)
+h3 Save Aravali Trust (18 characters)
+h3 People For Animals (PFA) (24 characters)
+h3 People For Animals (PFA) (24 characters)
+h3 Safe and Secure Faridabad (SSF) (31 characters)
+h3 Safe and Secure Faridabad (SSF) (31 characters)
+h3 Student Leader - Political Organization(Hidden) (47 characters)
+h3 Student Leader - Political Organization(Hidden) (47 characters)
+h2 My serviceswhat i provide (25 characters) INFOContent seems to be hidden
+h3 Front End Development (21 characters)
+h3 Digital Marketing & Paid Ads (28 characters)
+h3 Wordpress and Shopify Design (28 characters)
+h2 Contact meget in touch (22 characters) INFOContent seems to be hidden
+h3 Get in Touch (12 characters)
+h4 Address (7 characters)
+h4 Mobile (6 characters)
+h4 Send Email (10 characters)
+h3 Message me (10 characters)
+h2 Social Linksconnect with me (27 characters) INFOContent seems to be hidden
+WARNING 5 links without anchor text or image
+internal
+ 
+(12)
+-
+external
+ 
+(9)
+-
+other
+ 
+(2)
+internal
+URL	REL	TEXT	TITLE	IMG
+https://vikassingh.vercel.app/		Portfolio.Vikas Singh		
+https://vikassingh.vercel.app/#home		Home		
+https://vikassingh.vercel.app/#about		About		
+https://vikassingh.vercel.app/#services		Services		
+https://vikassingh.vercel.app/#skills		Skills		
+https://vikassingh.vercel.app/#achievements		Achievements		
+https://vikassingh.vercel.app/#nonprofit		Research		
+https://vikassingh.vercel.app/#social-activities		Activism		
+https://vikassingh.vercel.app/#contact		Contact		
+https://vikassingh.vercel.app/blog		Blog		
+https://vikassingh.vercel.app/blog		Read My Blogs		
+https://vikassingh.vercel.app/#about		Read more		
+external
+URL	REL	TEXT	TITLE	IMG
+https://drive.google.com/file/d/13qssfiu6Ni-p49nW2YPlo7ZYmMAD9WiA/view?usp=drive_link	noopener noreferrer	View CV		
+https://github.com/vsingh2110/mindscape-research	noopener noreferrer	Visit Project		
+https://web.archive.org/web/20190413140812/http://www.newsymca.com/	noopener noreferrer	Visit Project (Archived Link)		
+https://www.facebook.com/singhsahab.vikas	noopener noreferrer			
+https://twitter.com/vs_vimukt	noopener noreferrer			
+https://www.linkedin.com/in/vikas-singh2110/	noopener noreferrer			
+https://github.com/vsingh2110	noopener noreferrer			
+https://wa.me/919716186925?text=Via%20Website%20of%20Vikas%20Singh	noopener noreferrer			
+https://github.com/vsingh2110/	noopener noreferrer	Vikas Singh		
+other
+URL	REL	TEXT	TITLE	IMG
+tel:+91-9716186925		+91-9716186925		
+mailto:vsingh2110@gmail.com		vsingh2110@gmail.com		
+INFO 2 images (out of 2) with missing TITLE attribute
+INFO 1 images (out of 2) with missing LOADING attribute
+WARNING 2 images (out of 2) with missing WIDTH or HEIGHT attribute
+SRC	SIZE	LOADING	FETCH PR.	ALT	TITLE
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fvikas-socialist.png&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 768px) 288px, (max-width: 1024px) 384px, (max-width: 1280px) 450px, (max-width: 1536px) 550px, 650px	
+REAL	450x450
+HTML	- x -
+lazy	auto	Vikas Singh - Social Psychologist & Developer	
+
+https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg
+REAL	225x150
+HTML	- x -
+auto	India	
+ACTION
+METHOD
+FIELDS
+https://vikassingh.vercel.app/	get	11
+Doctype is HTML5, there are HTML5 tags and no obsolete HTML tags were found.
+★
+★
+★
+★
+★
+EXTERNAL RESOURCES
+
+2 items
+vercel.live			n.a.
+www.googletagmanager.com			ANALYTICS
+RESOURCE HINTS
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/0484562807a97172-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/33a864272e2b3e97-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/3ecd40fce058ee61-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/70d2fd2b9078a5a3-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/8888a3826f4a3af4-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/b957ea75a84b6ea7-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/eafabf029ad39a43-s.p.woff2
+preload
+(as image) (fetchpriority=auto)
+https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg
+preload
+(as script) (fetchpriority=low)
+https://vikassingh.vercel.app/_next/static/chunks/webpack-0545654421cbb19d.js
+INLINE SVG
+
+total bytes
+14966
+
+ID	CLIENT SIZE	VIEWBOX	1ST LEVEL NODES	BYTES	PREVIEW	
+-	14x14	0 0 20 20	path (1)	638		
+-	14x14	0 0 20 20	path (1)	163		
+-	0x0	0 0 20 20	path (1)	638		
+-	0x0	0 0 20 20	path (1)	163		
+-	1270x888	-	g (8)	3512		
+-	1270x888	-		9852		
+Url
+COMMON
+SOCIAL
+STRUCTURED DATA
+MOBILE
+MARKUP
+EXTERNAL RESOURCES
+RESOURCE HINTS
+OTHER META DATA
+print

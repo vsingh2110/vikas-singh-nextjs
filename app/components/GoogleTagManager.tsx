@@ -11,10 +11,13 @@ function GTMTracker() {
     if (pathname) {
       // Push pageview event to GTM dataLayer
       window.dataLayer = window.dataLayer || [];
+      
+      // Push both custom event and standard GTM format
       window.dataLayer.push({
         event: 'pageview',
-        page: pathname,
-        title: document.title,
+        page_path: pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : ''),
+        page_title: document.title,
+        page_location: window.location.href,
       });
     }
   }, [pathname, searchParams]);

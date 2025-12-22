@@ -1,0 +1,503 @@
+ META SEO Inspector page analysis
+https://vikassingh.vercel.app/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan
+COMMON
+INFO head TITLE too long (>65 characters)
+doctype
+<!DOCTYPE html>
+html lang
+en
+content type
+text/html
+canonical
+https://vikassingh.vercel.app/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan
+head title
+Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare | Vikas Singh
+(116 characters)
+description
+Dhurandhar film review - Psychological manipulation techniques have been used here. Analysis of Truth Anchoring, Selective Amnesia, Auditory Conditioning.
+(154 characters)
+keywords
+Dhurandhar Film, Political Cinema, Propaganda Analysis, 26/11 Mumbai Attack, Kandahar Hijack, Parliament Attack, Film Controversy, Media Manipulation
+( 8 items )
+INFO'keywords' meta tag is obsolete
+robots
+index, follow
+googlebot
+index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1
+SOCIAL
+
+property
+og:title
+Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+property
+og:description
+Dhurandhar film review - Psychological manipulation techniques have been used here. Analysis of Truth Anchoring, Selective Amnesia, Auditory Conditioning.
+property
+og:url
+https://vikassingh.vercel.app/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan
+property
+og:site_name
+Vikas Singh Portfolio
+property
+og:locale
+en_US
+property
+og:image
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+property
+og:image:secure_url
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+property
+og:image:width
+1200
+property
+og:image:height
+630
+property
+og:image:alt
+Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+property
+og:image:type
+image/jpeg
+property
+og:type
+article
+property
+article:published_time
+2025-12-15
+property
+article:author
+Vikas Singh
+property
+article:tag
+Dhurandhar Film
+property
+article:tag
+Political Cinema
+property
+article:tag
+Propaganda Analysis
+property
+article:tag
+26/11 Mumbai Attack
+property
+article:tag
+Kandahar Hijack
+property
+article:tag
+Parliament Attack
+property
+article:tag
+Film Controversy
+property
+article:tag
+Media Manipulation
+twitter:card
+summary_large_image
+twitter:site
+@vs_vimukt
+twitter:creator
+@vs_vimukt
+twitter:title
+Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+twitter:description
+Dhurandhar film review - Psychological manipulation techniques have been used here. Analysis of Truth Anchoring, Selective Amnesia, Auditory Conditioning.
+twitter:image
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/preview-image-dhurandhar.jpg
+STRUCTURED DATA
+The following is a rough representation of the found structured data, for more insights please test here:
+•
+Schema Markup Validator
+
+•
+Google Rich Results Test
+@type: Person name: Vikas Singh
+@type: PostalAddress
+@type: EducationalOrganization name: Electrical Engineering
+@type: Occupation name: Frontend Developer
+@type: Country name: India
+@type: WebPage name: Blog - Web Development & Digital Marketing
+@type: WebSite name: Vikas Singh Portfolio
+@type: Person name: Vikas Singh
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: Blog
+@type: Article datePublished: 2025-12-15 dateModified: 2025-12-15
+@type: Person name: Vikas Singh
+@type: Person name: Vikas Singh
+@type: WebPage
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: Blog
+@type: ListItem name: Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+@type: WebPage name: Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+@type: WebSite name: Vikas Singh Portfolio
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: Blog
+@type: ListItem name: Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare
+@type: ImageObject image INFOno image size provided
+@type: BlogPosting datePublished: 2025-12-15 dateModified: 2025-12-15
+@type: Person name: Vikas Singh
+@type: Person name: Vikas Singh
+@type: WebPage
+MOBILE
+viewport
+width=device-width, initial-scale=1
+LARGE IMAGES
+
+vikassingh.vercel.app
+3000x3000 - 9.0MP - square
+MARKUP
+
+<html>
+(1)
+
+<img>
+(20)
+
+WARNING too many <h1> tags(2 items)
+h1 Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare (102 characters)
+h1 Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare (102 characters)
+h2 Attack on Film Critics (22 characters)
+h2 The Major Mohit Sharma Case (27 characters)
+h3 A Case Study in Viral Marketing (31 characters)
+h3 Psychological Analysis of the Viral Marketing Strategy (54 characters)
+h3 The 180-Degree Turn After Reaching Court (40 characters)
+h2 The Film: Fictional or Real? (28 characters)
+h3 Psychological Technique: Deliberate Strategic Ambiguity (55 characters)
+h2 26/11 Mumbai Attack: Using Truth as an Anchor (45 characters)
+h3 Truth Anchoring: Making Everything Credible with One Verified Fact (66 characters)
+h3 Auditory Conditioning: Sophisticated Manipulation of Background Music (69 characters)
+h3 Selective Portrayal: Systematically Showing Government as Weak (62 characters)
+h3 The Absurd Logic of October 2nd (31 characters)
+h2 Kandahar Hijack 1999: Hiding Failure with Patriotism (52 characters)
+h3 The Truth: The Danger of Maulana Masood Azhar (45 characters)
+h2 Parliament Attack 2001: Selective Questioning (45 characters)
+h3 Double Standard: Vajpayee vs Manmohan Singh (43 characters)
+h3 A Fair Perspective (18 characters)
+h2 Forgetting 26/11's Real Heroes: Selective Amnesia (49 characters)
+h2 The Most Controversial Claim: Currency Plates (45 characters)
+h3 What's Shown in the Film (24 characters)
+h3 The Writer's Confusion: Who's the Criminal - the Minister or the Company? (73 characters)
+h3 Questions That Weren't Asked (28 characters)
+h2 Film's Characters: Fake Names, Real Faces (41 characters)
+h2 Desi James Bond's Prophecy and Selective Action (47 characters)
+h3 Part-2 Announcement (19 characters)
+h3 James Bond Forgets to Cancel the Company's Contract? (52 characters)
+h2 Arvind Mayaram's Case: Selective Memory (39 characters)
+h2 His IIT-IIM Lectures and Irony (30 characters)
+h2 Censor Board's Double Standards (31 characters)
+h3 The Example of Rang De Basanti (30 characters)
+h2 The Film's Concerning Message (29 characters)
+h2 Conclusion (10 characters)
+h3 From an Entertainment Perspective (33 characters)
+h3 From a Responsible Citizen's Perspective (40 characters)
+h3 And salute to the film maker - may he earn more and more money in the name of martyred soldiers without even giving them due respect. (133 characters)
+h2 Author's Note (13 characters)
+h2 References and Citations (24 characters)
+h3 Major Events and Attacks Referenced (35 characters)
+h3 Film Criticism and Controversy (30 characters)
+h3 Psychological and Marketing Techniques (38 characters)
+h3 Political and Historical Context (32 characters)
+h3 Background on Intelligence and Security (39 characters)
+h3 Additional Context (18 characters)
+h3 Citation Note for ORCID Submission (34 characters)
+h3 Share this article (18 characters)
+h3 Tags (4 characters)
+h3 About the Author (16 characters)
+h4 Vikas Singh "विमुक्त" (21 characters)
+h2 Social Linksconnect with me (27 characters) INFOContent seems to be hidden
+WARNING 5 links without anchor text or image
+internal
+ 
+(17)
+-
+external
+ 
+(62)
+-
+other
+ 
+(2)
+internal
+URL	REL	TEXT	TITLE	IMG
+https://vikassingh.vercel.app/		Portfolio.Vikas Singh		
+https://vikassingh.vercel.app/#home		Home		
+https://vikassingh.vercel.app/#about		About		
+https://vikassingh.vercel.app/#services		Services		
+https://vikassingh.vercel.app/#skills		Skills		
+https://vikassingh.vercel.app/#achievements		Achievements		
+https://vikassingh.vercel.app/#nonprofit		Research		
+https://vikassingh.vercel.app/#social-activities		Activism		
+https://vikassingh.vercel.app/#contact		Contact		
+https://vikassingh.vercel.app/blog		Blog		
+https://vikassingh.vercel.app/blog/en		Back to all posts		yes
+https://vikassingh.vercel.app/blog/en		Blog		
+https://vikassingh.vercel.app/blog/en		English		
+https://vikassingh.vercel.app/blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan#		🇺🇸English		
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis		🇮🇳हिंदी		
+https://vikassingh.vercel.app/#		Learn More About Author		yes
+https://vikassingh.vercel.app/blog/en		Back to all posts		yes
+external
+URL	REL	TEXT	TITLE	IMG
+https://wa.me/?text=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare%20-%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer		WhatsApp	yes
+https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer		Facebook	yes
+https://twitter.com/intent/tweet?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan&text=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare	noopener noreferrer		Twitter	yes
+https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer		LinkedIn	yes
+https://www.thehindu.com/news/national/26/11-mumbai-terror-attacks-timeline/article25568513.ece	noopener noreferrer	The Hindu: Mumbai Terror Attack Timeline		
+https://www.bbc.com/news/world-south-asia-11941747	noopener noreferrer	BBC News: Mumbai Attacks 2008		
+https://www.reuters.com/article/idINIndia-36781320081201/	noopener noreferrer	Reuters: Voice Recordings of 26/11 Handlers		
+https://timesofindia.indiatimes.com/india/tukaram-omble-the-brave-cop-who-caught-kasab-alive/articleshow/3827341.cms	noopener noreferrer	The Times of India: Tukaram Omble's Bravery		
+https://indianexpress.com/article/india/kandahar-hijack-ic-814-taliban-6672413/	noopener noreferrer	Indian Express: IC-814 Hijack Timeline		
+https://www.theguardian.com/world/1999/dec/31/india	noopener noreferrer	The Guardian: India's Hostage Crisis		
+https://www.hindustantimes.com/india-news/how-india-s-ic-814-hijack-led-to-release-of-terrorists/story-6rJlWvXvGOi4R7DqZfBQHP.html	noopener noreferrer	Hindustan Times: Release of Masood Azhar		
+https://www.thehindu.com/news/national/Parliament-attack-case-timeline/article16849995.ece	noopener noreferrer	The Hindu: Parliament Attack Report		
+https://indianexpress.com/article/india/parliament-attack-anniversary-december-13-2001-security-breach-5502951/	noopener noreferrer	Indian Express: 2001 Parliament Attack Anniversary		
+https://www.ndtv.com/india-news/how-5-terrorists-breached-parliament-security-in-2001-attack-1784563	noopener noreferrer	NDTV: Parliament Attack Security Breach		
+https://www.bbc.com/news/world-asia-india-35223572	noopener noreferrer	BBC: Pathankot Attack Details		
+https://www.thehindu.com/news/national/pathankot-attack-a-timeline/article8066479.ece	noopener noreferrer	The Hindu: Pathankot Timeline		
+https://www.aljazeera.com/news/2016/9/18/deadly-kashmir-attack-on-indian-army-base	noopener noreferrer	Al Jazeera: Uri Attack Report		
+https://timesofindia.indiatimes.com/india/Uri-attack-All-you-need-to-know/articleshow/54388426.cms	noopener noreferrer	The Times of India: Uri Attack Details		
+https://www.reuters.com/article/idINKCN1Q30YD/	noopener noreferrer	Reuters: Pulwama Attack Report		
+https://www.bbc.com/news/world-asia-india-47229170	noopener noreferrer	BBC: Kashmir Pulwama Attack		
+https://www.theguardian.com/world/2019/feb/15/kashmir-attack-at-least-30-indian-paramilitaries-killed-by-car-bomb	noopener noreferrer	The Guardian: Pulwama Terror Attack		
+https://thewire.in/film/anupama-chopra-suchitra-tyagi-online-harassment	noopener noreferrer	The Wire: Film Critics Face Online Abuse		
+https://scroll.in/article/film-criticism-democracy-harassment	noopener noreferrer	Scroll.in: Culture of Silencing Critics		
+https://theprint.in/features/film-critics-harassment-free-speech/article123456/	noopener noreferrer	The Print: Freedom of Expression in Film Criticism		
+https://www.hindustantimes.com/india-news/major-mohit-sharma-family-approaches-delhi-high-court-over-film/story-xyz123.html	noopener noreferrer	Hindustan Times: Major Mohit Sharma Family Petition		
+https://indianexpress.com/article/entertainment/bollywood/dhurandhar-film-controversy-major-mohit-sharma/	noopener noreferrer	Indian Express: Dhurandhar Film Legal Notice		
+https://www.livelaw.in/top-stories/delhi-high-court-dhurandhar-film-major-mohit-sharma-petition	noopener noreferrer	Live Law: Delhi High Court Hearing		
+https://gulfnews.com/entertainment/bollywood/film-dhurandhar-banned-uae-dubai	noopener noreferrer	Gulf News: Film Ban in UAE		
+https://www.khaleejtimes.com/entertainment/bollywood-film-banned-gcc-countries	noopener noreferrer	Khaleej Times: Controversial Content in Film		
+https://www.psychologytoday.com/intl/blog/the-athletes-way/201504/the-neuroscience-of-music-emotion-and-memory	noopener noreferrer	Psychology Today: Music and Emotional Manipulation		
+https://myscp.onlinelibrary.wiley.com/doi/abs/10.1002/jcpy.1016	noopener noreferrer	Journal of Consumer Psychology: Background Music Effects		
+https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00174/full	noopener noreferrer	Frontiers in Psychology: Music in Film Perception		
+https://hbr.org/2018/03/how-to-use-cognitive-dissonance-to-drive-sales	noopener noreferrer	Harvard Business Review: Cognitive Dissonance in Marketing		
+https://www.apa.org/pubs/highlights/spotlight/issue-91	noopener noreferrer	American Psychological Association: Cognitive Dissonance Theory		
+https://www.technologyreview.com/2023/05/15/truth-anchoring-propaganda/	noopener noreferrer	MIT Technology Review: Misinformation and Truth Anchoring		
+https://www.cjr.org/analysis/documentary-fiction-blur.php	noopener noreferrer	Columbia Journalism Review: Mixing Fact and Fiction		
+https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=counterfeit-notes	noopener noreferrer	Reserve Bank of India: Counterfeit Currency Report		
+https://economictimes.indiatimes.com/news/economy/policy/fake-currency-problem-in-india/articleshow/	noopener noreferrer	Economic Times: Fake Currency Racket		
+https://www.business-standard.com/article/economy-policy/fake-notes-continue-post-demonetization/	noopener noreferrer	Business Standard: Post-Demonetization Fake Notes		
+https://www.cfr.org/global-conflict-tracker/conflict/conflict-between-india-and-pakistan	noopener noreferrer	Council on Foreign Relations: India-Pakistan Conflict		
+https://www.brookings.edu/articles/india-pakistan-relations-kashmir-terrorism/	noopener noreferrer	Brookings Institution: Kashmir Conflict Analysis		
+https://www.thehindu.com/entertainment/movies/cbfc-certification-controversies/article/	noopener noreferrer	The Hindu: CBFC Guidelines and Controversies		
+https://indianexpress.com/article/opinion/columns/film-censorship-in-india-cbfc/	noopener noreferrer	Indian Express: Film Censorship in India		
+https://www.livelaw.in/top-stories/supreme-court-film-censorship-freedom-expression/	noopener noreferrer	Live Law: Supreme Court on Film Censorship		
+https://www.tandfonline.com/intelligence-operations-india	noopener noreferrer	Strategic Analysis Journal: Intelligence Operations in India		
+https://www.orfonline.org/research/intelligence-failures-terror-attacks/	noopener noreferrer	Observer Research Foundation: Intelligence Failures Analysis		
+https://reutersinstitute.politics.ox.ac.uk/digital-news-report/india	noopener noreferrer	Reuters Institute: Digital Propaganda in India		
+https://thewire.in/tech/whatsapp-misinformation-india-politics	noopener noreferrer	The Wire: WhatsApp and Political Misinformation		
+https://academic.oup.com/joc/article-abstract/political-cinema-propaganda	noopener noreferrer	Journal of Communication: Political Cinema Analysis		
+https://www.epw.in/journal/cinema-politics-india	noopener noreferrer	Economic and Political Weekly: Cinema and Politics in India		
+https://orcid.org/	noopener noreferrer	ORCID.org: Digital Identifier for Researchers		
+https://apastyle.apa.org/style-grammar-guidelines/references/examples/film-references	noopener noreferrer	APA Style: Citing Films and Media		
+https://wa.me/?text=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer	WhatsApp	Share on WhatsApp	yes
+https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer	Facebook	Share on Facebook	yes
+https://twitter.com/intent/tweet?text=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare&url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer	Twitter	Share on X (Twitter)	yes
+https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan	noopener noreferrer	LinkedIn	Share on LinkedIn	yes
+https://www.facebook.com/singhsahab.vikas	noopener noreferrer			
+https://twitter.com/vs_vimukt	noopener noreferrer			
+https://www.linkedin.com/in/vikas-singh2110/	noopener noreferrer			
+https://github.com/vsingh2110	noopener noreferrer			
+https://wa.me/919716186925?text=Via%20Website%20of%20Vikas%20Singh	noopener noreferrer			
+https://github.com/vsingh2110/	noopener noreferrer	Vikas Singh		
+other
+URL	REL	TEXT	TITLE	IMG
+mailto:?subject=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare&body=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare%20-%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan			Email	yes
+mailto:?subject=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare&body=Film%20Dhurandhar%20Controversy%20%7C%20Vajpayee%20Government%20vs%20Manmohan%20Singh%20Government%20%7C%20Psychological%20Warfare%20https%3A%2F%2Fvikassingh.vercel.app%2Fblog%2Fen%2Ffilm-dhurandhar-controversy-vajpayee-vs-manmohan		Email	Share via Email	yes
+INFO 20 images (out of 20) with missing TITLE attribute
+INFO 19 images (out of 20) with missing LOADING attribute
+WARNING 19 images (out of 20) with missing WIDTH or HEIGHT attribute
+SRC	SIZE	LOADING	FETCH PR.	ALT	TITLE
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=30
+SRCSET: available
+SIZES: 100vw	
+REAL	800x420
+HTML	- x -
+high		
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=90
+SRCSET: available
+SIZES: 100vw	
+REAL	800x420
+HTML	- x -
+high	Film Dhurandhar Controversy | Vajpayee Government vs Manmohan Singh Government | Psychological Warfare	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critic-anumpama-chopra-and-suchitra-tyagi.png
+REAL	606x374
+HTML	- x -
+auto	Film critics Anupama Chopra and Suchitra Tyagi	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critics-guild-statement-defending-critics-against-online-troll-and-harrasement.png
+REAL	800x807
+HTML	- x -
+auto	Film Critics Guild statement defending critics	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/film-critics-guild-reply-defending-critics-against-online-troll-and-harrasement.png
+REAL	523x616
+HTML	- x -
+auto	Film Critics Guild reply defending critics	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/major-mohit-sharma-family-moves-delhi-high-court-to-ban-dhurandhar-movie.jpeg
+REAL	495x549
+HTML	- x -
+auto	Major Mohit Sharma family moves Delhi High Court	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/comparison-in-looks-of-major-mohit-sharma-in-real-life-to-dhurandhar-film-lead-character-in-film-played-by-ranveer-singh.jpeg
+REAL	495x619
+HTML	- x -
+auto	Comparison of Major Mohit Sharma looks	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/major-mohit-sharma-brother-madhur-sharma-wants-dignified-portreyel-and-respect-for-his-brother-in-dhurandhar-movie.jpeg
+REAL	515x498
+HTML	- x -
+auto	Major Mohit Sharma's brother Madhur Sharma	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/aditya-dhar-clarification-twitter-x-about-dhurandhar-movie-and-major-mohit-sharma.jpeg
+REAL	508x604
+HTML	- x -
+auto	Aditya Dhar Twitter clarification	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/26-11-mumbai-attack-taj-hotel.webp
+REAL	1600x900 (1.4MP)
+HTML	- x -
+auto	26/11 Mumbai attack at Taj Hotel	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/kandhar-highjack-indian-airlines-december-1999.jpg
+REAL	1200x720
+HTML	- x -
+auto	Kandahar hijack 1999	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/Parliament-attack-december-2001.jpg
+REAL	3000x3000 (9.0MP)
+HTML	- x -
+auto	Parliament attack 2001	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/tukaram-omble-who-took-40-bullets-to-capture-ajmal-kasab-alive.jpg
+REAL	720x360
+HTML	- x -
+auto	Tukaram Omble	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/former-finance-minister-of-india-P-chidamabram-with-his-son-karti-chidambaram_.jpg
+REAL	650x400
+HTML	- x -
+auto	Former Finance Minister P Chidambaram	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/fake-500-cuurency-notes-government-of-india-issues-high-alert.jpg
+REAL	505x600
+HTML	- x -
+auto	Fake 500 currency notes alert	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/fake-cuurency-notes-in-year-2025-rose-by-37-percent.jpg
+REAL	526x526
+HTML	- x -
+auto	Fake currency notes rise in 2025	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/Dhurandhar-movie-reel-characters-vs-real-life-characters.png
+REAL	615x558
+HTML	- x -
+auto	Dhurandhar movie characters comparison	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/ek-din-ayegi-aisi-sarkar-jise-desh-ki-fikra-hogi-r-madhavan.jpg
+REAL	1080x720
+HTML	- x -
+auto	R Madhavan dialogue	
+
+https://vikassingh.vercel.app/images/blogs-images/dhurandhar/rang-de-basanti-movie-2006.jpg
+REAL	1500x700 (1.1MP)
+HTML	- x -
+auto	Rang De Basanti movie 2006	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fvikas-socialist.png&w=256&q=75
+SRCSET: available
+REAL	0x0
+HTML	90x90
+lazy	auto	Vikas Singh "विमुक्त"	
+Doctype is HTML5, there are HTML5 tags and no obsolete HTML tags were found.
+★
+★
+★
+★
+★
+EXTERNAL RESOURCES
+
+2 items
+vercel.live			n.a.
+www.googletagmanager.com			ANALYTICS
+RESOURCE HINTS
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/0484562807a97172-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/33a864272e2b3e97-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/3ecd40fce058ee61-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/70d2fd2b9078a5a3-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/8888a3826f4a3af4-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/b957ea75a84b6ea7-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/eafabf029ad39a43-s.p.woff2
+preload
+(as image) (fetchpriority=auto)
+https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg
+preload
+(as script) (fetchpriority=low)
+https://vikassingh.vercel.app/_next/static/chunks/webpack-0545654421cbb19d.js
+preload
+(as image) (fetchpriority=high)
+preload
+(as image) (fetchpriority=high)
+INLINE SVG
+
+total bytes
+9710
+
+ID	CLIENT SIZE	VIEWBOX	1ST LEVEL NODES	BYTES	PREVIEW	
+-	14x14	0 0 20 20	path (1)	638		
+-	14x14	0 0 20 20	path (1)	163		
+-	0x0	0 0 20 20	path (1)	638		
+-	0x0	0 0 20 20	path (1)	163		
+-	20x20	0 0 24 24	path (1)	219		
+-	16x16	0 0 24 24	path (1)	239		
+-	48x48	0 0 24 24	path (1)	431		
+-	48x48	0 0 24 24	path (1)	332		
+-	48x48	0 0 24 24	path (1)	1228		
+-	48x48	0 0 24 24	path (1)	410		
+-	48x48	0 0 24 24	path (1)	279		
+-	48x48	0 0 24 24	path (1)	622		
+-	48x48	0 0 24 24	path (1)	302		
+-	20x20	0 0 24 24	path (1)	208		
+-	16x16	0 0 24 24	path (1)	401		
+-	16x16	0 0 24 24	path (1)	302		
+-	16x16	0 0 24 24	path (1)	1198		
+-	16x16	0 0 24 24	path (1)	380		
+-	16x16	0 0 24 24	path (1)	249		
+-	16x16	0 0 24 24	path (1)	592		
+-	16x16	0 0 24 24	path (1)	272		
+-	16x16	0 0 24 24	path (1)	257		
+-	20x20	0 0 24 24	path (1)	187		
+Url
+COMMON
+SOCIAL
+STRUCTURED DATA
+MOBILE
+LARGE IMAGES
+MARKUP
+EXTERNAL RESOURCES
+RESOURCE HINTS
+OTHER META DATA
+print

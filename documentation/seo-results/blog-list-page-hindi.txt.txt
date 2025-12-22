@@ -1,0 +1,256 @@
+ META SEO Inspector page analysis
+https://vikassingh.vercel.app/blog/hi
+COMMON
+doctype
+<!DOCTYPE html>
+html lang
+en
+content type
+text/html
+canonical
+https://vikassingh.vercel.app/blog/hi
+head title
+ब्लॉग | विकास सिंह - वेब डेवलपमेंट और डिजिटल मार्केटिंग लेख
+(59 characters)
+description
+विकास सिंह द्वारा वेब डेवलपमेंट, React, Next.js, डिजिटल मार्केटिंग, SEO, मनोविज्ञान और प्रौद्योगिकी के बारे में जानकारीपूर्ण लेख पढ़ें। फ्रंटएंड डेवलपमेंट और डिजिटल विज्ञापन रणनीतियों पर विशेषज्ञ अंतर्दृष्टि।
+(208 characters)
+WARNING description too long (>170 characters)
+keywords
+वेब डेवलपमेंट ब्लॉग, React लेख, Next.js ट्यूटोरियल, डिजिटल मार्केटिंग, SEO टिप्स, फ्रंटएंड डेवलपमेंट, JavaScript, प्रौद्योगिकी लेख, मनोविज्ञान
+( 9 items )
+INFO'keywords' meta tag is obsolete
+robots
+index, follow
+googlebot
+index, follow
+SOCIAL
+
+property
+og:title
+ब्लॉग | विकास सिंह - वेब डेवलपमेंट और डिजिटल मार्केटिंग लेख
+property
+og:description
+विकास सिंह द्वारा वेब डेवलपमेंट, React, Next.js, डिजिटल मार्केटिंग, SEO, मनोविज्ञान और प्रौद्योगिकी के बारे में जानकारीपूर्ण लेख पढ़ें। फ्रंटएंड डेवलपमेंट और डिजिटल विज्ञापन रणनीतियों पर विशेषज्ञ अंतर्दृष्टि।
+property
+og:url
+https://vikassingh.vercel.app/blog/hi
+property
+og:site_name
+Vikas Singh Portfolio
+property
+og:locale
+hi_IN
+property
+og:image
+
+https://vikassingh.vercel.app/images/blog-og-image.jpg
+property
+og:image:width
+1200
+property
+og:image:height
+630
+property
+og:image:alt
+Vikas Singh Blog - Web Development & Digital Marketing
+property
+og:type
+website
+twitter:card
+summary_large_image
+twitter:title
+ब्लॉग | विकास सिंह - वेब डेवलपमेंट और डिजिटल मार्केटिंग लेख
+twitter:description
+विकास सिंह द्वारा वेब डेवलपमेंट, React, Next.js, डिजिटल मार्केटिंग, SEO, मनोविज्ञान और प्रौद्योगिकी के बारे में जानकारीपूर्ण लेख पढ़ें। फ्रंटएंड डेवलपमेंट और डिजिटल विज्ञापन रणनीतियों पर विशेषज्ञ अंतर्दृष्टि।
+twitter:image
+https://vikassingh.vercel.app/images/blog-og-image.jpg
+STRUCTURED DATA
+The following is a rough representation of the found structured data, for more insights please test here:
+•
+Schema Markup Validator
+
+•
+Google Rich Results Test
+@type: Person name: Vikas Singh
+@type: PostalAddress
+@type: EducationalOrganization name: Electrical Engineering
+@type: Occupation name: Frontend Developer
+@type: Country name: India
+@type: WebPage name: Blog - Web Development & Digital Marketing
+@type: WebSite name: Vikas Singh Portfolio
+@type: Person name: Vikas Singh
+@type: BreadcrumbList
+@type: ListItem name: Home
+@type: ListItem name: Blog
+MOBILE
+viewport
+width=device-width, initial-scale=1
+MARKUP
+
+<html>
+(1)
+
+<img>
+(6)
+
+WARNING H1 should be 20-70 characters(5 characters)
+h1 ब्लॉग (5 characters)
+h2 फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल (77 characters)
+h2 NextJS 14 से शुरू कैसे करें: एक व्यापक गाइड (43 characters)
+h2 2025 में डिजिटल मार्केटिंग ट्रेंड्स (35 characters)
+h2 Social Linksconnect with me (27 characters) INFOContent seems to be hidden
+WARNING 5 links without anchor text or image
+internal
+ 
+(15)
+-
+external
+ 
+(6)
+-
+other
+ 
+(0)
+internal
+URL	REL	TEXT	TITLE	IMG
+https://vikassingh.vercel.app/		Portfolio.Vikas Singh		
+https://vikassingh.vercel.app/#home		Home		
+https://vikassingh.vercel.app/#about		About		
+https://vikassingh.vercel.app/#services		Services		
+https://vikassingh.vercel.app/#skills		Skills		
+https://vikassingh.vercel.app/#achievements		Achievements		
+https://vikassingh.vercel.app/#nonprofit		Research		
+https://vikassingh.vercel.app/#social-activities		Activism		
+https://vikassingh.vercel.app/#contact		Contact		
+https://vikassingh.vercel.app/blog		Blog		
+https://vikassingh.vercel.app/blog/en		🇺🇸English		
+https://vikassingh.vercel.app/blog/hi#		🇮🇳हिंदी		
+https://vikassingh.vercel.app/blog/hi/dhurandhar-film-controversy-analysis		Film Analysis15 दिस॰ 2025, 05:30 am IST•33 min readफिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेलVikas Singhधुरंधर फिल्म समीक्षा - यहां मनोवैज्ञानिक छल-कपट की तकनीकें इस्तेमाल की गई हैं। Truth Anchoring, Selective Amnesia, Auditory Conditioning का विश्लेषण।लेख पढ़ें		yes
+https://vikassingh.vercel.app/blog/hi/nextjs-14-se-shuru-kaise-kare		वेब डेवलपमेंट15 जन॰ 2025, 05:30 am IST•5 min readNextJS 14 से शुरू कैसे करें: एक व्यापक गाइडविकास सिंह "विमुक्त"NextJS 14 के साथ आधुनिक वेब एप्लिकेशन बनाना सीखें, जिसमें नए App Router, Server Components, और परफॉर्मेंस ऑप्टिमाइज़ेशन तकनीकें शामिल हैं।लेख पढ़ें		yes
+https://vikassingh.vercel.app/blog/hi/digital-marketing-trends-2025		डिजिटल मार्केटिंग10 जन॰ 2025, 05:30 am IST•7 min read2025 में डिजिटल मार्केटिंग ट्रेंड्सविकास सिंह "विमुक्त"AI-संचालित मार्केटिंग, वॉयस सर्च ऑप्टिमाइज़ेशन और पर्सनलाइज़ेशन रणनीतियों सहित नवीनतम डिजिटल मार्केटिंग ट्रेंड्स का अन्वेषण करें जो 2025 में उद्योग को आकार देंगे।लेख पढ़ें		yes
+external
+URL	REL	TEXT	TITLE	IMG
+https://www.facebook.com/singhsahab.vikas	noopener noreferrer			
+https://twitter.com/vs_vimukt	noopener noreferrer			
+https://www.linkedin.com/in/vikas-singh2110/	noopener noreferrer			
+https://github.com/vsingh2110	noopener noreferrer			
+https://wa.me/919716186925?text=Via%20Website%20of%20Vikas%20Singh	noopener noreferrer			
+https://github.com/vsingh2110/	noopener noreferrer	Vikas Singh		
+INFO 6 images (out of 6) with missing TITLE attribute
+WARNING 6 images (out of 6) with missing WIDTH or HEIGHT attribute
+INFO 6 images (out of 6) are lazyloaded and above the fold
+SRC	SIZE	LOADING	FETCH PR.	ALT	TITLE
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x221
+HTML	- x -
+lazy	auto	फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fblogs-images%2Fdhurandhar%2Fpreview-image-dhurandhar.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x221
+HTML	- x -
+lazy	auto	फिल्म धुरंधर का विवाद | वाजपेयी सरकार vs मनमोहन सिंह सरकार | मनोवैज्ञानिक खेल	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fnextjs-blog.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x281
+HTML	- x -
+lazy	auto	NextJS 14 से शुरू कैसे करें: एक व्यापक गाइड	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fnextjs-blog.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x281
+HTML	- x -
+lazy	auto	NextJS 14 से शुरू कैसे करें: एक व्यापक गाइड	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fdigital-marketing-blog.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x300
+HTML	- x -
+lazy	auto	2025 में डिजिटल मार्केटिंग ट्रेंड्स	
+
+https://vikassingh.vercel.app/_next/image?url=%2Fimages%2Fdigital-marketing-blog.jpg&w=3840&q=75
+SRCSET: available
+SIZES: (max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw	
+REAL	422x300
+HTML	- x -
+lazy	auto	2025 में डिजिटल मार्केटिंग ट्रेंड्स	
+Doctype is HTML5, there are HTML5 tags and no obsolete HTML tags were found.
+★
+★
+★
+★
+★
+EXTERNAL RESOURCES
+
+2 items
+vercel.live			n.a.
+www.googletagmanager.com			ANALYTICS
+RESOURCE HINTS
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/0484562807a97172-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/33a864272e2b3e97-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/3ecd40fce058ee61-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/70d2fd2b9078a5a3-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/8888a3826f4a3af4-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/b957ea75a84b6ea7-s.p.woff2
+preload
+(as font) (type=font/woff2) (fetchpriority=auto)
+https://vikassingh.vercel.app/_next/static/media/eafabf029ad39a43-s.p.woff2
+preload
+(as image) (fetchpriority=auto)
+https://purecatamphetamine.github.io/country-flag-icons/3x2/IN.svg
+preload
+(as script) (fetchpriority=low)
+https://vikassingh.vercel.app/_next/static/chunks/webpack-0545654421cbb19d.js
+INLINE SVG
+
+total bytes
+4647
+
+ID	CLIENT SIZE	VIEWBOX	1ST LEVEL NODES	BYTES	PREVIEW	
+-	14x14	0 0 20 20	path (1)	638		
+-	14x14	0 0 20 20	path (1)	163		
+-	0x0	0 0 20 20	path (1)	638		
+-	0x0	0 0 20 20	path (1)	163		
+-	16x16	0 0 24 24	path (1)	272		
+-	16x16	0 0 24 24	path (1)	229		
+-	16x16	0 0 24 24	path (1)	253		
+-	16x16	0 0 24 24	path (1)	261		
+-	16x16	0 0 24 24	path (1)	272		
+-	16x16	0 0 24 24	path (1)	229		
+-	16x16	0 0 24 24	path (1)	253		
+-	16x16	0 0 24 24	path (1)	261		
+-	16x16	0 0 24 24	path (1)	272		
+-	16x16	0 0 24 24	path (1)	229		
+-	16x16	0 0 24 24	path (1)	253		
+-	16x16	0 0 24 24	path (1)	261		
+Url
+COMMON
+SOCIAL
+STRUCTURED DATA
+MOBILE
+MARKUP
+EXTERNAL RESOURCES
+RESOURCE HINTS
+OTHER META DATA
+print
