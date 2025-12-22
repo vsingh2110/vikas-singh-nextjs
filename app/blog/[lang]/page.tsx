@@ -85,6 +85,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default function BlogListingPage({ params }: PageProps) {
   const { lang } = params
 
+  // Validate language
+  if (lang !== 'en' && lang !== 'hi') {
+    notFound()
+  }
+
+  const posts = getAllPosts(lang)
+
+  const content = {
+    en: {
+      title: 'Blog',
+      subtitle: 'Insights on psychology, technology, digital platforms, and social change',
+      noPostsTitle: 'No posts yet',
+      noPostsText: 'Check back soon for new content, or switch to',
+      switchTo: 'English',
+    },
+    hi: {
+      title: 'ब्लॉग',
+      subtitle: 'मनोविज्ञान, प्रौद्योगिकी, डिजिटल प्लेटफार्मों और सामाजिक परिवर्तन पर अंतर्दृष्टि',
+      noPostsTitle: 'अभी तक कोई पोस्ट नहीं',
+      noPostsText: 'नई सामग्री के लिए जल्द ही वापस जांचें, या स्विच करें',
+      switchTo: 'हिंदी',
+    },
+  }
+
+  const text = content[lang]
+
   const pageTitle = lang === 'en' 
     ? 'Blog - Web Development & Digital Marketing' 
     : 'ब्लॉग - वेब डेवलपमेंट और डिजिटल मार्केटिंग'
@@ -114,30 +140,8 @@ export default function BlogListingPage({ params }: PageProps) {
             item: `https://vikassingh.vercel.app/blog/${lang}`,
           },
         ]}
-      /(lang !== 'en' && lang !== 'hi') {
-    notFound()
-  }
-
-  const posts = getAllPosts(lang)
-
-  const content = {
-    en: {
-      title: 'Blog',
-      subtitle: 'Insights on psychology, technology, digital platforms, and social change',
-      noPostsTitle: 'No posts yet',
-      noPostsText: 'Check back soon for new content, or switch to',
-      switchTo: 'English',
-    },
-    hi: {
-      title: 'ब्लॉग',
-      subtitle: 'मनोविज्ञान, प्रौद्योगिकी, डिजिटल प्लेटफार्मों और सामाजिक परिवर्तन पर अंतर्दृष्टि',
-      noPostsTitle: 'अभी तक कोई पोस्ट नहीं',
-      noPostsText: 'नई सामग्री के लिए जल्द ही वापस जांचें, या स्विच करें',
-      switchTo: 'हिंदी',
-    },
-  }
-
-  const text = content[lang]
+      />
+      <Navbar />
 
   return (
     <>
