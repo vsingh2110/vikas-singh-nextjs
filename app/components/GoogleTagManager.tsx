@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
-export default function GoogleTagManager() {
+function GTMTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -20,6 +20,14 @@ export default function GoogleTagManager() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export default function GoogleTagManager() {
+  return (
+    <Suspense fallback={null}>
+      <GTMTracker />
+    </Suspense>
+  );
 }
 
 // TypeScript declaration for dataLayer
