@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Ubuntu } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import GoogleTagManager from "./components/GoogleTagManager";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -71,6 +72,9 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
+        
+        {/* GTM Route Change Tracker */}
+        <GoogleTagManager />
         
         {children}
         <Analytics />

@@ -1,7 +1,7 @@
 # Tech Stack Reference
 
 **Project:** Vikas Singh Portfolio & Blog Website  
-**Last Updated:** December 10, 2025 (Evening Session)  
+**Last Updated:** December 22, 2025 (GTM & Analytics Integration)  
 **Purpose:** Comprehensive technical documentation of all technologies, packages, and configurations
 
 ---
@@ -198,6 +198,15 @@ console.log(stats.words) // 1250
 - ✅ **File-based with MDX** - Using gray-matter + next-mdx-remote
 - Content stored in `/content/blog/[lang]/` directory
 - Frontmatter for metadata, Markdown for content
+
+### **Analytics & Tracking**
+- ✅ **Vercel Analytics** (`@vercel/analytics@1.4.1`) - Built-in Vercel performance tracking
+- ✅ **Google Tag Manager** (GTM-KWKQK668) - Container for marketing tags
+- ✅ **Google Analytics 4** (G-9YNSYJ8PLQ) - User behavior tracking
+- ✅ **Custom Route Tracker** - Next.js SPA navigation tracking component
+  - Location: `/app/components/GoogleTagManager.tsx`
+  - Purpose: Tracks route changes in Next.js App Router
+  - Implementation: Client component using `usePathname()` and `useSearchParams()`
 
 ---
 

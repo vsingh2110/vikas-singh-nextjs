@@ -16,6 +16,8 @@ import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import BlurBackgroundScript from '@/app/components/BlurBackgroundScript'
+import ArticleSchema from '@/app/components/schemas/ArticleSchema'
+import BreadcrumbSchema from '@/app/components/schemas/BreadcrumbSchema'
 import { getPostBySlug, getAllSlugs } from '@/lib/blog'
 
 interface PageProps {
@@ -55,21 +57,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Vikas Singh`,
     description: post.excerpt,
+    keywords: post.tags?.join(', '),
+    authors: [{ name: post.author, url: 'https://vikassingh.vercel.app' }],
     alternates: {
-      canonical: `/blog/${lang}/${slug}`,
+      canonical: `https://vikassingh.vercel.app/blog/${lang}/${slug}`,
       languages: post.alternateLanguage && post.alternateSlug ? {
-        [post.alternateLanguage]: `/blog/${post.alternateLanguage}/${post.alternateSlug}`,
-        [lang]: `/blog/${lang}/${slug}`,
+        [post.alternateLanguage]: `https://vikassingh.vercel.app/blog/${post.alternateLanguage}/${post.alternateSlug}`,
+        [lang]: `https://vikassingh.vercel.app/blog/${lang}/${slug}`,
       } : undefined,
     },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       url: `https://vikassingh.vercel.app/blog/${lang}/${slug}`,
-      siteName: 'Vikas Singh',
+      siteName: 'Vikas Singh Portfolio',
       locale: lang === 'en' ? 'en_US' : 'hi_IN',
       type: 'article',
       publishedTime: post.date,
+      ...(post.tags && { tags: post.tags }),
       authors: [post.author],
       images: [
         {
@@ -89,6 +94,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: post.title,
       description: post.excerpt,
       images: [`https://vikassingh.vercel.app${post.image}`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   }
 }
@@ -217,8 +233,44 @@ export default function BlogPostPage({ params }: PageProps) {
   // Full URL for sharing
   const fullUrl = `https://vikassingh.vercel.app/blog/${lang}/${params.slug}`
 
+  // Calculate word count for schema
+  const wordCount = post.content.split(/\s+/).length
+
   return (
     <>
+      <ArticleSchema
+        headline={post.title}
+        description={post.excerpt}
+        image={`https://vikassingh.vercel.app${post.image}`}
+        datePublished={post.date}
+        dateModified={post.date}
+        authorName={post.author}
+        authorUrl="https://vikassingh.vercel.app"
+        url={fullUrl}
+        articleSection={post.category}
+        keywords={post.tags}
+        wordCount={wordCount}
+        inLanguage={lang}
+      />
+      <BreadcrumbSchema
+        items={[
+          {
+            position: 1,
+            name: 'Home',
+            item: 'https://vikassingh.vercel.app',
+          },
+          {
+            position: 2,
+            name: lang === 'en' ? 'Blog' : 'ब्लॉग',
+            item: `https://vikassingh.vercel.app/blog/${lang}`,
+          },
+          {
+            position: 3,
+            name: post.title,
+            item: fullUrl,
+          },
+        ]}
+      />
       <ReadingProgress />
       <Navbar />
       

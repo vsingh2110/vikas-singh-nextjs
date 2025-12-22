@@ -6,6 +6,8 @@ import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import BlogGrid from '@/app/components/BlogGrid'
+import WebPageSchema from '@/app/components/schemas/WebPageSchema'
+import BreadcrumbSchema from '@/app/components/schemas/BreadcrumbSchema'
 import { getAllPosts } from '@/lib/blog'
 import Link from 'next/link'
 
@@ -24,32 +26,58 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   const metadata = {
     en: {
-      title: 'Blog | Vikas Singh',
-      description: 'Read articles about web development, digital marketing, psychology, and technology by Vikas Singh',
+      title: 'Blog | Vikas Singh - Web Development & Digital Marketing Articles',
+      description: 'Read insightful articles about web development, React, Next.js, digital marketing, SEO, Google Ads, psychology, and technology by Vikas Singh. Expert insights on frontend development and digital advertising strategies.',
+      keywords: 'Web Development Blog, React Articles, Next.js Tutorials, Digital Marketing Blog, SEO Tips, Frontend Development, JavaScript Blog, Technology Articles, Psychology Insights',
     },
     hi: {
-      title: 'ब्लॉग | विकास सिंह',
-      description: 'विकास सिंह द्वारा वेब डेवलपमेंट, डिजिटल मार्केटिंग, मनोविज्ञान और प्रौद्योगिकी के बारे में लेख पढ़ें',
+      title: 'ब्लॉग | विकास सिंह - वेब डेवलपमेंट और डिजिटल मार्केटिंग लेख',
+      description: 'विकास सिंह द्वारा वेब डेवलपमेंट, React, Next.js, डिजिटल मार्केटिंग, SEO, मनोविज्ञान और प्रौद्योगिकी के बारे में जानकारीपूर्ण लेख पढ़ें। फ्रंटएंड डेवलपमेंट और डिजिटल विज्ञापन रणनीतियों पर विशेषज्ञ अंतर्दृष्टि।',
+      keywords: 'वेब डेवलपमेंट ब्लॉग, React लेख, Next.js ट्यूटोरियल, डिजिटल मार्केटिंग, SEO टिप्स, फ्रंटएंड डेवलपमेंट, JavaScript, प्रौद्योगिकी लेख, मनोविज्ञान',
     },
   }
 
   return {
     title: metadata[lang].title,
     description: metadata[lang].description,
+    keywords: metadata[lang].keywords,
+    authors: [{ name: 'Vikas Singh', url: 'https://vikassingh.vercel.app' }],
     alternates: {
-      canonical: `/blog/${lang}`,
+      canonical: `https://vikassingh.vercel.app/blog/${lang}`,
       languages: {
-        'en': '/blog/en',
-        'hi': '/blog/hi',
+        'en': 'https://vikassingh.vercel.app/blog/en',
+        'hi': 'https://vikassingh.vercel.app/blog/hi',
       },
     },
     openGraph: {
       title: metadata[lang].title,
       description: metadata[lang].description,
-      url: `/blog/${lang}`,
-      siteName: 'Vikas Singh',
+      url: `https://vikassingh.vercel.app/blog/${lang}`,
+      siteName: 'Vikas Singh Portfolio',
       locale: lang === 'en' ? 'en_US' : 'hi_IN',
       type: 'website',
+      images: [
+        {
+          url: 'https://vikassingh.vercel.app/images/blog-og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Vikas Singh Blog - Web Development & Digital Marketing',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: metadata[lang].title,
+      description: metadata[lang].description,
+      images: ['https://vikassingh.vercel.app/images/blog-og-image.jpg'],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
     },
   }
 }
@@ -57,8 +85,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default function BlogListingPage({ params }: PageProps) {
   const { lang } = params
 
-  // Validate language
-  if (lang !== 'en' && lang !== 'hi') {
+  const pageTitle = lang === 'en' 
+    ? 'Blog - Web Development & Digital Marketing' 
+    : 'ब्लॉग - वेब डेवलपमेंट और डिजिटल मार्केटिंग'
+  
+  const pageDescription = lang === 'en'
+    ? 'Articles about React, Next.js, Digital Marketing, SEO, and Technology'
+    : 'React, Next.js, डिजिटल मार्केटिंग, SEO और प्रौद्योगिकी के बारे में लेख'
+
+  return (
+    <>
+      <WebPageSchema
+        name={pageTitle}
+        description={pageDescription}
+        url={`https://vikassingh.vercel.app/blog/${lang}`}
+        inLanguage={lang}
+      />
+      <BreadcrumbSchema
+        items={[
+          {
+            position: 1,
+            name: 'Home',
+            item: 'https://vikassingh.vercel.app',
+          },
+          {
+            position: 2,
+            name: lang === 'en' ? 'Blog' : 'ब्लॉग',
+            item: `https://vikassingh.vercel.app/blog/${lang}`,
+          },
+        ]}
+      /(lang !== 'en' && lang !== 'hi') {
     notFound()
   }
 
