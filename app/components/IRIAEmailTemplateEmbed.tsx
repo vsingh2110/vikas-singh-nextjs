@@ -562,12 +562,7 @@ export default function IRIAEmailTemplateEmbed() {
     <div className="my-8">
       {/* Mobile Notice - Hidden on Desktop */}
       <div
-        className="block md:hidden my-8 p-6 border-2 border-dashed rounded-xl text-center"
-        style={{
-          backgroundColor: '#fef3c7',
-          borderColor: '#f59e0b',
-          color: '#92400e'
-        }}
+        className="block md:hidden my-8 p-6 border-2 border-dashed rounded-xl text-center bg-amber-100 dark:bg-amber-900/30 border-amber-500 dark:border-amber-600"
       >
         <div className="text-4xl mb-3">🖥️</div>
         <p className="font-bold text-lg mb-2">Desktop Only Feature</p>
@@ -612,12 +607,7 @@ export default function IRIAEmailTemplateEmbed() {
 
         {/* Fallback Notice */}
         <div
-          className="my-8 p-4 border-l-4 rounded-r-lg"
-          style={{
-            backgroundColor: '#fff7ed',
-            borderLeftColor: '#f97316',
-            color: '#9a3412'
-          }}
+          className="my-8 p-4 border-l-4 rounded-r-lg bg-orange-50 dark:bg-orange-900/30 border-orange-500 dark:border-orange-400"
         >
           <p className="font-bold mb-2">⚠️ Copy Button Not Working?</p>
           <p className="text-sm">
