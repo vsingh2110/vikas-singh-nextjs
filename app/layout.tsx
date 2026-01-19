@@ -24,6 +24,13 @@ export const metadata: Metadata = {
   title: "Vikas Singh | Frontend Developer & Digital Marketing Expert",
   description: "Portfolio of Vikas Singh - Frontend Developer specializing in React, Next.js, and Digital Marketing. Electrical Engineering graduate with expertise in web development and paid advertising.",
   keywords: ["Frontend Developer", "React", "Next.js", "Digital Marketing", "SEO", "WordPress", "Shopify", "Google Ads", "Facebook Ads"],
+  icons: {
+    icon: [
+      { url: '/images/vikas-socialist.png', type: 'image/png' },
+    ],
+    shortcut: '/images/vikas-socialist.png',
+    apple: '/images/vikas-socialist.png',
+  },
 };
 
 export default function RootLayout({

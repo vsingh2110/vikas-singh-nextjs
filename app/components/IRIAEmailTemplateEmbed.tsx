@@ -560,53 +560,75 @@ const emailTemplateHTML = `<!DOCTYPE html>
 export default function IRIAEmailTemplateEmbed() {
   return (
     <div className="my-8">
-      {/* Copy Button - Top */}
-      <EmailTemplateCopyButton position="top" />
-
-      {/* Email Template Embed - Theme Independent */}
+      {/* Mobile Notice - Hidden on Desktop */}
       <div
-        className="my-6 rounded-lg overflow-hidden shadow-2xl"
+        className="block md:hidden my-8 p-6 border-2 border-dashed rounded-xl text-center"
         style={{
-          backgroundColor: '#ffffff',
-          padding: '0',
-          border: '2px solid #e5e7eb',
-          isolation: 'isolate'
+          backgroundColor: '#fef3c7',
+          borderColor: '#f59e0b',
+          color: '#92400e'
         }}
       >
-        <iframe
-          id="email-template-iframe"
-          srcDoc={emailTemplateHTML}
-          style={{
-            width: '100%',
-            height: '1800px',
-            border: 'none',
-            backgroundColor: '#ffffff'
-          }}
-          title="IRIA 2026 Email Template Preview"
-        />
+        <div className="text-4xl mb-3">🖥️</div>
+        <p className="font-bold text-lg mb-2">Desktop Only Feature</p>
+        <p className="text-sm">
+          The embedded email template preview and copy functionality is only available on <strong>Desktop devices</strong>.
+        </p>
+        <p className="text-sm mt-2">
+          Please open this page in <strong>Google Chrome on a Desktop/Laptop</strong> to view and copy the email template.
+        </p>
       </div>
 
-      {/* Copy Button - Bottom */}
-      <EmailTemplateCopyButton position="bottom" />
+      {/* Desktop Content - Hidden on Mobile */}
+      <div className="hidden md:block">
+        {/* Copy Button - Top */}
+        <EmailTemplateCopyButton position="top" />
 
-      {/* Fallback Notice */}
-      <div
-        className="my-8 p-4 border-l-4 rounded-r-lg"
-        style={{
-          backgroundColor: '#fff7ed',
-          borderLeftColor: '#f97316',
-          color: '#9a3412'
-        }}
-      >
-        <p className="font-bold mb-2">⚠️ Copy Not Working?</p>
-        <p className="text-sm">
-          If the button doesn&apos;t copy the template properly:
-        </p>
-        <ol className="text-sm list-decimal ml-4 mt-2 space-y-1">
-          <li>Scroll inside the preview above and manually select all content (Ctrl+A inside the iframe)</li>
-          <li>Or request the template email directly from your manager</li>
-          <li>The copy button works best in Chrome Desktop</li>
-        </ol>
+        {/* Email Template Embed - Theme Independent */}
+        <div
+          className="my-6 rounded-lg overflow-hidden shadow-2xl"
+          style={{
+            backgroundColor: '#ffffff',
+            padding: '0',
+            border: '2px solid #e5e7eb',
+            isolation: 'isolate'
+          }}
+        >
+          <iframe
+            id="email-template-iframe"
+            srcDoc={emailTemplateHTML}
+            style={{
+              width: '100%',
+              height: '1800px',
+              border: 'none',
+              backgroundColor: '#ffffff'
+            }}
+            title="IRIA 2026 Email Template Preview"
+          />
+        </div>
+
+        {/* Copy Button - Bottom */}
+        <EmailTemplateCopyButton position="bottom" />
+
+        {/* Fallback Notice */}
+        <div
+          className="my-8 p-4 border-l-4 rounded-r-lg"
+          style={{
+            backgroundColor: '#fff7ed',
+            borderLeftColor: '#f97316',
+            color: '#9a3412'
+          }}
+        >
+          <p className="font-bold mb-2">⚠️ Copy Button Not Working?</p>
+          <p className="text-sm">
+            The copy button may not work in all browsers. If it doesn&apos;t copy properly:
+          </p>
+          <ol className="text-sm list-decimal ml-4 mt-2 space-y-1">
+            <li><strong>Manual Selection:</strong> Use your mouse to select the email content inside the preview above, then Ctrl+C to copy</li>
+            <li>Or request the template email directly from your manager</li>
+            <li>The copy button works best in Chrome Desktop</li>
+          </ol>
+        </div>
       </div>
     </div>
   );
