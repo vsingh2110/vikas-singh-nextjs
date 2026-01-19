@@ -2,9 +2,9 @@
 # IRIA 2026 Internal Sales Tutorial Blog Implementation
 
 **Date:** January 19, 2026  
-**Session Duration:** ~1 hour  
-**Status:** ✅ BLOG CREATED SUCCESSFULLY  
-**Deployment:** Pending image upload  
+**Session Duration:** ~2+ hours (multiple sessions)  
+**Status:** ✅ BLOG COMPLETED WITH EMBEDDED EMAIL TEMPLATE  
+**Deployment:** Ready for production  
 
 ---
 
@@ -12,20 +12,74 @@
 
 This session focused on creating an internal training blog for Phantom Healthcare sales executives on how to send IRIA 2026 invitation emails using our pre-designed Beefree template.
 
-**User Requirement:**
-- Create a step-by-step tutorial for sales team
-- Explain the copy-paste technique from Beefree preview mode
-- Cover BCC technique for privacy
-- Document daily email limits (Free Gmail vs Google Workspace)
-- Include precautions and best practices
-- Provide embedded option for template access
-- English version only - Hindi shows "Available in English Only" message
+**User Requirements (All Completed ✅):**
+- ✅ Create a step-by-step tutorial for sales team
+- ✅ Explain the copy-paste technique from Beefree preview mode
+- ✅ Cover BCC technique for privacy
+- ✅ Document daily email limits (Free Gmail vs Google Workspace)
+- ✅ Include precautions and best practices
+- ✅ **Embed full HTML email template with copy buttons** (NEW)
+- ✅ **Add video tutorial with poster image** (NEW)
+- ✅ **Browser compatibility notice** (Chrome desktop only) (NEW)
+- ✅ English version only - Hindi shows "Available in English Only" message
 
 ---
 
 ## 🎯 Major Accomplishments
 
-### 1. English Blog Post Created ✅
+### 1. Email Template Embed Component Created ✅ (NEW)
+
+**Problem Solved:** onClick handlers don't work in MDX (Server Component)
+
+**Solution:** Created dedicated Client Component
+
+**Files Created:**
+- `app/components/EmailTemplateCopyButton.tsx` - Copy button with state management
+- `app/components/IRIAEmailTemplateEmbed.tsx` - Full embed with iframe + copy buttons
+
+**Features:**
+- Full Beefree HTML email template embedded in iframe
+- Copy button at top AND bottom of template
+- Theme-independent (always white background, isolated)
+- Uses `execCommand('copy')` with selection API
+- Success/error states with visual feedback
+- Fallback instructions if copy doesn't work
+
+**Integration:**
+- Added to `app/blog/[lang]/[slug]/page.tsx` components object
+- MDX now uses `<IRIAEmailTemplateEmbed />` component call
+
+### 2. Video Tutorial Added ✅ (NEW)
+
+**Implementation:**
+```html
+<video 
+  controls 
+  preload="none" 
+  poster="/images/blogs-images/email-tutorial-iria-2026-phantom/tumbnail-or-hero-header-or-meta-og-preview.jpg"
+  className="w-full rounded-lg shadow-xl"
+>
+  <source src="...mp4" type="video/mp4" />
+</video>
+```
+
+**Features:**
+- Native HTML5 video (no YouTube dependency)
+- `preload="none"` for 15MB file - only loads when user clicks play
+- Poster image shown before play
+- Responsive width with rounded corners
+
+### 3. Browser Compatibility Notice ✅ (NEW)
+
+**Added prominent warning box:**
+- ✅ Chrome Desktop (RECOMMENDED)
+- ✅ Edge Desktop
+- ✅ Firefox Desktop
+- ❌ Outlook Desktop App
+- ❌ Apple Mail App
+- ❌ Mobile email apps
+
+### 4. English Blog Post Created ✅
 
 **File:** `content/blog/en/iria-2026-email-template-tutorial.mdx`
 
@@ -88,7 +142,7 @@ date: "2026-01-19"
 **Build Output:**
 ```
 Route (app)                                                      Size
-├ ● /blog/[lang]/[slug]                                          6.04 kB
+├ ● /blog/[lang]/[slug]                                          11.5 kB
 │   ├ /blog/en/digital-marketing-trends-2025
 │   ├ /blog/en/film-dhurandhar-controversy-vajpayee-vs-manmohan
 │   ├ /blog/en/getting-started-with-nextjs
@@ -97,28 +151,30 @@ Route (app)                                                      Size
 
 ---
 
-## 📁 Files Created
+## 📁 Files Created/Modified
 
-| File | Purpose |
-|------|---------|
-| `content/blog/en/iria-2026-email-template-tutorial.mdx` | Full English tutorial |
-| `content/blog/hi/iria-2026-email-template-tutorial.mdx` | Hindi placeholder with redirect |
+| File | Purpose | Status |
+|------|---------|--------|
+| `content/blog/en/iria-2026-email-template-tutorial.mdx` | Full English tutorial (385 lines) | ✅ Complete |
+| `content/blog/hi/iria-2026-email-template-tutorial.mdx` | Hindi placeholder with redirect | ✅ Complete |
+| `app/components/EmailTemplateCopyButton.tsx` | Copy button client component | ✅ NEW |
+| `app/components/IRIAEmailTemplateEmbed.tsx` | Full embed with iframe + buttons | ✅ NEW |
+| `app/blog/[lang]/[slug]/page.tsx` | Added IRIAEmailTemplateEmbed import/component | ✅ Modified |
 
 ---
 
-## 🖼️ Images Required (Pending)
+## 🖼️ Images Structure (User Provided)
 
-The blog uses **Type 1: Single Center Image** pattern as requested.
+**Folder:** `/public/images/blogs-images/email-tutorial-iria-2026-phantom/`
 
-**Images to add to `/public/images/`:**
-
-| Image Path | Purpose | Recommended Size |
-|------------|---------|-----------------|
-| `/images/iria-2026-email-tutorial.jpg` | Blog card preview | 1200x630px, <300KB |
-| `/images/iria-2026-invitation-preview.jpg` | Full email template preview | 1200x800px |
-| `/images/iria-2026-select-area.jpg` | Selection tutorial screenshot | 1200x800px |
-
-**Important:** Preview image must be under 300KB for WhatsApp OG preview compatibility (documented issue from Dec 18).
+| Image File | Purpose |
+|------------|---------|
+| `tumbnail-or-hero-header-or-meta-og-preview.jpg` | Blog card, OG preview, video poster |
+| `Select using the mouse...jpg` | Tutorial step 2 |
+| `Select till Unsubscribe...jpg` | Tutorial step 2 continued |
+| `Compose a new email, and remove any predefined signature...jpg` | Tutorial step 3 |
+| `Write the Subject...jpg` | Tutorial step 6 |
+| `IRIA 2026 Hyderabad Email Template Tutorial...mp4` | 15MB video tutorial |
 
 ---
 

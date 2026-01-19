@@ -12,6 +12,7 @@ import TopShareButtons from '@/app/components/TopShareButtons'
 import SocialShare from '@/app/components/SocialShare'
 import ReadingModeToggle from '@/app/components/ReadingModeToggle'
 import ImagePair from '@/app/components/ImagePair'
+import IRIAEmailTemplateEmbed from '@/app/components/IRIAEmailTemplateEmbed'
 import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
@@ -165,6 +166,7 @@ const components = {
     <hr className="my-8 border-t-2 border-gray-200" {...props} />
   ),
   ImagePair: ImagePair,
+  IRIAEmailTemplateEmbed: IRIAEmailTemplateEmbed,
 }
 
 export default function BlogPostPage({ params }: PageProps) {
