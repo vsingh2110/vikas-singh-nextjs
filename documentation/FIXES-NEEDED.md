@@ -1,8 +1,39 @@
-# FIXES NEEDED - December 22, 2025
+# FIXES NEEDED - January 20, 2026
 
 **STATUS:** ⚠️ SEO OPTIMIZATION REQUIRED - Foundation Complete, Fine-tuning Needed  
-**Last Updated:** December 22, 2025 - 9:00 PM IST  
+**Last Updated:** January 20, 2026 - Session 2  
 **Purpose:** Central tracking file for all outstanding bugs and issues
+
+---
+
+## ✅ COMPLETED - January 20, 2026 Session 2 (IRIA Blog Fixes)
+
+### Issue: IRIA 2026 Blog Multiple Fixes
+**Status:** ✅ ALL COMPLETED  
+**Build:** ✅ PASSING
+
+**Fixes Implemented:**
+
+| Fix | Status | Details |
+|-----|--------|---------|
+| Broken image: "Select till Unsubscribe..." | ✅ | Fixed path to match actual filename |
+| Broken image: "Compose a new email..." | ✅ | Fixed path to match actual filename |
+| Copy button not working | ✅ | Implemented modern Clipboard API with HTML support + fallbacks |
+| Address text Gmail auto-link | ✅ | Wrapped address in `<a href="#">` with pointer-events:none |
+| Video play button overlay | ✅ | Created VideoWithPlayButton component |
+| Video size reduced 20% | ✅ | Changed from 60vh to 48vh |
+| "Team Phantom Healthcare" dark mode | ✅ | Added dark:text-gray-100 class |
+| "copy-paste technique" wording | ✅ | Changed to "HTML formatting preservation method" |
+| PDF embed | ✅ | Created PDFEmbed component + added to blog |
+| Tutorial includes section | ✅ | Added intro box mentioning article, video, PDF |
+
+**Files Modified:**
+- `content/blog/en/iria-2026-email-template-tutorial.mdx`
+- `app/components/EmailTemplateCopyButton.tsx`
+- `app/components/IRIAEmailTemplateEmbed.tsx`
+- `app/components/VideoWithPlayButton.tsx` (NEW)
+- `app/components/PDFEmbed.tsx` (NEW)
+- `app/blog/[lang]/[slug]/page.tsx`
 
 ---
 

@@ -131,8 +131,8 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-left:10px;padding-right:10px;">
 																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:29px;">
-																	<p style="margin: 0; margin-bottom: 5px;">Hitex Road, Izzathnagar, Kothaguda, Hyderabad,</p>
-																	<p style="margin: 0;">Telangana (500084), 🇮🇳-INDIA</p>
+																	<p style="margin: 0; margin-bottom: 5px;"><a href="#" style="color:#000000;text-decoration:none;pointer-events:none;">Hitex Road, Izzathnagar, Kothaguda, Hyderabad,</a></p>
+																	<p style="margin: 0;"><a href="#" style="color:#000000;text-decoration:none;pointer-events:none;">Telangana (500084), 🇮🇳-INDIA</a></p>
 																</div>
 															</td>
 														</tr>

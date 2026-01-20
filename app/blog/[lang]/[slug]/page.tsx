@@ -13,6 +13,8 @@ import SocialShare from '@/app/components/SocialShare'
 import ReadingModeToggle from '@/app/components/ReadingModeToggle'
 import ImagePair from '@/app/components/ImagePair'
 import IRIAEmailTemplateEmbed from '@/app/components/IRIAEmailTemplateEmbed'
+import VideoWithPlayButton from '@/app/components/VideoWithPlayButton'
+import PDFEmbed from '@/app/components/PDFEmbed'
 import SocialLinks from '@/app/components/SocialLinks'
 import Footer from '@/app/components/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
@@ -167,6 +169,8 @@ const components = {
   ),
   ImagePair: ImagePair,
   IRIAEmailTemplateEmbed: IRIAEmailTemplateEmbed,
+  VideoWithPlayButton: VideoWithPlayButton,
+  PDFEmbed: PDFEmbed,
 }
 
 export default function BlogPostPage({ params }: PageProps) {
@@ -197,7 +201,7 @@ export default function BlogPostPage({ params }: PageProps) {
       share: 'इस लेख को साझा करें',
       tags: 'टैग',
       published: 'प्रकाशित',
-      readTime: 'मिनट पढ़ें',
+      readTime: 'मिनट पढ़ें',  
       blog: 'ब्लॉग',
     },
   }
