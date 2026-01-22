@@ -112,7 +112,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad">
 																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:44px;font-weight:700;letter-spacing:0px;line-height:1.5;text-align:center;mso-line-height-alt:66px;">
-																	<p style="margin: 0; margin-bottom: 5px;">📅 29<sup>th</sup> Jan to 1<sup>st</sup> Feb 2026</p>
+																	<p style="margin: 0; margin-bottom: 5px;">🗓️ 29<sup>th</sup> Jan to 1<sup>st</sup> Feb 2026</p>
 																	<p style="margin: 0;">📍 HITEX, Hyderabad</p>
 																</div>
 															</td>
