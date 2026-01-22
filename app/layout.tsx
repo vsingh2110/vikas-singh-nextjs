@@ -24,19 +24,6 @@ export const metadata: Metadata = {
   title: "Vikas Singh | Frontend Developer & Digital Marketing Expert",
   description: "Portfolio of Vikas Singh - Frontend Developer specializing in React, Next.js, and Digital Marketing. Electrical Engineering graduate with expertise in web development and paid advertising.",
   keywords: ["Frontend Developer", "React", "Next.js", "Digital Marketing", "SEO", "WordPress", "Shopify", "Google Ads", "Facebook Ads"],
-  icons: {
-    icon: [
-      { url: '/images/vikas-socialist.png', sizes: '192x192', type: 'image/png' },
-      { url: '/images/vikas-socialist.png', sizes: '32x32', type: 'image/png' },
-      { url: '/images/vikas-socialist.png', sizes: '16x16', type: 'image/png' },
-    ],
-    shortcut: '/images/vikas-socialist.png',
-    apple: [
-      { url: '/images/vikas-socialist.png', sizes: '180x180', type: 'image/png' },
-      { url: '/images/vikas-socialist.png', sizes: '152x152', type: 'image/png' },
-      { url: '/images/vikas-socialist.png', sizes: '120x120', type: 'image/png' },
-    ],
-  },
 };
 
 export default function RootLayout({
@@ -47,11 +34,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Favicon - vikas-socialist.png */}
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/vikas-socialist.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/vikas-socialist.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/vikas-socialist.png" />
-        <link rel="shortcut icon" href="/images/vikas-socialist.png" />
         <meta name="facebook-domain-verification" content="ppomg0wfqwsah0s8saocqbejcmdwsb" />
         <link
           rel="stylesheet"
