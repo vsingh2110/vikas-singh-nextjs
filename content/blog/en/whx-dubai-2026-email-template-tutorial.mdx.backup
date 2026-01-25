@@ -29,9 +29,7 @@ The steps, images, videos, and PDF resources in this tutorial are **exactly the 
 
 **📚 This tutorial includes:**
 - 📝 **Complete Article** - Step-by-step written guide (same as IRIA)
-- 🎬 **Video Tutorial** - Visual walkthrough (same process as IRIA)
-- 📄 **PDF Guide** - Downloadable reference (same steps as IRIA)
-- 📧 **Email Template Embed** - Copy the actual WHX template directly
+- 📄 **Email Template Embed** - Copy the actual WHX template directly
 
 <span className="text-gray-700 dark:text-gray-300 italic">Scroll to the bottom to copy the WHX Dubai 2026 email template.</span>
 
@@ -69,7 +67,6 @@ Before we dive into the tutorial, here's what we're promoting:
 | **Venue** | DEC (Dubai Exhibition Center), Expo City Dubai |
 | **Our Stall** | **N21.K110** |
 | **Address** | 99, 2020 Boulevard, Madinat Al Mataar, Near Dubai Expo 2020 Metro Station, Expo City Dubai, UAE |
-| **Virtual Stand** | [Click here to visit](https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D) |
 
 > "WHX Dubai 2026 (formerly Arab Health) is the world's premier gathering for healthcare professionals and medical technology innovators in the Middle East, Gulf, and African regions. Let's make Stall N21.K110 a beacon of excellence!" - Team Phantom Healthcare
 
@@ -161,26 +158,7 @@ You will receive the email template from your manager or team lead. Open that em
 
 ### Step 5: Add Recipients Using BCC
 
-⚠️ **VERY IMPORTANT: Always use BCC for multiple recipients**
-
-Why BCC is critical:
-- Protects recipient privacy (no one sees other email addresses)
-- Looks professional - each recipient thinks they received a personal email
-- Required for GDPR/privacy compliance
-- Prevents "Reply All" disasters
-
-**How to add BCC recipients:**
-
-1. Click on **BCC** field (next to "To" field)
-2. Add recipient email addresses separated by commas
-3. Leave the **"To"** field empty OR add your own email address
-4. **Recommended:** Put your own email in "To" field to track delivery
-
-### Step 6: Add Subject Line
-
-Use a clear, professional subject line:
-
-**Recommended Subject Lines (English):**
+⚠️ **VERY IMPORTANT: Always (English):**
 - `Invitation: Meet Phantom Healthcare at WHX Dubai 2026 - Stall N21.K110`
 - `Join us at World Health Expo Dubai | Phantom Healthcare - Feb 9-12, 2026`
 - `Special Invitation: WHX Dubai 2026 - Stall N21.K110, DEC Exhibition Center`
@@ -213,6 +191,25 @@ To avoid spam filters, use **multiple versions of subject lines** - don't send t
 - Batch 4: "World Health Expo Dubai 2026 - Phantom Healthcare awaits you"
 
 Varying subject lines improves deliverability and looks more natural.
+- Looks professional - each recipient thinks they received a personal email
+- Required for GDPR/privacy compliance
+- Prevents "Reply All" disasters
+
+**How to add BCC recipients:**
+
+1. Click on **BCC** field (next to "To" field)
+2. Add recipient email addresses separated by commas
+3. Leave the **"To"** field empty OR add your own email address
+4. **Recommended:** Put your own email in "To" field to track delivery
+
+### Step 6: Add Subject Line
+
+Use a clear, professional subject line:
+
+**Recommended Subject Lines:**
+- `Invitation: Meet Phantom Healthcare at WHX Dubai 2026 - Stall N21.K110`
+- `Join us at World Health Expo Dubai | Phantom Healthcare - Feb 9-12, 2026`
+- `Special Invitation: WHX Dubai 2026 - Stall N21.K110, DEC Exhibition Center`
 
 <figure className="my-8">
   <img src="/images/blogs-images/email-tutorial-iria-2026-phantom/Write the Subject as per your choice - use multiple versions of the Subject in every mail to avoid being in spamjunk Keep rec.jpg" alt="Write the Subject as per your choice - use multiple versions to avoid spam" className="rounded-lg shadow-xl w-full" width="1200" height="800" loading="lazy" title="Step 6: Add subject line with variations to avoid spam filters" />
@@ -315,31 +312,6 @@ This embedded template is designed to work only in **Google Chrome on Desktop**.
 
 </div>
 
-<div className="my-8 p-4 border-l-4 border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/30 rounded-r-lg">
-
-**✅ Actual WHX Dubai 2026 Template Below**
-
-This embedded template contains the **correct WHX Dubai 2026 event details:**
-- Event: WHX 2026 (World Health Expo, formerly Arab Health)
-- Dates: 9-12 February 2026
-- Venue: DEC, Expo City Dubai
-- Our Stall: N21.K110
-- Virtual Stand Link: Already embedded in the "CLICK TO VISIT OUR VIRTUAL STAND" button
-
-**How to use:**
-1. Click "📋 Copy Email Template" button below OR
-2. Use your mouse to select the entire email preview and copy manually (Ctrl+C)
-3. Open Gmail in Chrome (Desktop)
-4. Compose → Remove signature → Paste (Ctrl+V)
-5. Add BCC recipients + subject line → Send!
-
-**⚠️ Important:**
-- The "CLICK TO VISIT OUR VIRTUAL STAND" button links to: [https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D](https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D)
-- Test the button by sending yourself a test email first
-- If it doesn't work, ask your manager for the updated template
-
-</div>
-
 {/* Client Component with Email Template and Copy Buttons */}
 <WHXEmailTemplateEmbed />
 
@@ -423,13 +395,63 @@ Send invitations to:
 - This is normal for first view in some email clients
 - Recipients need to click "Display images" once
 - All images are properly hosted and will load
+## 📄 PDF Guide with Screenshots
 
-### Copy button not working?
+<div className="my-6 p-4 border border-purple-300 dark:border-purple-600 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
 
-- Make sure you're using Chrome Desktop (not mobile)
-- Try manually selecting the email with your mouse
-- Right-click the email preview and select "Copy"
-- Request the template email from your manager as alternative
+**📄 Note:** This PDF guide was created for the **IRIA 2026 invitation tutorial**, but because all steps are **exactly the same**, this guide will help you in the same way for WHX Dubai 2026 invitations.
+
+**Only difference:** The email template content (event details) - which you'll copy from the WHX template embedded at the bottom of this page instead of IRIA.
+
+</div>
+
+<div className="my-8">
+  <PDFEmbed 
+    src="/images/blogs-images/email-tutorial-iria-2026-phantom/pdf guide email template.pdf"
+    title="Email Template Guide - Complete Tutorial with Screenshots"
+    height="700px"
+  />
+</div>
+
+<div className="my-4 text-center">
+  <a 
+    href="/images/blogs-images/email-tutorial-iria-2026-phantom/pdf guide email template.pdf" 
+    download
+    className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors"
+  >
+    📥 Download PDF Guide
+  </a>
+  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">Process applies to all event invitation emails</p>
+</div>
+
+---
+
+## 📧 WHX Dubai 2026 Email Template - Copy From Here
+
+<div className="my-8 p-4 border-l-4 border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/30 rounded-r-lg">
+
+**✅ Actual WHX Dubai 2026 Template Below**
+
+This embedded template contains the **correct WHX Dubai 2026 event details:**
+- Event: WHX 2026 (World Health Expo, formerly Arab Health)
+- Dates: 9-12 February 2026
+- Venue: DEC, Expo City Dubai
+- Our Stall: N21.K110
+- Virtual Stand Link: Already embedded in the "CLICK TO VISIT OUR VIRTUAL STAND" button
+
+**How to use:**
+1. Click "📋 Copy Email Template" button below
+2. Open Gmail in Chrome (Desktop)
+3. Compose → Remove signature → Paste (Ctrl+V)
+4. Add BCC recipients + subject line
+5. Send!
+
+Or use your mouse to select the entire email preview and copy manually (Ctrl+C).
+
+</div>
+- The "CLICK TO VISIT OUR VIRTUAL STAND" button links to: https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D
+- Test the button by sending yourself a test email first
+- If it doesn't work, ask your manager for the updated template
 
 ---
 
@@ -450,7 +472,7 @@ Use this checklist for every batch:
 - [ ] Template copied correctly (mouse selection, not Ctrl+A)
 - [ ] Signature removed from compose window
 - [ ] Template pasted and looks correct
-- [ ] Subject line added (with variations for different batches)
+- [ ] Subject line added
 - [ ] Recipients added in BCC field only
 - [ ] Batch size: 10-15 recipients max
 - [ ] Previous batch was 15+ minutes ago
@@ -474,7 +496,7 @@ Watch this complete video tutorial to see the entire process in action:
 
 **📹 Note:** This video was created for the **IRIA 2026 invitation tutorial**, but because all steps are **exactly the same**, this tutorial will help you in the same way for WHX Dubai 2026 invitations.
 
-**Only difference:** The email template content (event details) - which you'll copy from the WHX template embedded above instead of IRIA.
+**Only difference:** The email template content (event details) - which you'll copy from the WHX template embedded below instead of IRIA.
 
 </div>
 
@@ -489,33 +511,14 @@ Watch this complete video tutorial to see the entire process in action:
 
 ---
 
-## 📄 Downloadable PDF Guide
+## 📧 Virtual Stand Link
 
-For offline reference, download our comprehensive PDF guide with all the steps and screenshots:
+Our virtual stand at WHX Dubai 2026 is now live! Visit or share this link:
 
-<div className="my-6 p-4 border border-purple-300 dark:border-purple-600 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+**Link:** [https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D](https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D)
 
-**📄 Note:** This PDF guide was created for the **IRIA 2026 invitation tutorial**, but because all steps are **exactly the same**, this guide will help you in the same way for WHX Dubai 2026 invitations.
-
-**Only difference:** The email template content (event details) - which you'll copy from the WHX template embedded above instead of IRIA.
-
-</div>
-
-<div className="my-8">
-  <PDFEmbed 
-    src="/images/blogs-images/email-tutorial-iria-2026-phantom/pdf guide email template.pdf"
-    title="Email Template Guide - Complete Tutorial with Screenshots"
-    height="700px"
-  />
-</div>
-
-<div className="my-4 text-center">
-  <a 
-    href="/images/blogs-images/email-tutorial-iria-2026-phantom/pdf guide email template.pdf" 
-    download
-    className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md transition-colors"
-  >
-    📥 Download PDF Guide
-  </a>
-  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">Complete step-by-step guide with screenshots | Process applies to all event invitation emails</p>
-</div>
+This link is already embedded in the email template button, but you can also share it separately on:
+- WhatsApp messages
+- LinkedIn posts
+- Email signatures
+- Social media updates
