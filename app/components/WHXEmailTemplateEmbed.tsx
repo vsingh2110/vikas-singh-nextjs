@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import EmailTemplateCopyButton from './EmailTemplateCopyButton';
 
@@ -306,8 +306,8 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad">
 																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:44px;font-weight:700;letter-spacing:0px;line-height:1.5;text-align:center;mso-line-height-alt:66px;">
-																	<p style="margin: 0; margin-bottom: 5px;">ðŸ—“ï¸ 9th to 12th February 2026</p>
-																	<p style="margin: 0;">&nbsp; ðŸš©Stand No. - N21.K110</p>
+																	<p style="margin: 0; margin-bottom: 5px;">🗓️ 9th to 12th February 2026</p>
+																	<p style="margin: 0;">&nbsp; 🚩Stand No. - N21.K110</p>
 																</div>
 															</td>
 														</tr>
@@ -316,7 +316,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-left:10px;padding-right:10px;">
 																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:33px;font-weight:500;letter-spacing:-1px;line-height:1.2;text-align:center;mso-line-height-alt:40px;">
-																	<p style="margin: 0;">ðŸ“DEC (Dubai Exhibition Center)</p>
+																	<p style="margin: 0;">📍DEC (Dubai Exhibition Center)</p>
 																</div>
 															</td>
 														</tr>
@@ -776,7 +776,7 @@ export default function WHXEmailTemplateEmbed() {
       <div
         className="block md:hidden my-8 p-6 border-2 border-dashed rounded-xl text-center bg-amber-100 dark:bg-amber-900/30 border-amber-500 dark:border-amber-600"
       >
-        <div className="text-4xl mb-3"></div>
+        <div className="text-4xl mb-3">🖥️</div>
         <p className="font-bold text-lg mb-2">Desktop Only Feature</p>
         <p className="text-sm">
           The embedded email template preview and copy functionality is only available on <strong>Desktop devices</strong>.
@@ -821,7 +821,7 @@ export default function WHXEmailTemplateEmbed() {
         <div
           className="my-8 p-4 border-l-4 rounded-r-lg bg-orange-50 dark:bg-orange-900/30 border-orange-500 dark:border-orange-400"
         >
-          <p className="font-bold mb-2"> Copy Button Not Working?</p>
+          <p className="font-bold mb-2">⚠️ Copy Button Not Working?</p>
           <p className="text-sm">
             The copy button may not work in all browsers. If it doesn&apos;t copy properly:
           </p>
