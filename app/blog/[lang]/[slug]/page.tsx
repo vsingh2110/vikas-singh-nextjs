@@ -13,6 +13,7 @@ import SocialShare from '@/app/components/SocialShare'
 import ReadingModeToggle from '@/app/components/ReadingModeToggle'
 import ImagePair from '@/app/components/ImagePair'
 import IRIAEmailTemplateEmbed from '@/app/components/IRIAEmailTemplateEmbed'
+import WHXEmailTemplateEmbed from '@/app/components/WHXEmailTemplateEmbed'
 import VideoWithPlayButton from '@/app/components/VideoWithPlayButton'
 import PDFEmbed from '@/app/components/PDFEmbed'
 import SocialLinks from '@/app/components/SocialLinks'
@@ -169,6 +170,7 @@ const components = {
   ),
   ImagePair: ImagePair,
   IRIAEmailTemplateEmbed: IRIAEmailTemplateEmbed,
+  WHXEmailTemplateEmbed: WHXEmailTemplateEmbed,
   VideoWithPlayButton: VideoWithPlayButton,
   PDFEmbed: PDFEmbed,
 }
