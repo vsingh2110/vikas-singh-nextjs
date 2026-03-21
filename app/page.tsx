@@ -124,13 +124,13 @@ export default function Home() {
       />
       <Navbar />
       <Hero />
+      <HomeBlogList />
       <About />
       <Skills />
       <Journey />
       <Achievements />
       <NonProfitWork />
       <SocialActivities />
-      <HomeBlogList />
       {/* <Projects /> */}
       {/* <Teams /> */}
       <Services />
