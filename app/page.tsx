@@ -15,6 +15,7 @@ import SocialLinks from './components/SocialLinks'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import PersonSchema from './components/schemas/PersonSchema'
+import HomeBlogList from './components/HomeBlogList'
 
 export const metadata: Metadata = {
   title: 'Vikas Singh | Frontend Developer & Digital Marketing Expert',
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     description: 'Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising',
     images: [
       {
-        url: 'https://vikassingh.vercel.app/images/og-image.jpg',
+        url: 'https://vikassingh.vercel.app/images/home-og-banner.png',
         width: 1200,
         height: 630,
         alt: 'Vikas Singh - Frontend Developer & Digital Marketing Expert',
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vikas Singh | Frontend Developer & Digital Marketing Expert',
     description: 'Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising',
-    images: ['https://vikassingh.vercel.app/images/og-image.jpg'],
+    images: ['https://vikassingh.vercel.app/images/home-og-banner.png'],
   },
   robots: {
     index: true,
@@ -129,6 +130,7 @@ export default function Home() {
       <Achievements />
       <NonProfitWork />
       <SocialActivities />
+      <HomeBlogList />
       {/* <Projects /> */}
       {/* <Teams /> */}
       <Services />
