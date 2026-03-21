@@ -3,7 +3,13 @@ import Image from 'next/image'
 import { getAllPosts } from '@/lib/blog'
 
 export default function HomeBlogList() {
-  const latestHindiPosts = getAllPosts('hi').slice(0, 4)
+  const featuredSlug = 'aatmasamman-ki-chot-aur-kaaryasthal-ka-sach'
+  const allHindiPosts = getAllPosts('hi')
+  const featuredPost = allHindiPosts.find((post) => post.slug === featuredSlug)
+  const remainingPosts = allHindiPosts.filter((post) => post.slug !== featuredSlug)
+  const latestHindiPosts = featuredPost
+    ? [featuredPost, ...remainingPosts].slice(0, 4)
+    : allHindiPosts.slice(0, 4)
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
