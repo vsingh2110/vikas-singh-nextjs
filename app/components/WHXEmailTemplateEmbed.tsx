@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import EmailTemplateCopyButton from './EmailTemplateCopyButton';
+import EmailTemplateCopyButton from "./EmailTemplateCopyButton";
 
 const emailTemplateHTML = `<!DOCTYPE html>
-<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en-US">
 
 <head>
 	<title>test at - 700px</title>
@@ -56,7 +56,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 		}
 
 		.row-2 .column-1 .block-2 .button:hover {
-			background-color: #014a1d !important;
+			background-color: #006ad3 !important;
 			border-bottom: 0 solid transparent !important;
 			border-left: 0 solid transparent !important;
 			border-right: 0px solid transparent !important;
@@ -64,7 +64,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 			color: #ffffff !important;
 		}
 
-		@media (max-width:720px) {
+		@media (max-width:625px) {
 			.desktop_hide table.icons-outer {
 				display: inline-table !important;
 			}
@@ -81,6 +81,10 @@ const emailTemplateHTML = `<!DOCTYPE html>
 
 			.icons-inner td {
 				margin: 0 auto;
+			}
+
+			.image_block div.fullWidth {
+				max-width: 100% !important;
 			}
 
 			.mobile_hide {
@@ -110,19 +114,30 @@ const emailTemplateHTML = `<!DOCTYPE html>
 				max-height: none !important;
 			}
 
-			.row-3 .column-1 .block-1.paragraph_block td.pad>div,
-			.row-3 .column-1 .block-2.paragraph_block td.pad>div,
-			.row-3 .column-1 .block-3.paragraph_block td.pad>div {
-				text-align: center !important;
-				font-size: 16px !important;
-			}
-
 			.row-2 .column-1 .block-2.button_block td.pad,
 			.row-3 .column-1 .block-1.paragraph_block td.pad,
 			.row-3 .column-1 .block-2.paragraph_block td.pad,
 			.row-3 .column-1 .block-3.paragraph_block td.pad,
+			.row-3 .column-1 .block-4.paragraph_block td.pad,
 			.row-5 .column-1 .block-1.paragraph_block td.pad {
 				padding: 10px !important;
+			}
+
+			.row-2 .column-1 .block-2.button_block span {
+				font-size: 16px !important;
+				line-height: 24px !important;
+			}
+
+			.row-2 .column-1 .block-2.button_block .alignment {
+				text-align: center !important;
+			}
+
+			.row-3 .column-1 .block-1.paragraph_block td.pad>div,
+			.row-3 .column-1 .block-2.paragraph_block td.pad>div,
+			.row-3 .column-1 .block-3.paragraph_block td.pad>div,
+			.row-3 .column-1 .block-4.paragraph_block td.pad>div {
+				text-align: center !important;
+				font-size: 16px !important;
 			}
 
 			.row-4 .column-1 .block-1.paragraph_block td.pad>div {
@@ -132,15 +147,6 @@ const emailTemplateHTML = `<!DOCTYPE html>
 
 			.row-4 .column-1 .block-1.paragraph_block td.pad {
 				padding: 15px 0 15px 5px !important;
-			}
-
-			.row-2 .column-1 .block-2.button_block span {
-				font-size: 16px !important;
-				line-height: 32px !important;
-			}
-
-			.row-2 .column-1 .block-2.button_block .alignment {
-				text-align: center !important;
 			}
 
 			.row-5 .column-1 .block-1.paragraph_block td.pad>div {
@@ -164,13 +170,6 @@ const emailTemplateHTML = `<!DOCTYPE html>
 				padding: 5px 0 !important;
 			}
 
-			.row-6 .column-1 .block-4.paragraph_block td.pad>div,
-			.row-6 .column-2 .block-4.paragraph_block td.pad>div,
-			.row-6 .column-3 .block-4.paragraph_block td.pad>div {
-				text-align: center !important;
-				font-size: 9px !important;
-			}
-
 			.row-10 .column-1 .block-1.paragraph_block td.pad,
 			.row-3 .column-1,
 			.row-6 .column-1 .block-2.paragraph_block td.pad,
@@ -190,19 +189,18 @@ const emailTemplateHTML = `<!DOCTYPE html>
 				padding: 0 !important;
 			}
 
+			.row-6 .column-1 .block-4.paragraph_block td.pad>div,
+			.row-6 .column-2 .block-4.paragraph_block td.pad>div,
+			.row-6 .column-3 .block-4.paragraph_block td.pad>div {
+				text-align: center !important;
+				font-size: 9px !important;
+			}
+
 			.row-6 .column-1 .block-5.paragraph_block td.pad>div,
 			.row-6 .column-2 .block-5.paragraph_block td.pad>div,
 			.row-6 .column-3 .block-5.paragraph_block td.pad>div {
 				text-align: center !important;
 				font-size: 10px !important;
-			}
-
-			.row-10 .column-1 .block-1.paragraph_block td.pad>div,
-			.row-9 .column-1 .block-2.paragraph_block td.pad>div,
-			.row-9 .column-2 .block-2.paragraph_block td.pad>div,
-			.row-9 .column-3 .block-2.paragraph_block td.pad>div {
-				text-align: center !important;
-				font-size: 8px !important;
 			}
 
 			.row-9 .column-1 .block-1.icons_block .icons-inner a,
@@ -211,6 +209,14 @@ const emailTemplateHTML = `<!DOCTYPE html>
 			.row-9 .column-2 .block-1.icons_block .icons-inner td,
 			.row-9 .column-3 .block-1.icons_block .icons-inner a,
 			.row-9 .column-3 .block-1.icons_block .icons-inner td {
+				font-size: 8px !important;
+			}
+
+			.row-10 .column-1 .block-1.paragraph_block td.pad>div,
+			.row-9 .column-1 .block-2.paragraph_block td.pad>div,
+			.row-9 .column-2 .block-2.paragraph_block td.pad>div,
+			.row-9 .column-3 .block-2.paragraph_block td.pad>div {
+				text-align: center !important;
 				font-size: 8px !important;
 			}
 
@@ -235,15 +241,15 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-radius: 0; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-size: auto; border-bottom: 1px solid #000000; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
 													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
-															<td class="pad" style="width:100%;">
+															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 698px;"><a href="https://api.whatsapp.com/send?phone=919899963601" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/z9t/tqy/men/INVITATION.gif" style="display: block; height: auto; border: 0; width: 100%;" width="698" alt="Invitation to WHX Dubai 2026 by Phantom Healthcare" title="Invitation to WHX Dubai 2026 by Phantom Healthcare" height="auto"></a></div>
+																	<div class="fullWidth" style="max-width: 603px;"><a href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/ggp/0vm/x06/INVITATION%20%281%29.gif" style="display: block; height: auto; border: 0; width: 100%;" width="603" alt="Invitation to WHX Dubai 2026 by Phantom Healthcare" title="Invitation to WHX Dubai 2026 by Phantom Healthcare" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -260,7 +266,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-image: url('https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/o78/43k/xb7/Untitled%20design%20-666.jpg'); background-repeat: no-repeat; background-size: cover; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-radius: 0; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-image: url('https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/4oc/m2t/ac2/WhatsApp%20Image%202026-01-27%20at%2011.54.21%20AM%20%281%29.jpeg'); background-repeat: repeat; border-bottom: 1px solid #000000; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
@@ -268,21 +274,21 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 698px;"><a href="https://api.whatsapp.com/send?phone=919899963601" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/1q8/v8p/dht/Untitled%20design_1.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="698" alt="Invitation to WHX Dubai 2026 by Phantom Healthcare" title="Invitation to WHX Dubai 2026 by Phantom Healthcare" height="auto"></a></div>
+																	<div style="max-width: 603px;"><a href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/zx3/44i/pp9/WhatsApp%20Image%202026-01-27%20at%2011.54.21%20AM.jpeg" style="display: block; height: auto; border: 0; width: 100%;" width="603" alt="Invitation to WHX Dubai 2026 by Phantom Healthcare" title="Invitation to WHX Dubai 2026 by Phantom Healthcare" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
 													</table>
-													<table class="button_block block-2" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+													<table class="button_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
-															<td class="pad">
-																<div class="alignment" align="center"><!--[if mso]>
-<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D" style="height:46px;width:441px;v-text-anchor:middle;" arcsize="31%" fillcolor="#4f944a">
-<v:stroke dashstyle="Solid" weight="3px" color="#000000"/>
+															<td class="pad" style="padding-bottom:15px;padding-left:10px;padding-right:10px;text-align:center;">
+																<div class="alignment" align="center"><a href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D" target="_blank" style="color:#ffffff;text-decoration:none;"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"  href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D"  style="height:32px;width:256px;v-text-anchor:middle;" arcsize="49%" fillcolor="#259ae1">
+<v:stroke dashstyle="Solid" weight="1px" color="#000000"/>
 <w:anchorlock/>
 <v:textbox inset="0px,0px,0px,0px">
-<center dir="false" style="color:#ffffff;font-family:Verdana, sans-serif;font-size:19px">
-<![endif]--><a href="https://connections.whxevents.com/event/whx-dubai-2026/exhibitor/RXhoaWJpdG9yXzIzMzc3NDE%3D" target="_blank" style="text-decoration: none; display: inline-block;"><span class="button" style="background-color: #4f944a; mso-shading: transparent; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-radius: 17px; border-right: 3px solid #000000; border-top: 3px solid #000000; color: #ffffff; display: inline-block; font-family: Verdana, Geneva, sans-serif; font-size: 19px; font-weight: 700; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 20px; padding-right: 20px; text-align: center; width: auto; word-break: keep-all; letter-spacing: normal;"><span style="word-break: break-word; line-height: 38px;">CLICK TO VISIT OUR VIRTUAL STAND</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></div>
+<center dir="false" style="color:#ffffff;font-family:Arial, sans-serif;font-size:15px">
+<![endif]--><span class="button" style="background-color: #259ae1; mso-shading: transparent; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-radius: 17px; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #ffffff; display: inline-block; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 10px; padding-right: 10px; text-align: center; width: auto; word-break: keep-all; letter-spacing: -0.5px;"><span style="word-break: break-word; line-height: 22.5px;">CLICK TO VISIT OUR VIRTUAL STAND</span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></a></div>
 															</td>
 														</tr>
 													</table>
@@ -298,25 +304,25 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; border-radius: 0; background-image: url('https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/h3l/0th/8yj/3.png'); background-position: top center; background-repeat: repeat; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-image: url('https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/a8q/cg2/naz/%F0%9F%93%859th%20to%2012th%20February%202026%20%F0%9F%93%8DDubai%20Exhibition%20Centre%2099%2C%202020%20Boulevard%2C%20Madinat%20Al%20Mataar%2C%20Expo%20City%20Dubai%2C%20Dubai%2C%20%28U.A.E%29%20%283%29.png'); background-repeat: no-repeat; background-size: cover; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 60px; padding-top: 30px; vertical-align: top;">
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-top: 5px; vertical-align: top;">
 													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														<tr>
 															<td class="pad">
-																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:44px;font-weight:700;letter-spacing:0px;line-height:1.5;text-align:center;mso-line-height-alt:66px;">
+																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:28px;font-weight:700;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:34px;">
 																	<p style="margin: 0; margin-bottom: 5px;">🗓️ 9th to 12th February 2026</p>
-																	<p style="margin: 0;">&nbsp; 🚩Stand No. - N21.K110</p>
+																	<p style="margin: 0;">&nbsp; 🚩Booth No. - N21.K110</p>
 																</div>
 															</td>
 														</tr>
 													</table>
 													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														<tr>
-															<td class="pad" style="padding-left:10px;padding-right:10px;">
-																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:33px;font-weight:500;letter-spacing:-1px;line-height:1.2;text-align:center;mso-line-height-alt:40px;">
-																	<p style="margin: 0;">📍DEC (Dubai Exhibition Center)</p>
+															<td class="pad">
+																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;letter-spacing:0px;line-height:0.6;text-align:center;mso-line-height-alt:12px;">
+																	<p style="margin: 0;">🇮🇳 INDIA - Country Pavilion</p>
 																</div>
 															</td>
 														</tr>
@@ -324,8 +330,18 @@ const emailTemplateHTML = `<!DOCTYPE html>
 													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														<tr>
 															<td class="pad" style="padding-left:10px;padding-right:10px;padding-top:15px;">
-																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:24px;font-weight:500;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:29px;">
-																	<p style="margin: 0; margin-bottom: 5px;">99, 2020 Boulevard, Madinat Al Mataar, Near Dubai Expo 2020 Metro Station, Expo City Dubai, - Dubai,</p>
+																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:23px;font-weight:500;letter-spacing:-1px;line-height:1.5;text-align:center;mso-line-height-alt:35px;">
+																	<p style="margin: 0;">📍DEC (Dubai Exhibition Center)</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-bottom:15px;padding-left:10px;padding-right:10px;padding-top:5px;">
+																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:15px;font-weight:500;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:18px;">
+																	<p style="margin: 0; margin-bottom: 5px;">99, 2020 Boulevard, Madinat Al Mataar,</p>
+																	<p style="margin: 0; margin-bottom: 5px;">Near Dubai Expo 2020 Metro Station, Expo City Dubai, - Dubai,</p>
 																	<p style="margin: 0;">United Arab Emirates (U.A.E)</p>
 																</div>
 															</td>
@@ -339,18 +355,18 @@ const emailTemplateHTML = `<!DOCTYPE html>
 							</tr>
 						</tbody>
 					</table>
-					<table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					<table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto;">
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-radius: 0; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-size: auto; border-bottom: 1px solid #000000; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="50%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
 													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														<tr>
 															<td class="pad" style="padding-bottom:20px;padding-left:30px;padding-top:15px;">
-																<div style="color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:17px;font-weight:700;letter-spacing:0px;line-height:1.5;text-align:left;mso-line-height-alt:26px;">
+																<div style="color:#101112;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:13px;font-weight:700;letter-spacing:0px;line-height:1.5;text-align:left;mso-line-height-alt:20px;">
 																	<p style="margin: 0; margin-bottom: 0px;">Call Us or</p>
 																	<p style="margin: 0; margin-bottom: 0px;">Connect Via Mail,</p>
 																	<p style="margin: 0;">Social Media &&nbsp;WhatsApp</p>
@@ -364,7 +380,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-top:10px;width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="mailto:digital@phantomhealthcare.com?body=&subject=Enquiry for radiology equipment products/services -via WHX 2026 Dubai" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/azm/1ag/ap0/Untitled%20design%20%285%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="Phantom Healthcare Email digital@phantomhealthcare.com Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="Phantom Healthcare Email digital@phantomhealthcare.com Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
+																	<div style="max-width: 50px;"><a href="mailto:digital@phantomhealthcare.com?body=&subject=Enquiry for radiology equipment products/services -via WHX 2026 Dubai" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/azm/1ag/ap0/Untitled%20design%20%285%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="50" alt="Phantom Healthcare Email digital@phantomhealthcare.com Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="Phantom Healthcare Email digital@phantomhealthcare.com Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -375,7 +391,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-top:10px;width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="https://api.whatsapp.com/send?phone=971522208819" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/a6l/val/4ss/Untitled%20design%20%286%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="WhatsApp Message - Phantom Healthcare Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="WhatsApp Message - Phantom Healthcare Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
+																	<div style="max-width: 50px;"><a href="https://api.whatsapp.com/send?phone=971522208819" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/a6l/val/4ss/Untitled%20design%20%286%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="50" alt="WhatsApp Message - Phantom Healthcare Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="WhatsApp Message - Phantom Healthcare Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -386,7 +402,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-top:10px;width:100%;padding-right:0px;padding-left:0px;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="tel:+971522208819" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/uxj/yf7/pj6/Untitled%20design%20%287%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="Call Phantom Healthcare -  +919899963601 Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="Call Phantom Healthcare -  +919899963601 Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
+																	<div style="max-width: 50px;"><a href="tel:+971522208819" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/uxj/yf7/pj6/Untitled%20design%20%287%29.png" style="display: block; height: auto; border: 0; width: 100%;" width="50" alt="Call Phantom Healthcare -  +971522208819 Enquiry for radiology equipment products/services -via WHX 2026 Dubai" title="Call Phantom Healthcare -  +971522208819 Enquiry for radiology equipment products/services -via WHX 2026 Dubai" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -403,15 +419,15 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-radius: 0; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-size: auto; border-bottom: 1px solid #000000; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: middle;">
 													<table class="paragraph_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
 														<tr>
 															<td class="pad">
-																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:20px;font-weight:600;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:24px;">
-																	<p style="margin: 0;">Our Registered Offices</p>
+																<div style="color:#000000;direction:ltr;font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:18px;font-weight:600;letter-spacing:0px;line-height:1.2;text-align:center;mso-line-height-alt:22px;">
+																	<p style="margin: 0;">Our Registered & Regional Offices</p>
 																</div>
 															</td>
 														</tr>
@@ -428,7 +444,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-size: auto; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; border-radius: 0; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; background-size: auto; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; border-right: 1px dotted #000000; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
@@ -436,7 +452,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-bottom:5px;padding-left:60px;padding-right:60px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/llr/anl/8m9/1.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="Phantom Healthcare US LLC, Chicago USA" title="Phantom Healthcare US LLC, Chicago USA" height="auto"></a></div>
+																	<div style="max-width: 60px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/llr/anl/8m9/1.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="60" alt="Phantom Healthcare US LLC, Chicago USA" title="Phantom Healthcare US LLC, Chicago USA" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -483,7 +499,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-bottom:5px;padding-left:60px;padding-right:60px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/e2m/3cz/dcz/3.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="Phantom Healthcare AE FZC, Sharjah UAE (Dubai)" title="Phantom Healthcare AE FZC, Sharjah UAE (Dubai)" height="auto"></a></div>
+																	<div style="max-width: 60px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/e2m/3cz/dcz/3.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="60" alt="Phantom Healthcare AE FZC, Sharjah UAE (Dubai)" title="Phantom Healthcare AE FZC, Sharjah UAE (Dubai)" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -530,7 +546,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 														<tr>
 															<td class="pad" style="padding-bottom:5px;padding-left:60px;padding-right:60px;width:100%;">
 																<div class="alignment" align="center">
-																	<div style="max-width: 70px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/5ou/up9/vla/2.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="70" alt="Phantom Healthcare IND Private Limited , Faridabad, DELHI-NCR (121003) India" title="Phantom Healthcare IND Private Limited , Faridabad, DELHI-NCR (121003) India" height="auto"></a></div>
+																	<div style="max-width: 60.3px;"><a href="#" target="_blank"><img src="https://5b58b4424f.imgdist.com/pub/bfra/f2uwhgvf/5ou/up9/vla/2.jpg" style="display: block; height: auto; border: 0; width: 100%;" width="60.3" alt="Phantom Healthcare IND Private Limited , Faridabad, DELHI-NCR (121003) India" title="Phantom Healthcare IND Private Limited , Faridabad, DELHI-NCR (121003) India" height="auto"></a></div>
 																</div>
 															</td>
 														</tr>
@@ -583,14 +599,14 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; vertical-align: top;">
 													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td class="pad" style="padding-left:10px;padding-right:10px;text-align:center;width:100%;">
-																<h1 style="margin: 0; color: #303030; direction: ltr; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 25px; font-weight: 700; letter-spacing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 30px;"><span class="tinyMce-placeholder" style="word-break: break-word;"><a href="https://phantomhealthcare.com/" target="_blank" title="Phantom Healthcare Website Link" style="text-decoration: none; color: #303030;" rel="noopener"><span class="mce-content-body mce-edit-focus" style="word-break: break-word; position: relative;" id="09dff28d-af1b-4ead-971e-0b6cd2109be9" data-position="70-0-0" data-qa="tinyeditor-root-element"><span class="tinyMce-placeholder" style="word-break: break-word;">www.phantomhealthcare.com</span></span></a></span></h1>
+																<h1 style="margin: 0; color: #303030; direction: ltr; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 700; letter-spacing: normal; line-height: 1.2; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 26px;"><span class="tinyMce-placeholder" style="word-break: break-word;"><a href="https://phantomhealthcare.com/" target="_blank" title="Phantom Healthcare Website Link" style="text-decoration: none; color: #303030;" rel="noopener"><span class="mce-content-body mce-edit-focus" style="word-break: break-word; position: relative;" id="09dff28d-af1b-4ead-971e-0b6cd2109be9" data-position="70-0-0" data-qa="tinyeditor-root-element"><span class="tinyMce-placeholder" style="word-break: break-word;">www.phantomhealthcare.com</span></span></a></span></h1>
 															</td>
 														</tr>
 													</table>
@@ -606,7 +622,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; vertical-align: top;">
@@ -643,7 +659,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-radius: 0; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; border-radius: 0; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
@@ -723,7 +739,7 @@ const emailTemplateHTML = `<!DOCTYPE html>
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; border-bottom: 1px solid #000000; border-radius: 0; padding-bottom: 5px; width: 700px; margin: 0 auto;" width="700">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-left: 1px solid #000000; border-right: 1px solid #000000; border-top: 1px solid #000000; color: #000000; border-bottom: 1px solid #000000; border-radius: 0; padding-bottom: 5px; width: 605px; margin: 0 auto;" width="605">
 										<tbody>
 											<tr>
 												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
@@ -744,23 +760,6 @@ const emailTemplateHTML = `<!DOCTYPE html>
 							</tr>
 						</tbody>
 					</table>
-					<table class="row row-11" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
-						<tbody>
-							<tr>
-								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 700px; margin: 0 auto;" width="700">
-										<tbody>
-											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
-													<!-- Beefree logo removed -->
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
 				</td>
 			</tr>
 		</tbody>
@@ -771,44 +770,39 @@ const emailTemplateHTML = `<!DOCTYPE html>
 
 export default function WHXEmailTemplateEmbed() {
   return (
-    <div className="my-8">
-      {/* Mobile Notice - Hidden on Desktop */}
-      <div
-        className="block md:hidden my-8 p-6 border-2 border-dashed rounded-xl text-center bg-amber-100 dark:bg-amber-900/30 border-amber-500 dark:border-amber-600"
-      >
-        <div className="text-4xl mb-3">🖥️</div>
-        <p className="font-bold text-lg mb-2">Desktop Only Feature</p>
+    <div className="my-12">
+      <div className="my-8 p-4 border-l-4 rounded-r-lg border-green-500 dark:border-green-400 bg-green-50 dark:bg-green-900/30">
+        <p className="font-bold mb-2">📋 Copy Email Template Directly</p>
         <p className="text-sm">
-          The embedded email template preview and copy functionality is only available on <strong>Desktop devices</strong>.
+          Click the button below to copy the WHX Dubai 2026 email template. Then
+          paste it into a new Gmail compose window.
         </p>
-        <p className="text-sm mt-2">
-          Please open this page in <strong>Google Chrome on a Desktop/Laptop</strong> to view and copy the email template.
+        <p className="text-xs mt-2 text-gray-600 dark:text-gray-400">
+          <strong>Note:</strong> Works best in Google Chrome on Desktop. Make
+          sure to remove your email signature before pasting.
         </p>
       </div>
 
-      {/* Desktop Content - Hidden on Mobile */}
-      <div className="hidden md:block">
+      <div className="relative">
         {/* Copy Button - Top */}
         <EmailTemplateCopyButton position="top" />
 
-        {/* Email Template Embed - Theme Independent */}
+        {/* Isolated Email Preview Container */}
         <div
-          className="my-6 rounded-lg overflow-hidden shadow-2xl"
+          className="email-preview-container bg-white rounded-lg overflow-hidden"
           style={{
-            backgroundColor: '#ffffff',
-            padding: '0',
-            border: '2px solid #e5e7eb',
-            isolation: 'isolate'
+            border: "2px solid #e5e7eb",
+            isolation: "isolate",
           }}
         >
           <iframe
             id="email-template-iframe"
             srcDoc={emailTemplateHTML}
             style={{
-              width: '100%',
-              height: '1800px',
-              border: 'none',
-              backgroundColor: '#ffffff'
+              width: "100%",
+              height: "1800px",
+              border: "none",
+              backgroundColor: "#ffffff",
             }}
             title="WHX Dubai 2026 Email Template Preview"
           />
@@ -818,15 +812,17 @@ export default function WHXEmailTemplateEmbed() {
         <EmailTemplateCopyButton position="bottom" />
 
         {/* Fallback Notice */}
-        <div
-          className="my-8 p-4 border-l-4 rounded-r-lg bg-orange-50 dark:bg-orange-900/30 border-orange-500 dark:border-orange-400"
-        >
+        <div className="my-8 p-4 border-l-4 rounded-r-lg bg-orange-50 dark:bg-orange-900/30 border-orange-500 dark:border-orange-400">
           <p className="font-bold mb-2">⚠️ Copy Button Not Working?</p>
           <p className="text-sm">
-            The copy button may not work in all browsers. If it doesn&apos;t copy properly:
+            The copy button may not work in all browsers. If it doesn&apos;t
+            copy properly:
           </p>
           <ol className="text-sm list-decimal ml-4 mt-2 space-y-1">
-            <li><strong>Manual Selection:</strong> Use your mouse to select the email content inside the preview above, then Ctrl+C to copy</li>
+            <li>
+              <strong>Manual Selection:</strong> Use your mouse to select the
+              email content inside the preview above, then Ctrl+C to copy
+            </li>
             <li>Or request the template email directly from your manager</li>
             <li>The copy button works best in Chrome Desktop</li>
           </ol>
