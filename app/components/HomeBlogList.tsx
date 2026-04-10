@@ -3,13 +3,12 @@ import Image from 'next/image'
 import { getAllPosts } from '@/lib/blog'
 
 export default function HomeBlogList() {
-  const featuredSlug = 'aatmasamman-ki-chot-aur-kaaryasthal-ka-sach'
-  const allHindiPosts = getAllPosts('hi')
-  const featuredPost = allHindiPosts.find((post) => post.slug === featuredSlug)
-  const remainingPosts = allHindiPosts.filter((post) => post.slug !== featuredSlug)
-  const latestHindiPosts = featuredPost
-    ? [featuredPost, ...remainingPosts].slice(0, 4)
-    : allHindiPosts.slice(0, 4)
+  const hindiPosts = getAllPosts('hi').map((post) => ({ ...post, lang: 'hi' as const }))
+  const englishPosts = getAllPosts('en').map((post) => ({ ...post, lang: 'en' as const }))
+
+  const latestPosts = [...hindiPosts, ...englishPosts]
+    .sort((a, b) => (a.date > b.date ? -1 : 1))
+    .slice(0, 8)
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950">
@@ -19,15 +18,15 @@ export default function HomeBlogList() {
             Latest Blog Posts
           </h2>
           <p className="mt-3 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            हाल की हिंदी पोस्ट यहां से सीधे पढ़ें।
+            Latest posts from both Hindi and English blog sections.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {latestHindiPosts.map((post) => (
+          {latestPosts.map((post) => (
             <Link
-              key={post.slug}
-              href={`/blog/hi/${post.slug}`}
+              key={`${post.lang}-${post.slug}`}
+              href={`/blog/${post.lang}/${post.slug}`}
               className="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all"
             >
               <div className="relative w-full h-52 bg-gray-200 dark:bg-gray-900">
@@ -40,7 +39,12 @@ export default function HomeBlogList() {
                 />
               </div>
               <div className="p-4">
-                <p className="text-xs text-brand-crimson font-semibold mb-2">{post.category}</p>
+                <div className="flex items-center justify-between mb-2 gap-3">
+                  <p className="text-xs text-brand-crimson font-semibold">{post.category}</p>
+                  <span className="text-[10px] font-bold tracking-wide px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200">
+                    {post.lang.toUpperCase()}
+                  </span>
+                </div>
                 <h3 className="text-base font-bold text-gray-900 dark:text-white line-clamp-2 mb-2">
                   {post.title}
                 </h3>
@@ -53,12 +57,18 @@ export default function HomeBlogList() {
           ))}
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/blog/hi"
             className="inline-block bg-brand-crimson text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-red-dark transition-colors"
           >
             सभी हिंदी ब्लॉग देखें
+          </Link>
+          <Link
+            href="/blog/en"
+            className="inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+          >
+            View All English Blogs
           </Link>
         </div>
       </div>
