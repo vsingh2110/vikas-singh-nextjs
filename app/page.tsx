@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     description: 'Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising',
     images: [
       {
-        url: 'https://vikassingh.vercel.app/images/home-og-profile-clean.png?v=20260411d',
-        width: 1200,
-        height: 630,
+        url: 'https://vikassingh.vercel.app/images/vikas-socialist-og-200k.jpg?v=20260411g',
+        width: 1024,
+        height: 1024,
         alt: 'Vikas Singh - Frontend Developer and Digital Marketing Expert',
       },
     ],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vikas Singh | Frontend Developer & Digital Marketing Expert',
     description: 'Frontend Developer & Digital Marketing Expert specializing in React, Next.js, SEO, and Paid Advertising',
-    images: ['https://vikassingh.vercel.app/images/home-og-profile-clean.png?v=20260411d'],
+    images: ['https://vikassingh.vercel.app/images/vikas-socialist-og-200k.jpg?v=20260411g'],
   },
   robots: {
     index: true,
