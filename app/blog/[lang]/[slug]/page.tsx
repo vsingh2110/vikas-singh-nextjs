@@ -47,8 +47,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     }
   }
 
+  const socialImage = post.ogImage || post.image
+
   // Detect image type and dimensions from the image path
-  const imageExtension = post.image.split('.').pop()?.toLowerCase()
+  const imageExtension = socialImage.split('.').pop()?.toLowerCase()
   const imageType = imageExtension === 'png' ? 'image/png' : 
                     imageExtension === 'jpg' || imageExtension === 'jpeg' ? 'image/jpeg' :
                     imageExtension === 'webp' ? 'image/webp' : 'image/jpeg'
@@ -82,8 +84,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       images: [
         {
-          url: `https://vikassingh.vercel.app${post.image}`,
-          secureUrl: `https://vikassingh.vercel.app${post.image}`,
+          url: `https://vikassingh.vercel.app${socialImage}`,
+          secureUrl: `https://vikassingh.vercel.app${socialImage}`,
           width: ogImageWidth,
           height: ogImageHeight,
           alt: post.title,
@@ -97,7 +99,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       creator: '@vs_vimukt',
       title: post.title,
       description: post.excerpt,
-      images: [`https://vikassingh.vercel.app${post.image}`],
+      images: [`https://vikassingh.vercel.app${socialImage}`],
     },
     robots: {
       index: true,

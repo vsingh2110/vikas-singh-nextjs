@@ -10,6 +10,7 @@ export interface BlogPost {
   excerpt: string
   content: string
   image: string
+  ogImage?: string
   date: string
   readTime: string
   category: string
@@ -26,6 +27,7 @@ export interface BlogPostMetadata {
   title: string
   excerpt: string
   image: string
+  ogImage?: string
   date: string
   readTime: string
   category: string
@@ -64,6 +66,7 @@ export function getAllPosts(language: 'en' | 'hi'): BlogPostMetadata[] {
         title: data.title,
         excerpt: data.excerpt,
         image: data.image,
+        ogImage: data.ogImage,
         date: data.date,
         readTime: readTimeResult.text,
         category: data.category,
@@ -95,6 +98,7 @@ export function getPostBySlug(slug: string, language: 'en' | 'hi'): BlogPost | n
       excerpt: data.excerpt,
       content,
       image: data.image,
+      ogImage: data.ogImage,
       date: data.date,
       readTime: readTimeResult.text,
       category: data.category,
