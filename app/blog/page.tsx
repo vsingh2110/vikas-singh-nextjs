@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation'
+import { permanentRedirect } from 'next/navigation'
 
 export const metadata = {
   title: 'Blog | Vikas Singh',
@@ -7,5 +7,5 @@ export const metadata = {
 
 // Redirect to English blog by default
 export default function BlogPage() {
-  redirect('/blog/en')
+  permanentRedirect('/blog/en')
 }
