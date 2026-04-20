@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Smooth theme transitions */
@@ -29,6 +30,7 @@ body {
   font-family: var(--font-poppins), sans-serif;
   color: #111;
   background: #fff;
+  overflow-x: hidden;
 }
 
 /* Custom scrollbar */
@@ -54,7 +56,7 @@ body {
 /* Blog Content Images */
 
 /* 1. Single Center Image (Biggest) - Full height with blur background, caption OUTSIDE */
-.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
+.prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) {
   position: relative;
   margin: 0 0 4.5rem 0;
   padding: 0 2rem;
@@ -67,7 +69,7 @@ body {
 }
 
 /* Blurred background image */
-.prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
+.prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure)::before {
   content: '';
   position: absolute;
   top: 0;
@@ -83,7 +85,7 @@ body {
   opacity: 0.6;
 }
 
-.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
+.prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) img {
   position: relative;
   z-index: 10;
   height: 100%;
@@ -96,7 +98,7 @@ body {
   border-radius: 8px;
 }
 
-.prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
+.prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) figcaption {
   position: absolute;
   bottom: -3.5rem;
   left: 0;
@@ -163,6 +165,52 @@ body {
   padding: 0 0.5rem;
 }
 
+/* Blog collage grid - always compact on mobile */
+.prose .blog-collage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.prose .blog-collage .blog-collage-item {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: block;
+  background: transparent;
+}
+
+.prose .blog-collage .blog-collage-item::before {
+  display: none !important;
+}
+
+.prose .blog-collage .blog-collage-item img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0.5rem;
+}
+
+.prose .blog-collage .blog-collage-item figcaption {
+  position: static;
+  margin-top: 0.4rem;
+  padding: 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+
+.dark .prose .blog-collage .blog-collage-item figcaption {
+  color: #9ca3af;
+}
+
 /* 3 & 4. Left/Right Floating Images - 400px desktop, captions visible */
 .prose figure.float-left,
 .prose figure.float-right {
@@ -211,7 +259,7 @@ body {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) {
+  .prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) {
     height: auto;
     min-height: auto;
     margin: 1rem 0 3rem 0;
@@ -222,11 +270,11 @@ body {
     border-radius: 0;
   }
   
-  .prose figure:not(.float-left):not(.float-right):not(.image-pair figure)::before {
+  .prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure)::before {
     display: none;
   }
   
-  .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) img {
+  .prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -238,7 +286,7 @@ body {
     border-radius: 8px;
   }
   
-  .prose figure:not(.float-left):not(.float-right):not(.image-pair figure) figcaption {
+  .prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) figcaption {
     position: static;
     display: block;
     width: 100%;
@@ -261,6 +309,18 @@ body {
   .prose .image-pair figure img {
     max-height: 40vh;
   }
+
+  .prose .blog-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .prose .blog-collage .blog-collage-item figcaption {
+    font-size: 0.67rem;
+    line-height: 1.25;
+    margin-top: 0.45rem;
+    padding: 0 0.1rem;
+  }
   
   .prose figure.float-left,
   .prose figure.float-right {
@@ -282,6 +342,45 @@ body {
   
   .prose .image-pair img {
     max-height: 40vh;
+  }
+}
+
+@media (min-width: 640px) {
+  .prose .blog-collage {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Focused mobile readability pass */
+@media (max-width: 414px) {
+  .prose .blog-collage {
+    gap: 0.55rem;
+  }
+
+  .prose .blog-collage .blog-collage-item figcaption {
+    font-size: 0.68rem;
+    line-height: 1.28;
+    margin-top: 0.4rem;
+    padding: 0 0.08rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .prose .blog-collage {
+    gap: 0.5rem;
+  }
+
+  .prose .blog-collage .blog-collage-item figcaption {
+    font-size: 0.65rem;
+    line-height: 1.24;
+    margin-top: 0.35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prose .blog-collage {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
   }
 }
 
@@ -313,6 +412,20 @@ body {
 .blog-content figure img {
   width: 100%;
   height: auto;
+}
+
+.blog-content,
+.blog-content p,
+.blog-content li,
+.blog-content a,
+.blog-content figcaption {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.blog-content pre {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 /* Ensure proper spacing for floating elements */

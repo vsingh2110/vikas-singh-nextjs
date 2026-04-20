@@ -348,12 +348,12 @@ export default function BlogPostPage({ params }: PageProps) {
         {/* Article Container - Expanded Width */}
         <article className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
           {/* Breadcrumb */}
-          <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 flex items-center gap-2">
+          <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mb-3 flex items-center gap-2 min-w-0">
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{text.blog}</Link>
             <span>→</span>
             <Link href={`/blog/${lang}`} className="hover:text-brand-crimson transition-colors">{lang === 'en' ? 'English' : 'हिंदी'}</Link>
             <span>→</span>
-            <span className="text-gray-700 dark:text-gray-300 font-medium line-clamp-1">{post.title}</span>
+            <span className="text-gray-700 dark:text-gray-300 font-medium line-clamp-1 min-w-0 flex-1">{post.title}</span>
           </div>
 
           {/* Header */}

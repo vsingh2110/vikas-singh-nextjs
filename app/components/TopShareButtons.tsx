@@ -37,7 +37,7 @@ export default function TopShareButtons({ title, url, language }: TopShareButton
         <span className="text-xs sm:text-sm text-gray-600 font-medium">
           {language === 'en' ? 'Share:' : 'साझा करें:'}
         </span>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           {/* Native Share API */}
           <button
             onClick={handleNativeShare}
