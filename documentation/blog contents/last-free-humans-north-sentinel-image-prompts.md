@@ -19,9 +19,10 @@ Six slots now use **real, license-clean photos** sourced from Wikimedia/NASA (cr
 - `02` - Charles R Knight woolly-mammoths painting (public domain)
 - `05` - Skara Brae Neolithic village (CC BY-SA 4.0)
 - `06` - Kudurru land-grant boundary stone, Louvre (public domain)
+- `07` - Great Ziggurat of Ur, US Air Force photo (public domain)
+- `08` - Assyrian Lachish Relief, British Museum (CC BY-SA 4.0)
 
-Still using **designed concept covers** (replace with AI art or real photos when ready, overwriting the same filenames - no MDX edits needed): `04` (bound-to-plot), `07` (caste/ziggurat), `08` (war), `09` (hedonic treadmill), `11` (freedom vs cage).
-Note: for `07` a public-domain US Air Force photo of the Great Ziggurat of Ur and for `08` the Assyrian Lachish Relief (British Museum, CC BY-SA) were identified but not downloaded this session due to Wikimedia rate-limiting - good candidates to drop in later.
+Still using **designed concept covers** (replace with AI art or real photos when ready, overwriting the same filenames - no MDX edits needed): `04` (bound-to-plot), `09` (hedonic treadmill), `11` (freedom vs cage). These three are symbolic/abstract, so an AI image model is the best fit.
 
 ## House rules for every image
 
