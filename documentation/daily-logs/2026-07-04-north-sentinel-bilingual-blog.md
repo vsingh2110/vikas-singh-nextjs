@@ -58,11 +58,55 @@ Ran a 3-agent review workflow (EN editorial/claims-framing, HI quality + EN/HI p
 - Build after all changes: `npm run build` → EXIT 0.
 - Committed + pushed to `main`: commit `780ba04` ("feat(blog): add bilingual North Sentinel essay and homepage Latest Posts feed"), 18 files, pushed `5ae2237..780ba04` → triggers Vercel auto-deploy.
 
+## Session continuation (later rounds, same day)
+
+After the initial publish, the user reviewed the rendered blog and gave rounds of feedback; the following were all completed and pushed.
+
+### 1) Dark-mode readability bug (affected ALL blogs)
+- Symptom: image captions and bracketed italic terms were invisible on dark background.
+- Root cause: captions/inline italics render as `<em>` (and `<figcaption>`), but `globals.css` `.dark .prose` overrides covered p/li/strong/code and MISSED `em` + `figcaption`.
+- Fix: added `.dark .prose em {color:#e5e7eb}` and `.dark .prose figcaption {color:#cbd5e1}` (plus the single-center / image-pair / float figcaption selectors). File: `app/globals.css`.
+
+### 2) Oversized image bug + image-format variety
+- Symptom: some images rendered taller than the viewport (a portrait was >100vh).
+- Root cause: images used bare `![]()` markdown (`<img>`), which has NO height cap; the `.prose figure` CSS caps single-center images at 65vh.
+- Fix: converted every article image in both languages from `![]()` to proper `<figure>` blocks, and used all three formats the user wanted: single-center (65vh cap), `float-left`/`float-right` (text-wrap), and a two-parallel `image-pair` (fences + inheritance). Captions are now semantic `<figcaption>`.
+
+### 3) Real, license-clean images (replaced concept covers)
+- Ran an image-sourcing workflow; downloaded from Wikimedia/NASA with an "Image credits" section added to both languages:
+  - hero/OG - Wayag Island (CC BY 2.0); `10` North Sentinel satellite (NASA PD); `01` Hadza hunters (CC BY 2.0); `02` Charles R Knight mammoths (PD); `05` Skara Brae (CC BY-SA 4.0); `06` Kudurru boundary stone (PD); `07` Great Ziggurat of Ur (US Air Force PD); `08` Assyrian Lachish Relief (CC BY-SA 4.0).
+- Wikimedia rate-limited mid-batch ("Too many requests"); `07`/`08` succeeded on a later retry.
+
+### 4) User-generated AI images
+- Gave the user Gemini-ready prompts for the abstract/weak slots; user generated and dropped in: hero, `01`, `02`, `04`, `07` (re-prompted as ranked human tiers, not a bare pyramid), `09`, `11`. Skipped `03-skeleton` (unused slot) per advice.
+
+### 5) Image optimization + fixes
+- Optimized every image via PowerShell System.Drawing: hero/OG 168 KB, all figures <=290 KB (were up to 480 KB).
+- OG was WebP (frontmatter `.jpg` reference mismatch + WhatsApp-unfriendly) -> converted back to a 168 KB JPEG.
+- Fixed a broken image: MDX referenced `07-...-1200x1500.jpg` but the user's file was `07-...-1600x900.jpg`; updated `src` + alt in both languages. Verified all 12 referenced images resolve.
+
+### 6) Mobile no-scroll / no-zoom hardening
+- Confirmed `html`/`body` `overflow-x:hidden`, floats go full-width `!important` on mobile, image-pair stacks, Next.js default viewport meta present.
+- Added a belt-and-suspenders backstop in `globals.css`: `.blog-content img/figure/.image-pair/pre/table/iframe/video { max-width:100% }`.
+
+### 7) Title changes
+- Hindi (catchier, keeps the term): `धरती के आख़िरी आज़ाद लोग: नॉर्थ सेंटिनल द्वीप और हेडोनिक ट्रेडमिल से आज़ादी`
+- English (user request): `The Last Free Humans: North Sentinel Island and the Hedonic Treadmill Trap Which We Call Progress` (corrected "Headonic" -> "Hedonic"). Slugs unchanged, so URLs/cross-links intact.
+
+### Commits pushed today (all to `main`)
+- `780ba04` add bilingual essay + homepage Latest Posts feed
+- `b016e28` daily log update
+- `2fc3fea` dark-mode captions, image formats, first real photos, HI title
+- `678f187` real ziggurat + Lachish relief
+- `0475e6c` user AI/real images, optimize all, OG jpg fix, caste filename fix
+- `a62d154` English title includes Hedonic Treadmill
+
 ## Follow-ups for next session
-1. Generate the 13 real cinematic images from `documentation/blog contents/last-free-humans-north-sentinel-image-prompts.md` (external image model) and overwrite the same filenames; keep hero + OG under 300 KB. Then commit/push again.
-2. Verify the Vercel deployment of commit `780ba04`; re-scrape social URLs if OG cache is stale.
-3. Browser spot-check the two bot-blocked reference links (Nature pathogens paywall redirect; SMU-hosted Diener PDF 403) — both are genuine; swap for stable mirrors only if they do not open for humans.
-4. Submit/refresh sitemap in Google Search Console after deploy.
+1. Manual QA on a real phone at 360/375/390/414 px: both language pages, confirm no horizontal scroll, captions readable in dark mode, floats full-width.
+2. Verify Vercel deployment of `a62d154`; re-scrape shared URLs if OG cache is stale.
+3. `03-skeleton` is an unused placeholder file - either delete it or, if wanted, place it in the "bones tell the story" paragraph (prompt is in the image sheet).
+4. Optional: swap the two bot-blocked reference links (Nature pathogens; SMU Diener PDF) for stable mirrors if they do not open in a browser.
+5. Submit/refresh sitemap in Google Search Console.
 
 ## Current State
-Bilingual essay is content-complete, build-safe, fully wired into both language listings + the homepage feed with working cross-links, using stylized placeholder cover art pending real images. Committed and pushed to `main` (`780ba04`); Vercel deploy triggered.
+Bilingual essay is fully published: 12 of 12 article images are real photos or user AI art (all optimized; OG is a WhatsApp-safe JPEG), captions/italics readable in light and dark mode, images use three formats and are viewport-safe on mobile, titles finalized in both languages. All work committed and pushed to `main` (latest `a62d154`); Vercel auto-deploy triggered. See `SESSION-HANDOVER-2026-07-04-NORTH-SENTINEL-BLOG-COMPLETE.md`.
