@@ -11,6 +11,7 @@ import SocialActivities from './components/SocialActivities'
 // import Projects from './components/Projects'
 // import Teams from './components/Teams'
 import Contact from './components/Contact'
+import HomeBlogList from './components/HomeBlogList'
 import SocialLinks from './components/SocialLinks'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -132,6 +133,7 @@ export default function Home() {
       {/* <Projects /> */}
       {/* <Teams /> */}
       <Services />
+      <HomeBlogList />
       <Contact />
       <SocialLinks />
       <Footer />
