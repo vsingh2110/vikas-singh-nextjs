@@ -435,6 +435,19 @@ body {
   clear: both;
 }
 
+/* Hard guarantee: nothing inside blog content can exceed the viewport width,
+   so mobile never gets horizontal scroll or auto zoom-out (belt-and-suspenders
+   on top of html/body overflow-x:hidden and the per-element mobile rules) */
+.blog-content img,
+.blog-content figure,
+.blog-content .image-pair,
+.blog-content pre,
+.blog-content table,
+.blog-content iframe,
+.blog-content video {
+  max-width: 100%;
+}
+
 /* Typography - Dark Mode for Prose */
 .dark .prose {
   color: #d4d4d4;
