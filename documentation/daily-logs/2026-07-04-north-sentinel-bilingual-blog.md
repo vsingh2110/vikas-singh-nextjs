@@ -52,11 +52,17 @@ Ran a 3-agent review workflow (EN editorial/claims-framing, HI quality + EN/HI p
 - URL check: 11/12 load-bearing links resolve and support their claims (exact figures matched). 2 are genuine but bot-blocked and worth a browser spot-check before/after deploy: the Nature pathogens article (303→paywall; confirmed via PMC mirror) and the SMU-hosted Diener "Beyond the Hedonic Treadmill" PDF (HTTP 403 to bots). Both are correctly attributed real papers.
 - Rebuilt after edits: `npm run build` → EXIT 0.
 
+## Commit / Deploy (done this session)
+- Replaced the labeled placeholder JPGs with 13 clean, deploy-safe themed **cover graphics** (gradient + kicker + title + small "placeholder concept cover" footer), 31-51 KB each — the live site looks intentional rather than "PLACEHOLDER"-stamped. NOTE: I have no text-to-image tool, so the real cinematic photos still need generating from the prompt sheet.
+- Mounted `HomeBlogList` on the portfolio homepage `app/page.tsx` (after `<Services />`, before `<Contact />`) — "Latest Blog Posts" mixed HI/EN feed; verified the new post shows newest-first.
+- Build after all changes: `npm run build` → EXIT 0.
+- Committed + pushed to `main`: commit `780ba04` ("feat(blog): add bilingual North Sentinel essay and homepage Latest Posts feed"), 18 files, pushed `5ae2237..780ba04` → triggers Vercel auto-deploy.
+
 ## Follow-ups for next session
-1. Generate the 13 real images from the prompt sheet and overwrite the placeholder filenames; keep hero + OG under 300 KB for WhatsApp/social previews.
-2. Optional: if a "Latest Blog Posts" section on the portfolio homepage is wanted, wire `HomeBlogList` into `app/page.tsx` (confirm with user first).
-3. Commit/push to trigger Vercel deploy (not done this session — awaiting user go-ahead).
-4. After deploy, submit/refresh sitemap in Google Search Console.
+1. Generate the 13 real cinematic images from `documentation/blog contents/last-free-humans-north-sentinel-image-prompts.md` (external image model) and overwrite the same filenames; keep hero + OG under 300 KB. Then commit/push again.
+2. Verify the Vercel deployment of commit `780ba04`; re-scrape social URLs if OG cache is stale.
+3. Browser spot-check the two bot-blocked reference links (Nature pathogens paywall redirect; SMU-hosted Diener PDF 403) — both are genuine; swap for stable mirrors only if they do not open for humans.
+4. Submit/refresh sitemap in Google Search Console after deploy.
 
 ## Current State
-Bilingual essay is content-complete, build-safe, fully wired into both language listings with working cross-links, and using placeholder art pending real images. Not yet committed/deployed.
+Bilingual essay is content-complete, build-safe, fully wired into both language listings + the homepage feed with working cross-links, using stylized placeholder cover art pending real images. Committed and pushed to `main` (`780ba04`); Vercel deploy triggered.
