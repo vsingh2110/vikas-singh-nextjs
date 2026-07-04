@@ -499,6 +499,21 @@ body {
   border-radius: 0.5rem;
 }
 
+/* Dark mode readability: inline italics/emphasis and figure captions
+   (fixes low-contrast captions and bracketed italic terms that used the
+   light-mode text-gray-800 / text-gray-500 utility with no dark override) */
+.dark .prose em {
+  color: #e5e7eb;
+}
+
+.dark .prose figcaption,
+.dark .prose figure:not(.float-left):not(.float-right):not(.blog-collage-item):not(.image-pair figure) figcaption,
+.dark .prose .image-pair figure figcaption,
+.dark .prose figure.float-left figcaption,
+.dark .prose figure.float-right figcaption {
+  color: #cbd5e1;
+}
+
 /* Homepage Sections Dark Mode Fixes */
 
 /* About Section */

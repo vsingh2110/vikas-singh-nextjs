@@ -12,7 +12,16 @@ Bilingual essay on North Sentinel Island, the agricultural trap, and the hedonic
 
 ## Status
 
-Labeled **placeholder** JPGs already exist at every filename below (so the homepage cards, blog listing, and article all render cleanly right now). Generate the real images and **overwrite the same filenames** - no MDX edits needed.
+Six slots now use **real, license-clean photos** sourced from Wikimedia/NASA (credited in the article's "Image credits" section):
+- `00-hero` / `00-og` - Wayag Island, Raja Ampat (CC BY 2.0)
+- `10` - North Sentinel Island, NASA satellite (public domain)
+- `01` - Hadza hunters (CC BY 2.0)
+- `02` - Charles R Knight woolly-mammoths painting (public domain)
+- `05` - Skara Brae Neolithic village (CC BY-SA 4.0)
+- `06` - Kudurru land-grant boundary stone, Louvre (public domain)
+
+Still using **designed concept covers** (replace with AI art or real photos when ready, overwriting the same filenames - no MDX edits needed): `04` (bound-to-plot), `07` (caste/ziggurat), `08` (war), `09` (hedonic treadmill), `11` (freedom vs cage).
+Note: for `07` a public-domain US Air Force photo of the Great Ziggurat of Ur and for `08` the Assyrian Lachish Relief (British Museum, CC BY-SA) were identified but not downloaded this session due to Wikimedia rate-limiting - good candidates to drop in later.
 
 ## House rules for every image
 
